@@ -11,22 +11,22 @@
 	return TRUE
 
 /client/proc/get_looc()
-	var/msg = input(src, null, "looc \"text\"") as text|null
+	var/msg = browser_input_text(src, "LOCAL OUT OF CHARACTER", "", "", 1824, FALSE, FALSE, placeholder = "FROM BEHIND THE CURTAIN...")
 	do_looc(msg, FALSE)
 
-/client/verb/looc(msg as text)
+/client/verb/looc()
 	set name = "LOOC"
 	set desc = "Local OOC, seen only by those in view."
 	set category = "OOC"
+	var/verbmsg = browser_input_text(usr, "LOCAL OUT OF CHARACTER", "", "", 1824, FALSE, FALSE, placeholder = "FROM BEHIND THE CURTAIN...")
+	do_looc(verbmsg, FALSE)
 
-	do_looc(msg, FALSE)
-
-/client/verb/loocwp(msg as text)
+/client/verb/loocwp()
 	set name = "LOOC (Wall Pierce)"
 	set desc = "Local OOC, seen by all in range."
 	set category = "OOC"
-
-	do_looc(msg, TRUE)
+	var/wpmsg = browser_input_text(usr, "WALL-PIERCING LOOC", "", "", 1824, FALSE, FALSE, placeholder = "BURST THE SEAMS, FROM BEYOND THE VEIL...")
+	do_looc(wpmsg, TRUE)
 
 /client/proc/do_looc(msg as text, wp)
 

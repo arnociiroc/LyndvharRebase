@@ -369,7 +369,7 @@
 				var/datum/sprite_accessory/penis/penis = new penis_path()
 				valid_penis_types[penis.name] = penis_path
 			
-			var/new_style = input(user, "Choose your penis type", "Penis Customization") as null|anything in valid_penis_types
+			var/new_style = browser_input_list(user, "CHOOSE THEIR PENIS", "SAUSAGE FESTIVAL", valid_penis_types)
 			if(new_style)
 				if(new_style == "none")
 					var/obj/item/organ/penis/penis = H.getorganslot(ORGAN_SLOT_PENIS)

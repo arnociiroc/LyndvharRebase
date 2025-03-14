@@ -167,7 +167,7 @@
 		dat += "<br>Specials can have negative or positive effects"
 	dat += "<br><br><center>Your points will be retained<br><a href='?src=[REF(src)];task=continue'>Continue</a></center>"
 	var/datum/browser/popup = new(user, "dreams", "<center>Dreams</center>", 350, 450)
-	popup.set_window_options("can_close=0")
+	popup.set_window_options(can_close = FALSE)
 	popup.set_content(dat.Join())
 	popup.open(FALSE)
 
