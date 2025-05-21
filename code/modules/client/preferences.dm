@@ -29,7 +29,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/tmp/old_be_special = 0			//Bitflag version of be_special, used to update old savefiles and nothing more
 										//If it's 0, that's good, if it's anything but 0, the owner of this prefs file's antag choices were,
 										//autocorrected this round, not that you'd need to check that.
-
+	var/ui_theme = UI_PREFERENCE_LIGHT_MODE
 	var/UI_style = null
 	var/buttons_locked = TRUE
 	var/hotkeys = TRUE
@@ -352,37 +352,22 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			// LETHALSTONE EDIT BEGIN: add pronoun prefs
 			dat += "<BR><b>Pronouns:</b> <a href='?_src_=prefs;preference=pronouns;task=input'>[pronouns]</a><BR>"
 			// LETHALSTONE EDIT END
-
-			dat += "<BR>"
-			dat += "<b>Race:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a>[spec_check(user) ? "" : " (!)"]<BR>"
+			dat += "<BR><b>Accent:</b> <a href='?_src_=prefs;preference=char_accent;task=input'>[char_accent]</a>"
+			var/datum/language/selected_lang
+			var/lang_output = "None"
+			if(ispath(extra_language, /datum/language))
+				selected_lang = extra_language
+				lang_output = initial(selected_lang.name)
+			dat += "<br><b>Extra Language: </b><a href='?_src_=prefs;preference=extra_language;task=input'>[lang_output]</a>"
+			dat += "<br><b>Voice Color: </b><a href='?_src_=prefs;preference=voice;task=input'>Change</a>"
+			dat += "<br><b>Voice Pitch: </b><a href='?_src_=prefs;preference=voice_pitch;task=input'>[voice_pitch]</a>"
+			// LETHALSTONE EDIT BEGIN: add voice type prefs
+			dat += "<br><b>Voice Type</b>: <a href='?_src_=prefs;preference=voicetype;task=input'>[voice_type]</a>"
+			// LETHALSTONE EDIT END
 
 //			dat += "<a href='?_src_=prefs;preference=species;task=random'>Random Species</A> "
 //			dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SPECIES]'>Always Random Species: [(randomise[RANDOM_SPECIES]) ? "Yes" : "No"]</A><br>"
 
-			if(!(AGENDER in pref_species.species_traits))
-				var/dispGender
-				if(gender == MALE)
-					dispGender = "Masculine" // LETHALSTONE EDIT: repurpose gender as bodytype, display accordingly
-				else if(gender == FEMALE)
-					dispGender = "Feminine" // LETHALSTONE EDIT: repurpose gender as bodytype, display accordingly
-				else
-					dispGender = "Other"
-				dat += "<b>Body Type:</b> <a href='?_src_=prefs;preference=gender'>[dispGender]</a><BR>"
-				if(randomise[RANDOM_BODY] || randomise[RANDOM_BODY_ANTAG]) //doesn't work unless random body
-					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER]'>Always Random Bodytype: [(randomise[RANDOM_GENDER]) ? "Yes" : "No"]</A>"
-					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER_ANTAG]'>When Antagonist: [(randomise[RANDOM_GENDER_ANTAG]) ? "Yes" : "No"]</A>"
-			
-			if(LAZYLEN(pref_species.allowed_taur_types))
-				var/obj/item/bodypart/taur/T = taur_type
-				var/name = ispath(T) ? T::name : "None"
-				dat += "<b>Taur Body Type:</b> <a href='?_src_=prefs;preference=taur_type;task=input'>[name]</a><BR>"
-				dat += "<b>Taur Color:</b><span style='border: 1px solid #161616; background-color: #[taur_color];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=taur_color;task=input'>Change</a><BR>"
-
-			// LETHALSTONE EDIT BEGIN: add voice type prefs
-			dat += "<b>Voice Type</b>: <a href='?_src_=prefs;preference=voicetype;task=input'>[voice_type]</a><BR>"
-			// LETHALSTONE EDIT END
-
-			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
 
 //			dat += "<br><b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a>"
 //			if(randomise[RANDOM_BODY] || randomise[RANDOM_BODY_ANTAG]) //doesn't work unless random body
@@ -392,7 +377,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 //			dat += "<b><a href='?_src_=prefs;preference=name;task=random'>Random Name</A></b><BR>"
 			dat += "<BR>"
 			// LETHALSTONE EDIT: add statpack selection
-			dat += "<b>Statpack:</b> <a href='?_src_=prefs;preference=statpack;task=input'>[statpack.name]</a><BR>"
+			dat += "<BR><b>Statpack:</b> <a href='?_src_=prefs;preference=statpack;task=input'>[statpack.name]</a><BR>"
 			dat += "<b>Virtue:</b> <a href='?_src_=prefs;preference=virtue;task=input'>[virtue]</a><BR>"
 			if(statpack.name == "Virtuous")
 				dat += "<b>Second Virtue:</b> <a href='?_src_=prefs;preference=virtuetwo;task=input'>[virtuetwo]</a><BR>"
@@ -444,6 +429,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 //			-----------START OF BODY TABLE-----------
 			dat += "<table width='100%'><tr><td width='1%' valign='top'>"
 			dat += "<b>Update feature colors with change:</b> <a href='?_src_=prefs;preference=update_mutant_colors;task=input'>[update_mutant_colors ? "Yes" : "No"]</a><BR>"
+			dat += "<BR>"
 			var/use_skintones = pref_species.use_skintones
 			if(use_skintones)
 
@@ -457,16 +443,27 @@ GLOBAL_LIST_EMPTY(chosen_names)
 				dat += "<b>Mutant Color #1:</b><span style='border: 1px solid #161616; background-color: #[features["mcolor"]];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color;task=input'>Change</a><BR>"
 				dat += "<b>Mutant Color #2:</b><span style='border: 1px solid #161616; background-color: #[features["mcolor2"]];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color2;task=input'>Change</a><BR>"
 				dat += "<b>Mutant Color #3:</b><span style='border: 1px solid #161616; background-color: #[features["mcolor3"]];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=mutant_color3;task=input'>Change</a><BR>"
+			dat += "<b>Age:</b> <a href='?_src_=prefs;preference=age;task=input'>[age]</a><BR>"
+			dat += "<b>Race:</b> <a href='?_src_=prefs;preference=species;task=input'>[pref_species.name]</a>[spec_check(user) ? "" : " (!)"]<BR>"
+			if(!(AGENDER in pref_species.species_traits))
+				var/dispGender
+				if(gender == MALE)
+					dispGender = "Masculine" // LETHALSTONE EDIT: repurpose gender as bodytype, display accordingly
+				else if(gender == FEMALE)
+					dispGender = "Feminine" // LETHALSTONE EDIT: repurpose gender as bodytype, display accordingly
+				else
+					dispGender = "Other"
+				dat += "<b>Body Type:</b> <a href='?_src_=prefs;preference=gender'>[dispGender]</a>"
+				if(randomise[RANDOM_BODY] || randomise[RANDOM_BODY_ANTAG]) //doesn't work unless random body
+					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER]'>Always Random Bodytype: [(randomise[RANDOM_GENDER]) ? "Yes" : "No"]</A>"
+					dat += "<a href='?_src_=prefs;preference=toggle_random;random_type=[RANDOM_GENDER_ANTAG]'>When Antagonist: [(randomise[RANDOM_GENDER_ANTAG]) ? "Yes" : "No"]</A>"
+			
+			if(LAZYLEN(pref_species.allowed_taur_types))
+				var/obj/item/bodypart/taur/T = taur_type
+				var/name = ispath(T) ? T::name : "None"
+				dat += "<b>Taur Body Type:</b> <a href='?_src_=prefs;preference=taur_type;task=input'>[name]</a><BR>"
+				dat += "<b>Taur Color:</b><span style='border: 1px solid #161616; background-color: #[taur_color];'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=taur_color;task=input'>Change</a><BR>"
 
-			var/datum/language/selected_lang
-			var/lang_output = "None"
-			if(ispath(extra_language, /datum/language))
-				selected_lang = extra_language
-				lang_output = initial(selected_lang.name)
-			dat += "<b>Extra Language: </b><a href='?_src_=prefs;preference=extra_language;task=input'>[lang_output]</a>"
-			dat += "<br><b>Voice Color: </b><a href='?_src_=prefs;preference=voice;task=input'>Change</a>"
-			dat += "<br><b>Voice Pitch: </b><a href='?_src_=prefs;preference=voice_pitch;task=input'>[voice_pitch]</a>"
-			dat += "<br><b>Accent:</b> <a href='?_src_=prefs;preference=char_accent;task=input'>[char_accent]</a>"
 			dat += "<BR>"
 			dat += "<br><b>Physique:</b> <a href='?_src_=prefs;preference=customizers;task=menu'>Change</a>"
 			dat += "<br><b>Sprite Scale:</b><a href='?_src_=prefs;preference=body_size;task=input'>[(features["body_size"] * 100)]%</a>"
@@ -2601,6 +2598,84 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	if(update_mutant_colors)
 		reset_body_marking_colors()
 		reset_all_customizer_accessory_colors()
+
+/datum/preferences/proc/get_ui_theme_stylesheet()
+	switch(ui_theme)
+
+		if(UI_PREFERENCE_LIGHT_MODE)
+
+			. = {"
+			<html>
+			<head>
+			  <style>
+			    body {
+			      background-color: #ffffff;
+			      color: #000000;
+			    }
+
+			    a {
+			      color: #1a0dab;
+			    }
+
+			    a:visited {
+			      color: #660099;
+			    }
+
+			    hr {
+			      border-top: 1px solid #ccc;
+			    }
+			  </style>
+			</head>
+			</html>
+			"}
+
+		if(UI_PREFERENCE_DARK_MODE) // TODO: MAKE THE DARK THEME BETTER - YISCHE
+
+			. = {"
+			<html>
+			<head>
+			  <style>
+			    body {
+			      background-color: #000000;
+			      color: #897472;
+			    }
+			    a {
+			      color: #7b5353;
+			    }
+
+				a:hover {
+				  color: #eac0b9
+				}
+
+			    a:visited {
+			      color: #ae3636;
+			    }
+
+				select {
+				color: #897472;
+				background-color: #000000;
+				border: 1px solid #897472;
+				resize: none;
+				}
+
+				button {
+				background-color: #000000;
+				}
+
+				input {
+				color: #897472;
+				background-color: #000000;
+				border: 1px solid #897472;
+				resize: none;
+				}
+
+			    hr {
+			      border-top: 1px solid #444;
+			    }
+			  </style>
+			</head>
+			</html>
+			"}
 
 /proc/valid_headshot_link(mob/user, value, silent = FALSE, list/valid_extensions = list("jpg", "png", "jpeg"))
 	var/static/link_regex = regex("i.gyazo.com|a.l3n.co|b.l3n.co|c.l3n.co|images2.imgbox.com|thumbs2.imgbox.com|files.catbox.moe") //gyazo, lensdump, imgbox, catbox

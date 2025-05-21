@@ -172,6 +172,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//general preferences
 	S["asaycolor"]			>> asaycolor
 	S["ooccolor"]			>> ooccolor
+	S["ui_theme"]			>> ui_theme
 	S["lastchangelog"]		>> lastchangelog
 	S["UI_style"]			>> UI_style
 	S["hotkeys"]			>> hotkeys
@@ -300,6 +301,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["masked_examine"], masked_examine)
 	WRITE_FILE(S["mute_animal_emotes"], mute_animal_emotes)
 	WRITE_FILE(S["autoconsume"], autoconsume)
+	WRITE_FILE(S["ui_theme"], ui_theme)
 	WRITE_FILE(S["crt"], crt)
 	WRITE_FILE(S["sexable"], sexable)
 	WRITE_FILE(S["shake"], shake)
