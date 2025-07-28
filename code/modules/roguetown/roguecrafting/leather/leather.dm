@@ -180,3 +180,19 @@
 	craftdiff = 3
 	sellprice = 10
 
+/datum/crafting_recipe/roguetown/leather/greatstrap
+	name = "greatweapon back-strap (2 leather, rope)"
+	result = list(/obj/item/gwstrap)
+	reqs = list(/obj/item/natural/hide/cured = 2,
+				/obj/item/rope = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 3
+	sellprice = 20
+
+/datum/crafting_recipe/roguetown/leather/neck/leather_leash
+	name = "leather leash (1 leather)"
+	result = /obj/item/leash/leather
+	reqs = list(/obj/item/natural/hide/cured = 1)
+	tools = list(/obj/item/needle)
+	time = 10 SECONDS
+	always_availible = TRUE
