@@ -360,6 +360,7 @@
 	body_parts_covered = NECK
 	prevent_crits = list()
 	blocksound = PLATEHIT
+	leashable = TRUE
 
 /obj/item/clothing/neck/roguetown/psicross
 	name = "psycross"
