@@ -36,16 +36,19 @@
 			H.change_stat("constitution", 3)
 			H.change_stat("intelligence", 3)
 			l_hand = /obj/item/rogueweapon/scabbard/sword
-			var/weapons = list("Dunargiac Longsword", "Kriegsmesser", "Longsword")
+			var/weapons = list("Dunargiac Longsword", "Kriegsmesser", "Freifechter Longsword", "Field Longsword")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
-				if("Dunargiac Longsword")
+				if("Dunargiac Longsword") // A longsword with a compound ricasso. Accompanied by a traditional flip knife.
 					r_hand = /obj/item/rogueweapon/sword/long/dunargi
 					beltr = /obj/item/rogueweapon/huntingknife/idagger/navaja
-				if("Kriegsmesser")		//Och- eugh- German!
+				if("Kriegsmesser")		// Och- eugh- German!
 					r_hand = /obj/item/rogueweapon/sword/long/kriegmesser
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
-				if("Longsword")	
+				if("Freifechter Longsword")	// A sharp feder. Less damage, better defense. Definitely not a good choice.
+					r_hand = /obj/item/rogueweapon/sword/long/frei
+					beltr = /obj/item/rogueweapon/huntingknife/idagger
+				if("Field Longsword")	//A common longsword.
 					r_hand = /obj/item/rogueweapon/sword/long
 					beltr = /obj/item/rogueweapon/huntingknife/idagger
 		if("Lándzsa")
@@ -69,13 +72,16 @@
 			beltr = /obj/item/rogueweapon/scabbard/sheath
 			l_hand = /obj/item/rogueweapon/huntingknife/idagger
 			backl = /obj/item/gwstrap
-			var/weapons = list("Boar Spear", "Lucerne")
+			var/weapons = list("Freifechter Spear", "Lucerne")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
-				if("Boar Spear")
+				if("Freifechter Spear") // A steel spear with a cool-looking stick & a banner sticking out of it.
+					r_hand = /obj/item/rogueweapon/spear/boar/frei
+					wrists = /obj/item/rogueweapon/katar/punchdagger/frei
+				if("Boar Spear") // A normal boar spear. Without the freifechter stuff on it.
 					r_hand = /obj/item/rogueweapon/spear/boar
 					wrists = /obj/item/rogueweapon/katar/punchdagger
-				if("Lucerne")		//A normal lucerne for the people that get no drip & no bitches.
+				if("Lucerne")		// A normal lucerne for the people that get no drip & no bitches.
 					r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -95,4 +101,5 @@
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BADTRAINER, TRAIT_GENERIC)
 	H.grant_language(/datum/language/kargradi)
