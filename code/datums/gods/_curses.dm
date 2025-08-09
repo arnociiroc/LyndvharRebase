@@ -62,7 +62,7 @@
 /datum/curse/proc/on_loss(mob/living/carbon/human/owner)
 	REMOVE_TRAIT(owner, trait, TRAIT_CURSE)
 	to_chat(owner, span_userdanger("Something has changed... I feel relieved."))
-	owner.playsound_local(get_turf(owner), 'sound/misc/bell.ogg', 80, FALSE, pressure_affected = FALSE)
+	owner.playsound_local(get_turf(owner), 'sound/misc/bellold.ogg', 80, FALSE, pressure_affected = FALSE)
 	qdel(src)
 	return
 

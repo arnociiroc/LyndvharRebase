@@ -41,7 +41,7 @@
 
 			if (H.is_cursed(temp))
 				H.remove_curse(temp)
-				priority_announce("Gods have lifted [curse_pick] from [H.real_name]!", title = "DIVINE MERCY", sound = 'sound/misc/bell.ogg')
+				priority_announce("Gods have lifted [curse_pick] from [H.real_name]!", title = "DIVINE MERCY", sound = 'sound/misc/bellold.ogg')
 				message_admins("ADMIN DIVINE WRATH: ([ckey]) has lifted [curse_pick] from [H.real_name]) ") //[ADMIN_LOOKUPFLW(user)] Maybe add this here if desirable but dunno.
 				log_game("ADMIN DIVINE WRATH: ([ckey]) has lifted [curse_pick] from [H.real_name])")
 			else
