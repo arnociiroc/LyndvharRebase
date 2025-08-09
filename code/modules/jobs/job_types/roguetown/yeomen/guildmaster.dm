@@ -30,19 +30,6 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	head = /obj/item/clothing/head/roguetown/chaperon/noble/guildmaster
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/blacksmith
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
-	pants = /obj/item/clothing/under/roguetown/trou/artipants
-	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
-	backl = /obj/item/storage/backpack/rogue/backpack
-	backpack_contents = list(
-		/obj/item/rogueweapon/hammer/iron = 1,
-		/obj/item/rogueweapon/tongs = 1,
-		/obj/item/recipe_book/blacksmithing = 1,
-		)
-		belt = /obj/item/storage/belt/rogue/leather
-		beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
-		beltr = /obj/item/storage/keyring/guildmaster
 	if(H.mind)
 		// Skillset is a combo of Artificer + Blacksmith with Labor Skills. 
 		// And Tailor / Leathercrafting
@@ -74,6 +61,20 @@
 			H.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE) // Worse than the real tailor, so can't steal their job right away 
 			H.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
+		armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
+		pants = /obj/item/clothing/under/roguetown/trou/artipants
+		shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
+		backl = /obj/item/storage/backpack/rogue/backpack
+		backpack_contents = list(
+			/obj/item/rogueweapon/hammer/iron = 1,
+			/obj/item/rogueweapon/tongs = 1,
+			/obj/item/recipe_book/blacksmithing = 1,
+			)
+		belt = /obj/item/storage/belt/rogue/leather
+		beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
+		beltr = /obj/item/storage/keyring/guildmaster
+
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 1)
 	H.change_stat("endurance", 2)
