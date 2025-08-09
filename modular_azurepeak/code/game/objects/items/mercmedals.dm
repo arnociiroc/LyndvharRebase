@@ -121,6 +121,3 @@
 	but lyve all the same."
 	icon_state = "vaquero_ring"
 
-/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/warscholar
-// NOT CURRENTLY IMPLEMENTED
-
