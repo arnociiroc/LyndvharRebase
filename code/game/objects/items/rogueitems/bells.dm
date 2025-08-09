@@ -21,7 +21,7 @@
 	. = ..()
 	if(ringing)
 		return
-	playsound(src.loc, 'sound/misc/bell.ogg', 50, 1)
+	playsound(src.loc, 'sound/misc/bellold.ogg', 50, 1)
 
 
 	for(var/mob/M in view(10, src.loc))
@@ -84,7 +84,7 @@
 	if(ringing)
 		return
 	if(istype(used_item, /obj/item/rogueweapon/mace/church))
-		playsound(loc, 'sound/misc/bell.ogg', 50, 1)
+		playsound(loc, 'sound/misc/bellold.ogg', 50, 1)
 		for(var/mob/M in orange(150, src))
 			if(M.client)
 				to_chat(M, span_notice("The church bell rings, echoing solemnly through the area."))
