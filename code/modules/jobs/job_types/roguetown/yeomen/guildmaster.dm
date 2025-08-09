@@ -30,6 +30,19 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	head = /obj/item/clothing/head/roguetown/chaperon/noble/guildmaster
 	gloves = /obj/item/clothing/gloves/roguetown/angle/grenzelgloves/blacksmith
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
+	pants = /obj/item/clothing/under/roguetown/trou/artipants
+	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
+	backl = /obj/item/storage/backpack/rogue/backpack
+	backpack_contents = list(
+		/obj/item/rogueweapon/hammer/iron = 1,
+		/obj/item/rogueweapon/tongs = 1,
+		/obj/item/recipe_book/blacksmithing = 1,
+		)
+		belt = /obj/item/storage/belt/rogue/leather
+		beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
+		beltr = /obj/item/storage/keyring/guildmaster
 	if(H.mind)
 		// Skillset is a combo of Artificer + Blacksmith with Labor Skills. 
 		// And Tailor / Leathercrafting
@@ -61,20 +74,6 @@
 			H.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE) // Worse than the real tailor, so can't steal their job right away 
 			H.adjust_skillrank(/datum/skill/craft/tanning, 1, TRUE)
-		armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket/artijacket
-		pants = /obj/item/clothing/under/roguetown/trou/artipants
-		shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/artificer
-		backl = /obj/item/storage/backpack/rogue/backpack
-		backpack_contents = list(
-			/obj/item/rogueweapon/hammer/iron = 1,
-			/obj/item/rogueweapon/tongs = 1,
-			/obj/item/recipe_book/blacksmithing = 1,
-			)
-		belt = /obj/item/storage/belt/rogue/leather
-		beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
-		beltr = /obj/item/storage/keyring/guildmaster
-
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 1)
 	H.change_stat("endurance", 2)
@@ -94,7 +93,7 @@
 			to_chat(src, span_warning("You must wait before speaking again."))
 			return FALSE
 		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
-		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
+		if(do_after(src, 5 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			say(announcementinput)
 			priority_announce("[announcementinput]", "The Guildmaster Heralds", 'sound/misc/bell.ogg', sender = src)
 			COOLDOWN_START(src, guildmaster_announcement, GUILDMASTER_ANNOUNCEMENT_COOLDOWN)
