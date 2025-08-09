@@ -361,7 +361,7 @@ GLOBAL_VAR_INIT(last_crown_announcement_time, -1000)
 /proc/make_outlaw(raw_message)
 	if(raw_message in GLOB.outlawed_players)
 		GLOB.outlawed_players -= raw_message
-		priority_announce("[raw_message] is no longer an outlaw within the city limits of Lyndvhar.", "The [SSticker.rulertype] Decrees", 'sound/misc/royal_decree.ogg', "Retinue Captain")
+		priority_announce("[raw_message] is no longer an outlaw within the city limits of Lyndvhar.", "The [SSticker.rulertype] Decrees", 'sound/misc/outlaw.ogg', "Retinue Captain")
 		return FALSE
 	var/found = FALSE
 	for(var/mob/living/carbon/human/H in GLOB.player_list)
@@ -370,7 +370,7 @@ GLOBAL_VAR_INIT(last_crown_announcement_time, -1000)
 	if(!found)
 		return FALSE
 	GLOB.outlawed_players += raw_message
-	priority_announce("[raw_message] has been declared an outlaw by the nobility and must be captured or slain.", "The [SSticker.rulertype] Decrees", 'sound/misc/royal_decree2.ogg', "Retinue Captain")
+	priority_announce("[raw_message] has been declared an outlaw by the nobility and must be captured or slain.", "The [SSticker.rulertype] Decrees", 'sound/misc/outlaw.ogg', "Retinue Captain")
 	return TRUE
 
 /proc/make_law(raw_message)
