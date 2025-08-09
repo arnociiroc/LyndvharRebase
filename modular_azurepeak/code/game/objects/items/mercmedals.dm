@@ -117,7 +117,7 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/vaquero
 	name = "vaquero's ring"
-	desc = "A beautiful gold-and-rontz ring, a masterwork of Etruscan jeweling. This does more than prove you a true vaquero; it shows you are as beautiful as you are dangerous, a crimson stone set against gold. Lyve dangerously, \
+	desc = "A beautiful gold-and-rontz ring, a masterwork of Lyndhardtian jeweling. This does more than prove you a true vaquero; it shows you are as beautiful as you are dangerous, a crimson stone set against gold. Lyve dangerously, \
 	but lyve all the same."
 	icon_state = "vaquero_ring"
 
