@@ -32,9 +32,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	max_pq = null
 	round_contrib_points = 4
 
-	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
-	virtue_restrictions = list(/datum/virtue/utility/noble)
-
 /datum/outfit/job/roguetown/priest
 	job_bitflag = BITFLAG_CHURCH
 	allowed_patrons = list(/datum/patron/divine/astrata)	//We lock this cus head of church, acktully
