@@ -54,28 +54,28 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/grenzelhoft
 	name = "imperial gryphon"
-	desc = "A parody of the brass medal issued to Grenzelhoftian soldiers of great honor and renown. Frequently adopted as medals by other, younger guilds among the mercenaries of PSYDONIA, with slight adjustment."
+	desc = "A parody of the brass medal issued to Grenzelhoftian soldiers of great honor and renown. Frequently adopted as medals by other, younger guilds among the mercenaries of Yoheon, with slight adjustment."
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/blackoak
 	name = "guardian's seedpouch"
-	desc = "A pouch, sealed tight, bearing the acorn of an oak native to the Azure Basin. May your end be a new beginning for Azurea."
+	desc = "A pouch, sealed tight, bearing the acorn of an oak native to the Crestborne forests. May your end be a new beginning for Greencrest."
 	icon_state = "blackoak_pouch"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero
 	name = "condottiero's hilt"
-	desc = "A beautiful silver necklace with pea-sized rontz inlays. Each is a work of art in itself; handcrafted by a master jeweler of Etrusca. This is the blade to which the \
+	desc = "A beautiful silver necklace with pea-sized rontz inlays. Each is a work of art in itself; handcrafted by a master jeweler of Aevislan. This is the blade to which the \
 	condottiero has sworn their lyfe."
 	icon_state = "condo_blade"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/desertrider
 	name = "desert rider's sash"
-	desc = "A luxuriant golden chain worn about the shoulders or neck, a sign of high honor in distant Raneshan. Some claim these are a testament to the origins of the Desert Riders in distant slave-fighting pits, but \
-	others think them marks of favor from the highest echelons of the Empire. The desert riders confirm neither rumour."
+	desc = "A luxuriant golden chain worn about the shoulders or neck, a sign of high honor in distant Zybantium. Some claim these are a testament to the origins of the Desert Riders in distant slave-fighting pits, but \
+	others think them marks of favor from the highest echelons of the Ziggurat. The desert riders confirm neither rumour."
 	icon_state = "rider_sash"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forlorn
 	name = "laughing volf medal"
-	desc ="A trinket bearing the snarling visage of a volf and bolt, a mark of distinction among the Forlorn Hope. Often taken from the dead and issued anew to the living, each bearing \
+	desc ="A trinket bearing the snarling visage of a volf and bolt, a mark of distinction among the Forvheipal thralldom. Often taken from the dead and issued anew to the living, each bearing \
 	lyfetymes of nicks and scratches."
 	icon_state = "forlorn_dogmedal"
 
@@ -87,7 +87,7 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/atgervi
 	name = "northmanne's idol"
-	desc = "A humble token of tightly-wound canvas, fur, and wood. A piece of home, clutched tight against the chest. Feel its heart beat in tyme with your own. Even here, in distant Azure Peak, \
+	desc = "A humble token of tightly-wound canvas, fur, and wood. A piece of home, clutched tight against the chest. Feel its heart beat in tyme with your own. Even here, in distant Lyndvhar, \
 	the gods walk, and they walk with you."
 	icon_state = "atgervi_idol"
 
@@ -105,9 +105,9 @@
 	// NOT CURRENTLY IMPLEMENTED
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/routier
-	name = "otavan silvered halo"
-	desc = "A fragment of blessed Otavan steel, carefully wrought into an unusual halo-pattern. While it won't do any good against verevolfs or demons, it will remind a distant routier of what they're fighting for: \
-	home, blessed Otava, and their Weeping God, PSYDON."
+	name = "valorian silvered halo"
+	desc = "A fragment of blessed Valorian steel, carefully wrought into an unusual halo-pattern. While it won't do any good against verevolfs or demons, it will remind a distant routier of what they're fighting for: \
+	home, blessed Valoria, and their truth, PSYDON."
 	icon_state = "routier_halo"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/steppesman
