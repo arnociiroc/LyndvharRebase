@@ -966,7 +966,7 @@
 	grid_height = 64
 	dropshrink = 0
 	bigboy = FALSE
-	force = 25 // Same statline as the cup hilted etruscan rapier
+	force = 25 // Same statline as the cup hilted calmirixian rapier
 	wdefense = 8
 
 /obj/item/rogueweapon/sword/cutlass

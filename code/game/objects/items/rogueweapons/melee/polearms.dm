@@ -1019,7 +1019,7 @@
 	max_blade_int = 150 // 50% more sharpness but it barely matter lol
 
 /obj/item/rogueweapon/spear/boar/frei
-	name = "Aavnic lándzsa"
+	name = "Kargradi lándzsa"
 	desc = "A regional earspoon lance with a carved handle, adorned with the colours of the Freifechters. These are smithed by the legendary armourers of Vyšvou and given to distinguished lancers upon their graduation."
 	icon_state = "praguespear"
 
