@@ -72,7 +72,7 @@
 			beltr = /obj/item/rogueweapon/scabbard/sheath
 			l_hand = /obj/item/rogueweapon/huntingknife/idagger
 			backl = /obj/item/gwstrap
-			var/weapons = list("Freifechter Spear", "Lucerne")
+			var/weapons = list("Freifechter Spear", "Boar Spear", "Lucerne")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Freifechter Spear") // A steel spear with a cool-looking stick & a banner sticking out of it.
