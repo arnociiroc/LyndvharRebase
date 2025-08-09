@@ -81,7 +81,7 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/freifechter
 	name = "freifechter's obol"
-	desc = "A descendant of the oft-forgotten psilen, with a hole through one end for hanging on a string. With the advent of mammon as the Western Continent's currency of choice, \
+	desc = "A descendant of the oft-forgotten astilen, with a hole through one end for hanging on a string. With the advent of mammon as the Western Continent's currency of choice, \
 	they find new lyfe worn as marks of skill by freifechters."
 	icon_state = "freif_obol"
 
