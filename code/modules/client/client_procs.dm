@@ -569,7 +569,7 @@ GLOBAL_LIST_EMPTY(respawncounts)
 	var/baotha_storyteller = /datum/storyteller/baotha
 	var/matthios_storyteller = /datum/storyteller/matthios
 
-	data += "<div style='text-align: center; font-size: 1.3em; color: #AA0000; margin: 20px 0 10px 0;'><b>INHUMEN GODS</b></div>"
+	data += "<div style='text-align: center; font-size: 1.3em; color: #AA0000; margin: 20px 0 10px 0;'><b>THE ARCHDAEMONS</b></div>"
 	data += "<div style='border-top: 3px solid #404040; margin: 0 auto 30px; width: 91.5%;'></div>"
 
 	data += "<div style='width: 91.5%; margin: 0 auto;'>"
