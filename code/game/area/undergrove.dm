@@ -2,7 +2,7 @@
 	name = "Southern Caves"
 	icon_state = "cavewet"
 	warden_area = TRUE
-	first_time_text = "The Undersea"
+	first_time_text = "UNDERSEA"
 	ambientsounds = AMB_CAVEWATER
 	ambientnight = AMB_CAVEWATER
 	spookysounds = SPOOKY_CAVE

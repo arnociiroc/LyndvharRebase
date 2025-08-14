@@ -8,27 +8,27 @@
 
 /area/rogue/indoors/cave/underhamlet
 	name = "The Underhamlet"
-	first_time_text = "The Underhamlet"
+	first_time_text = "UNDERHAMLET"
 
 /area/rogue/indoors/cave/west
 	name = "Western Undercoast"
-	first_time_text = "Western Undercoast"
+	first_time_text = "WESTERN UNDERCOAST"
 
 /area/rogue/indoors/cave/east
 	name = "Eastern Undercoast"
-	first_time_text = "Eastern Undercoast"
+	first_time_text = "EASTERN UNDERCOAST"
 
 /area/rogue/indoors/cave/central
 	name = "Central Undercoast"
-	first_time_text = "Central Undercoast"
+	first_time_text = "CENTRAL UNDERCOAST"
 
 /area/rogue/indoors/cave/northern
 	name = "Northern Undercoast"
-	first_time_text = "Northern Undercoast"
+	first_time_text = "NORTHERN UNDERCOAST"
 
 /area/rogue/indoors/cave/southern
 	name = "Southern Undercoast"
-	first_time_text = "Southern Undercoast"
+	first_time_text = "SOUTHERN UNDERCOAST"
 
 /area/rogue/under/cave/mazedungeon
 	name = "mazedungeon"
@@ -39,7 +39,7 @@
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/dungeon1
 	ceiling_protected = TRUE
-	deathsight_message = "a dark cave where Abyssor's dream echoes"
+	deathsight_message = "a dark temple of shattered belief"
 
 /area/rogue/under/cave/orcdungeon
 	name = "orcdungeon"

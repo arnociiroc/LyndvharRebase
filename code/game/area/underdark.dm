@@ -2,7 +2,7 @@
 	name = "Central Underdark" // Northern is Sunken City
 	icon_state = "cavewet"
 	warden_area = FALSE
-	first_time_text = "The Underdark" // This is where most people will enter Underdark
+	first_time_text = "UNDERDARK" // This is where most people will enter Underdark
 	ambientsounds = AMB_CAVEWATER
 	ambientnight = AMB_CAVEWATER
 	spookysounds = SPOOKY_CAVE
@@ -22,7 +22,7 @@
 
 /area/rogue/under/underdark/south
 	name = "Southern Underdark"
-	first_time_text = "The Southern Underdark"
+	first_time_text = "SOUTHERN UNDERDARK"
 
 /area/rogue/under/underdark/north
 	name = "Melted Undercity"
