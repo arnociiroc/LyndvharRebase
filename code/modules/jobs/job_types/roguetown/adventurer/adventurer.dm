@@ -8,8 +8,8 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 	flag = ADVENTURER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 20
+	spawn_positions = 20
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "A wanderer, not from this region. Whatever led you to this fate is up to the wind to decide, be it that you are fleeing the civil war, looking for work, or otherwise. Whether you will survive the coming week is an altogether different matter entirely- however. The roads have become inhospitable and treacherous to most. You may learn fairly quickly why your destination has become so isolated from everywhere else."
 
