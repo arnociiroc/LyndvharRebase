@@ -1,0 +1,3430 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ai" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"aj" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/obj/structure/closet/crate/roguecloset/inn,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave/inhumen)
+"aB" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/obj/item/reagent_containers/glass/cup/golden,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"aJ" = (
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/pelt,
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave/inhumen)
+"ba" = (
+/obj/structure/table/vtable/v2,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper,
+/obj/item/paper,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave/inhumen)
+"bO" = (
+/obj/structure/chair/bench/church,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"bX" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"cs" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"cT" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"do" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end,
+/area/rogue/under/cave/inhumen)
+"dU" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/reagent_containers/glass/bucket/pot,
+/obj/item/natural/bundle/stick{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/obj/item/natural/bundle/stick{
+	pixel_y = 5;
+	pixel_x = 5
+	},
+/obj/item/natural/bundle/stick{
+	pixel_y = 2;
+	pixel_x = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"eb" = (
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"ek" = (
+/obj/structure/table/wood{
+	dir = 4;
+	icon_state = "largetable"
+	},
+/obj/item/rogueweapon/huntingknife/cleaver,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"eE" = (
+/obj/machinery/light/rogue/firebowl{
+	light_color = "#b30202"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"fg" = (
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave/inhumen)
+"fR" = (
+/obj/item/chair/rogue,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"fZ" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"ge" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"hq" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/obj/structure/bars/passage{
+	density = 0;
+	icon_state = "passage1";
+	name = "unholy protection";
+	redstone_id = "wretch_2"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"hv" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/obj/effect/landmark/start/wretch,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"hX" = (
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"iJ" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"iU" = (
+/obj/structure/bed/rogue/shit,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"je" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"jf" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"jj" = (
+/obj/structure/fluff/walldeco/stone,
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long{
+	dir = 1
+	},
+/area/rogue/under/cave/inhumen)
+"js" = (
+/obj/structure/fluff/statue/femalestatue/zizo{
+	desc = "An ancient statue depicting an elven woman.";
+	name = "Ancient Statue";
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"jN" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 5
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"jU" = (
+/obj/machinery/light/rogue/hearth,
+/obj/machinery/light/rogue/oven/south,
+/obj/item/cooking/pan,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"jV" = (
+/obj/structure/table/wood{
+	dir = 6;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"kv" = (
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"kQ" = (
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"lq" = (
+/obj/structure/table/church,
+/obj/item/roguecoin/aalloy/pile,
+/obj/item/roguecoin/aalloy/pile,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"lv" = (
+/obj/structure/table/wood{
+	dir = 6;
+	icon_state = "largetable"
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"lN" = (
+/turf/open/water/bloody,
+/area/rogue/under/cave/inhumen)
+"lR" = (
+/obj/structure/fluff/alch,
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"lW" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"mw" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"mT" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"mZ" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long{
+	dir = 1
+	},
+/area/rogue/under/cave/inhumen)
+"nc" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"nj" = (
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"nZ" = (
+/obj/structure/closet/crate/chest/wicker,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"of" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/cand,
+/area/rogue/under/cave/inhumen)
+"op" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/under/cave/inhumen)
+"pU" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"qk" = (
+/obj/item/rogueweapon/pick,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"qC" = (
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"rb" = (
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cave/inhumen)
+"rH" = (
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/butter,
+/obj/item/reagent_containers/food/snacks/rogue/meat/sausage,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/structure/closet/crate/chest/neu,
+/obj/item/reagent_containers/food/snacks/rogue/meat/salami,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"sw" = (
+/obj/structure/bars/passage{
+	density = 0;
+	icon_state = "passage1";
+	name = "unholy protection";
+	redstone_id = "wretch_2"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"sM" = (
+/obj/machinery/tanningrack,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"sP" = (
+/obj/structure/table/wood{
+	dir = 4;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 12
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"sY" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"te" = (
+/obj/structure/fluff/traveltile/wretch{
+	aportalgoesto = "wretchin2";
+	aportalid = "wretchout2"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"tF" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/closet/crate/chest/neu,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave/inhumen)
+"tT" = (
+/obj/structure/roguewindow/stained/zizo,
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave/inhumen)
+"tY" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 1
+	},
+/area/rogue/under/cave/inhumen)
+"ul" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"uq" = (
+/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"vu" = (
+/turf/open/water/cleanshallow,
+/area/rogue/under/cave/inhumen)
+"vE" = (
+/obj/structure/fluff/walldeco/stone,
+/turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/under/cave/inhumen)
+"wb" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"wp" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "tablewood2"
+	},
+/obj/item/storage/belt/rogue/surgery_bag/full,
+/obj/structure/fluff/walldeco/stone{
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"wD" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"xC" = (
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"xK" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 4
+	},
+/area/rogue/under/cave/inhumen)
+"xY" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/closet/crate/chest/neu,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"yg" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"yp" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"ys" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 9
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"yx" = (
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"zv" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Aq" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave/inhumen)
+"Au" = (
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave/inhumen)
+"AC" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/obj/structure/lever{
+	redstone_id = wretch_2
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"AK" = (
+/obj/structure/fluff/walldeco/chains{
+	pixel_x = 23
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"Bo" = (
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"BJ" = (
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/thresher,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"CM" = (
+/obj/machinery/anvil/crafted,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"CQ" = (
+/obj/structure/table/vtable,
+/obj/item/natural/feather,
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave/inhumen)
+"CS" = (
+/obj/item/natural/worms/leech,
+/obj/item/natural/worms/leech{
+	pixel_x = 8
+	},
+/obj/item/natural/worms/leech{
+	pixel_x = -8
+	},
+/turf/open/water/bloody,
+/area/rogue/under/cave/inhumen)
+"DE" = (
+/obj/structure/table/wood{
+	dir = 8;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Ex" = (
+/obj/item/natural/worms/leech,
+/obj/item/natural/worms/leech{
+	pixel_x = 8
+	},
+/obj/item/natural/worms/leech{
+	pixel_x = -8
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/water/bloody,
+/area/rogue/under/cave/inhumen)
+"EC" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8;
+	icon_state = "chair2"
+	},
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Fo" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave/inhumen)
+"Fr" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/obj/item/clothing/neck/roguetown/gorget/cursed_collar,
+/obj/item/clothing/neck/roguetown/gorget/cursed_collar,
+/obj/item/clothing/neck/roguetown/collar/leather/nomagic,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"FV" = (
+/obj/structure/table/church/m,
+/obj/item/roguekey/inhumen,
+/obj/item/roguekey/inhumen,
+/obj/item/roguekey/inhumen,
+/obj/item/roguekey/inhumen,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"FY" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/carpet/inn,
+/area/rogue/under/cave/inhumen)
+"Hh" = (
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/whip,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"Hk" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"HB" = (
+/obj/structure/table/optable,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"HL" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"HT" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/effect/landmark/start/wretchlate,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"Jw" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1;
+	lockid = "inhumen";
+	name = "Forgotten Chapel"
+	},
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"Jx" = (
+/obj/structure/mineral_door/bars{
+	lockid = "inhumen"
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"JE" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave/inhumen)
+"JL" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 12
+	},
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Ku" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave/inhumen)
+"Kx" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 9
+	},
+/obj/item/reagent_containers/food/snacks/butter,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Ld" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/structure/lever{
+	redstone_id = wretch_1
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"Lj" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
+/area/rogue/under/cave/inhumen)
+"Ly" = (
+/obj/structure/chair/wood/rogue{
+	dir = 4
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"LK" = (
+/obj/structure/pillory{
+	lockid = "inhumen"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Mt" = (
+/obj/structure/fluff/traveltile/wretch{
+	aportalgoesto = "wretchin1";
+	aportalid = "wretchout1"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"My" = (
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"MQ" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/landmark/start/wretch,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"Nb" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"NN" = (
+/obj/structure/roguemachine/mail,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"NS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/machinery/light/rogue/firebowl/church{
+	light_color = "#b30202"
+	},
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"OU" = (
+/obj/machinery/light/rogue/smelter,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"Pr" = (
+/obj/effect/decal/cleanable/dirt/cobweb,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"Pw" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
+/obj/machinery/light/rogue/forge,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"PX" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"Ra" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 5
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"Rh" = (
+/obj/structure/roguemachine/scomm,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"Rr" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"Rx" = (
+/obj/item/storage/roguebag,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"RQ" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"RW" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"RZ" = (
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"Sx" = (
+/obj/structure/fluff/statue/gargoyle/moss/candles,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"Tl" = (
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"TG" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1";
+	pixel_y = -4
+	},
+/obj/item/kitchen/rollingpin,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"TL" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/closet/crate/chest/old_crate,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"TO" = (
+/obj/structure/chair/bench/church/mid,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"UP" = (
+/obj/structure/chair/bench/church/r,
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"UU" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"VA" = (
+/turf/closed/wall/mineral/rogue/decostone/mossy/red/end{
+	dir = 8
+	},
+/area/rogue/under/cave/inhumen)
+"VO" = (
+/obj/structure/fluff/grindwheel,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave/inhumen)
+"WW" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"XM" = (
+/obj/structure/fluff/psycross/zizocross,
+/turf/open/floor/rogue/herringbone,
+/area/rogue/under/cave/inhumen)
+"Ym" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8;
+	icon_state = "chair2"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"YF" = (
+/obj/machinery/light/rogue/cauldron,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"YN" = (
+/turf/open/floor/rogue/wood,
+/area/rogue/under/cave/inhumen)
+"ZI" = (
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/under/cave/inhumen)
+"ZN" = (
+/obj/structure/fluff/walldeco/stone{
+	pixel_y = 32
+	},
+/obj/effect/landmark/start/wretchlate,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+
+(1,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(2,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(3,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(4,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(5,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+te
+te
+te
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(6,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+bX
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(7,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+yp
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(8,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+yp
+rb
+rb
+rb
+op
+Lj
+Lj
+tT
+Lj
+Lj
+op
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(9,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+yp
+rb
+rb
+rb
+mZ
+aJ
+aJ
+fg
+aJ
+aJ
+mZ
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(10,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+rb
+rb
+rb
+jj
+fg
+fg
+fg
+fg
+FY
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(11,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+rb
+rb
+rb
+of
+tF
+YN
+YN
+YN
+CQ
+mZ
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(12,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+op
+Lj
+of
+tT
+tT
+of
+Lj
+iJ
+op
+rb
+rb
+rb
+mZ
+aj
+Au
+YN
+Au
+ba
+jj
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(13,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+of
+jU
+RZ
+eb
+dU
+Rr
+Tl
+Tl
+vE
+do
+Lj
+tT
+Lj
+Lj
+of
+Fo
+of
+Lj
+Lj
+tY
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(14,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+rb
+rb
+rb
+rb
+rb
+mZ
+TG
+eb
+eb
+sM
+Tl
+Tl
+Tl
+je
+of
+Nb
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+eE
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(15,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+rb
+rb
+rb
+mZ
+rH
+eb
+eb
+Tl
+Tl
+Tl
+Tl
+Tl
+pU
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+Sx
+do
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(16,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+Aq
+Aq
+rb
+rb
+mZ
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+je
+of
+Bo
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+eE
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(17,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+Aq
+Aq
+Aq
+Ku
+Ku
+rb
+op
+VA
+RW
+Tl
+kv
+Tl
+RQ
+op
+tT
+vE
+do
+Lj
+tT
+Lj
+Lj
+sw
+sw
+sw
+Lj
+tY
+do
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+yp
+yp
+yp
+rb
+rb
+rb
+"}
+(18,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+Ku
+rb
+of
+fZ
+Tl
+kv
+kv
+yg
+xK
+op
+op
+op
+op
+op
+op
+MQ
+sY
+qC
+qC
+qC
+eE
+op
+op
+rb
+rb
+rb
+yp
+yp
+yp
+vu
+vu
+yp
+yp
+yp
+bX
+rb
+rb
+"}
+(19,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+Ku
+rb
+tT
+Tl
+Tl
+Ly
+Ly
+fR
+mZ
+op
+op
+op
+op
+op
+HT
+nj
+wb
+qC
+qC
+qC
+qC
+qC
+vE
+xK
+rb
+yp
+yp
+yp
+vu
+vu
+vu
+vu
+yp
+yp
+yp
+rb
+rb
+"}
+(20,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+Ku
+rb
+tT
+Tl
+Tl
+Kx
+DE
+JL
+of
+xK
+op
+of
+op
+wD
+nj
+nj
+wb
+qC
+ZI
+ZI
+bO
+qC
+XM
+VA
+rb
+yp
+yp
+yp
+yp
+vu
+vu
+vu
+vu
+yp
+yp
+rb
+rb
+"}
+(21,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+yp
+yp
+of
+NN
+Tl
+jN
+ek
+jV
+mZ
+tT
+Pr
+jf
+kv
+kv
+nj
+nj
+sY
+qC
+TO
+TO
+TO
+qC
+qC
+tT
+bX
+yp
+yp
+yp
+yp
+yp
+vu
+vu
+vu
+yp
+yp
+rb
+rb
+"}
+(22,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+yp
+yp
+yp
+Tl
+Tl
+Ym
+kv
+EC
+mZ
+VA
+kv
+lN
+lN
+lN
+kv
+lq
+sY
+qC
+UP
+UP
+UP
+qC
+qC
+op
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+vu
+yp
+yp
+yp
+Mt
+rb
+"}
+(23,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+lW
+qk
+yp
+Tl
+Tl
+kv
+kv
+AC
+of
+of
+mT
+lN
+js
+lN
+kv
+FV
+NS
+qC
+qC
+qC
+qC
+qC
+qC
+hq
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+Mt
+rb
+"}
+(24,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+yp
+Rx
+yp
+Tl
+Tl
+Ly
+kv
+HL
+mZ
+xK
+kv
+lN
+lN
+lN
+kv
+aB
+Ld
+qC
+ZI
+ZI
+bO
+qC
+qC
+op
+yp
+yp
+vu
+vu
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+Mt
+rb
+"}
+(25,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+yp
+yp
+of
+Rh
+Tl
+ys
+ai
+xC
+mZ
+tT
+nc
+yx
+kv
+kv
+nj
+nj
+sY
+qC
+TO
+TO
+TO
+qC
+qC
+tT
+bX
+yp
+yp
+vu
+vu
+vu
+yp
+yp
+yp
+yp
+yp
+rb
+rb
+"}
+(26,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+Aq
+Aq
+Ku
+Ku
+Ku
+rb
+tT
+Tl
+Tl
+Ra
+sP
+lv
+of
+VA
+op
+of
+op
+wD
+nj
+nj
+wb
+qC
+UP
+UP
+UP
+qC
+XM
+xK
+rb
+yp
+yp
+vu
+vu
+vu
+vu
+yp
+yp
+yp
+yp
+rb
+rb
+"}
+(27,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+Aq
+Aq
+Aq
+Ku
+Ku
+rb
+tT
+Tl
+Tl
+fR
+kv
+zv
+mZ
+op
+op
+op
+op
+op
+ZN
+nj
+wb
+qC
+qC
+qC
+qC
+qC
+vE
+VA
+rb
+yp
+yp
+yp
+vu
+vu
+vu
+vu
+yp
+yp
+yp
+rb
+rb
+"}
+(28,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+Aq
+rb
+rb
+rb
+rb
+of
+fZ
+Tl
+kv
+kv
+yg
+VA
+op
+op
+op
+op
+op
+op
+hv
+sY
+qC
+qC
+qC
+eE
+op
+op
+rb
+rb
+rb
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+yp
+bX
+rb
+rb
+"}
+(29,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+JE
+JE
+JE
+rb
+op
+Lj
+Lj
+Lj
+tY
+RW
+Tl
+kv
+Tl
+RQ
+op
+tT
+vE
+do
+Lj
+tT
+Lj
+Lj
+sw
+sw
+sw
+Lj
+Lj
+tY
+rb
+rb
+rb
+rb
+rb
+yp
+yp
+yp
+yp
+yp
+yp
+rb
+rb
+rb
+"}
+(30,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+tT
+iU
+AK
+Tl
+WW
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+je
+of
+Bo
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+eE
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(31,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+of
+fZ
+Tl
+Tl
+Jx
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+Tl
+pU
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+Sx
+do
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(32,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+tT
+My
+iU
+Tl
+WW
+Tl
+Tl
+Tl
+ul
+UU
+UU
+UU
+cs
+of
+uq
+qC
+qC
+qC
+qC
+qC
+qC
+qC
+eE
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(33,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+xK
+op
+Jx
+do
+Lj
+tY
+PX
+lR
+YF
+TL
+Ex
+CS
+CS
+vE
+do
+Lj
+tT
+Lj
+Lj
+of
+Jw
+of
+Lj
+Lj
+tY
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(34,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+mZ
+Hh
+Tl
+Hk
+Fr
+op
+Lj
+of
+tT
+tT
+of
+Lj
+Lj
+op
+rb
+rb
+rb
+mZ
+OU
+hX
+kQ
+hX
+cT
+jj
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(35,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+mZ
+BJ
+Tl
+Tl
+Tl
+Tl
+jj
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+jj
+VO
+kQ
+kQ
+kQ
+CM
+mZ
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(36,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+tT
+Tl
+kv
+kv
+kv
+Tl
+tT
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+of
+xY
+kQ
+kQ
+kQ
+Pw
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(37,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+of
+fZ
+kv
+LK
+kv
+je
+of
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+mZ
+nZ
+kQ
+kQ
+kQ
+ge
+mZ
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(38,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+tT
+HB
+kv
+kv
+kv
+Tl
+tT
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+op
+Lj
+Lj
+tT
+Lj
+Lj
+op
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(39,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+mZ
+wp
+Tl
+mw
+Tl
+Tl
+mZ
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(40,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+VA
+Lj
+tT
+of
+tT
+Lj
+op
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(41,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(42,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(43,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(44,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(45,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(46,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(47,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(48,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(49,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
+(50,1,1) = {"
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+rb
+"}
