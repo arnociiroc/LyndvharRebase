@@ -19,7 +19,7 @@ endmap
 map dun_manor
 endmap
 
-map lyndvhar_city
+map lyndvhar_world
 	default
 	votable
 endmap
