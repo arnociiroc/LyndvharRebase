@@ -28,7 +28,7 @@
 
 
 /area/rogue/outdoors/mountains/decap/stepbelow
-	name = "Scorched City"
+	name = "Scorched Caldera"
 	icon_state = "decap"
 	ambush_mobs = list(
 				new /datum/ambush_config/pair_of_direbear = 10,
@@ -43,7 +43,7 @@
 	droning_sound = 'sound/music/area/decap_deeper.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "SCORCHED CITY"
+	first_time_text = "SCORCHED CALDERA"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 
@@ -81,7 +81,7 @@
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/dungeon1
 	ceiling_protected = TRUE
-	deathsight_message = "a twisted tangle of soaring peaks"
+	deathsight_message = "a twisted arena of drakeflame"
 
 /area/rogue/under/cave/dragonden/can_craft_here()
 	return FALSE
