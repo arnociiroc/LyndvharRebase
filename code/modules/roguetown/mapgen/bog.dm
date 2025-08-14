@@ -1,7 +1,7 @@
 //genstuff
 /obj/effect/landmark/mapGenerator/rogue/bog
 	mapGeneratorType = /datum/mapGenerator/bog
-	endTurfX = 255
+	endTurfX = 450
 	endTurfY = 400
 	startTurfX = 1
 	startTurfY = 1
