@@ -329,8 +329,8 @@
 /area/rogue/under/cave/inhumen)
 "te" = (
 /obj/structure/fluff/traveltile/wretch{
-	aportalgoesto = "wretchin2";
-	aportalid = "wretchout2"
+	aportalgoesto = "wretchout2";
+	aportalid = "wretchin2"
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
