@@ -172,7 +172,7 @@
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	beltl = /obj/item/quiver/arrows
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
-		backpack_contents = list(
+	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
 		/obj/item/rope/chain = 2
