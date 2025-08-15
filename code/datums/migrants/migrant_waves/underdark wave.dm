@@ -80,7 +80,6 @@
 	name = "Underdark Slavers"
 	shared_wave_type = /datum/migrant_wave/underdark
 	can_roll = FALSE
-	downgrade_wave = /datum/migrant_wave/underdark_down_seven
 	roles = list(
 		/datum/migrant_role/underdark/thrallmaster = 1,
 	)
