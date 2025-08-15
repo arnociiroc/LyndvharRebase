@@ -7,16 +7,17 @@
 /datum/outfit/job/roguetown/underdark/thrallmaster/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
-	neck = /obj/item/clothing/neck/roguetown/gorget
+	neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
-	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	backl = /obj/item/storage/backpack/rogue/satchel/short
-	beltl = /obj/item/rogueweapon/sword/rapier/dec
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+	backl = /obj/item/storage/backpack/rogue/satchel/
+	backr = /obj/item/rogueweapon/shield/tower
+	beltl = /obj/item/rogueweapon/whip/antique
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
@@ -58,7 +59,46 @@
 	allowed_races = RACES_ALL_KINDS
 /datum/outfit/job/roguetown/underdark/halberdier/pre_equip(mob/living/carbon/human/H)
 	..()
+	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
+	mask = /obj/item/clothing/mask/rogue/ragmask/black
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backr = /obj/item/gwstrap
+	l_hand = /obj/item/rogueweapon/halberd/glaive
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+	backpack_contents = list(
+		/obj/item/rogueweapon/scabbard/sheath = 1, 
+		/obj/item/flashlight/flare/torch/lantern = 1,
+		/obj/item/rope/chain = 2)
 
+	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
+	H.change_stat("strength", 1)
+	H.change_stat("endurance", 3)
+	H.change_stat("constitution", 2)
+	H.change_stat("perception", -2)
+	H.change_stat("speed", -1)
+	H.change_stat("intelligence", 1)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
 
 /datum/migrant_role/underdark/bladesinger
 	name = "Underdark Bladesinger"
