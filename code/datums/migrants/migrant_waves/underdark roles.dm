@@ -118,7 +118,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	/obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	l_hand = /obj/item/rogueweapon/sword/falx
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
