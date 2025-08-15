@@ -1,6 +1,6 @@
 /datum/migrant_role/underdark/thrallmaster
 	name = "Underdark Thrallmaster"
-	greet_text = ""
+	greet_text = "Having served the Maîtresse of the Drow Cities faithfully, you have been given an established title of nobility and a free license to expand your new powerbase. You have decided that the easiest way to do this is to expand upwards, into the topside regions- to look for slaves and do mercantile trade. How you will go about this is up to you."
 	outfit = /datum/outfit/job/roguetown/underdark/thrallmaster
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -53,7 +53,7 @@
 
 /datum/migrant_role/underdark/halberdier
 	name = "Underdark Halberdier"
-	greet_text = ""
+	greet_text = "Serving the Thrallmaster, you are a simple halberdier of their noble estate. Serve them well or face punishment for your misdeeds."
 	outfit = /datum/outfit/job/roguetown/underdark/halberdier
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -102,7 +102,7 @@
 
 /datum/migrant_role/underdark/bladesinger
 	name = "Underdark Bladesinger"
-	greet_text = ""
+	greet_text = "Serving the Thrallmaster, you are their second-in-command, and one of their closest allies and confidants. Assist them in any way that you can in the expansion of their powerbase, lest they flounder and all suffer the consequences."
 	outfit = /datum/outfit/job/roguetown/underdark/bladesinger
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -148,7 +148,7 @@
 
 /datum/migrant_role/underdark/archer
 	name = "Underdark Archer"
-	greet_text = ""
+	greet_text = "Serving the Thrallmaster, you are a simple archer of their noble estate. Serve them well or face punishment for your misdeeds."
 	outfit = /datum/outfit/job/roguetown/underdark/archer
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -195,7 +195,7 @@
 
 /datum/migrant_role/underdark/slave
 	name = "Underdark Slave"
-	greet_text = ""
+	greet_text = "You are hardly considered anything to these people. Nothing less than a serving caste dedicated to serving the whims of this party whenever desired- be it cooking, cleaning, sewing- whatever. Your worth is only valued at how valuable you make yourself. Perhaps you will get lucky and get sold away to a better place- or put out of your misery."
 	outfit = /datum/outfit/job/roguetown/underdark/slave
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
