@@ -9,7 +9,7 @@
 	head = /obj/item/clothing/head/roguetown/nyle
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/half/iron
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
@@ -65,7 +65,7 @@
 	mask = /obj/item/clothing/mask/rogue/ragmask/black
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
