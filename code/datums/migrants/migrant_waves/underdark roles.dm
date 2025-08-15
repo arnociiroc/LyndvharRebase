@@ -3,7 +3,7 @@
 	greet_text = ""
 	outfit = /datum/outfit/job/roguetown/underdark/thrallmaster
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/underdark/thrallmaster/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
@@ -56,7 +56,7 @@
 	greet_text = ""
 	outfit = /datum/outfit/job/roguetown/underdark/halberdier
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/underdark/halberdier/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
@@ -105,7 +105,7 @@
 	greet_text = ""
 	outfit = /datum/outfit/job/roguetown/underdark/bladesinger
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/underdark/bladesinger/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/roguehood/black
@@ -151,7 +151,7 @@
 	greet_text = ""
 	outfit = /datum/outfit/job/roguetown/underdark/archer
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/underdark/archer/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/roguehood/black
