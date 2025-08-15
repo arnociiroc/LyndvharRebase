@@ -10,7 +10,7 @@
 	head = /obj/item/clothing/head/roguetown/nyle
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
-	armor = /obj/item/clothing/suit/roguetown/armor/half/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
