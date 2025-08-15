@@ -126,6 +126,7 @@
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
 		/obj/item/rope/chain = 2)
+
 	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
