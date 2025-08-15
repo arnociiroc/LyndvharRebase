@@ -108,7 +108,43 @@
 	allowed_races = RACES_ALL_KINDS
 /datum/outfit/job/roguetown/underdark/bladesinger/pre_equip(mob/living/carbon/human/H)
 	..()
-
+	head = /obj/item/clothing/head/roguetown/roguehood/black
+	mask = /obj/item/clothing/mask/rogue/ragmask/black
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	/obj/item/storage/backpack/rogue/satchel/short
+	l_hand = /obj/item/rogueweapon/sword/falx
+	beltl = /obj/item/rogueweapon/scabbard/sword
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+	backpack_contents = list(
+		/obj/item/rogueweapon/scabbard/sheath = 1, 
+		/obj/item/flashlight/flare/torch/lantern = 1,
+		/obj/item/rope/chain = 2)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
+	H.change_stat("strength", -2)
+	H.change_stat("endurance", 2)
+	H.change_stat("constitution", -2)
+	H.change_stat("perception", 2)
+	H.change_stat("speed", 3)
+	H.change_stat("intelligence", 1)
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
 
 /datum/migrant_role/underdark/archer
 	name = "Underdark Archer"
