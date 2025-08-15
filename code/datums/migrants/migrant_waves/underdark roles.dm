@@ -24,7 +24,8 @@
 		/obj/item/flashlight/flare/torch/lantern = 1, 
 		/obj/item/storage/belt/rogue/pouch/coins/rich = 1, 
 		/obj/item/rope/chain = 2,
-		/obj/item/clothing/neck/roguetown/collar/leather/nomagic = 1)
+		/obj/item/clothing/neck/roguetown/collar/leather/nomagic = 1
+		)
 
 	H.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
@@ -76,7 +77,8 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
-		/obj/item/rope/chain = 2)
+		/obj/item/rope/chain = 2
+		)
 
 	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
@@ -125,7 +127,8 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
-		/obj/item/rope/chain = 2)
+		/obj/item/rope/chain = 2
+		)
 
 	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -172,7 +175,8 @@
 		backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
-		/obj/item/rope/chain = 2)
+		/obj/item/rope/chain = 2
+		)
 
 	H.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/slings, 2, TRUE) 
@@ -205,6 +209,7 @@
 	neck = /obj/item/clothing/neck/roguetown/collar/leather/nomagic
 	armor = /obj/item/clothing/suit/roguetown/shirt/rags
 	pants = /obj/item/clothing/under/roguetown/loincloth/brown
+
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
