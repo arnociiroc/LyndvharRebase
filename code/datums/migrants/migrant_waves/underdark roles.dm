@@ -6,8 +6,8 @@
 	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/underdark/thrallmaster/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
-	neck = /obj/item/clothing/neck/roguetown/bevor/iron
+	head = /obj/item/clothing/head/roguetown/nyle
+	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
@@ -17,7 +17,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	backl = /obj/item/storage/backpack/rogue/satchel
-	backr = /obj/item/rogueweapon/shield/tower
+	backr = /obj/item/rogueweapon/shield/tower/metal
 	beltl = /obj/item/rogueweapon/whip/antique
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
 	backpack_contents = list(
@@ -47,7 +47,7 @@
 	H.change_stat("perception", 1)
 	H.change_stat("speed", -1)
 	H.change_stat("intelligence", 1)
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_PERFECT_TRACKER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
@@ -61,11 +61,11 @@
 	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/underdark/halberdier/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
 	mask = /obj/item/clothing/mask/rogue/ragmask/black
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/ironiron
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
@@ -100,7 +100,7 @@
 	H.change_stat("perception", -2)
 	H.change_stat("speed", -1)
 	H.change_stat("intelligence", 1)
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
 
@@ -119,11 +119,11 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/satchel
 	l_hand = /obj/item/rogueweapon/sword/falx
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
