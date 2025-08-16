@@ -298,7 +298,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
 		if(do_after(src, 5 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			say(announcementinput)
-			priority_announce("[announcementinput]", "The Priest Speaks", 'sound/misc/bell.ogg', sender = src)
+			priority_announce("[announcementinput]", "The Priest Speaks", 'sound/misc/bellold.ogg', sender = src)
 			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
 		else
 			to_chat(src, span_warning("Your announcement was interrupted!"))
@@ -393,7 +393,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	if (inputty in GLOB.apostasy_players)
 		GLOB.apostasy_players -= inputty
-		priority_announce("[real_name] has forgiven [inputty]. Their patron hears their prayer once more!", title = "APOSTASY LIFTED", sound = 'sound/misc/bell.ogg')
+		priority_announce("[real_name] has forgiven [inputty]. Their patron hears their prayer once more!", title = "APOSTASY LIFTED", sound = 'sound/misc/bellold.ogg')
 		message_admins("APOSTASY: [real_name] ([ckey]) has used forgiven apostasy at [H.real_name] ([H.ckey])")
 		log_game("APOSTASY: [real_name] ([ckey]) has used forgiven apostasy at [H.real_name] ([H.ckey])")
 
@@ -457,7 +457,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	if (inputty in GLOB.excommunicated_players)
 		GLOB.excommunicated_players -= inputty
-		priority_announce("[real_name] has reconciled [inputty] with the Church. They are once again part of the flock!", title = "RECONCILIATION", sound = 'sound/misc/bell.ogg')
+		priority_announce("[real_name] has reconciled [inputty] with the Church. They are once again part of the flock!", title = "RECONCILIATION", sound = 'sound/misc/bellold.ogg')
 		message_admins("EXCOMMUNICATION: [real_name] ([ckey]) has reconciled [H.real_name] ([H.ckey])")
 		log_game("EXCOMMUNICATION: [real_name] ([ckey]) has reconciled [H.real_name] ([H.ckey])")
 
@@ -543,7 +543,7 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 
 		if (H.is_cursed(temp))
 			H.remove_curse(temp)
-			priority_announce("[real_name] has lifted [curse_pick] from [H.real_name]! They are once again part of the flock!", title = "REDEMPTION", sound = 'sound/misc/bell.ogg')
+			priority_announce("[real_name] has lifted [curse_pick] from [H.real_name]! They are once again part of the flock!", title = "REDEMPTION", sound = 'sound/misc/bellold.ogg')
 			message_admins("DIVINE CURSE: [real_name] ([ckey]) has removed [curse_pick] from [H.real_name]) ") //[ADMIN_LOOKUPFLW(user)] Maybe add this here if desirable but dunno.
 			log_game("DIVINE CURSE: [real_name] ([ckey]) has removed [curse_pick] from [H.real_name])")
 		else

@@ -21,7 +21,7 @@
 	max_pq = null
 	round_contrib_points = 1
 
-	cmode_music = 'sound/music/combat_squire.ogg'
+	cmode_music = 'sound/music/combat_garrison.ogg'
 
 /datum/outfit/job/roguetown/squire
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard

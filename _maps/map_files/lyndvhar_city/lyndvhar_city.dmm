@@ -2438,6 +2438,17 @@
 /area/rogue/indoors/town/tavern{
 	first_time_text = "THE FOOL'S FLAGON"
 	})
+"bBs" = (
+/obj/structure/bars/passage/shutter{
+	redstone_id = "weaponsmith_shutter"
+	},
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "bBy" = (
 /obj/structure/roguewindow,
 /obj/structure/bars{
@@ -2828,6 +2839,17 @@
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/town/basement/keep)
+"bNN" = (
+/obj/structure/bars{
+	icon_state = "barsbent";
+	layer = 2.81
+	},
+/obj/structure/bars/passage/shutter{
+	redstone_id = "armourer_shutter"
+	},
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/dwarfin)
 "bNU" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -102283,7 +102305,7 @@ prE
 prE
 prE
 oWT
-tjF
+bBs
 tph
 orM
 xHT
@@ -102445,7 +102467,7 @@ prE
 yaQ
 prE
 eQx
-tjF
+bBs
 tph
 orM
 xHT
@@ -103417,7 +103439,7 @@ prE
 yaQ
 prE
 eQx
-lGx
+bNN
 tph
 orM
 xHT
@@ -103579,7 +103601,7 @@ prE
 prE
 prE
 oWT
-lGx
+bNN
 tph
 orM
 xHT

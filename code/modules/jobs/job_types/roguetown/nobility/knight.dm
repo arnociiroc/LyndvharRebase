@@ -419,9 +419,9 @@
 			beltr = /obj/item/quiver/sling/iron
 			beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/sling
 	
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 
 	var/helmets = list(
 		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
@@ -436,7 +436,7 @@
 		"Slitted Kettle" = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
 		"None"
 	)
-	
+
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
