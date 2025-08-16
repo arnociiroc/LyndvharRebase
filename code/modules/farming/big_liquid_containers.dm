@@ -84,7 +84,7 @@
 	reagents.add_reagent(/datum/reagent/consumable/ethanol/whitewine,900)
 
 /obj/structure/fermentation_keg/redwine
-	desc = "A barrel that contains an Valorian luxury. It was originally served as part of Psydonic communion, eventually becoming wildly enjoyed within Otava to the point of being oft paired with EVERY meal."
+	desc = "A barrel that contains an Valorian luxury. It was originally served as part of Psydonic communion, eventually becoming wildly enjoyed within Valoria to the point of being oft paired with EVERY meal."
 
 /obj/structure/fermentation_keg/redwine/Initialize()
 	. = ..()

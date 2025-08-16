@@ -80,7 +80,7 @@
 
 /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	name = "psydonian leather gloves"
-	desc = "Made with Otava's Finest leather, these gloves are fashioned to last."
+	desc = "Made with Valoria's Finest leather, these gloves are fashioned to last."
 	icon_state = "psydongloves"
 	item_state = "psydongloves"
 	salvage_result = /obj/item/natural/hide/cured	
