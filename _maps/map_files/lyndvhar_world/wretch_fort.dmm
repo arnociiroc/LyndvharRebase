@@ -263,6 +263,10 @@
 "op" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red,
 /area/rogue/under/cave/inhumen)
+"pC" = (
+/obj/structure/far_travel,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
 "pU" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	locked = 1;
@@ -2331,7 +2335,7 @@ yp
 yp
 yp
 yp
-yp
+rb
 rb
 rb
 rb
@@ -2379,9 +2383,9 @@ rb
 rb
 rb
 rb
-rb
-rb
-rb
+yp
+yp
+yp
 rb
 rb
 rb
@@ -2431,9 +2435,9 @@ rb
 rb
 rb
 rb
-rb
-rb
-rb
+pC
+pC
+pC
 rb
 rb
 rb
