@@ -611,7 +611,7 @@
 
 /obj/item/rogueweapon/sword/short/falchion
 	name = "falchion"
-	desc = "A single-edged sword that is similar to a messer in appearance, its origins trace back to Otava. An implement of commoners and knights alike. It's good for cutting and thrusting."
+	desc = "A single-edged sword that is similar to a messer in appearance, its origins trace back to southwestern Llewyn. An implement of commoners and knights alike. It's good for cutting and thrusting."
 	force = 20
 	icon_state = "falchion"
 	wdefense = 6

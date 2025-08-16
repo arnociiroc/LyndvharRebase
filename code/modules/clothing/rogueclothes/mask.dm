@@ -32,7 +32,7 @@
 /obj/item/clothing/mask/rogue/spectacles/inq
 	name = "valorian nocshade lens-pair"
 	icon_state = "bglasses"
-	desc = "Made to both ENDURE and incite debate within those few Noc-Sainted within Otava. Noc-lit walks, yae or nae? The lenses look like they can be brushed aside with a carefully guided right-pointer finger led motion."
+	desc = "Made to both ENDURE and incite debate within those of studious background within Valoria. The lenses look like they can be brushed aside with a carefully guided right-pointer finger led motion."
 	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
 	max_integrity = 300
 	integrity_failure = 0.5
