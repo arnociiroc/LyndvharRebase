@@ -234,7 +234,7 @@
 			if(m)
 				if(prob(1) && sect == "sect1")
 					user.playsound_local(user, 'sound/misc/psydong.ogg', 100, FALSE)
-					user.say("PSY 23:4... And so, ZEZUS wept; for he had been struck down by the silvered javelin of JVDAS, PSYDON's most devout.")
+					user.say("PSY 23:4... And so, PSYDON wept; for he had been cast from the annals of history, VANQUISHED by the most devoutly heathen of sects..")
 					user.psydo_nyte()
 				else
 					user.say(m)	
