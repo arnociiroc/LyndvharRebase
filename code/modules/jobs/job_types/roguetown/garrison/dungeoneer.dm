@@ -22,6 +22,8 @@
 
 	cmode_music = 'sound/music/combat_garrison.ogg'
 
+	stat_ceilings = list(STAT_STRENGTH = 16, STAT_CONSTITUTION = 16, STAT_ENDURANCE = 16)
+
 /datum/job/roguetown/dungeoneer/New()
 	. = ..()
 	peopleknowme = list()

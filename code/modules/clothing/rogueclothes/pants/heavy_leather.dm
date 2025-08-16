@@ -31,7 +31,6 @@
 	name = "valorian leather trousers"
 	desc = "padded leather armor made by Valorian tailors, its quality is remarkable."
 	icon_state = "fencerpants"
-	allowed_race = NON_DWARVEN_RACE_TYPES
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic
 	name = "fencing breeches"
@@ -40,6 +39,7 @@
 	detail_tag = "_detail"
 	color = "#FFFFFF"
 	detail_color = "#5E4440"
+	allowed_race = NON_DWARVEN_RACE_TYPES
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic/update_icon()
 	cut_overlays()
@@ -50,7 +50,7 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic/Initialize()
+/obj/item/clothing/under/roguetown/heavy_leather_pants/valorian/generic/Initialize()
 	..()
 	update_icon()
 
