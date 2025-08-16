@@ -100,25 +100,25 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	name = "Bandit Default"
 	desc = ""
 	shortname = "Bandit Def."
-	credits = "T-87 SULFURHEAD - Deadly Shadows (https://www.youtube.com/@T87-Sulfurhead)"
-	musicpath = list('sound/music/cmode/antag/combat_deadlyshadows.ogg')
+	credits = ""
+	musicpath = list('sound/music/combat_bandit.ogg')
 
 /datum/combat_music/bandit_soldier
-	name = "Bandit Soldier (Deserter/Outlaw)"
+	name = "Bandit Soldier"
 	desc = ""
 	shortname = "Bandit Sold."
 	credits = "T-87 SULFURHEAD - The Wall (https://www.youtube.com/@T87-Sulfurhead)"
 	musicpath = list('sound/music/cmode/antag/combat_thewall.ogg')
 
 /datum/combat_music/bandit_rogue
-	name = "Bandit Rogue (Sellsword/Cutpurse)"
+	name = "Bandit Rogue"
 	desc = ""
 	shortname = "Bandit Rogue"
 	credits = "T-87 SULFURHEAD - Cutpurse (https://www.youtube.com/@T87-Sulfurhead)"
 	musicpath = list('sound/music/cmode/antag/combat_cutpurse.ogg')
 
 /datum/combat_music/bandit_mage
-	name = "Bandit Mage (Hedge Mage)"
+	name = "Bandit Mage"
 	desc = ""
 	shortname = "Bandit Mage"
 	credits = "Timestopper Tactics - corru.works"
@@ -218,9 +218,9 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list('sound/music/cmode/church/combat_eora.ogg')
 
 /datum/combat_music/forlorn
-	name = "Forlorn Hope Mercenary"
+	name = "Forvheipal Thrall"
 	desc = ""
-	shortname = "Forlorn Hope"
+	shortname = "Forvheipal Thrall"
 	musicpath = list('sound/music/combat_blackstar.ogg')
 
 /datum/combat_music/grenzelhoft
@@ -299,11 +299,11 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list('sound/music/combat_knight.ogg')
 
 /datum/combat_music/man_at_arms
-	name = "Man at Arms (Sergeant)"
+	name = "Garrison"
 	desc = ""
 	shortname = ""
-	credits = "T87-Sulfurhead - Ready or Not (https://www.youtube.com/@T87-Sulfurhead)"
-	musicpath = list('sound/music/combat_ManAtArms.ogg')
+	credits = ""
+	musicpath = list('sound/music/combat_garrison.ogg')
 
 
 // Maniac code has this track uncommented so this is free. And tbh it should remain here. Banger.
@@ -352,7 +352,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list('sound/music/cmode/church/combat_necra.ogg')
 
 /datum/combat_music/noble
-	name = "Noble (Merchant/Freifechter)"
+	name = "Noble"
 	desc = ""
 	shortname = "Noble"
 	musicpath = list('sound/music/combat_noble.ogg')
@@ -387,7 +387,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 /datum/combat_music/routier
 	name = "Routier, Valorian"
 	desc = ""
-	shortname = "Rogue"
+	shortname = "Routier"
 	musicpath = list('sound/music/combat_routier.ogg')
 
 /datum/combat_music/shaman
@@ -499,8 +499,8 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 
 
 /datum/combat_music/warscholar
-	name = "Warscholar, Naledi"
+	name = "Khazumian"
 	desc = ""
-	shortname = "Warscholar"
+	shortname = "Maktabian"
 	credits = "Butcher's Boulevard - Kristjan Thomas Haaristo"
 	musicpath = list('sound/music/warscholar.ogg')
