@@ -218,7 +218,7 @@
 //VALORIAN MARQUE - WORTHLESS TO ANYONE BUT INQ.
 /obj/item/roguecoin/inqcoin
 	name = "valorian marque"
-	desc = "A blessed silver coin finished with a unique wash of black dye, bearing the post-kingdom Psycross. Kingsfield has denied the existence of such a coin when queried, as such coinage is rumoured to be used internally by the Valorian Inquisition."
+	desc = "A blessed silver coin finished with a unique wash of black dye, bearing the post-Gilded Psycross. The Archbishop of Valoria has denied the existence of such a coin when queried, as such coinage is rumoured to be used internally by the Valorian Inquisition."
 	icon_state = "i1"
 	sellprice = 0
 	base_type = CTYPE_ICOIN
@@ -227,7 +227,7 @@
 //GOLD
 /obj/item/roguecoin/gold
 	name = "zenar"
-	desc = "A gold coin bearing the symbol of the Taurus and the pre-kingdom psycross. These were in the best condition of the provincial gold mints, the rest were melted down."
+	desc = "A gold coin bearing the symbol of the Taurus and the pre-Gilded psycross. These were in the best condition of the provincial gold mints, the rest were melted down."
 	icon_state = "g1"
 	sellprice = 10
 	base_type = CTYPE_GOLD

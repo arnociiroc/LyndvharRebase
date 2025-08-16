@@ -940,7 +940,7 @@
 
 /obj/item/rogueweapon/sword/rapier/psy/relic
 	name = "Eucharist"
-	desc = "Etruscan shape falling prey to Valorian craftsmanship. Saint Malum's smiths created an uniquely thin blade, capable of swiftly skewering the unholy and the miscreants through gaps that most claim to have never existed in the first place. <b> Silver-dipped steel crowned upon a basket hilt that keeps righteous hands safe from harm."
+	desc = "Calmirixian shape falling prey to Valorian craftsmanship. Psydonic smiths created a uniquely thin blade, capable of swiftly skewering the unholy and the miscreants through gaps that most claim to have never existed in the first place. <b> Silver-dipped steel crowned upon a basket hilt that keeps righteous hands safe from harm."
 	icon_state = "psyrapier"
 	sheathe_icon = "psyrapier"
 	max_integrity = 300
