@@ -473,7 +473,7 @@ Inquisitorial armory down here
 
 /obj/item/inqarticles/indexer
 	name = "\improper INDEXER"
-	desc = "A blessed ampoule with a retractable bladetip, intended to further information gathering through hematology. Siphon blood from an individual until the INDEXER clicks shut, then mail it back to Otava for cataloguing."
+	desc = "A blessed ampoule with a retractable bladetip, intended to further information gathering through hematology. Siphon blood from an individual until the INDEXER clicks shut, then mail it back to Valoria for cataloguing."
 	icon = 'icons/roguetown/items/misc.dmi'
 	icon_state = "indexer"
 	item_state = "indexer"
@@ -559,7 +559,7 @@ Inquisitorial armory down here
 						active = TRUE
 						icon_state = "indexer_ready"
 				else
-					to_chat(user, span_notice("It's ready to be sent back to Otava."))
+					to_chat(user, span_notice("It's ready to be sent back to Valoria."))
 			else
 				playsound(src, 'sound/items/indexer_shut.ogg', 75, FALSE, 3)
 				possible_item_intents = list(/datum/intent/use)

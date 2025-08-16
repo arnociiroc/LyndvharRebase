@@ -696,8 +696,8 @@
 
 /obj/structure/roguemachine/mail/proc/display_marquette(mob/user)
 	var/contents
-	contents = "<center>✤ ── L'INQUISITION MARQUETTE D'OTAVA ── ✤<BR>"
-	contents += "POUR L'ÉRADICATION DE L'HÉRÉSIE, TANT QUE PSYDON ENDURE.<BR>"
+	contents = "<center>✤ ── LA GLORIOSA INQUISIZIONE DI VALORIA ── ✤<BR>"
+	contents += "PER LA PURIFICAZIONE DELL'ERESIA, POSSA PERSEVERARE PSYDON.<BR>"
 	if(HAS_TRAIT(user, TRAIT_PURITAN))		
 		contents += "✤ ── <a href='?src=[REF(src)];locktoggle=1]'> PURITAN'S LOCK: [inqonly ? "OUI":"NON"]</a> ── ✤<BR>"
 	else

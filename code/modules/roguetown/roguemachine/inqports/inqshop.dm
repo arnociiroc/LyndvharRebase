@@ -26,7 +26,7 @@
 	name = "inquisitorial equipment crate"
 
 /obj/structure/closet/crate/chest/inqcrate/wardrobe/
-	name = "otava's finest wardrobe crate"
+	name = "valoria's finest wardrobe crate"
 
 /// ✤ SUPPLIES ✤ START HERE! WOW!	
 
