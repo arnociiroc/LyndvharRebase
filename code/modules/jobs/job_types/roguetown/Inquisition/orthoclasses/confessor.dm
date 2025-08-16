@@ -25,13 +25,13 @@
 	H.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
-	gloves = /obj/item/clothing/gloves/roguetown/otavan/psygloves
+	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	beltr = /obj/item/quiver/bolts
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	backr = /obj/item/storage/backpack/rogue/satchel/otavan
+	backr = /obj/item/storage/backpack/rogue/satchel/valorian
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/confessor
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots

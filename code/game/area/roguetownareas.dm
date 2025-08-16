@@ -561,7 +561,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/indoors/inq
 	name = "The Inquisition"
 	icon_state = "chapel"
-	first_time_text = "THE OTAVAN INQUISITION"
+	first_time_text = "THE VALORIAN INQUISITION"
 
 /area/rogue/indoors/inq/office
 	name = "The Inquisitor's Office"

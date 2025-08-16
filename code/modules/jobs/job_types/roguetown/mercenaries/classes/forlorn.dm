@@ -84,7 +84,7 @@
 			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-			l_hand = /obj/item/rogueweapon/sword/iron/messer
+			l_hand = /obj/item/rogueweapon/sword/short/messer/iron
 			beltr = /obj/item/rogueweapon/scabbard/sword
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backr = /obj/item/storage/backpack/rogue/satchel

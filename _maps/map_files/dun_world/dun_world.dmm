@@ -45079,7 +45079,7 @@
 /area/rogue/under/underdark/north)
 "nDg" = (
 /obj/item/paper{
-	info = "The Inquisition will hardly come search for me here - yet the drow have started to notice my presence in the area. I fear everyday upon which I take breath, risking death by their hand or the Otavans."
+	info = "The Inquisition will hardly come search for me here - yet the drow have started to notice my presence in the area. I fear everyday upon which I take breath, risking death by their hand or the Valorians."
 	},
 /obj/structure/table/wood/poor,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -59271,7 +59271,7 @@
 /obj/item/clothing/mask/rogue/facemask/psydonmask,
 /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate,
 /obj/item/clothing/gloves/roguetown/chain/psydon,
-/obj/item/clothing/gloves/roguetown/otavan/inqgloves,
+/obj/item/clothing/gloves/roguetown/valorian/inqgloves,
 /obj/item/clothing/mask/rogue/sack/psy,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/inq/office)

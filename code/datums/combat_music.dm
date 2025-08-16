@@ -385,7 +385,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list('sound/music/cmode/church/combat_reckoning.ogg')
 
 /datum/combat_music/routier
-	name = "Routier, Otavan"
+	name = "Routier, Valorian"
 	desc = ""
 	shortname = "Rogue"
 	musicpath = list('sound/music/combat_routier.ogg')

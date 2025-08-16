@@ -26,7 +26,7 @@
 	base_icon_state = "chestweird1"
 
 /obj/structure/closet/crate/chest/inqcrate
-	name = "otavan chest"
+	name = "valorian chest"
 	desc = "A foreboding red chest with black dye-washed silver embellishments."
 	icon_state = "chestweird2"
 	base_icon_state = "chestweird2"	

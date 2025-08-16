@@ -244,7 +244,7 @@
 				budget2change(2, user, "MARQUE")
 				qdel(I)
 				GLOB.azure_round_stats[STATS_MARQUES_MADE] += 2
-				playsound(loc, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
+				playsound(loc, 'sound/misc/valorianlament.ogg', 100, FALSE, -1)
 				playsound(loc, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)	
 			else
 				if(!I.broken)
@@ -350,7 +350,7 @@
 						qdel(I.paired)	
 					qdel(I)
 					visible_message(span_warning("[user] sends something."))
-					playsound(loc, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
+					playsound(loc, 'sound/misc/valorianlament.ogg', 100, FALSE, -1)
 					playsound(loc, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
 			return	
 
@@ -461,7 +461,7 @@
 						qdel(I.paired)
 						qdel(I)
 						visible_message(span_warning("[user] sends something."))
-						playsound(loc, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
+						playsound(loc, 'sound/misc/valorianlament.ogg', 100, FALSE, -1)
 						playsound(loc, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
 						return
 				else
