@@ -48,6 +48,7 @@
 		"Archmagus",
 		"Inquisitor",
 		"Orthodoxist",
+		"Absolver",
 		"Warden",
 		"Squire",
 		"Veteran",
