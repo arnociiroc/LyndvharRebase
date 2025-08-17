@@ -117,7 +117,7 @@
 	density = 0;
 	icon_state = "passage1";
 	name = "unholy protection";
-	redstone_id = "wretch_2"
+	redstone_id = "wretch_1"
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cave/inhumen)
@@ -308,7 +308,7 @@
 	density = 0;
 	icon_state = "passage1";
 	name = "unholy protection";
-	redstone_id = "wretch_2"
+	redstone_id = "wretch_1"
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cave/inhumen)
@@ -459,9 +459,6 @@
 "AC" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
-	},
-/obj/structure/lever{
-	redstone_id = wretch_2
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
@@ -638,14 +635,10 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "Ld" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/structure/lever{
 	redstone_id = wretch_1
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "Lj" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
@@ -2004,7 +1997,7 @@ yp
 Tl
 Tl
 kv
-kv
+Ld
 AC
 of
 of
@@ -2066,7 +2059,7 @@ lN
 lN
 kv
 aB
-Ld
+sY
 qC
 ZI
 ZI
