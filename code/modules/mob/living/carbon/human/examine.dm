@@ -229,6 +229,9 @@
 		if(item)
 			. += span_notice("You get the feeling [m2] most valuable possession is \a [item].")
 
+	if(!obscure_name || client?.prefs.masked_examine)
+		if(headshot_link)
+			. += "<span class='info'><img src=[headshot_link] width=100 height=100/></span>"
 	var/is_stupid = FALSE
 	var/is_smart = FALSE
 	var/is_normal = FALSE
