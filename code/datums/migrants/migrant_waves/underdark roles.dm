@@ -19,7 +19,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	beltl = /obj/item/rogueweapon/whip/antique
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1, 
@@ -76,7 +76,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/gwstrap
 	l_hand = /obj/item/rogueweapon/halberd/glaive
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
@@ -128,7 +128,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	l_hand = /obj/item/rogueweapon/sword/falx
 	beltl = /obj/item/rogueweapon/scabbard/sword
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
@@ -178,7 +178,7 @@
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	beltl = /obj/item/quiver/arrows
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	backpack_contents = list(
 		/obj/item/rogueweapon/scabbard/sheath = 1, 
 		/obj/item/flashlight/flare/torch/lantern = 1,
