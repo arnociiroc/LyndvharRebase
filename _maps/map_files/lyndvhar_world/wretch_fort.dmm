@@ -18,6 +18,10 @@
 /obj/item/reagent_containers/glass/cup/golden,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave/inhumen)
+"aE" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
 "aJ" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/pelt,
@@ -1631,7 +1635,7 @@ Aq
 rb
 rb
 mZ
-Tl
+aE
 Tl
 Tl
 Tl
