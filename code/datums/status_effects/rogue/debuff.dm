@@ -525,3 +525,13 @@
 	desc = "I heard a holy pantheonic sermon. My patron is not pleased."
 	icon_state = "debuff"
 	color ="#af9f9f"
+/atom/movable/screen/alert/status_effect/emberwine
+	name = "Aphrodesiac"
+	desc = "The warmth is spreading through my body..."
+	icon_state = "emberwine"
+
+/datum/status_effect/debuff/emberwine
+	id = "emberwine"
+	effectedstats = list("strength" = -1, "endurance" = -2, "speed" = -2, "intelligence" = -3)
+	duration = 1 MINUTES
+	alert_type = /atom/movable/screen/alert/status_effect/emberwine
