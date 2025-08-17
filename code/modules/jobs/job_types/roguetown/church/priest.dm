@@ -49,7 +49,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	id = /obj/item/clothing/ring/active/nomag
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/priest
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/needle/pestra = 1,
 		/obj/item/natural/worms/leech/cheele = 1, //little buddy
@@ -60,6 +60,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	ADD_TRAIT(H, TRAIT_CHOSEN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_UNDIVIDED, TRAIT_GENERIC)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
@@ -372,7 +373,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 /mob/living/carbon/human/proc/churchecancurse(var/mob/living/carbon/human/H, apostasy = FALSE)
 	if (!H.devotion && apostasy)
-		to_chat(src, span_warning("This one's connection to the ten is too shallow."))
+		to_chat(src, span_warning("This one's connection to the Ten is too shallow."))
 		return FALSE
 
 	//Flavor messages for cursing certain god's faithful.
@@ -384,7 +385,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	//Abyssor's clergy are gripped by his dream.
 	if (istype(H.patron, /datum/patron/divine/abyssor))
-		to_chat(src, span_warning("The Dreamer, Abyssor has his clutches grasped firmly around this one. The light of the ten only barely penetrates the depths."))
+		to_chat(src, span_warning("The Maiden of the Sea, Abyssor, has her clutches grasped firmly around this one. The light of the Ten only barely penetrates the depths."))
 		ADD_TRAIT(H, TRAIT_CURSE_RESIST, TRAIT_GENERIC)
 
 	//Let's not curse heretical antags.
@@ -420,7 +421,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	if (inputty in GLOB.apostasy_players)
 		GLOB.apostasy_players -= inputty
-		priority_announce("[real_name] has forgiven [inputty]. Their patron hears their prayer once more!", title = "APOSTASY LIFTED", sound = 'sound/misc/bellold.ogg')
+		priority_announce("[real_name] has forgiven [inputty]. Their patron hears their prayer once more!", title = "RECONNECTION", sound = 'sound/misc/bellold.ogg')
 		message_admins("APOSTASY: [real_name] ([ckey]) has used forgiven apostasy at [H.real_name] ([H.ckey])")
 		log_game("APOSTASY: [real_name] ([ckey]) has used forgiven apostasy at [H.real_name] ([H.ckey])")
 
@@ -626,7 +627,7 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 		revert_cast()
 		return FALSE
 
-	if(alert(target, "[user.real_name] is trying to convert you back to the church. Do you accept?", "Conversion Request", "Yes", "No") != "Yes")
+	if(alert(target, "[user.real_name] is trying to convert you back to the light. Do you accept?", "Conversion Request", "Yes", "No") != "Yes")
 		to_chat(user, span_warning("[target] refused your offer of conversion."))
 		revert_cast()
 		return FALSE
@@ -671,8 +672,8 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 	user.apply_status_effect(/datum/status_effect/debuff/devitalised)
 	target.apply_status_effect(/datum/status_effect/debuff/devitalised)
 
-	var/announcement_text = "[user.real_name] has brought [target.real_name] back into the fold of the church! [target.real_name] now follows [user.patron.name]!"
-	priority_announce(announcement_text, title = "REDEMPTION", sound = 'sound/misc/bell.ogg')
+	var/announcement_text = "[user.real_name] has brought [target.real_name] back into the fold of the Pantheon! [target.real_name] now follows [user.patron.name]. Praise be!"
+	priority_announce(announcement_text, title = "REDEMPTION", sound = 'sound/misc/bellold.ogg')
 	message_admins("HERETIC CONVERSION: [user.real_name] ([user.ckey]) has converted [target.real_name] ([target.ckey]) to [user.patron.name]")
 	log_game("HERETIC CONVERSION: [user.real_name] ([user.ckey]) converted [target.real_name] ([target.ckey]) to [user.patron.name]")
 	to_chat(user, span_danger("You've converted [target.name] to follow [user.patron.name]!"))
