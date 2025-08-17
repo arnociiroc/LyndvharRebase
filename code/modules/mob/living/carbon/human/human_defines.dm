@@ -116,6 +116,7 @@
 	var/ooc_notes_display = null
 	var/ooc_extra_link
 	var/ooc_extra
+	var/nsfw_headshot_link = null
 	var/is_legacy = FALSE
 	var/received_resident_key = FALSE
 
