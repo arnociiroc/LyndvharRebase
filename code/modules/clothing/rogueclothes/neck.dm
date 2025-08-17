@@ -321,6 +321,8 @@
 	name = "zaprixys collar"
 	desc = "A collar that denotes a slave-warrior of the Zaprixys Order. A general item used across Forvheipal."
 	icon_state = "iwolfcollaralt"
+	unequip_delay_self = 40
+	leashable = TRUE
 
 /obj/item/clothing/neck/roguetown/gorget/steel
 	name = "steel gorget"
@@ -656,6 +658,7 @@
 	desc = "This is a debug parent item. If you are seeing it meow at the coders."
 	icon_state = "collar_rope"
 	item_state = "collar_rope"
+	unequip_delay_self = 40
 	resistance_flags = FIRE_PROOF
 	dropshrink = 0.5
 	leashable = TRUE
@@ -664,8 +667,8 @@
 
 //This right here is how you init components without copying the same bloody init repeatedly like how armorcode does it. I really don't like how this is done in the rest of the codebase. So have a proper example ~Neri
 /obj/item/clothing/neck/roguetown/collar/Initialize(mapload)
+	. = ..()
 	if(bellsound == TRUE)
-		. = ..()
 		AddComponent(/datum/component/squeak, SFX_COLLARJINGLE, 50, 100, 1) //We want squeak so wearer jingles if touched while wearing collar
 
 /obj/item/clothing/neck/roguetown/collar/leather
@@ -677,7 +680,6 @@
 	item_state = "leathercollar"
 	leashable = TRUE
 	resistance_flags = FIRE_PROOF
-	dropshrink = 0.5
 	bellsound = FALSE
 	bell = FALSE
 
@@ -690,9 +692,7 @@
 	item_state = "iwolfcollaralt"
 	leashable = TRUE
 	resistance_flags = FIRE_PROOF
-	dropshrink = 0.5
 	bellsound = FALSE
-	bell = FALSE
 
 /obj/item/clothing/neck/roguetown/collar/cowbell
 	name = "cowbell collar"
@@ -703,7 +703,6 @@
 	item_state = "cowbellcollar"
 	leashable = TRUE
 	resistance_flags = FIRE_PROOF
-	dropshrink = 0.5
 	bellsound = TRUE
 
 /obj/item/clothing/neck/roguetown/collar/catbell
@@ -715,7 +714,6 @@
 	item_state = "catbellcollar"
 	leashable = TRUE
 	resistance_flags = FIRE_PROOF
-	dropshrink = 0.5
 	bellsound = TRUE
 
 /obj/item/clothing/neck/roguetown/collar/feldcollar
