@@ -684,12 +684,15 @@
 /obj/item/clothing/neck/roguetown/collar/forlorn
 	name = "light forvheipal collar"
 	desc = "A spiked collar that denotes a slave to Forvheipal."
+	icon = 'icons/roguetown/clothing/neck.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/neck.dmi'
 	icon_state = "iwolfcollaralt"
 	item_state = "iwolfcollaralt"
 	leashable = TRUE
 	resistance_flags = FIRE_PROOF
 	dropshrink = 0.5
-	bellsound = TRUE
+	bellsound = FALSE
+	bell = FALSE
 
 /obj/item/clothing/neck/roguetown/collar/cowbell
 	name = "cowbell collar"
