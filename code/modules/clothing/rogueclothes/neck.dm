@@ -681,6 +681,16 @@
 	bellsound = FALSE
 	bell = FALSE
 
+/obj/item/clothing/neck/roguetown/collar/forlorn
+	name = "light forvheipal collar"
+	desc = "A spiked collar that denotes a slave to Forvheipal."
+	icon_state = "iwolfcollaralt"
+	item_state = "iwolfcollaralt"
+	leashable = TRUE
+	resistance_flags = FIRE_PROOF
+	dropshrink = 0.5
+	bellsound = TRUE
+
 /obj/item/clothing/neck/roguetown/collar/cowbell
 	name = "cowbell collar"
 	desc = "A leather collar with a jingly cowbell attached."
