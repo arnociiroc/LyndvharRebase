@@ -544,6 +544,8 @@
 /obj/item/clothing/neck/roguetown/gorget/cursed_collar,
 /obj/item/clothing/neck/roguetown/gorget/cursed_collar,
 /obj/item/clothing/neck/roguetown/collar/leather/nomagic,
+/obj/item/leash/chain,
+/obj/item/leash/chain,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "FV" = (
