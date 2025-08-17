@@ -354,7 +354,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_CURSE_GRAGGAR = span_warning("I am forsaken by the Daemon of Conquest. Bloodlust carves its way into my soul."),
 	TRAIT_CURSE_MATTHIOS = span_warning("I am forsaken by the Daemon of Envy. Greed will be my only salvation."),
 	TRAIT_CURSE_BAOTHA = span_warning("I am forsaken by the Daemon of Indulgence. I am drowning in her promises."),
-  TRAIT_JACKOFALLTRADES = span_notice("Skills cost half as much for me to raise.")
+	TRAIT_JACKOFALLTRADES = span_notice("Skills cost half as much for me to raise."),
 	TRAIT_BLOODLOSS_IMMUNE = span_notice("While I may bleed, I will feel nothing from it."),
 	TRAIT_ADRENALINE_RUSH = span_notice("I'm invigorated in the midst of battle! I don't feel my wounds!")
 ))
