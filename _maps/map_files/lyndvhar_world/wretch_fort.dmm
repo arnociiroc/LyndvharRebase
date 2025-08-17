@@ -18,6 +18,10 @@
 /obj/item/reagent_containers/glass/cup/golden,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave/inhumen)
+"aE" = (
+/obj/machinery/gear_painter,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
 "aJ" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/pelt,
@@ -103,6 +107,8 @@
 /area/rogue/under/cave/inhumen)
 "ge" = (
 /obj/structure/closet/crate/chest/neu_iron,
+/obj/item/rogueweapon/hammer/iron,
+/obj/item/rogueweapon/tongs,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cave/inhumen)
 "hq" = (
@@ -115,7 +121,7 @@
 	density = 0;
 	icon_state = "passage1";
 	name = "unholy protection";
-	redstone_id = "wretch_2"
+	redstone_id = "wretch_1"
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cave/inhumen)
@@ -306,7 +312,7 @@
 	density = 0;
 	icon_state = "passage1";
 	name = "unholy protection";
-	redstone_id = "wretch_2"
+	redstone_id = "wretch_1"
 	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cave/inhumen)
@@ -412,6 +418,10 @@
 "xY" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/closet/crate/chest/neu,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cave/inhumen)
 "yg" = (
@@ -453,9 +463,6 @@
 "AC" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
-	},
-/obj/structure/lever{
-	redstone_id = wretch_2
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
@@ -538,6 +545,8 @@
 /obj/item/clothing/neck/roguetown/gorget/cursed_collar,
 /obj/item/clothing/neck/roguetown/gorget/cursed_collar,
 /obj/item/clothing/neck/roguetown/collar/leather/nomagic,
+/obj/item/leash/chain,
+/obj/item/leash/chain,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "FV" = (
@@ -630,14 +639,10 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "Ld" = (
-/obj/effect/decal/cobbleedge{
-	dir = 1;
-	icon_state = "borderfall"
-	},
 /obj/structure/lever{
 	redstone_id = wretch_1
 	},
-/turf/open/floor/rogue/herringbone,
+/turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "Lj" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
@@ -1630,7 +1635,7 @@ Aq
 rb
 rb
 mZ
-Tl
+aE
 Tl
 Tl
 Tl
@@ -1996,7 +2001,7 @@ yp
 Tl
 Tl
 kv
-kv
+Ld
 AC
 of
 of
@@ -2058,7 +2063,7 @@ lN
 lN
 kv
 aB
-Ld
+sY
 qC
 ZI
 ZI

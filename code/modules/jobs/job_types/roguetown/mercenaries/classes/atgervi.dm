@@ -39,7 +39,7 @@
 			H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 
-			H.change_stat("strength", 1)	
+			H.change_stat("strength", 2)	
 			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 2)
 			H.change_stat("perception", 1)
@@ -53,7 +53,7 @@
 			wrists = /obj/item/clothing/wrists/roguetown/bracers
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 			backr = /obj/item/rogueweapon/shield/atgervi
-			backl = /obj/item/storage/backpack/rogue/satchel/black
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle //They didn't have neck protection before.
@@ -70,7 +70,7 @@
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
 
@@ -85,7 +85,7 @@
 			pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
-			backr = /obj/item/storage/backpack/rogue/satchel/black
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/flashlight/flare/torch

@@ -88,8 +88,8 @@
 	head = /obj/item/clothing/head/roguetown/roguehood/pontifex
 	mask = /obj/item/clothing/mask/rogue/lordmask/khazumian
 	neck = /obj/item/clothing/neck/roguetown/leather
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/pontifex
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants

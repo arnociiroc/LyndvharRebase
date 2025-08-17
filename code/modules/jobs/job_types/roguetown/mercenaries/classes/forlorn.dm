@@ -14,13 +14,13 @@
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
-	var/classes = list("Forvheipal Light Infantry","Forvheipal Javelineer")
+	var/classes = list("Light Infantry","Javelineer")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
-		if("Forvheipal Light Infantry")
+		if("Light Infantry")
 			H.set_blindness(0)
-			to_chat(H, span_warning("The Forvheipal Infantry are the Zapyrixian Order's regular thralls, wielding warhammer and shield."))
+			to_chat(H, span_warning("The Light Infantry are the Zapyrixian Order's regular thralls, wielding warhammer and shield."))
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
@@ -44,6 +44,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
+			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/splintlegs
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
@@ -52,10 +53,10 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/rogueweapon/mace/warhammer/steel
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/rogueweapon/shield/heater
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath)
-		if("Forvheipal Javelineer")
+		if("Javelineer")
 			H.set_blindness(0)
 			to_chat(H, span_warning("The Forvheipal Javelineers are the Zapyrixian Order's ranged thrall, wielding javelins and relying on their agility to avoid blows."))
 			H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
@@ -75,18 +76,20 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("perception", 3)
 			H.change_stat("speed", 2)
+			H.change_stat("endurance", 2)
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
+			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-			l_hand = /obj/item/rogueweapon/sword/short/messer/iron
+			l_hand = /obj/item/rogueweapon/sword/short/messer
 			beltr = /obj/item/rogueweapon/scabbard/sword
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/quiver/javelin/iron
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath)

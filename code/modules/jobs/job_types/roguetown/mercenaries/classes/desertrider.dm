@@ -54,7 +54,7 @@
 			belt = /obj/item/storage/belt/rogue/leather/shalal
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/scabbard/sword
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/rogueweapon/huntingknife/idagger/navaja,
@@ -100,7 +100,7 @@
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex/zybantu
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-			backr = /obj/item/storage/backpack/rogue/satchel/black
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/rogueweapon/huntingknife/idagger/navaja,
