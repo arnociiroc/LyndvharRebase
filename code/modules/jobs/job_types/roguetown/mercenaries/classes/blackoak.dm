@@ -20,7 +20,7 @@
 	cloak = /obj/item/clothing/cloak/forrestercloak
 	gloves = /obj/item/clothing/gloves/roguetown/elven_gloves
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	var/classes = list("Melee (Polearms)", "Ranged (Bows)")
@@ -35,7 +35,7 @@
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/craft/carpentry, 2, TRUE)
 			H.change_stat("endurance", 2)

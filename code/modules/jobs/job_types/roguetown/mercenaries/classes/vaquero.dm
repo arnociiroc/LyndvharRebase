@@ -41,7 +41,7 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	cloak = /obj/item/clothing/cloak/half/rider/red
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	l_hand = /obj/item/rogueweapon/sword/rapier/vaquero
 	beltr = /obj/item/rogueweapon/scabbard/sheath

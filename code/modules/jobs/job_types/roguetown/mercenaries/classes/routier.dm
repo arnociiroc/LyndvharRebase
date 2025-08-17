@@ -61,7 +61,7 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	shoes = /obj/item/clothing/shoes/roguetown/boots/valorian
 	gloves = /obj/item/clothing/gloves/roguetown/valorian
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backl = /obj/item/rogueweapon/shield/tower/metal
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,

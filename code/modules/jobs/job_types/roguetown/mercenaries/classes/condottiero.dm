@@ -12,11 +12,11 @@
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	cloak = /obj/item/clothing/cloak/half/red
-	gloves = /obj/item/clothing/gloves/roguetown/angle
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/iron
 	head = /obj/item/clothing/head/roguetown/helmet
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	l_hand = /obj/item/rogueweapon/sword/short
 	beltr = /obj/item/quiver/bolts
