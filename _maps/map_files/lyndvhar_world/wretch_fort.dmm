@@ -103,6 +103,8 @@
 /area/rogue/under/cave/inhumen)
 "ge" = (
 /obj/structure/closet/crate/chest/neu_iron,
+/obj/item/rogueweapon/hammer/iron,
+/obj/item/rogueweapon/tongs,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cave/inhumen)
 "hq" = (
@@ -412,6 +414,10 @@
 "xY" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/closet/crate/chest/neu,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/iron,
+/obj/item/rogueore/coal,
+/obj/item/rogueore/coal,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cave/inhumen)
 "yg" = (
