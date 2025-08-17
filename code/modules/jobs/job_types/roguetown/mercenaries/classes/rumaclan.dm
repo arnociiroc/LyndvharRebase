@@ -70,7 +70,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
 			gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/storage/belt/rogue/pouch/coins/poor,

@@ -72,7 +72,7 @@
 				cloak = /obj/item/clothing/cloak/forrestercloak/snow
 				belt = /obj/item/storage/belt/rogue/leather/black
 				beltl = /obj/item/flashlight/flare/torch
-				backl = /obj/item/storage/backpack/rogue/satchel
+				backl = /obj/item/storage/backpack/rogue/satchel/short
 				shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 				gloves = /obj/item/clothing/gloves/roguetown/plate/dwarven
 				pants = /obj/item/clothing/under/roguetown/trou/leather
