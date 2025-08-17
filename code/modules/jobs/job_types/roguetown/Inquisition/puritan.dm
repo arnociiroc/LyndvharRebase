@@ -41,7 +41,7 @@
 
 /datum/advclass/puritan/inspector
 	name = "Puritan"
-	tutorial = "Abandoning your titles and estate in the republic, you joined with the Valorian Inquisition in order to fight the heretical and monsters abroad. Serving no true specialty, your blade has been your go-to option for problems-- as well as your silver tongue. Despite abandoning your titles, you are still seen by many as noble-blooded, and that can get you places in Psydon's name."
+	tutorial = "Abandoning your titles and estate in the republic, you joined with the Valorian Inquisition in order to fight the heretical and monsters abroad. Serving no true specialty, your blade has been your go-to option for problems-- as well as your silver tongue."
 	outfit = /datum/outfit/job/roguetown/puritan/inspector
 
 	category_tags = list(CTAG_PURITAN)
@@ -70,7 +70,7 @@
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = FALSE, devotion_limit = CLERIC_REQ_1) //Capped to T1 miracles.
+	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1) //Capped to T1 miracles.
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_BLACKBAGGER, TRAIT_GENERIC) // Probably trained the Confessors. Or was one. Who knows.
@@ -151,7 +151,7 @@
 	H.change_stat("perception", 2)
 	H.change_stat("intelligence", 2)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = FALSE, devotion_limit = CLERIC_REQ_1) //Capped to T1 miracles.
+	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_1) //Capped to T1 miracles.
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
