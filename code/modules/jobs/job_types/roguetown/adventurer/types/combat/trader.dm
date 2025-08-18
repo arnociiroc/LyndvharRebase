@@ -67,7 +67,7 @@
 				)
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 2)
-			H.change_stat("speed", 1)
+			H.change_stat("speed", 2)
 
 		if("Brewer")
 			to_chat(H, span_warning("You make your coin peddling imported alcohols from all over the world, though you're no stranger to the craft, and have experience brewing your own ale in a pinch. You have the equipments and know how on how to make your own distiller, too."))
@@ -106,7 +106,7 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 1)
 			H.change_stat("strength", 1)
-			H.change_stat("constitution", 1)
+			H.change_stat("constitution", 2)
 			ADD_TRAIT(H, TRAIT_CICERONE, TRAIT_GENERIC) // To view what is in a bottle.
 
 		if("Cuisinier")
@@ -152,7 +152,7 @@
 				// no ration wrappers by design
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 1)
-			H.change_stat("speed", 1) // you move very fast in a kitchen, you see
+			H.change_stat("speed", 2) // you move very fast in a kitchen, you see
 			H.change_stat("constitution", 1)
 			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 
@@ -192,7 +192,7 @@
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 1)
 			H.change_stat("strength", 1)
-			H.change_stat("endurance", 1)
+			H.change_stat("endurance", 2)
 
 		if ("Doomsayer")
 			to_chat(H, span_warning("THE WORLD IS ENDING!!! At least, that's what you want your clients to believe. You'll offer them a safe place in the new world, of course - built by yours truly."))
@@ -228,7 +228,7 @@
 				)
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 1)
-			H.change_stat("strength", 1)
+			H.change_stat("strength", 2)
 			H.change_stat("constitution", 1)
 
 		if ("Scholar")
@@ -265,7 +265,7 @@
 				/obj/item/rogueweapon/scabbard/sheath = 1
 				)
 			H.change_stat("intelligence", 3)
-			H.change_stat("perception", 1)
+			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
 			H.change_stat("endurance", 1)
 
@@ -299,7 +299,7 @@
 			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 1)
 			H.change_stat("endurance", 1)
-			H.change_stat("speed", 2)
+			H.change_stat("speed", 4)
 			var/weapons = list("Harp","Lute","Accordion","Guitar","Hurdy-Gurdy","Viola","Vocal Talisman")
 			var/weapon_choice = input("Choose your instrument.", "TAKE UP ARMS") as anything in weapons
 			H.set_blindness(0)

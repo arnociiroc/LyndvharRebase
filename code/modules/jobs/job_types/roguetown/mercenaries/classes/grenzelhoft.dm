@@ -40,7 +40,7 @@
 			H.change_stat("endurance", 3)
 			H.change_stat("constitution", 3)
 			H.change_stat("perception", 1)
-			H.change_stat("speed", -1)		//They get heavy armor now + sword option; so lower speed.
+			H.change_stat("speed", -2)		//They get heavy armor now + sword option; so lower speed.
 			var/weapons = list("Zweihander", "Kriegmesser & Buckler")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)

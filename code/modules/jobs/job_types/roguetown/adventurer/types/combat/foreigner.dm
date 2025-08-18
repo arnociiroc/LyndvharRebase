@@ -31,7 +31,7 @@
 			beltl = /obj/item/rogueweapon/sword/sabre/mulyeog
 			belt = /obj/item/storage/belt/rogue/leather/black
 			backr = /obj/item/storage/backpack/rogue/satchel/short
-			H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)		//to encourage use of the scabbard as a shield	
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -58,9 +58,9 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 			armor = /obj/item/clothing/suit/roguetown/armor/basiceast/mentorsuit
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			belt = /obj/item/storage/belt/rogue/leather/
+			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel/short
-			H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)		
+			H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)		
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)

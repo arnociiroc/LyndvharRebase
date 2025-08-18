@@ -10,14 +10,13 @@
 	classes = list("Battlemaster" = "You are a seasoned weapon specialist, clad in maille, with years of experience in warfare and battle under your belt.",
 					"Duelist"= "You are an esteemed swordsman who foregoes armor in exchange for a more nimble fighting style.",
 					"Barbarian" = "You are a brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
-					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.",
-					"Flagellant" = "You are a pacifistic warrior who embraces suffering, believing pain is the path to enlightenment. You take the suffering of others upon yourself.")
+					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.")
 
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter","Flagellant")
+	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -97,8 +96,8 @@
 					head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab
 					gloves = /obj/item/clothing/gloves/roguetown/leather
 			H.change_stat("strength", 2)
-			H.change_stat("endurance", 1)
-			H.change_stat("constitution", 2)
+			H.change_stat("endurance", 2)
+			H.change_stat("constitution", 3)
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -141,7 +140,7 @@
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
 			H.change_stat("intelligence", 2)
-			H.change_stat("speed", 1)
+			H.change_stat("speed", 2)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			head = /obj/item/clothing/head/roguetown/duelhat
 			mask = /obj/item/clothing/mask/rogue/duelmask
@@ -201,7 +200,7 @@
 					H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 					ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC)
 			H.change_stat("strength", 3)
-			H.change_stat("endurance", 1)
+			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 2)
 			H.change_stat("intelligence", -2)
 			if(should_wear_masc_clothes(H))
