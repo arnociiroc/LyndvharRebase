@@ -40,23 +40,38 @@
 		if(GLOB.adventurer_hugbox_duration)
 			addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, adv_hugboxing_start)), 1)
 
+	var/wanted = list("I am a well-known outlaw!", "I am a nobody. For now.")
+	var/wanted_choice = input("Are you a known outlaw?") as anything in wanted
+	switch(wanted_choice)
+		if("I am a well-known outlaw!") //Extra challenge for those who want it
+		
+		if("I am a nobody. For now.") //Nothing ever happens
+			return
+
 // Proc for wretch to select a bounty
 /proc/wretch_select_bounty(mob/living/carbon/human/H)
+	var/wanted = list("I am a well-known outlaw!", "I am a nobody. For now.")
+	var/wanted_choice = input(H, "Are you a known outlaw?") as anything in wanted
+	switch(wanted_choice)
+		if("I am a well-known outlaw!") //Extra challenge for those who want it
+		
+		if("I am a nobody. For now.") //Nothing ever happens
+			return
 	var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Lyndvhar", "The Bisphoric of Valoria", "The Holy Mother Church of Lyndhardtia")
 	if(bounty_poster == "The Justiciary of Lyndvhar")
 		GLOB.outlawed_players += H.real_name
 	else
 		GLOB.excommunicated_players += H.real_name
-	// Felinid said we should gate it at 100 or so on at the lowest, so that wretch cannot ezmode it.
+	
 	var/bounty_severity = input(H, "How severe are your crimes?", "Bounty Amount") as anything in list("Misdeed", "Harm towards lyfe", "Horrific atrocities")
-	var/bounty_total = rand(100, 400) // Just in case
+	var/bounty_total = rand(100, 400)
 	switch(bounty_severity)
 		if("Misdeed")
 			bounty_total = rand(100, 250)
 		if("Harm towards lyfe")
 			bounty_total = rand(250, 400)
 		if("Horrific atrocities")
-			bounty_total = rand(400, 600) // Let's not make it TOO profitable
+			bounty_total = rand(400, 600)
 	var/my_crime = input(H, "What is your crime?", "Crime") as text|null
 	if (!my_crime)
 		my_crime = "crimes against the Crown"
