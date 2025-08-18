@@ -64,7 +64,7 @@
 				if("Iron Saber & Wood Shield")
 					H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 					H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
-					r_hand = /obj/item/rogueweapon/sword/saber/iron
+					r_hand = /obj/item/rogueweapon/sword/iron/saber
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					backr = /obj/item/rogueweapon/shield/wood
 			var/armors = list("Chainmaille Set","Iron Breastplate","Gambeson & Helmet","Light Zybantium Armor")
@@ -83,12 +83,12 @@
 					pants = /obj/item/clothing/under/roguetown/splintlegs/iron
 					gloves = /obj/item/clothing/gloves/roguetown/leather
 				if("Gambeson & Helmet")
-					armor = /obj/item/clothing/suit/roguetown/armor/gambeson
+					armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 					neck = /obj/item/clothing/neck/roguetown/coif/padded//neck cover
 					shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
 					wrists = /obj/item/clothing/wrists/roguetown/splintarms/iron//adding it since this set feels far too weak compared to the other two, gets one helmet and arm cover at least
 					pants = /obj/item/clothing/under/roguetown/trou/leather
-					head = /obj/item/clothing/head/roguetown/helmet/kettle
+					head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 					gloves = /obj/item/clothing/gloves/roguetown/leather
 				if("Light Zybantium Armor")
 					shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/zybantu
@@ -177,7 +177,7 @@
 			ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
 			H.set_blindness(0)
-			var/weapons = list("Katar","Axe","Sword","Club","Spear","MY BARE HANDS!!!")
+			var/weapons = list("Katar","Axe","Sword","Spiked Mace","Spear","MY BARE HANDS!!!")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if ("Katar")
@@ -190,9 +190,9 @@
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					r_hand = /obj/item/rogueweapon/sword/short
-				if("Club")
+				if("Spiked Mace")
 					H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-					beltr = /obj/item/rogueweapon/mace/woodclub
+					beltr = /obj/item/rogueweapon/mace/spiked
 				if("Spear")
 					H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 					r_hand = /obj/item/rogueweapon/spear/bonespear

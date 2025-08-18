@@ -61,7 +61,7 @@
 			switch(weapon_choice)
 				if("Sabre")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-					beltr = /obj/item/rogueweapon/sword/sabre
+					beltr = /obj/item/rogueweapon/sword/iron/saber
 					r_hand = /obj/item/rogueweapon/scabbard/sword
 				if("Whip")
 					H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
