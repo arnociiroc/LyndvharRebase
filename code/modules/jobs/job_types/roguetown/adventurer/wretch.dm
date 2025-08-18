@@ -40,6 +40,14 @@
 		if(GLOB.adventurer_hugbox_duration)
 			addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, adv_hugboxing_start)), 1)
 
+	var/wanted = list("I am a well-known outlaw!", "I am a nobody. For now.")
+	var/wanted_choice = input("Are you a known outlaw?") as anything in wanted
+	switch(wanted_choice)
+		if("I am a well-known outlaw!") //Extra challenge for those who want it
+			wretch_select_bounty(H)
+		if("I am a nobody. For now.") //Nothing ever happens
+			return
+
 // Proc for wretch to select a bounty
 /proc/wretch_select_bounty(mob/living/carbon/human/H)
 	var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Lyndvhar", "The Bisphoric of Valoria", "The Holy Mother Church of Lyndhardtia")
