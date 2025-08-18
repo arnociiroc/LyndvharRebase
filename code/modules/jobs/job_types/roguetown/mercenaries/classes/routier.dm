@@ -48,7 +48,7 @@
 		if("Flailman")
 			H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 			beltl = /obj/item/rogueweapon/flail/sflail
-		if("Foot Lancer")
+		if("Lancer")
 			H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			r_hand = /obj/item/rogueweapon/spear/lance
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
