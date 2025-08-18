@@ -14,7 +14,7 @@ LICH SKELETONS
 	cloak = /obj/item/clothing/cloak/half	//starts black, so they can be identified.
 	belt = /obj/item/storage/belt/rogue/leather/black
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/paalloy
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	gloves = /obj/item/clothing/gloves/roguetown/chain/paalloy
 
 /datum/outfit/job/roguetown/greater_skeleton/lich/pre_equip(mob/living/carbon/human/H)
@@ -256,7 +256,7 @@ LICH SKELETONS
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
 	neck = /obj/item/clothing/neck/roguetown/coif
 	shoes = /obj/item/clothing/shoes/roguetown/sandals/aalloy
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut
 	beltl = /obj/item/rogueweapon/pick/copper

@@ -53,8 +53,8 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			shirt = /obj/item/clothing/suit/roguetown/shirt/robe
 			belt = /obj/item/storage/belt/rogue/leather
-			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			beltr = /obj/item/storage/belt/rogue/surgery_bag/full
 			beltl = /obj/item/flashlight/flare/torch/lantern
 			backpack_contents = list(
@@ -88,8 +88,8 @@
 			cloak = /obj/item/clothing/suit/roguetown/armor/longcoat
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/red
 			belt = /obj/item/storage/belt/rogue/leather/black
-			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			beltr = /obj/item/rogueweapon/mace/cudgel
 			beltl = /obj/item/flashlight/flare/torch
 			backpack_contents = list(
@@ -174,8 +174,8 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/purple
 			belt = /obj/item/storage/belt/rogue/leather/black
 			cloak = /obj/item/clothing/cloak/raincloak/purple
-			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 			beltl = /obj/item/flashlight/flare/torch
 			beltr = /obj/item/rogueweapon/huntingknife
@@ -213,8 +213,8 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
 			belt = /obj/item/storage/belt/rogue/leather/black
 			cloak = /obj/item/clothing/cloak/half
-			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 			beltl = /obj/item/flashlight/flare/torch
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut
@@ -247,8 +247,8 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			shirt = /obj/item/clothing/suit/roguetown/shirt/robe/mageyellow
 			belt = /obj/item/storage/belt/rogue/leather/black
-			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 			beltl = /obj/item/flashlight/flare/torch
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
@@ -277,7 +277,7 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			beltl = /obj/item/flashlight/flare/torch
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			head = /obj/item/clothing/head/roguetown/jester
 			neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 			H.cmode_music = 'sound/music/combat_jester.ogg'

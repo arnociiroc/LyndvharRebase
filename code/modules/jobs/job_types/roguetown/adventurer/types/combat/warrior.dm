@@ -100,7 +100,7 @@
 			H.change_stat("endurance", 1)
 			H.change_stat("constitution", 2)
 			belt = /obj/item/storage/belt/rogue/leather
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -152,7 +152,7 @@
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			backr = /obj/item/rogueweapon/shield/buckler
 			belt = /obj/item/storage/belt/rogue/leather
 			backpack_contents = list(
@@ -211,7 +211,7 @@
 				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 				shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 				gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-				backl = /obj/item/storage/backpack/rogue/satchel
+				backl = /obj/item/storage/backpack/rogue/satchel/short
 				belt = /obj/item/storage/belt/rogue/leather
 				neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 				beltl = /obj/item/rogueweapon/huntingknife
@@ -222,7 +222,7 @@
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 				shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 				gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
-				backl = /obj/item/storage/backpack/rogue/satchel
+				backl = /obj/item/storage/backpack/rogue/satchel/short
 				belt = /obj/item/storage/belt/rogue/leather
 				neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 				beltl = /obj/item/rogueweapon/huntingknife
@@ -248,7 +248,7 @@
 			H.change_stat("intelligence", 5)
 			beltr = /obj/item/rogueweapon/scabbard/sword
 			r_hand = /obj/item/rogueweapon/sword/silver
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/jacket
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/puritan

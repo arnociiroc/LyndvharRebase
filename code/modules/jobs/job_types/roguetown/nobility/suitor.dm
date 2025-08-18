@@ -50,7 +50,7 @@
 		beltl = /obj/item/flashlight/flare/torch/lantern
 		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
-		backr = /obj/item/storage/backpack/rogue/satchel
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 		id = /obj/item/clothing/ring/signet
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	else if(should_wear_masc_clothes(H))
@@ -64,7 +64,7 @@
 		neck = /obj/item/roguekey/manor
 		beltl = /obj/item/flashlight/flare/torch/lantern
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-		backr = /obj/item/storage/backpack/rogue/satchel
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 		id = /obj/item/clothing/ring/signet
 	H.adjust_skillrank(/datum/skill/misc/music, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -126,7 +126,7 @@
 	neck = /obj/item/roguekey/manor
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	id = /obj/item/clothing/ring/silver
 	if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress
@@ -178,7 +178,7 @@
 	neck = /obj/item/roguekey/manor
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	beltr = /obj/item/rogueweapon/sword/sabre/dec
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	id = /obj/item/clothing/ring/silver
 	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/mid = 1)
 	if(H.mind)

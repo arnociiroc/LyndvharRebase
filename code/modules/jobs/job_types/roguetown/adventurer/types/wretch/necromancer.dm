@@ -21,7 +21,7 @@
 	beltr = /obj/item/reagent_containers/glass/bottle/rogue/manapot
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogueweapon/woodstaff/diamond
 	backpack_contents = list(
 		/obj/item/spellbook_unfinished/pre_arcyne = 1,

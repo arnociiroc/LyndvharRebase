@@ -66,13 +66,13 @@
 				if("Longsword + Shield")
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					r_hand = /obj/item/rogueweapon/sword/long
-					backr = /obj/item/rogueweapon/shield/tower/metal
+					backr = /obj/item/rogueweapon/shield/iron
 				if("Mace + Shield")
 					beltr = /obj/item/rogueweapon/mace/steel
-					backr = /obj/item/rogueweapon/shield/tower/metal
+					backr = /obj/item/rogueweapon/shield/iron
 				if("Flail + Shield")
 					beltr = /obj/item/rogueweapon/flail/sflail
-					backr = /obj/item/rogueweapon/shield/tower/metal
+					backr = /obj/item/rogueweapon/shield/iron
 				if("Lucerne")
 					r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 					backr = /obj/item/gwstrap
@@ -80,7 +80,7 @@
 					backr = /obj/item/rogueweapon/stoneaxe/battle
 				if("Lance + Kite Shield")
 					r_hand = /obj/item/rogueweapon/spear/lance
-					backr = /obj/item/rogueweapon/shield/tower/metal
+					backr = /obj/item/rogueweapon/shield/iron
 				if("Shamshir")
 					r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
 			var/helmets = list(
@@ -110,7 +110,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 			belt = /obj/item/storage/belt/rogue/leather
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			backl = /obj/item/storage/backpack/rogue/satchel //gwstraps landing on backr asyncs with backpack_contents
+			backl = /obj/item/storage/backpack/rogue/satchel/short //gwstraps landing on backr asyncs with backpack_contents
 			backpack_contents = list(
 				/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 				/obj/item/flashlight/flare/torch/lantern/prelit = 1,
@@ -187,7 +187,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron 
 			beltl = /obj/item/rogueweapon/mace/cudgel
 			belt = /obj/item/storage/belt/rogue/leather
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 
 			backpack_contents = list(/obj/item/natural/cloth = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/flashlight/flare/torch/lantern/prelit = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 			var/helmets = list(

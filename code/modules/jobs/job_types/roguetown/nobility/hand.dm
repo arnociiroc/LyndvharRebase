@@ -57,7 +57,7 @@
 //Classical hand start - same as before, nothing changed. 
 /datum/outfit/job/roguetown/hand/handclassic/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	l_hand = /obj/item/rogueweapon/huntingknife/idagger/dtace
 	r_hand = /obj/item/rogueweapon/sword/rapier/dec
 	backpack_contents = list(
@@ -93,7 +93,7 @@
 
 //Spymaster start. More similar to the rogue adventurer - loses heavy armor and sword skills for more sneaky stuff. 
 /datum/outfit/job/roguetown/hand/spymaster/pre_equip(mob/living/carbon/human/H)
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	l_hand = /obj/item/rogueweapon/huntingknife/idagger/dtace
 	r_hand = /obj/item/rogueweapon/sword/rapier/dec
 	backpack_contents = list(
@@ -109,7 +109,7 @@
 	else
 		cloak = /obj/item/clothing/cloak/raincloak/mortus //cool spymaster cloak
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-		backr = /obj/item/storage/backpack/rogue/satchel/black
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
 		pants = /obj/item/clothing/under/roguetown/tights/black
 	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)

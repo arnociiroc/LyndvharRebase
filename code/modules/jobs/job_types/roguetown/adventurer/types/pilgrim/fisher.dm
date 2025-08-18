@@ -46,7 +46,7 @@
 		head = /obj/item/clothing/head/roguetown/fisherhat
 		mouth = /obj/item/rogueweapon/huntingknife
 		armor = /obj/item/clothing/suit/roguetown/armor/workervest
-		backl = /obj/item/storage/backpack/rogue/satchel
+		backl = /obj/item/storage/backpack/rogue/satchel/short
 		belt = /obj/item/storage/belt/rogue/leather
 		backr = /obj/item/fishingrod
 		beltr = /obj/item/cooking/pan
@@ -64,7 +64,7 @@
 		neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 		head = /obj/item/clothing/head/roguetown/fisherhat
 		mouth = /obj/item/rogueweapon/huntingknife
-		backl = /obj/item/storage/backpack/rogue/satchel
+		backl = /obj/item/storage/backpack/rogue/satchel/short
 		belt = /obj/item/storage/belt/rogue/leather
 		backr = /obj/item/fishingrod
 		beltr = /obj/item/cooking/pan

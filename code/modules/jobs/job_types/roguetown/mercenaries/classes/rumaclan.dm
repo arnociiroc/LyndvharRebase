@@ -36,7 +36,7 @@
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
 			gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/flashlight/flare/torch/lantern,

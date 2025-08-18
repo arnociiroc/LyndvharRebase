@@ -18,7 +18,7 @@
 	cloak = /obj/item/clothing/cloak/apron/blacksmith
 	mouth = /obj/item/rogueweapon/huntingknife
 	pants = /obj/item/clothing/under/roguetown/trou
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 						/obj/item/flint = 1,
 						/obj/item/rogueore/coal=1,

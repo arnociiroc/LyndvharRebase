@@ -204,7 +204,7 @@
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
 		/obj/item/rogueweapon/woodstaff/riddle_of_steel,
 		/obj/item/ritechalk,
-		/obj/item/storage/backpack/rogue/satchel,
+		/obj/item/storage/backpack/rogue/satchel/short,
 	)
 	for (var/i = 1, i <= equipment_slots.len, i++)
 		var/slot = equipment_slots[i]
