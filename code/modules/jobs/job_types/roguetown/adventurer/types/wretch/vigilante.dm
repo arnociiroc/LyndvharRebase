@@ -12,7 +12,7 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/full //So your skull isn't caved in if you decide to wear a cool hat. 
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/councillor
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/steel
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
