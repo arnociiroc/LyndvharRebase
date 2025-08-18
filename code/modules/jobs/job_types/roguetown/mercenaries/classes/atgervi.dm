@@ -76,7 +76,7 @@
 
 			H.change_stat("strength", 3) 
 			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 2)
+			H.change_stat("constitution", 1)
 			H.change_stat("speed", 1)
 
 			head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi

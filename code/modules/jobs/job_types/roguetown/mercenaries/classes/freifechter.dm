@@ -32,9 +32,10 @@
 			H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-			H.change_stat("perception", 2)
-			H.change_stat("constitution", 3)
+			H.change_stat("perception", 1)
+			H.change_stat("constitution", 2)
 			H.change_stat("intelligence", 3)
+			H.change_stat("strength", 1)
 			l_hand = /obj/item/rogueweapon/scabbard/sword
 			var/weapons = list("Dunargiac Longsword", "Kriegsmesser", "Freifechter Longsword", "Field Longsword")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons

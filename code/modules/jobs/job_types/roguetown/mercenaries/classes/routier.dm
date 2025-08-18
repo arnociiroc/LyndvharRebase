@@ -36,7 +36,7 @@
 	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 4)
 	H.change_stat("perception", 1)
-	H.change_stat("speed", -1)
+	H.change_stat("speed", -2)
 	switch(classchoice)
 		if("Swordsman")
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)

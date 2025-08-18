@@ -50,8 +50,6 @@
 		gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
 		armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 		shoes = /obj/item/clothing/shoes/roguetown/boots
-		H.change_stat("endurance", 1)
-		H.change_stat("constitution", 1) //to compensate for the permanent lack of armor
 		H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 	else if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/armor/basiceast/captainrobe

@@ -40,7 +40,8 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 1) 
+			H.change_stat("perception", 1)
+			H.change_stat("constitution", 2)
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
@@ -74,6 +75,8 @@
 			H.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+			H.change_stat("strength", -1)
+			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 3)
 			H.change_stat("speed", 2)
 			H.change_stat("endurance", 2)
@@ -84,12 +87,12 @@
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
+			belt = /obj/item/storage/belt/rogue/leather
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 			l_hand = /obj/item/rogueweapon/sword/short/messer
 			beltr = /obj/item/rogueweapon/scabbard/sword
-			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+			beltr = /obj/item/quiver/javelin/steel
 			backr = /obj/item/storage/backpack/rogue/satchel/short
-			backl = /obj/item/quiver/javelin/iron
-			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath)
+			backl = /obj/item/quiver/javelin/steel
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath, /obj/item/storage/belt/rogue/pouch/coins/poor)
