@@ -49,7 +49,7 @@
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	beltr = /obj/item/storage/keyring/heir
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
@@ -84,7 +84,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/heir
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	if(should_wear_masc_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince

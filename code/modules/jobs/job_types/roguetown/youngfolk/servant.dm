@@ -41,7 +41,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -84,7 +84,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	pants = pick(/obj/item/clothing/under/roguetown/tights/stockings/black, /obj/item/clothing/under/roguetown/tights/stockings/white) 
 	cloak = /obj/item/clothing/cloak/apron/waist
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -123,7 +123,7 @@
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor

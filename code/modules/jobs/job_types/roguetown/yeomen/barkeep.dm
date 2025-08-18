@@ -42,7 +42,7 @@
 		H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltr = /obj/item/storage/keyring/innkeep
