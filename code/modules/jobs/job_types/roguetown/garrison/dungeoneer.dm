@@ -48,7 +48,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltr = /obj/item/rogueweapon/whip/antique
 	beltl = /obj/item/storage/keyring/dungeoneer
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 2,
 		/obj/item/flashlight/flare/torch/lantern = 1,

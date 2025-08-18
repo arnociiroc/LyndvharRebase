@@ -61,7 +61,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
 		/obj/item/clothing/neck/roguetown/chaincoif/iron
@@ -99,7 +99,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
 		/obj/item/clothing/neck/roguetown/chaincoif/iron
@@ -149,7 +149,7 @@
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger,
 		/obj/item/storage/belt/rogue/pouch,
