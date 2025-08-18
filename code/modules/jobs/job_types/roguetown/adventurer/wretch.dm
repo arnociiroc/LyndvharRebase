@@ -51,7 +51,7 @@
 // Proc for wretch to select a bounty
 /proc/wretch_select_bounty(mob/living/carbon/human/H)
 	var/wanted = list("I am a well-known outlaw!", "I am a nobody. For now.")
-	var/wanted_choice = input("Are you a known outlaw?") as anything in wanted
+	var/wanted_choice = input(H, "Are you a known outlaw?") as anything in wanted
 	switch(wanted_choice)
 		if("I am a well-known outlaw!") //Extra challenge for those who want it
 		
