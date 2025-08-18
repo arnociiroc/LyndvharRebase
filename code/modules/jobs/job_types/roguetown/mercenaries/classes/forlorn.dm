@@ -91,7 +91,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 			l_hand = /obj/item/rogueweapon/sword/short/messer
-			beltr = /obj/item/rogueweapon/scabbard/sword
+			beltl = /obj/item/rogueweapon/scabbard/sword
 			beltr = /obj/item/quiver/javelin/steel
 			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/quiver/javelin/steel
