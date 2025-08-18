@@ -48,17 +48,17 @@
 		shirt = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress/monarch
 		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/random
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+		id = /obj/item/clothing/ring/diamond
 	else if(should_wear_masc_clothes(H))
 		head = /obj/item/clothing/head/roguetown/nyle/consortcrown
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
 		belt = /obj/item/storage/belt/rogue/leather
 		beltl = /obj/item/storage/keyring/royal
 		beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-		backr = /obj/item/storage/backpack/rogue/satchel
-		id = /obj/item/clothing/ring/silver
+		id = /obj/item/clothing/ring/diamond
 	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
