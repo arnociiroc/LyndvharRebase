@@ -20,7 +20,7 @@
 	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/butchering, 5, TRUE)
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/rogueweapon/huntingknife/cleaver // old tbutcher had no knife. as a butcher.
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather

@@ -27,9 +27,9 @@
 	pants = /obj/item/clothing/under/roguetown/trou
 	head = /obj/item/clothing/head/roguetown/strawhat
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	armor = /obj/item/clothing/suit/roguetown/armor/workervest
 	mouth = /obj/item/clothing/mask/cigarette/pipe/westman

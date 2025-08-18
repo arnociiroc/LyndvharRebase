@@ -39,7 +39,7 @@
 			pants = /obj/item/clothing/under/roguetown/tights/black
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short/short
 			belt = /obj/item/storage/belt/rogue/leather/rope
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(
@@ -96,7 +96,7 @@
 		if("Paladin")
 			to_chat(H, span_warning("A holy warrior. Where others of the clergy may have spent their free time studying scriptures, you have instead honed your skills with a blade."))
 			belt = /obj/item/storage/belt/rogue/leather
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short/short
 			backr = /obj/item/rogueweapon/shield/iron
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
@@ -198,7 +198,7 @@
 			to_chat(H, span_warning("You were a bard once - but you've found a new calling. Your eyes have been opened to the divine, now you wander from city to city singing songs and telling tales of your patron's greatness."))
 			head = /obj/item/clothing/head/roguetown/bardhat
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short/short
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -277,7 +277,7 @@
 		if("Missionary")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a devout worshipper of the divine with a strong connection to your patron god. You've spent years studying scriptures and serving your deity - now you wander into foreign lands, spreading the word of your faith."))
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots

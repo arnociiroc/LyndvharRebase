@@ -24,7 +24,7 @@
 	l_hand = /obj/item/rogueweapon/sword/long/marlin
 	beltr = /obj/item/rogueweapon/huntingknife
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 						/obj/item/flashlight/flare/torch = 1,
 						)

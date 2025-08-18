@@ -33,7 +33,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	head = /obj/item/clothing/head/roguetown/roguehood
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backl = /obj/item/rogueweapon/stoneaxe/woodcut/steel/woodcutter		//Unique axe, not craftable purposefully. Good axe, but not end-all be-all for combat.
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather

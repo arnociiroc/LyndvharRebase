@@ -32,7 +32,7 @@
 	beltl = /obj/item/rogueweapon/huntingknife/cleaver
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	backpack_contents = list(

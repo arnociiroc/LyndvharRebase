@@ -26,7 +26,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/cloth/lady
 	beltl = /obj/item/needle
 	beltr = /obj/item/rogueweapon/huntingknife/scissors
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 						/obj/item/natural/cloth = 2,
 						/obj/item/natural/bundle/fibers/full = 1,

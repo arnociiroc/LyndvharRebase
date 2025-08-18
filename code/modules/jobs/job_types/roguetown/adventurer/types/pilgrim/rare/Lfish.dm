@@ -20,7 +20,7 @@
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 		neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 		head = /obj/item/clothing/head/roguetown/fisherhat
-		backr = /obj/item/storage/backpack/rogue/satchel
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 		belt = /obj/item/storage/belt/rogue/leather
 		backl = /obj/item/fishingrod
@@ -52,7 +52,7 @@
 		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
 		neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 		head = /obj/item/clothing/head/roguetown/fisherhat
-		backr = /obj/item/storage/backpack/rogue/satchel
+		backr = /obj/item/storage/backpack/rogue/satchel/short
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 		belt = /obj/item/storage/belt/rogue/leather/rope
 		beltr = /obj/item/fishingrod

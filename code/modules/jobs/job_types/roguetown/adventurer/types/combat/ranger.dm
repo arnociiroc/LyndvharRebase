@@ -30,7 +30,7 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/raincloak/green
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltr = /obj/item/flashlight/flare/torch/lantern
 			backpack_contents = list(
 				/obj/item/bait = 1,
@@ -84,7 +84,7 @@
 			belt = /obj/item/storage/belt/rogue/leather/knifebelt/iron
 			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/rogueweapon/huntingknife/idagger
 			beltr = /obj/item/quiver/bolts
 			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
@@ -122,7 +122,7 @@
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 			belt = /obj/item/storage/belt/rogue/leather
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltr = /obj/item/flashlight/flare/torch/lantern
 			beltl = /obj/item/rogueweapon/mace/cudgel
 			backpack_contents = list(
@@ -156,7 +156,7 @@
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			belt = /obj/item/storage/belt/rogue/leather
 			cloak = /obj/item/clothing/cloak/raincloak/green
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut // Technical main weapon?
 			backpack_contents = list(
 				/obj/item/rogueweapon/huntingknife = 1,
