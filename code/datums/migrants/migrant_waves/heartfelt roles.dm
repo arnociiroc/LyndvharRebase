@@ -113,7 +113,7 @@
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	r_hand = /obj/item/rogueweapon/huntingknife
 	beltr = /obj/item/rogueweapon/scabbard/sheath
-	backr = /obj/item/storage/backpack/rogue/satchel/short/weocilyn
+	backr = /obj/item/storage/backpack/rogue/satchel/weocilyn
 	mask = /obj/item/clothing/mask/rogue/spectacles/golden
 	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)

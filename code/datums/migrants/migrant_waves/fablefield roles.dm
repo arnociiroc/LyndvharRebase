@@ -16,7 +16,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
 	cloak = /obj/item/clothing/cloak/half/red
-	backl = /obj/item/storage/backpack/rogue/satchel/short/short
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/rogue/instrument/guitar
 	beltl = /obj/item/rogueweapon/sword/rapier/dec
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
