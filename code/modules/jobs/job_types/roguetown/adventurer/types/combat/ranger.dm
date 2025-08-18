@@ -72,6 +72,7 @@
 					beltl = /obj/item/quiver/bolts
 			H.change_stat("perception", 3)
 			H.change_stat("speed", 2)
+			H.change_stat("constitution", 2)
 
 		if("Assassin")
 			to_chat(H, span_warning("You've lived the life of a hired killer and have spent your time training with blades and crossbows alike."))
@@ -107,9 +108,10 @@
 			H.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander.ogg'
-			H.change_stat("perception", 2)
+			H.change_stat("perception", 3)
 			H.change_stat("speed", 2)
 			H.change_stat("endurance", 1)
+			H.change_stat("constitution", 1)
 			H.grant_language(/datum/language/thievescant)
 			H.set_blindness(0)
 
@@ -142,9 +144,9 @@
 			H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 			H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-			H.change_stat("constitution", 1)
 			H.change_stat("strength", 2)
-			H.change_stat("intelligence", 2)
+			H.change_stat("intelligence", 3)
+			H.change_stat("perception", 2)
 			H.set_blindness(0)
 
 		if("Biome Wanderer")
@@ -206,13 +208,13 @@
 					pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 					gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 					ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-					H.change_stat("speed", 1)
+					H.change_stat("speed", 2)
 				if("Medium Armor")
 					armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 					pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 					gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 					ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-					H.change_stat("strength", 1)
+					H.change_stat("strength", 2)
 					H.set_blindness(0)
 			H.change_stat("perception", 2) // Look far, but not too far.
 			H.change_stat("endurance", 2)

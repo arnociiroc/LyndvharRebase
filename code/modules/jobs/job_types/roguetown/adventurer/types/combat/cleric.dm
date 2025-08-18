@@ -192,6 +192,8 @@
 			H.change_stat("strength", 2)
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 1)
+			H.change_stat("intelligence", 1)
+			H.change_stat("perception", 1)
 
 		if("Cantor")
 			H.set_blindness(0)
@@ -226,9 +228,11 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/cmode/church/combat_reckoning.ogg'
-			H.change_stat("strength", 1)
+			H.change_stat("strength", -1)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
+			H.change_stat("intelligence", 3)
+			H.change_stat("perception", 2)
 			H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			switch(H.patron?.type)
 				if(/datum/patron/old_god)
@@ -298,7 +302,7 @@
 			H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 			H.cmode_music = 'sound/music/cmode/church/combat_reckoning.ogg'
-			H.change_stat("intelligence", 2)
+			H.change_stat("intelligence", 3)
 			H.change_stat("endurance", 1)
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
