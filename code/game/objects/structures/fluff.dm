@@ -824,6 +824,7 @@
 	icon_state = "gargoyle"
 
 /obj/structure/fluff/statue/aasimar
+	desc = "A stone statue of an Aasimar. Forget not what was lost in the wake of Blood."
 	icon_state = "aasimar"
 
 /obj/structure/fluff/statue/gargoyle/candles
