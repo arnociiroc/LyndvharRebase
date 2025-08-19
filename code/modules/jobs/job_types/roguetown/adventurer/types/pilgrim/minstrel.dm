@@ -33,7 +33,9 @@
 						/obj/item/flashlight/flare/torch = 1,
 						/obj/item/rogueweapon/scabbard/sheath = 1
 						)
-	H.change_stat("speed", 1)  
+	H.change_stat("speed", 2)  
 	H.change_stat("fortune", 1)
+	H.change_stat("endurance", 1)
+	H.change_stat("constitution", 1)
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)

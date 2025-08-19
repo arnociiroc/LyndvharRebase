@@ -30,10 +30,11 @@
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE) //Climbing into windows to steal drugs or booze.
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE) //Climbing into windows to steal drugs or booze.
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.change_stat("intelligence", -2)
-	H.change_stat("constitution", 1)
+	H.change_stat("constitution", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("strength", 1)
 	H.change_stat("fortune", 2)
 	if(H.patron.type == /datum/patron/divine/xylix)
