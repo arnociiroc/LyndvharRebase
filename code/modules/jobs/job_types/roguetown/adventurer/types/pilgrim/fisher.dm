@@ -1,6 +1,6 @@
 /datum/advclass/fisher
 	name = "Fisher"
-	tutorial = "You are a fisherman, with your bag of bait and your fishing rod, you are one of few who can reliably get a stable source of meat around here"
+	tutorial = "You are a fisherman, with your bag of bait and your fishing rod, you are one of few who can reliably get a stable source of meat around here."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/fisher
@@ -9,10 +9,6 @@
 
 /datum/outfit/job/roguetown/adventurer/fisher/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE) //Wrestling down those nasty carp.
@@ -25,10 +21,10 @@
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/traps, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 1)

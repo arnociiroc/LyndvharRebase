@@ -9,7 +9,7 @@
 
 /datum/outfit/job/roguetown/adventurer/seamstress/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.adjust_skillrank(/datum/skill/misc/sewing, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
@@ -35,7 +35,7 @@
 						/obj/item/recipe_book/sewing = 1, 
 						/obj/item/recipe_book/leatherworking = 1
 						)
-	H.change_stat("intelligence", 2)
+	H.change_stat("intelligence", 3)
 	H.change_stat("speed", 2)
 	H.change_stat("perception", 1)
 	H.change_stat("strength", -1)

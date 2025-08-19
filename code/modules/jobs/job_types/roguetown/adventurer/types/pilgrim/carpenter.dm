@@ -1,7 +1,7 @@
 /datum/advclass/carpenter
 	name = "Carpenter"
 	tutorial = "A skilled carpenter, able to manipulate wood to suit their needs \
-	building forts and stores, carpenting floors, putting up crosses. You can do it all with enough logs"
+	building forts and stores, carpenting floors, putting up crosses. You can do it all with enough logs."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/carpenter
@@ -10,20 +10,20 @@
 
 /datum/outfit/job/roguetown/adventurer/carpenter/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE) // They use hammers, sawes and axes all day.
-	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE) 
-	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
+	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE) // They use hammers, sawes and axes all day.
+	H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE) 
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE) 
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE) 
+	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE) 
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE) // They work at great heights.
-	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/crafting, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/carpentry, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/masonry, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/masonry, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/engineering, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/traps, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)

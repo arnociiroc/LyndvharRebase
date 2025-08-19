@@ -19,8 +19,8 @@
 		if("Spearhunter")
 			to_chat(H, span_warning("You are a hunter who specializes in spears, excelling in strength and endurance."))
 			pants = /obj/item/clothing/under/roguetown/trou/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+			armor = /obj/item/clothing/suit/roguetown/armor/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
@@ -63,11 +63,11 @@
 			H.cmode_music = 'sound/music/cmode/towner/combat_towner2.ogg'
 			return
 		if("Bowman")
-			pants = /obj/item/clothing/under/roguetown/trou/artipants
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/lowcut
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
+			cloak = /obj/item/clothing/cloak/wickercloak
 			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 			belt = /obj/item/storage/belt/rogue/leather
