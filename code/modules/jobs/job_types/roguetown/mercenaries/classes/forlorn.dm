@@ -44,7 +44,6 @@
 			H.change_stat("constitution", 2)
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
 			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/splintlegs
 			gloves = /obj/item/clothing/gloves/roguetown/leather
@@ -57,6 +56,15 @@
 			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/rogueweapon/shield/heater
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath)
+
+			var/helms = list("Barred Helmet", "Volfplate Helmet")
+			var/helms_choice = input(H,"Choose your helmet.", "TAKE UP HELMS") as anything in helms
+			switch(helms_choice)
+				if("Barred Helmet")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/sheriff, SLOT_HEAD, TRUE)
+				if("Volfplate Helmet")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/volfplate, SLOT_HEAD, TRUE)
+
 		if("Javelineer")
 			H.set_blindness(0)
 			to_chat(H, span_warning("The Forvheipal Javelineers are the Zapyrixian Order's ranged thrall, wielding javelins and relying on their agility to avoid blows."))
@@ -85,7 +93,6 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
-			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
@@ -98,3 +105,13 @@
 			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/quiver/javelin/steel
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath, /obj/item/storage/belt/rogue/pouch/coins/poor)
+
+			var/helmets = list("Hound Mask", "Volfplate Helmet")
+			var/helmets_choice = input(H,"Choose your helmet.", "TAKE UP HELMS") as anything in helmets
+			switch(helmets_choice)
+				if("Hound Mask")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant, SLOT_HEAD, TRUE)
+					H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/hound, SLOT_WEAR_MASK, TRUE)
+				if("Volfplate Helmet")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/volfplate, SLOT_HEAD, TRUE)
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant, SLOT_WEAR_MASK, TRUE)
