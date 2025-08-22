@@ -42,13 +42,13 @@
 			H.change_stat("endurance", 2)
 			H.change_stat("perception", 1)
 			H.change_stat("constitution", 2)
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/splintlegs
-			gloves = /obj/item/clothing/gloves/roguetown/leather
+			gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
 			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			wrists = /obj/item/clothing/wrists/roguetown/splintarms
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -92,12 +92,12 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
-			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+			pants = /obj/item/clothing/under/roguetown/splintlegs
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 			belt = /obj/item/storage/belt/rogue/leather
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			l_hand = /obj/item/rogueweapon/sword/short/messer
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			beltr = /obj/item/quiver/javelin/steel
