@@ -162,12 +162,12 @@
 /datum/supply_pack/rogue/Sellsword/sallet
 	name = "Desert Rider Sallet"
 	cost = 20
-	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/raneshen)
+	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/zybantu)
 
 /datum/supply_pack/rogue/Sellsword/dridergambeson
 	name = "Desert Rider Gambeson"
 	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/zybantu)
 
 /datum/supply_pack/rogue/Sellsword/scalemail
 	name = "Scalemail"

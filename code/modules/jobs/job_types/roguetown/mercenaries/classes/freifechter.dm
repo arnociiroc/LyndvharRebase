@@ -71,7 +71,7 @@
 			H.change_stat("speed", -1)
 			beltr = /obj/item/rogueweapon/scabbard/sheath
 			l_hand = /obj/item/rogueweapon/huntingknife/idagger
-			backl = /obj/item/gwstrap
+			backl = /obj/item/rogueweapon/scabbard/
 			var/weapons = list("Freifechter Spear", "Boar Spear", "Lucerne")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
