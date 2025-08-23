@@ -54,26 +54,58 @@ GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 
 	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
 	var/hairf = pick(list(/datum/sprite_accessory/hair/head/lowbraid, 
-						/datum/sprite_accessory/hair/head/countryponytailalt))
+						/datum/sprite_accessory/hair/head/himecut, 
+						/datum/sprite_accessory/hair/head/countryponytailalt, 
+						/datum/sprite_accessory/hair/head/stacy,
+						/datum/sprite_accessory/hair/head/stacybun,
+						/datum/sprite_accessory/hair/head/kusanagi_alt))
 	var/hairm = pick(list(/datum/sprite_accessory/hair/head/ponytailwitcher, 
-						/datum/sprite_accessory/hair/head/lowbraid))
+						/datum/sprite_accessory/hair/head/lowbraid,
+						/datum/sprite_accessory/hair/head/dave, 
+						/datum/sprite_accessory/hair/head/emo, 
+						/datum/sprite_accessory/hair/head/sabitsuki,
+						/datum/sprite_accessory/hair/head/sabitsuki_ponytail))
+	var/beard = pick(list(/datum/sprite_accessory/hair/facial/viking,
+						/datum/sprite_accessory/hair/facial/manly,
+						/datum/sprite_accessory/hair/facial/longbeard))
 	head.sellprice = 5
 
 	var/datum/bodypart_feature/hair/head/new_hair = new()
+	var/datum/bodypart_feature/hair/facial/new_facial = new()
 
 	if(gender == FEMALE)
 		new_hair.set_accessory_type(hairf, null, src)
 	else
 		new_hair.set_accessory_type(hairm, null, src)
+		new_facial.set_accessory_type(beard, null, src)
+
+	if(prob(50))
+		new_hair.accessory_colors = "#C1A287"
+		new_hair.hair_color = "#C1A287"
+		new_facial.accessory_colors = "#C1A287"
+		new_facial.hair_color = "#C1A287"
+		hair_color = "#C1A287"
+	else
+		new_hair.accessory_colors = "#A56B3D"
+		new_hair.hair_color = "#A56B3D"
+		new_facial.accessory_colors = "#A56B3D"
+		new_facial.hair_color = "#A56B3D"
+		hair_color = "#A56B3D"
+
+	head.add_bodypart_feature(new_hair)
+	head.add_bodypart_feature(new_facial)
+
+	dna.update_ui_block(DNA_HAIR_COLOR_BLOCK)
+	dna.species.handle_body(src)
 
 	if(organ_eyes)
-		organ_eyes.eye_color = "#1d4981"
-		organ_eyes.accessory_colors = "#FFBF00#FFBF00"
+		organ_eyes.eye_color = "#336699"
+		organ_eyes.accessory_colors = "#336699#336699"
 
 	if(gender == FEMALE)
-		real_name = pick(world.file2list("strings/rt/names/human/humsouf.txt"))
+		real_name = pick(world.file2list("strings/rt/names/human/humnorf.txt"))
 	else
-		real_name = pick(world.file2list("strings/rt/names/human/humsoum.txt"))
+		real_name = pick(world.file2list("strings/rt/names/human/humnorm.txt"))
 	update_hair()
 	update_body()
 
