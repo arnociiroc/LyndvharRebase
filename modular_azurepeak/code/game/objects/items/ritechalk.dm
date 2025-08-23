@@ -103,7 +103,7 @@
 		if("Rune of Ambition")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Ambition..."))
 		if("Rune of Stirring")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Dream..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Waves..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/abyssor_alt_inactive(step_turf)
