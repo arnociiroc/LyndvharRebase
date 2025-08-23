@@ -67,7 +67,7 @@
 	desc = "The Archdaemon MATTHIOS was the third to be born from the sins of mortalkind. Matthios is the physical embodiment of mass theft, pillaging, and envy. Many of his cultist followers practice this through open banditry and thievery. Despite all this he is believed to also be the patron of the destitute and beggars– though there is always insidious intent to be found in an Archdaemon."
 	worshippers = "Highwaymen, Robbers, Downtrodden Peasants"
 	crafting_recipes = list(/datum/crafting_recipe/roguetown/sewing/bandithood)
-	mob_traits = list(TRAIT_COMMIE, TRAIT_MATTHIOS_EYES)
+	mob_traits = list(TRAIT_COMMIE, TRAIT_MATTHIOS_EYES, TRAIT_SEEPRICES_SHITTY)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison					= CLERIC_ORI,
 					/obj/effect/proc_holder/spell/invoked/appraise						= CLERIC_ORI,
 					/obj/effect/proc_holder/spell/targeted/touch/lesserknock/miracle	= CLERIC_T0,
@@ -192,7 +192,7 @@
 	to_chat(follower, span_danger("For Matthios to hear my prayers I must either be in the church of the abandoned, near an inverted psycross, flaunting wealth upon me of at least 100 mammon, or offer a coin of at least five mammon up to him!"))
 	return FALSE
 
-// Baotha 
+// Baotha
 /datum/patron/inhumen/baotha/can_pray(mob/living/follower)
 	. = ..()
 	// Allows prayer in the Zzzzzzzurch(!)

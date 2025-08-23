@@ -992,8 +992,8 @@
 	name = "Khazumian warstaff"
 	desc = "A staff carrying the crescent moon of Khuzker's knowledge, as well as the black and gold insignia of the Khaliphate."
 	icon_state = "naledistaff"
-	possible_item_intents = list(SPEAR_BASH)
-	gripped_intents = list(/datum/intent/spear/bash/ranged,/datum/intent/mace/smash/wood/ranged)
+	possible_item_intents = list(SPEAR_BASH, /datum/intent/special/magicarc)
+	gripped_intents = list(/datum/intent/spear/bash/ranged, /datum/intent/mace/smash/wood/ranged, /datum/intent/special/magicarc)
 	force = 18
 	force_wielded = 22
 	max_integrity = 250

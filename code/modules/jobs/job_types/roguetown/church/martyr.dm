@@ -460,7 +460,7 @@
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
 	r_hand = /obj/item/rogueweapon/scabbard/sword
 	backr = /obj/item/storage/backpack/rogue/satchel
-	backl = /obj/item/rogueweapon/shield/tower/metal
+	backl = /obj/item/rogueweapon/shield/tower/holysee
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	neck = /obj/item/clothing/neck/roguetown/bevor
@@ -493,6 +493,7 @@
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SILVER_BLESSED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDICINE_EXPERT, TRAIT_GENERIC)	//Tentative!
 	ADD_TRAIT(H, TRAIT_DUALWIELDER, TRAIT_GENERIC)	//You can't dual wield the unique weapon, this is more to cover for the NODROP weapon that might end up in an off-hand.
 	H.change_stat("strength", 2)
 	H.change_stat("constitution", 3)

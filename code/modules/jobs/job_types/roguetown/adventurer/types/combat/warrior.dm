@@ -11,13 +11,14 @@
 					"Duelist"= "You are an esteemed swordsman who foregoes armor in exchange for a more nimble fighting style.",
 					"Barbarian" = "You are a brutal warrior who foregoes armor in order to showcase your raw strength. You specialize in unarmed combat and wrestling.",
 					"Monster Hunter" = "You specialize in hunting down monsters and the undead, carrying two blades - one of silver, one of steel.",
-					"Flagellant" = "You are a pacifistic warrior who embraces suffering, believing pain is the path to enlightenment. You take the suffering of others upon yourself.")
+					"Flagellant" = "You are a pacifistic warrior who embraces suffering, believing pain is the path to enlightenment. You take the suffering of others upon yourself.",
+					"Ironclad" = "You are a warrior who puts their trust in durable armor. The best offense is a good defense.")
 
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter","Flagellant")
+	var/classes = list("Battlemaster","Duelist","Barbarian","Monster Hunter","Flagellant","Ironclad")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -52,7 +53,7 @@
 				if("Billhook")
 					H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 					r_hand = /obj/item/rogueweapon/spear/billhook
-					backr = /obj/item/gwstrap
+					backr = /obj/item/rogueweapon/scabbard/gwstrap
 				if("Battle Axe")
 					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					backr = /obj/item/rogueweapon/stoneaxe/battle
@@ -63,8 +64,8 @@
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					r_hand = /obj/item/rogueweapon/sword/short/iron
 				if("Iron Saber & Wood Shield")
-					H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-					H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/shields, 2, TRUE)
 					r_hand = /obj/item/rogueweapon/sword/saber/iron
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					backr = /obj/item/rogueweapon/shield/wood
@@ -182,23 +183,23 @@
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if ("Katar")
-					H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 4, TRUE)
 					beltr = /obj/item/rogueweapon/katar
 				if("Axe")
-					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/axes, 3, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/boneaxe
 				if("Sword")
-					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					r_hand = /obj/item/rogueweapon/sword/short
 				if("Club")
-					H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
 					beltr = /obj/item/rogueweapon/mace/woodclub
 				if("Spear")
-					H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
 					r_hand = /obj/item/rogueweapon/spear/bonespear
 				if ("MY BARE HANDS!!!")
-					H.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+					H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 4, TRUE)
 					ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC)
 			H.change_stat("strength", 3)
 			H.change_stat("endurance", 1)
