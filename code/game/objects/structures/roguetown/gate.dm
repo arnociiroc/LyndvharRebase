@@ -187,7 +187,7 @@ GLOBAL_LIST_EMPTY(biggates)
 			attached_gate.toggle()
 
 /obj/structure/gate/psy_vault
-	name = "\improper HIS vault"
+	name = "\improper VAULT OF THE FORGOTTEN"
 	redstone_id = "swamp_psy_dungeon_hour"
 	max_integrity = "9999"
 
