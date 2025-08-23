@@ -75,7 +75,7 @@
 
 /datum/species/aasimar/after_creation(mob/living/carbon/C)
 	..()
-	to_chat(C, "<span class='info'>I can speak Celestial with ,c before my speech.</span>")
+	to_chat(C, "<span class='info'>I can speak Celestia with ,c before my speech.</span>")
 
 /datum/species/aasimar/on_species_loss(mob/living/carbon/C)
 	. = ..()
