@@ -77,6 +77,8 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 	if(mode == NPC_AI_HUNT)
 		if(prob(2)) // do not make this big or else they NEVER SHUT UP
 			emote("laugh")
+		if(prob(15))
+			say(pick(GLOB.highwayman_aggro))
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/human/northern/highwayman/pre_equip(mob/living/carbon/human/H)
