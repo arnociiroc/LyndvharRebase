@@ -189,7 +189,7 @@
 ///////////////////////
 
 /datum/supply_pack/rogue/Sellsword/wolfhelm
-	name = "Forlon Volf Plate Helm"
+	name = "Volf Plate Helm"
 	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/volfplate)
 
