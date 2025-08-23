@@ -355,7 +355,7 @@
 	icon_state = "sdaggeralt"
 	sheathe_icon = "sdaggeralt"
 
-/obj/item/rogueweapon/huntingknife/idagger/steel/kazengun
+/obj/item/rogueweapon/huntingknife/idagger/steel/saltlian
 	name = "steel tanto"
 	desc = "A steel dagger imported from the Saltlian Kingdoms. A sturdy blade bears a subtle curve, set into a decorated circular crossguard. A waxed \
 	wrapping of twisted cordage provides a secure grip."
@@ -601,7 +601,7 @@
 			if("onbelt")
 				return list("shrink" = 0.3,"sx" = -2,"sy" = -5,"nx" = 4,"ny" = -5,"wx" = 0,"wy" = -5,"ex" = 2,"ey" = -5,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
-/obj/item/rogueweapon/huntingknife/throwingknife/kazengun
+/obj/item/rogueweapon/huntingknife/throwingknife/saltlian
 	name = "eastern tossblade"
 	desc = "A four pointed throwing knife ground and sharpened from a single piece of metal. The design is intended to solve one of weaknesses of basic tossblades; \
 	more points means these are more likely to land point-first."

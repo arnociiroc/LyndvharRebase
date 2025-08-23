@@ -14,7 +14,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/physician
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	r_hand = /obj/item/storage/belt/rogue/surgery_bag/full/physician
 	belt = /obj/item/storage/belt/rogue/leather/black

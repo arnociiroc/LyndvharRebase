@@ -26,7 +26,7 @@
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			belt = /obj/item/storage/belt/rogue/leather
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
@@ -87,7 +87,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 			cloak = /obj/item/clothing/cloak/stabard/dungeon
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			belt = /obj/item/storage/belt/rogue/leather
 			gloves = /obj/item/clothing/gloves/roguetown/angle
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
@@ -117,7 +117,7 @@
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
 			H.cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg'
-			var/weapons = list("Just An Iron Shield","Dagger + Crossbow", "Militia Warpick + Heater Shield", "Militia Spear + Heater Shield")
+			var/weapons = list("Just An Iron Shield","Dagger + Crossbow", "Militia Warpick + Iron Shield", "Militia Spear + Heater Shield")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			H.set_blindness(0)
 			switch(weapon_choice)
@@ -131,7 +131,7 @@
 					l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
 					backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 					beltr = /obj/item/quiver/bolts
-				if ("Militia Warpick + Heater Shield")
+				if ("Militia Warpick + Iron Shield")
 					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltl = /obj/item/rogueweapon/pick/militia
 					backr = /obj/item/rogueweapon/shield/iron
@@ -142,6 +142,6 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("strength", 1)
 			H.change_stat("endurance", 1)
-			H.change_stat("speed", 2)//Still the speed class
+			H.change_stat("speed", 3)//Still the speed class
 	H.grant_language(/datum/language/thievescant)
 	wretch_select_bounty(H)

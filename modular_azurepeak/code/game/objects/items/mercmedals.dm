@@ -101,7 +101,7 @@
 	desc = "The underdwellers claim this will always point you exactly where you need to go. If it doesn't work, that's just an issue of skill and mindset."
 	icon_state = "under_compass"
 
-/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/kazengun
+/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/saltlian
 	// NOT CURRENTLY IMPLEMENTED
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/routier

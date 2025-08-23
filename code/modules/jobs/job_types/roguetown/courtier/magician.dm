@@ -40,7 +40,7 @@
 	beltl = /obj/item/storage/magebag
 	id = /obj/item/clothing/ring/active/nomag
 	r_hand = /obj/item/rogueweapon/woodstaff/riddle_of_steel/magos
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/reagent_containers/glass/bottle/rogue/poison, 
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,

@@ -32,9 +32,10 @@
 			H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
-			H.change_stat("perception", 2)
-			H.change_stat("constitution", 3)
+			H.change_stat("perception", 1)
+			H.change_stat("constitution", 2)
 			H.change_stat("intelligence", 3)
+			H.change_stat("strength", 1)
 			l_hand = /obj/item/rogueweapon/scabbard/sword
 			var/weapons = list("Dunargiac Longsword", "Kriegsmesser", "Freifechter Longsword", "Field Longsword")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
@@ -88,7 +89,7 @@
 	head = /obj/item/clothing/head/roguetown/roguehood/pontifex
 	mask = /obj/item/clothing/mask/rogue/lordmask/khazumian
 	neck = /obj/item/clothing/neck/roguetown/leather
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/pontifex

@@ -498,12 +498,12 @@
 
 
 /*
-	KAZENGUN
+	SALTLIA
 */
 
 
-/obj/item/rogueweapon/scabbard/sword/kazengun
-	name = "simple kazengun scabbard"
+/obj/item/rogueweapon/scabbard/sword/saltlian
+	name = "simple saltlian scabbard"
 	desc = "A piece of steel lined with wood. Great for batting away blows."
 	icon_state = "kazscab"
 	item_state = "kazscab"
@@ -517,7 +517,7 @@
 	max_integrity = 0
 
 
-/obj/item/rogueweapon/scabbard/sword/kazengun/steel
+/obj/item/rogueweapon/scabbard/sword/saltlian/steel
 	name = "hwang scabbard"
 	desc = "A cloud-patterned scabbard with a cloth sash. Used for blocking."
 	icon_state = "kazscab_steel"
@@ -525,7 +525,7 @@
 	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 
 
-/obj/item/rogueweapon/scabbard/sword/kazengun/gold
+/obj/item/rogueweapon/scabbard/sword/saltlian/gold
 	name = "gold-stained Xinyi scabbard"
 	desc = "An ornate, wooden scabbard with a sash. Great for parrying."
 	icon_state = "kazscab_gold"

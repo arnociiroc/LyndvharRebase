@@ -28,7 +28,7 @@
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are well versed and experienced in swordfighting, you have no problem in taking up most jobs so long as the coin is good, for either yourself or the clan and the seonjang."))
 			belt = /obj/item/storage/belt/rogue/leather
-			beltr = /obj/item/rogueweapon/scabbard/sword/kazengun/steel
+			beltr = /obj/item/rogueweapon/scabbard/sword/saltlian/steel
 			beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 			cloak = /obj/item/clothing/cloak/eastcloak1
@@ -36,7 +36,7 @@
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
 			gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
-			backr = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/flashlight/flare/torch/lantern,
@@ -52,7 +52,7 @@
 			H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.change_stat("strength", 2)
-			H.change_stat("endurance", 3)
+			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 3)
 			H.change_stat("perception", 1)
 			H.change_stat("speed", -1)

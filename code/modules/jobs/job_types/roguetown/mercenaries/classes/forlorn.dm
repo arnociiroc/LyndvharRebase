@@ -40,15 +40,15 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 1) 
-			shoes = /obj/item/clothing/shoes/roguetown/boots
+			H.change_stat("perception", 1)
+			H.change_stat("constitution", 2)
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
 			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/splintlegs
-			gloves = /obj/item/clothing/gloves/roguetown/leather
+			gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
 			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			wrists = /obj/item/clothing/wrists/roguetown/splintarms
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -56,12 +56,22 @@
 			backr = /obj/item/storage/backpack/rogue/satchel/short
 			backl = /obj/item/rogueweapon/shield/heater
 			backpack_contents = list(/obj/item/rogueweapon/huntingknife, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath)
+
+			var/helms = list("Barred Helmet", "Volfplate Helmet")
+			var/helms_choice = input(H,"Choose your helmet.", "TAKE UP HELMS") as anything in helms
+			switch(helms_choice)
+				if("Barred Helmet")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/sheriff, SLOT_HEAD, TRUE)
+				if("Volfplate Helmet")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/volfplate, SLOT_HEAD, TRUE)
+
 		if("Javelineer")
 			H.set_blindness(0)
 			to_chat(H, span_warning("The Forvheipal Javelineers are the Zapyrixian Order's ranged thrall, wielding javelins and relying on their agility to avoid blows."))
 			H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -74,22 +84,33 @@
 			H.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+			H.change_stat("strength", -1)
+			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 3)
 			H.change_stat("speed", 2)
 			H.change_stat("endurance", 2)
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
-			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
-			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+			pants = /obj/item/clothing/under/roguetown/splintlegs
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-			belt = /obj/item/storage/belt/rogue/leather/steel/tasset
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
+			belt = /obj/item/storage/belt/rogue/leather
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
 			l_hand = /obj/item/rogueweapon/sword/short/messer
-			beltr = /obj/item/rogueweapon/scabbard/sword
-			beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+			beltl = /obj/item/rogueweapon/scabbard/sword
+			beltr = /obj/item/quiver/javelin/steel
 			backr = /obj/item/storage/backpack/rogue/satchel/short
-			backl = /obj/item/quiver/javelin/iron
-			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath)
+			backl = /obj/item/quiver/javelin/steel
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/roguekey/mercenary, /obj/item/rogueweapon/scabbard/sheath, /obj/item/storage/belt/rogue/pouch/coins/poor)
+
+			var/helmets = list("Hound Mask", "Volfplate Helmet")
+			var/helmets_choice = input(H,"Choose your helmet.", "TAKE UP HELMS") as anything in helmets
+			switch(helmets_choice)
+				if("Hound Mask")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant, SLOT_HEAD, TRUE)
+					H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/hound, SLOT_WEAR_MASK, TRUE)
+				if("Volfplate Helmet")
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/volfplate, SLOT_HEAD, TRUE)
+					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant, SLOT_WEAR_MASK, TRUE)

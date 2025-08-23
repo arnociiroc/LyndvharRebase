@@ -30,7 +30,7 @@
 			beltr = /obj/item/reagent_containers/glass/bottle/rogue/manapot
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltl = /obj/item/rogueweapon/huntingknife
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			backr = /obj/item/rogueweapon/woodstaff
 			backpack_contents = list(
 				/obj/item/flashlight/flare/torch = 1,
@@ -56,7 +56,7 @@
 				H.mind?.adjust_spellpoints(6)
 			H.change_stat("intelligence", 3)
 			H.change_stat("perception", 2)
-			H.change_stat("speed", 1)
+			H.change_stat("speed", 2)
 			H.mind?.adjust_spellpoints(18)
 			H.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
@@ -73,7 +73,7 @@
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/clothing/neck/roguetown/gorget
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/recipe_book/survival = 1)
@@ -92,7 +92,7 @@
 			H.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 			H.change_stat("strength", 2) // Favoring a less speedy and more steady playstyle vs spellsinger
-			H.change_stat("intelligence", 5)
+			H.change_stat("intelligence", 5) // for sentinel of wits
 			H.change_stat("constitution", 1)
 			H.change_stat("endurance", 1)
 			H?.mind.adjust_spellpoints(12)
@@ -136,7 +136,7 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			neck = /obj/item/clothing/neck/roguetown/gorget
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/spellcasterrobe
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			beltr = /obj/item/rogueweapon/scabbard/sword

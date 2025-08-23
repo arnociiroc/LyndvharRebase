@@ -36,7 +36,7 @@
 	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 4)
 	H.change_stat("perception", 1)
-	H.change_stat("speed", -1)
+	H.change_stat("speed", -2)
 	switch(classchoice)
 		if("Swordsman")
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
@@ -48,7 +48,7 @@
 		if("Flailman")
 			H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 			beltl = /obj/item/rogueweapon/flail/sflail
-		if("Foot Lancer")
+		if("Lancer")
 			H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			r_hand = /obj/item/rogueweapon/spear/lance
 	wrists = /obj/item/clothing/wrists/roguetown/bracers

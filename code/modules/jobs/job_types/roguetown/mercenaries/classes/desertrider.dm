@@ -38,7 +38,8 @@
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("strength", 2)
-			H.change_stat("endurance", 2)
+			H.change_stat("endurance", 3)
+			H.change_stat("constitution", 1)
 			backl = /obj/item/rogueweapon/shield/tower/zybantu
 			r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
 			head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
@@ -87,6 +88,7 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			H.change_stat("endurance", 2)
 			H.change_stat("intelligence", 1)
+			H.change_stat("perception", 1)
 			H.change_stat("speed", 3)
 			head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
 			neck = /obj/item/clothing/neck/roguetown/leather

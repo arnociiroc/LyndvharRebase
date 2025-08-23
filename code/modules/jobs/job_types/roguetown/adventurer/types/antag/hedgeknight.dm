@@ -26,7 +26,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	l_hand = /obj/item/rogueweapon/sword/long/dec
 	backr = /obj/item/rogueweapon/scabbard/sword
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	id = /obj/item/mattcoin
 	backpack_contents = list(
 					/obj/item/rogueweapon/huntingknife/idagger = 1,

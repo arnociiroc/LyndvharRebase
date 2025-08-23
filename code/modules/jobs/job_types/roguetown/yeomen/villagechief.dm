@@ -38,7 +38,7 @@
 	l_hand = /obj/item/rogueweapon/woodstaff/wise
 	beltr = /obj/item/quiver/arrows
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
 	backpack_contents = list(
 		/obj/item/storage/keyring/velder  = 1,

@@ -40,21 +40,4 @@
 		var/datum/antagonist/new_antag = new /datum/antagonist/prisoner()
 		H.mind.add_antag_datum(new_antag)
 	ADD_TRAIT(H, TRAIT_BANDITCAMP, TRAIT_GENERIC)
-/proc/wretch_select_bounty(mob/living/carbon/human/H)
-	var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Lyndvhar", "The Bisphoric of Valoria", "The Holy Mother Church of Lyndhardtia")
-	if(bounty_poster == "The Justiciary of Lyndvhar")
-		GLOB.outlawed_players += H.real_name
-	else
-		GLOB.excommunicated_players += H.real_name
-	
-	var/bounty_severity = input(H, "How severe are your crimes?", "Bounty Amount") as anything in list("Misdeed", "Harm towards lyfe")
-	var/bounty_total = rand(100, 400) // Just in case
-	switch(bounty_severity)
-		if("Misdeed")
-			bounty_total = rand(100, 200)
-		if("Harm towards lyfe")
-			bounty_total = rand(200, 300)
-	var/my_crime = input(H, "What is your crime?", "Crime") as text|null
-	if (!my_crime)
-		my_crime = "crimes against the City"
-	add_bounty(H.real_name, bounty_total, FALSE, my_crime, bounty_poster)
+	wretch_select_bounty(H)

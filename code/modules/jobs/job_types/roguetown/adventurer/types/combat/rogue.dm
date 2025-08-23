@@ -23,7 +23,7 @@
 			to_chat(H, span_warning("You are a treasure hunter trained in hunting for valuables. Discern what is treasure or not, your fortune could be hidden anywhere."))
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			belt = /obj/item/storage/belt/rogue/leather
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
@@ -61,7 +61,7 @@
 			switch(weapon_choice)
 				if("Sabre")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-					beltr = /obj/item/rogueweapon/sword/sabre
+					beltr = /obj/item/rogueweapon/sword/iron/saber
 					r_hand = /obj/item/rogueweapon/scabbard/sword
 				if("Whip")
 					H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
@@ -130,12 +130,12 @@
 				if("Eastern Agent")
 					backpack_contents = list(
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/rogueweapon/huntingknife/idagger/steel/kazengun = 1,
+						/obj/item/rogueweapon/huntingknife/idagger/steel/saltlian = 1,
 						/obj/item/rogueweapon/scabbard/sheath = 1,
 						/obj/item/lockpickring/mundane = 1,
 						/obj/item/recipe_book/survival = 1,
 						)
-					belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/kazengun
+					belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
 					gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 					pants = /obj/item/clothing/under/roguetown/trou/leather/eastern
 					shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
@@ -167,7 +167,7 @@
 			beltl = /obj/item/flashlight/flare/torch/lantern
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			cloak = /obj/item/clothing/cloak/half/red
 			backpack_contents = list(
 				/obj/item/lockpick = 1,
@@ -208,7 +208,7 @@
 			pants = /obj/item/clothing/under/roguetown/tights/sailor
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor/red
-			backl = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			backr = /obj/item/rogue/instrument/hurdygurdy
 			belt = /obj/item/storage/belt/rogue/leather/knifebelt/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
