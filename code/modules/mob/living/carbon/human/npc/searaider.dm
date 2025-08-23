@@ -127,6 +127,8 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 			emote("rage")
 		if(prob(25)) // do not make this big or else they NEVER SHUT UP
 			emote("laugh")
+		if(prob(15))
+			say(pick(GLOB.searaider_aggro))
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/human/northern/searaider/pre_equip(mob/living/carbon/human/H)

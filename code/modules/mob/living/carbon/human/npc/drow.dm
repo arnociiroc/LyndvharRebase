@@ -114,6 +114,8 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 	if(mode == NPC_AI_HUNT)
 		if(prob(5))
 			emote("laugh")
+		if(prob(15))
+			say(pick(GLOB.drowraider_aggro))
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/elf/dark/drowraider/pre_equip(mob/living/carbon/human/H)
