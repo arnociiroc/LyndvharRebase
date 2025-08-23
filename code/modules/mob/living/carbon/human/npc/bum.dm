@@ -1,7 +1,7 @@
 GLOBAL_LIST_INIT(bum_quotes, world.file2list("strings/rt/bumlines.txt"))
 GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 
-/mob/living/carbon/human/species/human/northern/bum //weak peasant infantry. Neutral but can be given factions for events. doesn't attack players. 
+/mob/living/carbon/human/species/human/northern/bum //weak beggars. garbage equipment, random stats, all over the sewers. fuck em.
 	aggressive=1
 	rude = TRUE
 	mode = NPC_AI_IDLE
@@ -10,7 +10,7 @@ GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 	dodgetime = 30
 	flee_in_pain = TRUE
 	possible_rmb_intents = list()
-	var/is_silent = TRUE /// Determines whether or not we will scream our funny lines at people.
+	var/is_silent = FALSE /// Determines whether or not we will scream our funny lines at people.
 
 
 /mob/living/carbon/human/species/human/northern/bum/ambush
