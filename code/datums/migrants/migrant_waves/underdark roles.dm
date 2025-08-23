@@ -74,7 +74,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	belt = /obj/item/storage/belt/rogue/leather/black
 	backl = /obj/item/storage/backpack/rogue/satchel/short
-	backr = /obj/item/gwstrap
+	backr = /obj/item/rogueweapon/scabbard/gwstrap
 	l_hand = /obj/item/rogueweapon/halberd/glaive
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
 	backpack_contents = list(

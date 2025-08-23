@@ -182,7 +182,7 @@
 
 /datum/crafting_recipe/roguetown/leather/greatstrap
 	name = "greatweapon back-strap (2 leather, rope)"
-	result = list(/obj/item/gwstrap)
+	result = list(/obj/item/rogueweapon/scabbard/)
 	reqs = list(/obj/item/natural/hide/cured = 2,
 				/obj/item/rope = 1)
 	tools = list(/obj/item/needle)

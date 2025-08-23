@@ -80,12 +80,12 @@
 				display_as_wanderer = TRUE
 			if(islatejoin)
 				is_returning = TRUE
-		if(display_as_wanderer)
-			. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name]."))
-		else if(used_title)
-			. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][race_name] [used_title]."))
-		else
-			. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, the [race_name]."))
+			if(display_as_wanderer)
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name]."))
+			else if(used_title)
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][race_name] [used_title]."))
+			else
+				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, the [race_name]."))
 
 		if(HAS_TRAIT(src, TRAIT_WITCH))
 			if(HAS_TRAIT(user, TRAIT_NOBLE) || HAS_TRAIT(user, TRAIT_INQUISITION) || HAS_TRAIT(user, TRAIT_WITCH))
@@ -230,8 +230,8 @@
 			. += span_notice("You get the feeling [m2] most valuable possession is \a [item].")
 
 	if(!obscure_name || client?.prefs.masked_examine)
-		if(headshot_link)
-			. += "<span class='info'><img src=[headshot_link] width=100 height=100/></span>"
+		if((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
+			. += "<span class='info'><img src=[headshot_link] width=100 height=100/> \nø ------------ ø</span>"
 	var/is_stupid = FALSE
 	var/is_smart = FALSE
 	var/is_normal = FALSE
@@ -835,7 +835,8 @@
 			
 	for(var/line in lines)
 		. += span_info(line)
-
+	if(lines)
+		. += span_info("ø ------------ ø")
 	var/trait_exam = common_trait_examine()
 	if(!isnull(trait_exam))
 		. += trait_exam
@@ -899,7 +900,7 @@
 	else if(HAS_TRAIT(src, TRAIT_CABAL) && HAS_TRAIT(examiner, TRAIT_CABAL))
 		heretic_text += "♦"
 	else if(HAS_TRAIT(src, TRAIT_HORDE) && HAS_TRAIT(examiner, TRAIT_HORDE))
-		heretic_text += "♠"
+		heretic_text += "♣"
 	else if(HAS_TRAIT(src, TRAIT_DEPRAVED) && HAS_TRAIT(examiner, TRAIT_DEPRAVED))
 		heretic_text += "♥"
 	

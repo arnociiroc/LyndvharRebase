@@ -168,6 +168,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	var/nsfw_headshot_link
 
+	var/chatheadshot = FALSE
 	var/ooc_extra_link
 	var/ooc_extra
 	var/list/descriptor_entries = list()

@@ -26,8 +26,7 @@
 	cmode_music = 'sound/music/combat_blackoak.ogg'
 
 /datum/outfit/job/roguetown/bogguardsman
-	head = /obj/item/clothing/head/roguetown/helmet/bascinet/antler
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide/warden
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	cloak = /obj/item/clothing/cloak/wardencloak
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	belt = /obj/item/storage/belt/rogue/leather
@@ -55,7 +54,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	pants = /obj/item/clothing/under/roguetown/trou/leather
-	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
+	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve/warden
 	beltr = /obj/item/quiver/arrows
 	beltl = /obj/item/rogueweapon/huntingknife/idagger
 	backpack_contents = list(
@@ -90,6 +89,26 @@
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 	H.set_blindness(0)
 
+	var/helmets = list(
+		"Path of the Antelope" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/antler,
+		"Path of the Volf"		= /obj/item/clothing/head/roguetown/helmet/sallet/warden/wolf,
+		"Path of the Ram"		= /obj/item/clothing/head/roguetown/helmet/sallet/warden/goat,
+		"Path of the Bear"		= /obj/item/clothing/head/roguetown/helmet/sallet/warden/bear,
+		"None"
+	)
+	var/helmchoice = input("Choose your Path.", "HELMET SELECTION") as anything in helmets
+	if(helmchoice != "None")
+		head = helmets[helmchoice]
+
+	var/hoods = list(
+		"Common Shroud" 	= /obj/item/clothing/head/roguetown/roguehood/warden,
+		"Antlered Shroud"		= /obj/item/clothing/head/roguetown/roguehood/warden/antler,
+		"None"
+	)
+	var/hoodchoice = input("Choose your Shroud.", "HOOD SELECTION") as anything in hoods
+	if(helmchoice != "None")
+		mask = hoods[hoodchoice]
+
 /datum/advclass/bogguardsman/forester
 	name = "Forester"
 	tutorial = "You are a forester, a woodsman who volunteered to become a part of the wardens. You have experience using axes and polearms."
@@ -102,7 +121,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	backl = /obj/item/gwstrap
+	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut/wardenpick
 	beltl = /obj/item/rogueweapon/huntingknife
 	r_hand = /obj/item/rogueweapon/spear
@@ -138,3 +157,23 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
 	H.set_blindness(0)
+
+	var/helmets = list(
+		"Path of the Antelope" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/antler,
+		"Path of the Volf"		= /obj/item/clothing/head/roguetown/helmet/sallet/warden/wolf,
+		"Path of the Ram"		= /obj/item/clothing/head/roguetown/helmet/sallet/warden/goat,
+		"Path of the Bear"		= /obj/item/clothing/head/roguetown/helmet/sallet/warden/bear,
+		"None"
+	)
+	var/helmchoice = input("Choose your Path.", "HELMET SELECTION") as anything in helmets
+	if(helmchoice != "None")
+		head = helmets[helmchoice]
+
+	var/hoods = list(
+		"Common Shroud" 	= /obj/item/clothing/head/roguetown/roguehood/warden,
+		"Antlered Shroud"		= /obj/item/clothing/head/roguetown/roguehood/warden/antler,
+		"None"
+	)
+	var/hoodchoice = input("Choose your Shroud.", "HOOD SELECTION") as anything in hoods
+	if(helmchoice != "None")
+		mask = hoods[hoodchoice]

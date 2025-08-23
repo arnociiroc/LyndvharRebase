@@ -24,7 +24,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
-			backr = /obj/item/gwstrap
+			backr = /obj/item/rogueweapon/scabbard/gwstrap
 			backl = /obj/item/storage/backpack/rogue/backpack
 			belt = /obj/item/storage/belt/rogue/leather
 			beltr = /obj/item/storage/meatbag
@@ -48,7 +48,7 @@
 			H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
