@@ -125,9 +125,9 @@ GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 	if(!wander && prob(10))
 		face_atom(get_step(src,pick(GLOB.cardinals)))
 
-	if(prob(3))
+	if(prob(10))
 		say(pick(GLOB.bum_quotes))
-	if(prob(8))
+	if(prob(10))
 		emote(pick("laugh","burp","yawn","grumble","mumble","blink_r","clap"))
 
 /mob/living/carbon/human/species/human/northern/bum/handle_combat()
