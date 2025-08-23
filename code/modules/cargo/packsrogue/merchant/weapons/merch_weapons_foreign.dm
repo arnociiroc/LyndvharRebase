@@ -50,16 +50,16 @@
 	contains = list(/obj/item/rogueweapon/spear/naginata)
 
 /datum/supply_pack/rogue/merc_weapons/katana
-	name = "Kazengun Straight Sword"
+	name = "Saltlian Straight Sword"
 	cost = 80
 	contains = list(/obj/item/rogueweapon/sword/sabre/mulyeog)
 
-/datum/supply_pack/rogue/merc_weapons/kazengunscabbard
-	name = "Kazengun Scabbard"
+/datum/supply_pack/rogue/merc_weapons/saltlianscabbard
+	name = "Saltlian Scabbard"
 	cost = 80
-	contains = list(/obj/item/rogueweapon/scabbard/sword/kazengun)
+	contains = list(/obj/item/rogueweapon/scabbard/sword/saltlian)
 
-/datum/supply_pack/rogue/merc_weapons/kazengunhookblade
-	name = "Kazengun Hook Sword"
+/datum/supply_pack/rogue/merc_weapons/saltlianhookblade
+	name = "Saltlian Hook Sword"
 	cost = 100
 	contains = list(/obj/item/rogueweapon/sword/sabre/hook)

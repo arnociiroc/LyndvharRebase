@@ -443,7 +443,7 @@
 	taste_description = "bubbly, sour salt"
 	color = "#dddddd"
 
-//Kazengun boozes
+//Saltlia boozes
 
 /datum/reagent/consumable/ethanol/kgunlager
 	name = "Yamaguchi Pale"
@@ -575,7 +575,7 @@
 
 /datum/reagent/consumable/ethanol/komuchisake // if you put this outside the lich dungeon i'll kill you
 	name = "Divine Snake Wine" 
-	description = "The True Form of the Whipwine. The Magickal Snake Wine was an exclusively produced medicinal wine from over three centures ago in the Kazengun Shogunate..."
+	description = "The True Form of the Whipwine. The Magickal Snake Wine was an exclusively produced medicinal wine from over three centures ago in the Saltliac Kingdoms..."
 	boozepwr = 60 // ancient lichebrau...
 	taste_description = "bitterness, pain, iron, and ancient mistakes" // what did you expect [2]
 	color = "#553837"

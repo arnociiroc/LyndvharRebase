@@ -28,7 +28,7 @@
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are well versed and experienced in swordfighting, you have no problem in taking up most jobs so long as the coin is good, for either yourself or the clan and the seonjang."))
 			belt = /obj/item/storage/belt/rogue/leather
-			beltr = /obj/item/rogueweapon/scabbard/sword/kazengun/steel
+			beltr = /obj/item/rogueweapon/scabbard/sword/saltlian/steel
 			beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 			cloak = /obj/item/clothing/cloak/eastcloak1

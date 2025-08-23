@@ -130,12 +130,12 @@
 				if("Eastern Agent")
 					backpack_contents = list(
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/rogueweapon/huntingknife/idagger/steel/kazengun = 1,
+						/obj/item/rogueweapon/huntingknife/idagger/steel/saltlian = 1,
 						/obj/item/rogueweapon/scabbard/sheath = 1,
 						/obj/item/lockpickring/mundane = 1,
 						/obj/item/recipe_book/survival = 1,
 						)
-					belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/kazengun
+					belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
 					gloves = /obj/item/clothing/gloves/roguetown/eastgloves1
 					pants = /obj/item/clothing/under/roguetown/trou/leather/eastern
 					shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
