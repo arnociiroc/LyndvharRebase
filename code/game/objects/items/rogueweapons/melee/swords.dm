@@ -375,7 +375,7 @@
 
 /obj/item/rogueweapon/sword/long/judgement
 	name = "\"Judgement\""
-	desc = "An intricately forged longsword, it's blade is made from Aavnr's finest Vyšvou steel - held from an ornate carved ivory grip from the region's \"Mamük\" megafauna. A sight that's truly unique."
+	desc = "An intricately forged longsword, it's blade is made from Lyndhardtia's finest and firm steel - held from an ornate carved ivory grip made from the region's finest smiths and designers. Legend speaks of this blade being wielded by Morcan Lyndhardtia, Naexidor's son."
 	icon_state = "judgement"
 	item_state = "judgement"
 	sheathe_icon = "judgement"
