@@ -2,7 +2,7 @@ GLOBAL_LIST_INIT(bum_quotes, world.file2list("strings/rt/bumlines.txt"))
 GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 
 /mob/living/carbon/human/species/human/northern/bum
-	aggressive=0
+	aggressive=1
 	rude = TRUE
 	mode = NPC_AI_IDLE
 	faction = list("bums", "station")
@@ -45,7 +45,7 @@ GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_LEECHIMMUNE, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_INFINITE_ENERGY, TRAIT_GENERIC)
-	equipOutfit(new /datum/outfit/job/roguetown/vagrant)
+	equipOutfit(new /datum/outfit/job/roguetown/vagabond/beggar)
 
 /mob/living/carbon/human/species/human/northern/bum/npc_idle()
 	if(m_intent == MOVE_INTENT_SNEAK)
@@ -66,3 +66,9 @@ GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 		say(pick(GLOB.bum_quotes))
 	if(prob(3))
 		emote(pick("laugh","burp","yawn","grumble","mumble","blink_r","clap"))
+
+/mob/living/carbon/human/species/human/northern/bum/handle_combat()
+	if(mode == NPC_AI_HUNT)
+		if(prob(2)) // do not make this big or else they NEVER SHUT UP
+			emote("laugh")
+	. = ..()
