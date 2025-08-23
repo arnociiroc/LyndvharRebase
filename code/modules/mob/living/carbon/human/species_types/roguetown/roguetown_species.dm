@@ -25,7 +25,7 @@
 			return strings("brazillian_replacement.json", type)
 		if("Tiefling accent")
 			return strings("spanish_replacement.json", type)
-		if("Middle accent")
+		if("Commoner accent")
 			return strings("middlespeak.json", type)
 		if("Rhaenish accent")
 			return strings("norf_replacement.json", type)
