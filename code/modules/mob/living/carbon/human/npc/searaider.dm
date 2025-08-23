@@ -127,7 +127,7 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 			emote("rage")
 		if(prob(25)) // do not make this big or else they NEVER SHUT UP
 			emote("laugh")
-		if(prob(15))
+		if(prob(5))
 			say(pick(GLOB.searaider_aggro))
 	. = ..()
 

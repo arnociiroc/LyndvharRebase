@@ -134,6 +134,8 @@ GLOBAL_LIST_INIT(bum_aggro, world.file2list("strings/rt/bumaggrolines.txt"))
 	if(mode == NPC_AI_HUNT)
 		if(prob(2)) // do not make this big or else they NEVER SHUT UP
 			emote("laugh")
+		if(prob(10))
+			say(pick(GLOB.bum_aggro))
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/human/northern/bum/pre_equip(mob/living/carbon/human/H)
