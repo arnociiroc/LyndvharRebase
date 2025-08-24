@@ -1001,7 +1001,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
 	// Draining nobility from the duke or the heirs increases payout and causes CHAOS. Astrata weeps!
-	if((victim == SSticker.rulermob) || (victim == SSticker.regentmob) || (victim.mind?.assigned_role in list ("Prince", "Princess")))
+	if((victim == SSticker.rulermob) || (victim == SSticker.regentmob) || (victim.mind?.assigned_role in list ("Heir", "Heiress")))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
@@ -1032,7 +1032,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	REMOVE_TRAIT(victim, TRAIT_NOBLE, TRAIT_VIRTUE)
 	ADD_TRAIT(victim, TRAIT_DEFILED_NOBLE, TRAIT_GENERIC)
 	playsound(loc, 'sound/misc/evilevent.ogg', 100, FALSE, -1)
-	to_chat(victim, span_cult("You feel your Astrata's gift of nobility stripped from you, the inhumen feasting upon it!"))
+	to_chat(victim, span_cult("You feel your Astrata's gift of nobility stripped from you, the daemons feasting upon it!"))
 	return TRUE
 
 /datum/outfit/job/roguetown/gildedrite/pre_equip(mob/living/carbon/human/H)
