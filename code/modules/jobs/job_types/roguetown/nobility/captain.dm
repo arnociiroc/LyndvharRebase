@@ -24,28 +24,30 @@
 	cmode_music = 'sound/music/combat_captain.ogg'
 
 /datum/outfit/job/roguetown/captain
-	neck = /obj/item/clothing/neck/roguetown/gorget/steel
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/captain
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/captain
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	pants = /obj/item/clothing/under/roguetown/chainlegs/captain
 	gloves = /obj/item/clothing/gloves/roguetown/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
-	cloak = /obj/item/clothing/cloak/cape/guard
+	cloak = /obj/item/clothing/cloak/captain
 	job_bitflag = BITFLAG_ROYALTY | BITFLAG_GARRISON
 
 /datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/cape/guard))
+		if(istype(H.cloak, /obj/item/clothing/cloak/captain))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "captain's cape ([index])"
+			S.name = "captain's cloak ([index])"
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
 		var/honorary = "Ser"
@@ -69,7 +71,6 @@
 	tutorial = "You've fought shoulder to shoulder with the soldiery of Lyndhardtia while embedded directly within massed infantry formations in expedition. As a peerless armed combatant and tactician both, you are a formidable presence on any battlefield."
 	outfit = /datum/outfit/job/roguetown/captain/infantry
 	category_tags = list(CTAG_CAPTAIN)
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 
 /datum/outfit/job/roguetown/captain/infantry/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -159,36 +160,10 @@
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 			beltr = /obj/item/rogueweapon/scabbard/sword
 			r_hand = /obj/item/rogueweapon/sword/sabre
-			backl = /obj/item/rogueweapon/shield/tower/metal
-	var/helmets = list(
-		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
-		"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
-		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
-		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
-		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
-		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
-		"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet,
-		"Hounskull Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
-		"Dunargiac Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/dunargi,
-		"Slitted Kettle"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
-		"None"
-	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
-	if(helmchoice != "None")
-		head = helmets[helmchoice]
-
-	var/armors = list(
-		"Brigandine"		= /obj/item/clothing/suit/roguetown/armor/brigandine,
-		"Coat of Plates"	= /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates,
-		"Steel Cuirass"		= /obj/item/clothing/suit/roguetown/armor/plate/half,
-		"Fluted Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/half/fluted,
-	)
-	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
-	armor = armors[armorchoice]
 
 /datum/advclass/captain/cavalry
 	name = "Cavalry Captain"
-	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations."
+	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations. Many a man can tell the tale of what your prowess on saigaback has contributed to this city's protection."
 	outfit = /datum/outfit/job/roguetown/captain/cavalry
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_CAPTAIN)
@@ -216,7 +191,7 @@
 	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 5, TRUE)
 	H.change_stat("strength", 2)
 	H.change_stat("perception", 1)
 	H.change_stat("intelligence", 2)
@@ -234,7 +209,6 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_GUARDSMAN, TRAIT_GENERIC)
 	H.verbs |= list(/mob/living/carbon/human/proc/request_outlaw, /mob/proc/haltyell, /mob/living/carbon/human/mind/proc/setorders)
 	H.adjust_blindness(-3)
 	var/weapons = list(
@@ -255,7 +229,7 @@
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 		if("Mace & Crossbow")
 			H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
-			r_hand = /obj/item/rogueweapon/mace
+			r_hand = /obj/item/rogueweapon/mace/steel/morningstar
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			beltr = /obj/item/quiver/bolts
 		if("Spear & Shield")
@@ -288,52 +262,6 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 4, TRUE)
 				beltl = /obj/item/quiver/arrows
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-
-	var/armors = list(
-		"Brigandine",
-		"Coat of Plates",
-		"Steel Cuirass",
-		"Captain's armor"
-	)
-	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
-	switch(armorchoice)
-		if("Brigandine")
-			armor = /obj/item/clothing/suit/roguetown/armor/brigandine
-			pants = /obj/item/clothing/under/roguetown/chainlegs
-			cloak = /obj/item/clothing/cloak/stabard
-		if("Coat of Plates")
-			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates
-			pants = /obj/item/clothing/under/roguetown/chainlegs
-			cloak = /obj/item/clothing/cloak/stabard
-		if("Fluted Cuirass")
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/fluted
-			pants = /obj/item/clothing/under/roguetown/chainlegs
-			cloak = /obj/item/clothing/cloak/stabard
-		if("Captain's armor")
-			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/captain
-			pants = /obj/item/clothing/under/roguetown/chainlegs/captain
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/captain
-			cloak = /obj/item/clothing/cloak/captain
-
-	if(armorchoice == "Captain's armor")
-		return // Get helmet from armor selection
-
-	var/helmets = list(
-		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
-		"Guard Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
-		"Barred Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff,
-		"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket,
-		"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight,
-		"Visored Sallet"	= /obj/item/clothing/head/roguetown/helmet/sallet/visored,
-		"Armet"				= /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet,
-		"Hounskull Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull,
-		"Dunargiac Bascinet" = /obj/item/clothing/head/roguetown/helmet/bascinet/dunargi,
-		"Slitted Kettle"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
-		"None"
-	)
-	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
-	if(helmchoice != "None")
-		head = helmets[helmchoice]
 
 /obj/effect/proc_holder/spell/self/convertrole
 	name = "Recruit Beggar"
@@ -416,8 +344,8 @@
 	new_role = "Watchman"
 	overlay_state = "recruit_guard"
 	recruitment_faction = "Watchman"
-	recruitment_message = "Serve the town guard, %RECRUIT!"
-	accept_message = "FOR THE CROWN!"
+	recruitment_message = "Serve the city watch, %RECRUIT!"
+	accept_message = "FOR THE CITY!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/guard/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)
