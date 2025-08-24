@@ -71,7 +71,6 @@
 	tutorial = "You've fought shoulder to shoulder with the soldiery of Lyndhardtia while embedded directly within massed infantry formations in expedition. As a peerless armed combatant and tactician both, you are a formidable presence on any battlefield."
 	outfit = /datum/outfit/job/roguetown/captain/infantry
 	category_tags = list(CTAG_CAPTAIN)
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 
 /datum/outfit/job/roguetown/captain/infantry/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -164,7 +163,7 @@
 
 /datum/advclass/captain/cavalry
 	name = "Cavalry Captain"
-	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations."
+	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations. Many a man can tell the tale of what your prowess on saigaback has contributed to this city's protection."
 	outfit = /datum/outfit/job/roguetown/captain/cavalry
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_CAPTAIN)
@@ -192,7 +191,7 @@
 	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 5, TRUE)
 	H.change_stat("strength", 2)
 	H.change_stat("perception", 1)
 	H.change_stat("intelligence", 2)
