@@ -1,3 +1,4 @@
+GLOBAL_LIST_INIT(searaider_quotes, world.file2list("strings/rt/searaiderlines.txt"))
 GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggrolines.txt"))
 
 /mob/living/carbon/human/species/human/northern/searaider
@@ -36,7 +37,7 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	. = ..()
 	set_species(/datum/species/human/northern)
 	addtimer(CALLBACK(src, PROC_REF(after_creation)), 1 SECONDS)
-	is_silent = TRUE
+	is_silent = FALSE
 
 
 /mob/living/carbon/human/species/human/northern/searaider/after_creation()
@@ -115,10 +116,19 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	if(!wander && prob(10))
 		face_atom(get_step(src,pick(GLOB.cardinals)))
 
+	if(prob(10))
+		say(pick(GLOB.searaider_quotes))
+	if(prob(10))
+		emote(pick("laugh","burp","yawn","grumble","mumble","blink_r","clap"))
+
 /mob/living/carbon/human/species/human/northern/searaider/handle_combat()
 	if(mode == NPC_AI_HUNT)
 		if(prob(50)) // ignores is_silent because they should at least still be able to scream at people!
 			emote("rage")
+		if(prob(25)) // do not make this big or else they NEVER SHUT UP
+			emote("laugh")
+		if(prob(5))
+			say(pick(GLOB.searaider_aggro))
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/human/northern/searaider/pre_equip(mob/living/carbon/human/H)
