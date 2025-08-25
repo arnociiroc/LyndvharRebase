@@ -14,6 +14,15 @@
 ,e I'll take my time breaking you, piece by piece!
 ,e Another body for the skrallax to feast on! 
 ,e The Matriarch's will is absolute - your life ends here, fool!
+,e Surrender now, and you might live as a slave!
+,e Bow before my strength!
+,e How dare you come down to our lands!
+,e Interloper!
+,e Fool!
+,e You never should have came here!
+,e Oh look, a surface-dweller come to offer themself!
+,e Prepare for your end!
+,e Beg for mercy- and watch as you receive nothing!
 ,e Mon dieu!
 ,e En garde!
 ,e C'est fini!
