@@ -145,7 +145,7 @@ h1.alert, h2.alert	{color: #c9c1ba;font-family: Pterra, TrueType;}
 .dunargi				{font-family: "Feronia", "Pterra"; font-size: 100%;}
 .rhaenvalian			{font-family: "Jorvik Informal", "Pterra"; font-size: 100%;}
 .kargradi				{font-family: "Romeodn", "Pterra"; font-size: 100%;}
-.forvheipan				{font-family: "Leander", Pterra; font-size: 120%;}
+.forvheipan				{font-family: "Caslame", Pterra; font-size: 120%;}
 
 .torture				{color: #42ff20}
 
