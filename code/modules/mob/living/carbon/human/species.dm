@@ -125,8 +125,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	/// List of bodypart features of this species
 	var/list/bodypart_features
 
-	var/list/allowed_taur_types = list()
-
 	/// List of descriptor choices this species gets in preferences customization
 	var/list/descriptor_choices = list(
 		/datum/descriptor_choice/height,
@@ -251,9 +249,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 /datum/species/proc/get_skin_list()
 	return GLOB.skin_tones
-
-/datum/species/proc/get_taur_list()
-	return allowed_taur_types
 
 /datum/species/proc/get_hairc_list()
 	return GLOB.haircolor
@@ -579,7 +574,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/is_inhumen = HAS_TRAIT(H, TRAIT_INHUMEN_ANATOMY)
 	var/num_arms = H.get_num_arms(FALSE)
 	var/num_legs = H.get_num_legs(FALSE)
-	var/is_taur = !!H.get_taur_tail()
 
 	switch(slot)
 		if(SLOT_HANDS)
@@ -666,7 +660,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(SLOT_SHOES)
 			if(H.shoes)
 				return FALSE
-			if(is_nudist || is_inhumen || is_taur)
+			if(is_nudist || is_inhumen)
 				return FALSE
 			if( !(I.slot_flags & ITEM_SLOT_SHOES) )
 				return FALSE
@@ -1649,7 +1643,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	I.funny_attack_effects(H, user, nodmg)
 
-	H.send_item_attack_message(I, user, parse_zone(selzone, affecting))
+	H.send_item_attack_message(I, user, parse_zone(selzone))
 
 	if(nodmg)
 		return FALSE //dont play a sound

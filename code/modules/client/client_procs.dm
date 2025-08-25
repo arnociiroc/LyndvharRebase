@@ -90,8 +90,6 @@ GLOBAL_LIST_EMPTY(respawncounts)
 	// Tgui Topic middleware
 	if(tgui_Topic(href_list))
 		return
-	if(href_list["reload_tguipanel"])
-		nuke_chat()
 	//Logs all hrefs, except chat pings
 	if(!(href_list["_src_"] == "chat" && href_list["proc"] == "ping" && LAZYLEN(href_list) == 2))
 		log_href("[src] (usr:[usr]\[[COORD(usr)]\]) : [hsrc ? "[hsrc] " : ""][href]")
@@ -155,6 +153,8 @@ GLOBAL_LIST_EMPTY(respawncounts)
 			return
 		if("vars")
 			return view_var_Topic(href,href_list,hsrc)
+		if("chat")
+			return chatOutput.Topic(href, href_list)
 
 	switch(href_list["action"])
 		if("openLink")
@@ -733,6 +733,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 /client/New(TopicData)
 	var/tdata = TopicData //save this for later use
+	chatOutput = new /datum/chatOutput(src)
 	TopicData = null							//Prevent calls to client.Topic from connect
 
 	if(connection != "seeker" && connection != "web")//Invalid connection type.
@@ -785,8 +786,9 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	prefs.last_id = computer_id			//these are gonna be used for banning
 	fps = prefs.clientfps
 
-	// Instantiate tgui panel
-	tgui_panel = new(src, "browseroutput")
+	if(prefs.prefer_old_chat == FALSE)
+		spawn() // Goonchat does some non-instant checks in start()
+			chatOutput.start()
 
 	if(fexists(roundend_report_file()))
 		verbs += /client/proc/show_previous_roundend_report
@@ -862,8 +864,6 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	if(alert_mob_dupe_login)
 		spawn()
 			alert(mob, "You have logged in already with another key this round, please log out of this one NOW or risk being banned!")
-
-	tgui_panel.initialize()
 
 	connection_time = world.time
 	connection_realtime = world.realtime
@@ -1055,7 +1055,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 	GLOB.ahelp_tickets.ClientLogout(src)
 	GLOB.directory -= ckey
 	GLOB.clients -= src
-	QDEL_NULL(tgui_panel)
+	QDEL_NULL(chatOutput)
 	QDEL_LIST_ASSOC_VAL(char_render_holders)
 	if(movingmob != null)
 		movingmob.client_mobs_in_contents -= mob
@@ -1553,18 +1553,6 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 /client/proc/show_character_previews(mutable_appearance/MA)
 	var/pos = 0
-
-	var/atom/movable/screen/char_preview/background = LAZYACCESS(char_render_holders, "bg")
-	if(background)
-		screen -= background
-		char_render_holders -= background
-		qdel(background)
-	background = new()
-	LAZYSET(char_render_holders, "bg", background)
-	screen += background
-	background.screen_loc = "character_preview_map:0,0 to 3,3"
-
-	// not cardinal anymore, makes taurs more clear
 	for(var/D in GLOB.cardinals)
 		pos++
 		var/atom/movable/screen/char_preview/O = LAZYACCESS(char_render_holders, "[D]")
@@ -1579,13 +1567,13 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		O.dir = D
 		switch(pos)
 			if(1)
-				O.screen_loc = "character_preview_map:2,2"
+				O.screen_loc = "character_preview_map:1:2,2:-18"
 			if(2)
-				O.screen_loc = "character_preview_map:1,2"
+				O.screen_loc = "character_preview_map:0:2,2:-18"
 			if(3)
-				O.screen_loc = "character_preview_map:1,1"
+				O.screen_loc = "character_preview_map:1:2,0:10"
 			if(4)
-				O.screen_loc = "character_preview_map:2,1"
+				O.screen_loc = "character_preview_map:0:2,0:10"
 
 /client/proc/clear_character_previews()
 	for(var/atom/movable/screen/S in char_render_holders)

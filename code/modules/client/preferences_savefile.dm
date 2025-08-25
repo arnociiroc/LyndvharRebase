@@ -198,6 +198,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["shake"]				>> shake
 	S["mastervol"]			>> mastervol
 	S["lastclass"]			>> lastclass
+	S["prefer_old_chat"]	>> prefer_old_chat
 
 
 	S["default_slot"]		>> default_slot
@@ -344,6 +345,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["pda_style"], pda_style)
 	WRITE_FILE(S["pda_color"], pda_color)
 	WRITE_FILE(S["key_bindings"], key_bindings)
+	WRITE_FILE(S["prefer_old_chat"], prefer_old_chat)
 	return TRUE
 
 
@@ -465,8 +467,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["voice_type"]			>> voice_type
 	S["nickname"]			>> nickname
 	S["highlight_color"]	>> highlight_color
-	S["taur_type"]			>> taur_type
-	S["taur_color"]			>> taur_color
 
 /datum/preferences/proc/load_character(slot)
 	if(!path)
@@ -613,11 +613,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["mcolor3"]	= sanitize_hexcolor(features["mcolor3"], 6, 0)
 	features["ethcolor"]	= copytext(features["ethcolor"],1,7)
 	features["feature_lizard_legs"]	= sanitize_inlist(features["legs"], GLOB.legs_list, "Normal Legs")
-	var/list/valid_taur_types = pref_species.get_taur_list()
-	if(!(taur_type in valid_taur_types))
-		taur_type = null
-	taur_color = sanitize_hexcolor(taur_color, 6, 0)
-
 	S["body_markings"] >> body_markings
 	body_markings = SANITIZE_LIST(body_markings)
 	validate_body_markings()
@@ -677,17 +672,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["backpack"]			, backpack)
 	WRITE_FILE(S["jumpsuit_style"]		, jumpsuit_style)
 	WRITE_FILE(S["uplink_loc"]			, uplink_spawn_loc)
-	WRITE_FILE(S["randomise"]			, randomise)
-	WRITE_FILE(S["species"]				, pref_species.name)
+	WRITE_FILE(S["randomise"]		, randomise)
+	WRITE_FILE(S["species"]			, pref_species.name)
 	WRITE_FILE(S["charflaw"]			, charflaw.type)
-	WRITE_FILE(S["feature_mcolor"]		, features["mcolor"])
-	WRITE_FILE(S["feature_mcolor2"]		, features["mcolor2"])
-	WRITE_FILE(S["feature_mcolor3"]		, features["mcolor3"])
-	WRITE_FILE(S["feature_ethcolor"]	, features["ethcolor"])
+	WRITE_FILE(S["feature_mcolor"]					, features["mcolor"])
+	WRITE_FILE(S["feature_mcolor2"]					, features["mcolor2"])
+	WRITE_FILE(S["feature_mcolor3"]					, features["mcolor3"])
+	WRITE_FILE(S["feature_ethcolor"]					, features["ethcolor"])
 	WRITE_FILE(S["nickname"]			, nickname)
 	WRITE_FILE(S["highlight_color"]		, highlight_color)
-	WRITE_FILE(S["taur_type"]			, taur_type)
-	WRITE_FILE(S["taur_color"]			, taur_color)
 
 	//Custom names
 	for(var/custom_name_id in GLOB.preferences_custom_names)
@@ -746,6 +739,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		WRITE_FILE(S["loadout3"] , loadout3.type)
 	else
 		WRITE_FILE(S["loadout3"] , null)
+
 
 	return TRUE
 
