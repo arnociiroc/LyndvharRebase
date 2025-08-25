@@ -12,7 +12,7 @@
 	outfit = /datum/outfit/job/roguetown/mercenary/rumaclan
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_OUTLANDER)
-	cmode_music = 'sound/music/combat_kazengite.ogg'
+	cmode_music = 'sound/music/combat_saltlia.ogg'
 	classes = list("Gun-in" = "You are well versed and experienced in swordfighting, you have no problem in taking up most jobs so long as the coin is good, for either yourself or the clan and the seonjang.",
 					"Sasu" = "You are an archer of the clan, many have called you an true marksman for your skills with the bow. You have no problem in taking up most jobs so long as the coin is good, for either yourself or the clan and the seonjang.")
 /datum/outfit/job/roguetown/mercenary/rumaclan/pre_equip(mob/living/carbon/human/H)
