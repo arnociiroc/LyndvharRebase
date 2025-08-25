@@ -1,4 +1,4 @@
-/proc/browser_input_text(mob/user, message = "", title = "", default, max_length = MAX_MESSAGE_LEN, multiline = FALSE, encode = TRUE, timeout = 0, placeholder = "")
+/proc/browser_input_text(mob/user, message = "", title = "", default, max_length = MAX_MESSAGE_LEN, multiline = FALSE, encode = TRUE, timeout = 0, placeholder = "", savemode = FALSE)
 	if(!user)
 		user = usr
 	if(!istype(user))
@@ -11,7 +11,7 @@
 	if(isnull(user.client))
 		return null
 
-	var/datum/browser/modal/input_text/input = new(user, message, title, default, max_length, multiline, encode, timeout, placeholder)
+	var/datum/browser/modal/input_text/input = new(user, message, title, default, max_length, multiline, encode, timeout, placeholder, savemode)
 	input.open()
 	input.wait()
 	if(input)
@@ -23,8 +23,10 @@
 	var/encode = TRUE
 	/// If set, the output cannot be longer than this.
 	var/max_length = INFINITY
+	/// If TRUE, only shows a single input button. Meant for specific use cases.
+	var/savemode = FALSE
 
-/datum/browser/modal/input_text/New(mob/user, message, title, default, max_length, multiline, encode, timeout, placeholder)
+/datum/browser/modal/input_text/New(mob/user, message, title, default, max_length, multiline, encode, timeout, placeholder, savemode)
 	if(!user)
 		closed = TRUE
 		return
@@ -94,15 +96,16 @@
 			autofocus>[html_encode(default)]</textarea>
 
 		<div style="display: flex; justify-content: space-between; align-items: center; text-align: center;">
-			<button id="submitButton" type="submit" name="submit" value="[TRUE]">[CHOICE_CONFIRM]</button>
-			[NULLABLE(isnum(max_length)) && {"
+			[NULLABLE(!savemode) && {"<button id="submitButton" type="submit" name="submit" value="[TRUE]">[CHOICE_CONFIRM]</button>"}]
+			[NULLABLE(isnum(max_length) && !savemode) && {"
 			<div>
 				<span id="charCount">[length(default)]</span>
 				/
 				<span id="maxChars">[max_length]</span>
 			</div>
 			"}]
-			<button id="cancelButton" type="submit" name="cancel" value="[TRUE]" formnovalidate>[CHOICE_CANCEL]</button>
+			[NULLABLE(savemode) && {"<div style = "align-items: center;"> <button id="submitButton" type="submit" name="submit" value="[TRUE]">[CHOICE_SAVE]</button> </div>"}]
+			[NULLABLE(!savemode) && {"<button id="cancelButton" type="submit" name="cancel" value="[TRUE]" formnovalidate>[CHOICE_CANCEL]</button> "}]
 		</div>
 	</form>
 	"})
