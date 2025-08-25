@@ -129,4 +129,4 @@
 					H.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 					r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 					backl = /obj/item/quiver/arrows
-
+	H.grant_language(/datum/language/zybanti)
