@@ -214,6 +214,78 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Maniac"
 	musicpath = list('sound/music/combat_maniac.ogg')
 
+	/datum/combat_music/maniac_two
+	name = "Maniac (Alt)"
+	desc = "Driven by an endless, never-satiated spree for death. They will wake up."
+	shortname = "Maniac2"
+	musicpath = list('sound/music/combat_maniac2.ogg')
+
+	/datum/combat_music/martyrsafe
+	name = "Martyr"
+	desc = "You will see yourself sacrificed for the betterment of the whole."
+	shortname = "Martyr"
+	musicpath = list('sound/music/combat_martyrsafe.ogg')
+
+	/datum/combat_music/matthios
+	name = "Matthios"
+	desc = "Envy is your calling- their riches are yours."
+	shortname = "Matthios"
+	musicpath = list('sound/music/combat_matthios.ogg')
+
+	/datum/combat_music/noble
+	name = "Nobility"
+	desc = "A pleasing melody upon the ears- one that serves you."
+	shortname = "Noble"
+	musicpath = list('sound/music/combat_noble.ogg')
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
 	/datum/combat_music/default
 	name = "Default"
 	desc = "I let my current status sing for itself; its song will change dynamically."
