@@ -9,7 +9,7 @@
 	space_chance = 80
 	default_priority = 90
 	icon_state = "asse"
-	spans = list(SPAN_LUPIAN)
+	spans = list(SPAN_FORVHEIPAL)
 	syllables = list(
 		"rah","mur","ru","ke","grok","wen","tot","sch",
 		"grst","crentz","cet","waz","et","du","kor","heizt","loch","jach","qet","anzhem","icht",
