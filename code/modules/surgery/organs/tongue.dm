@@ -25,7 +25,7 @@
 		/datum/language/dunargi,
 		/datum/language/rhaenvalian,
 		/datum/language/kargradi,
-		/datum/language/canilunzt
+		/datum/language/forvhish
 	))
 
 /obj/item/organ/tongue/Initialize(mapload)

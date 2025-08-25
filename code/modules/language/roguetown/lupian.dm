@@ -1,5 +1,5 @@
-/datum/language/canilunzt
-	name = "Canilunzt"
+/datum/language/forvhish
+	name = "Forvhish"
 	desc = "A somewhat simple language consisting of heavily articulate barks, growls, yaps, and combined movements of the tail and ears. It's natively spoken by the Lupian and Vulpkian of Forvheipal."
 	speech_verb = "rrrfts"
 	ask_verb = "rurs"
