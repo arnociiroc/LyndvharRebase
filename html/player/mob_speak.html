@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+				
+					
+	<script type="text/javascript">
+		addEventListener("DOMContentLoaded", function(){
+			const textEntry = document.querySelector("#entry");
+			const submitButton = document.querySelector("#submitButton");
+			const cancelButton = document.querySelector("#cancelButton");
+
+			
+				textEntry.addEventListener('keydown', function(event){
+					switch(event.which){
+						case 13: 
+							event.preventDefault();
+							if(!event.shiftKey){
+								submitButton.click();
+							}
+							break;
+
+						case 27: 
+							cancelButton.click();
+							break;
+					}
+				})
+			
+
+			
+				const charCount = document.querySelector("#charCount");
+				const maxChars = document.querySelector("#maxChars");
+				maxChars.innerHTML = 1824
+
+				textEntry.addEventListener('input', function(event){
+					charCount.innerHTML = event.target.value.length;
+				})
+			
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="speak_files/asset.f072178458298a614fecbf991b93e465.css">
+				</head>
+				<body scroll="auto">
+					<div class="uiWrapper">
+						<div class="uiSpacing">
+							
+	<form style="display: flex; flex-direction: column; height: 100%;" action="byond://">
+		<input type="hidden" name="src" value="[0x21001936]">
+
+		<center><b>SPEAK YOUR MIND</b></center>
+
+		<textarea id="entry" style="
+				overflow-y: auto;
+				margin: auto 0;
+				height: 1rem;" name="choice" maxlength="1824" placeholder="SAY IT LOUDER..." autofocus=""></textarea>
+
+		<div style="display: flex; justify-content: space-between; align-items: center; text-align: center;">
+			<button id="submitButton" type="submit" name="submit" value="1">MAKE IT SO</button>
+			
+			<div>
+				<span id="charCount">0</span>
+				/
+				<span id="maxChars">1824</span>
+			</div>
+			
+			<button id="cancelButton" type="submit" name="cancel" value="1" formnovalidate="">I RESCIND</button>
+		</div>
+	</form>
+	
+						</div>
+					</div>
+				
+			</body></html>

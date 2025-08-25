@@ -56,7 +56,7 @@
 			mod = 10
 		if(selection == "SILVER")
 			mod = 5
-		var/coin_amt = text2num(browser_input_text(user, "There is [SStreasury.treasury_value] mammon in the treasury. <br> You may withdraw [floor(amt/mod)] [selection] COINS from your account."))
+		var/coin_amt = text2num(browser_input_text(user, "There is [SStreasury.treasury_value] mammon in the treasury. <br> You may withdraw [floor(amt/mod)] [selection] COINS from your account.", "", "", "", FALSE, FALSE, placeholder = "MAMMON MATTERS..."))
 		coin_amt = round(coin_amt)
 		if(coin_amt < 1)
 			return
