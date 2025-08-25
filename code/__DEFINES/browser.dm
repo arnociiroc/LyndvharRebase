@@ -3,6 +3,8 @@
 #define NULLABLE(condition) (condition || null)
 #define CHOICE_OK "SO BE IT"
 
+#define CHOICE_SAVE "KEEP IT SAFE"
+
 #define CHOICE_YES "MAKE IT SO"
 #define CHOICE_NO "IT SHALL NOT BE"
 #define CHOICE_NEVER "BEGONE, NEVER AGAIN"

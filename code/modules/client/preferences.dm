@@ -1703,7 +1703,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					popup.open(FALSE)
 				if("flavortext")
 					to_chat(user, "<span class='notice'>["<span class='bold'>Flavortext should not include nonphysical nonsensory attributes such as backstory or the character's internal thoughts.</span>"]</span>")
-					var/new_flavortext = browser_input_text(user, "INPUT THE DESCRIPTION:", "WHAT'S ON THE SURFACE?", flavortext, "", encode = FALSE, multiline = TRUE)
+					var/new_flavortext = input(user, "Input your character description:", "Flavortext", flavortext) as message|null
 					if(new_flavortext == null)
 						return
 					if(new_flavortext == "")
@@ -1722,7 +1722,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					log_game("[user] has set their flavortext'.")
 				if("ooc_notes")
 					to_chat(user, "<span class='notice'>["<span class='bold'>If you put 'anything goes' or 'no limits' here, do not be surprised if people take you up on it.</span>"]</span>")
-					var/new_ooc_notes = browser_input_text(user, "INPUT YOUR PREFERENCE:", "OOC NOTES", ooc_notes, "", encode = FALSE, multiline = TRUE)
+					var/new_ooc_notes = input(user, "Input your OOC preferences:", "OOC notes", ooc_notes) as message|null
 					if(new_ooc_notes == null)
 						return
 					if(new_ooc_notes == "")
