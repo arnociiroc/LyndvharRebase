@@ -19,12 +19,14 @@
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 	deathsight_message = "a twisted tangle of soaring peaks"
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 /area/rogue/indoors/shelter/mountains/decap
 	icon_state = "decap"
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 
 /area/rogue/outdoors/mountains/decap/stepbelow
@@ -46,6 +48,7 @@
 	first_time_text = "SCORCHED CALDERA"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 /area/rogue/outdoors/mountains/decap/gunduzirak
 	name = "Ruins of Khuufvale"
@@ -63,6 +66,7 @@
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 	ceiling_protected = TRUE
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 /area/rogue/outdoors/mountains/decap/gunduzirak/bossarena
 	name = "Baronness Boss Arena"
@@ -81,7 +85,7 @@
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/dungeon1
 	ceiling_protected = TRUE
-	deathsight_message = "a twisted arena of drakeflame"
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 /area/rogue/under/cave/dragonden/can_craft_here()
 	return FALSE
@@ -96,6 +100,7 @@
 	converted_type = /area/rogue/outdoors/dungeon1
 	ceiling_protected = TRUE
 	deathsight_message = "a twisted tangle of soaring peaks"
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 /area/rogue/under/cave/scarymaze
 	name = "hauntedlabyrinth"
@@ -107,6 +112,7 @@
 	converted_type = /area/rogue/outdoors/dungeon1
 	ceiling_protected = TRUE
 	deathsight_message = "a twisted tangle of soaring peaks"
+	threat_region = THREAT_REGION_MOUNT_DECAP
 
 /area/rogue/outdoors/mountains/decap/minotaurfort
 	name = "Minotaur Fort"
@@ -118,3 +124,4 @@
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 	ceiling_protected = TRUE
+	threat_region = THREAT_REGION_MOUNT_DECAP
