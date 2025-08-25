@@ -61,6 +61,11 @@ body {
 	src: url('kargradi.ttf');
 }
 
+@font-face {
+	font-family: "Emperialisme";
+	src: url('forvheipan.ttf');
+}
+
 /* */
 
 em {
