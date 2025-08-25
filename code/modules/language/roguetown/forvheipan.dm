@@ -11,12 +11,12 @@
 	icon_state = "asse"
 	spans = list(SPAN_FORVHEIPAL)
 	syllables = list(
-		"rah","mur","ru","ke","grok","wen","tot","sch",
-		"grst","crentz","cet","waz","et","du","kor","heizt","loch","jach","qet","anzhem","icht",
-		"unt","kech","gech","flei","deint","weim","kan","neiz","mende","lak","jen","gor","bor",
-		"kol","hau","au","vau","amh","av","vogh","guau","hev","haf","auh","bhao","jau","yar","owff",
+		"rah","mur","ru","ke","grok","kto","martwy","cii",
+		"naj","crentz","itp","waz","it","ty","kor","nagrzewa","otwor","tak","qet","anzhem","nie",
+		"strak","zdziwienia","gech","twardy","twoj","moc","kan","nie","mende","lak","jen","gor","bor",
+		"przelecz","rabac","och","wow","amh","sr","voc","guau","hew","haf","auh","bhao","skowyt","jar","uff",
 		"ghav","buh","rur","ya","cen","bar","kuk","tek","qat","uk","wu","vuh","tah","tch","schz",
-		"auch","ist","ein","entch","zwichs","tut","mir","wo","bis","es","vor","nic","gro","ill",
-		"enem","zandt","tzch","noch","hel","ischt","far","wa","baram","iereng","tech","lach","sam",
-		"mak","lich","gen","or","ag","eck","gec","stag","onn","bin","ket","einech","cresthz","azunein","ghzth"
+		"rowniez","jast","a","uwiezjc","miedzy","tut","ja","gdzie","dopoki","to","zanim","nic","swietnie","chory",
+		"enem","piasek","dziekuje","juz","pieklo","jest","far","wa","baram","iereng","tech","lach","sam",
+		"mak","swiatlo","gen","lub","ag","narzonik","pozno","jelen","onn","jestem","ket","te","cresthz","azuno","ghz"
 	)
