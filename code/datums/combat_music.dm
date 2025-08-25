@@ -412,68 +412,68 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Acolyte"
 	musicpath = list('sound/music/cmode/church/combat_acolyte.ogg')
 
-	/datum/combat_music/default
+	/datum/combat_music/astrata
 	name = "Astrata"
 	desc = "The tyranny of the Sun grows brighter."
 	shortname = "Astrata"
-	musicpath = list('sound/music/cmode/church/')
+	musicpath = list('sound/music/cmode/church/combat_astrata.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list('sound/music/cmode/church/')
+	/datum/combat_music/eora
+	name = "Eora"
+	desc = "Must you really fight?"
+	shortname = "Eora"
+	musicpath = list('sound/music/cmode/church/combat_eora.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list('sound/music/cmode/church/')
+	/datum/combat_music/necra
+	name = "Necra"
+	desc = "They won't get to the Veil on their own, after all."
+	shortname = "Necra"
+	musicpath = list('sound/music/cmode/church/combat_necra.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list('sound/music/cmode/church/')
+	/datum/combat_music/reckoning
+	name = "Reckoning"
+	desc = "There will be a reckoning upon this house."
+	shortname = "Reckoning"
+	musicpath = list('sound/music/cmode/church/combat_reckoning.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/wardenforest
+	name = "Forestry"
+	desc = "The woods call for you- Dendor's words, likely."
+	shortname = "Forestry"
+	musicpath = list('sound/music/cmode/garrison/combat_warden.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/courtmage
+	name = "Magician"
+	desc = "A magician never tells their secrets."
+	shortname = "Magician"
+	musicpath = list('sound/music/cmode/nobility/combat_courtmage.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/spymaster
+	name = "Spymaster"
+	desc = "An ever-looking eye behind the keyhole."
+	shortname = "Spy"
+	musicpath = list('sound/music/cmode/nobility/combat_spymaster.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/retired
+	name = "Retired"
+	desc = "You've grown too old for this stupid shite."
+	shortname = "Retired"
+	musicpath = list('sound/music/cmode/towner/combat_retired.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/towner
+	name = "Villager"
+	desc = "A nobody who believes they will be something one day."
+	shortname = "Towner"
+	musicpath = list('sound/music/cmode/towner/combat_towner.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/towner2
+	name = "Villager 2"
+	desc = "A nobody who believes they will be something one day."
+	shortname = "Towner2"
+	musicpath = list('sound/music/cmode/towner/combat_towner2.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/towner3
+	name = "Villager 3"
+	desc = "A nobody who believes they will be something one day."
+	shortname = "Towner3"
+	musicpath = list('sound/music/cmode/towner/combat_towner2.ogg')
