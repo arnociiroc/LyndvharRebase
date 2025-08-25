@@ -416,8 +416,8 @@
 	effectedstats = list("intelligence" = -10)
 
 /atom/movable/screen/alert/status_effect/knot_fucked_stupid
-	name = "Fucked Stupid"
-	desc = "Mmmph I can't think straight..."
+	name = "Braindead"
+	desc = "I am having difficulty thinking.."
 
 /datum/status_effect/knot_gaped
 	id = "knot_gaped"
@@ -442,7 +442,7 @@
 
 /atom/movable/screen/alert/status_effect/knot_gaped
 	name = "Gaped"
-	desc = "You were forcefully withdrawn from. Warmth runs freely down your thighs..."
+	desc = "You were forcefully withdrawn from."
 
 /datum/status_effect/knotted
 	id = "knotted"
