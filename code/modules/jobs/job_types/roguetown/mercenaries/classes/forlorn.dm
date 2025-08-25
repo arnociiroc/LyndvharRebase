@@ -114,3 +114,4 @@
 				if("Volfplate Helmet")
 					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/helmet/heavy/volfplate, SLOT_HEAD, TRUE)
 					H.equip_to_slot_or_del(new /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant, SLOT_WEAR_MASK, TRUE)
+	H.grant_language(/datum/language/forvheipan)
