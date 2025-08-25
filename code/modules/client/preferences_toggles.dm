@@ -614,3 +614,17 @@ GLOBAL_LIST_INIT(ghost_orbits, list(GHOST_ORBIT_CIRCLE,GHOST_ORBIT_TRIANGLE,GHOS
 		return
 	prefs.asaycolor = initial(prefs.asaycolor)
 	prefs.save_preferences()
+/client/proc/set_ui_theme()
+	set name = "Toggle UI theme"
+	set desc = "Toggle UI theme"
+	set category = "Prefs - Admin"
+	if(!holder)
+		return
+
+	if(prefs.ui_theme == UI_PREFERENCE_LIGHT_MODE)
+		prefs.ui_theme = UI_PREFERENCE_DARK_MODE
+	else
+		prefs.ui_theme = UI_PREFERENCE_LIGHT_MODE
+
+	to_chat(src, span_notice("UI theme switched to [prefs.ui_theme]"))
+

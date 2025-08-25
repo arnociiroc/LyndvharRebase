@@ -18,15 +18,14 @@ GLOBAL_VAR(lordsecondary)
 
 /mob/proc/lord_color_choice()
 	if(!client)
-		addtimer(CALLBACK(src, PROC_REF(lord_color_choice)), 50)
+		addtimer(CALLBACK(src, PROC_REF(lord_color_choice)), 5 SECONDS)
 		return
 	var/prim
 	var/sec
-	var/choice = input(src, "Choose a Primary Color", "LYNDVHAR") as anything in colorlist
+	var/choice = browser_input_list(src, "Choose a Primary Color", "HERALD THINE KINGDOM", colorlist)
 	if(choice)
 		prim = colorlist[choice]
-		colorlist -= choice
-	choice = input(src, "Choose a Secondary Color", "LYNDVHAR") as anything in colorlist
+	choice = browser_input_list(src, "Choose a Secondary Color", "HERALD THINE KINGDOM", colorlist)
 	if(choice)
 		sec = colorlist[choice]
 	if(!prim || !sec)

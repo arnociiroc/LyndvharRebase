@@ -9,7 +9,7 @@
 	set category = "IC"
 	
 	display_typing_indicator()
-	var/message = input(usr, "", "say") as text|null
+	var/message = browser_input_text(usr, "SPEAK YOUR MIND", "", placeholder = "SAY IT LOUDER...", encode = FALSE, max_length = 1824)
 	// If they don't type anything just drop the message.
 	clear_typing_indicator()
 	if(!length(message))
@@ -52,7 +52,7 @@
 	set category = "IC"
 
 	display_typing_indicator()
-	var/message = input(usr, "", "me") as text|null
+	var/message = browser_input_text(usr, "EMOTE - ACT - PERFORM", "", "", 1824, FALSE, FALSE, placeholder = "DANCE FOR THEM...") 
 	// If they don't type anything just drop the message.
 	clear_typing_indicator()		// clear it immediately!
 	if(!length(message))
@@ -87,7 +87,7 @@
 	set hidden = 1
 
 	display_typing_indicator()
-	var/message = input(usr, "", "me") as message|null
+	var/message = browser_input_text(usr, "A GRANDIOSE DISPLAY", "A LOT TO PERFORM", "", 1824, TRUE, FALSE, placeholder = "MANY WORDS MAKE A PLAY...") 
 	// If they don't type anything just drop the message.
 	clear_typing_indicator()
 	if(!length(message))

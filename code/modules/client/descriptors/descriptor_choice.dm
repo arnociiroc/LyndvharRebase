@@ -339,42 +339,42 @@
 	/datum/mob_descriptor/prominent/vulpine_features
 
 /datum/descriptor_choice/prominent_one
-	name = "Prominent #1"
+	name = "First Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/unkempt
 	descriptors = list(PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_two
-	name = "Prominent #2"
+	name = "Second Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/dim_look
 	descriptors = list(PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_three
-	name = "Prominent #3"
+	name = "Third Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/none
 	descriptors = list(/datum/mob_descriptor/prominent/none, PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_four
-	name = "Prominent #4"
+	name = "Fourth Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/none
 	descriptors = list(/datum/mob_descriptor/prominent/none, PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_one_wild
-	name = "Prominent #1"
+	name = "First Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/unkempt
 	descriptors = list(PROMINENT_WILDKIN, PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_two_wild
-	name = "Prominent #2"
+	name = "Second Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/dim_look
 	descriptors = list(PROMINENT_WILDKIN, PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_three_wild
-	name = "Prominent #3"
+	name = "Third Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/none
 	descriptors = list(/datum/mob_descriptor/prominent/none, PROMINENT_WILDKIN, PROMINENT_DESCRIPTORS)
 
 /datum/descriptor_choice/prominent_four_wild
-	name = "Prominent #4"
+	name = "Fourth Feature"
 	default_descriptor = /datum/mob_descriptor/prominent/none
 	descriptors = list(/datum/mob_descriptor/prominent/none, PROMINENT_WILDKIN, PROMINENT_DESCRIPTORS)
 

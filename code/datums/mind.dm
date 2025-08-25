@@ -768,7 +768,7 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 		var/obj/effect/proc_holder/spell/S = X
 		S.action.Grant(new_character)
 
-/datum/mind/proc/disrupt_spells(delay, list/exceptions = New())
+/datum/mind/proc/disrupt_spells(delay, list/exceptions = list())
 	for(var/X in spell_list)
 		var/obj/effect/proc_holder/spell/S = X
 		for(var/type in exceptions)
