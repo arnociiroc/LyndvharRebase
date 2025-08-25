@@ -23,4 +23,5 @@
 		"rhaenvalian.ttf" = 'interface/fonts/languages/rhaenvalian.ttf',
 		"kargradi.ttf" = 'interface/fonts/languages/kargradi.ttf',
 		"forvheipan.ttf" = 'interface/fonts/languages/forvheipan.ttf',
+		"zybanti.ttf" = 'interface/fonts/languages/zybanti.otf',
 	)

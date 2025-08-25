@@ -66,6 +66,11 @@ body {
 	src: url('forvheipan.ttf');
 }
 
+@font-face {
+	font-family: "Persian";
+	src: url('zybanti.otf');
+}
+
 /* */
 
 em {
