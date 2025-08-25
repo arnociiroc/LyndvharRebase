@@ -166,53 +166,53 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Heretic"
 	musicpath = list('sound/music/combat_heretic.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/holy
+	name = "Holy Devout"
+	desc = "The pantheon speaks through you- and all around you."
+	shortname = "Holy"
+	musicpath = list('sound/music/combat_holy.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/inqold
+	name = "Inquisition (Old)"
+	desc = "A reckoning comes before this realm- Psydon's will."
+	shortname = "Inqold"
+	musicpath = list('sound/music/combat_inqold.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/ordinator
+	name = "Inquisition (Ordinator)"
+	desc = "A reckoning comes before this realm- Psydon's will."
+	shortname = "Inqord"
+	musicpath = list('sound/music/combat_inqordinator.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/jester
+	name = "Jester"
+	desc = "Laughter echoes throughout these halls."
+	shortname = "Jester"
+	musicpath = list('sound/music/combat_jester.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/khazumite
+	name = "Khazumite"
+	desc = "How did you even get here, I wonder..? It matters little."
+	shortname = "Khazumite"
+	musicpath = list('sound/music/combat_khazumite.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/knight
+	name = "Knightly Oath"
+	desc = "You swore an oath and you will see it upheld."
+	shortname = "Knight"
+	musicpath = list('sound/music/combat_knight.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/manatarms
+	name = "Man-At-Arms"
+	desc = "It is your watch that protects this realm. (Old Garrison)"
+	shortname = "MAA"
+	musicpath = list('sound/music/combat_ManAtArms.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/maniac
+	name = "Maniac"
+	desc = "Driven by an endless, never-satiated spree for death. They will wake up."
+	shortname = "Maniac"
+	musicpath = list('sound/music/combat_maniac.ogg')
 
 	/datum/combat_music/default
 	name = "Default"
