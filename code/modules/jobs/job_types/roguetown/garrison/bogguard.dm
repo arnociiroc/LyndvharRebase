@@ -88,6 +88,7 @@
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_WOODSMAN, TRAIT_GENERIC)
 	H.set_blindness(0)
 
 	var/helmets = list(
@@ -158,6 +159,7 @@
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_WOODSMAN, TRAIT_GENERIC)
 	H.set_blindness(0)
 
 	var/helmets = list(
