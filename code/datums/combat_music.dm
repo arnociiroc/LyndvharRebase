@@ -400,6 +400,54 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Wall"
 	musicpath = list('sound/music/cmode/antag/combat_thewall.ogg')
 
+	/datum/combat_music/thrall
+	name = "Enthralled"
+	desc = "Possessed by some means- doomed to be driven to your death."
+	shortname = "Thrall"
+	musicpath = list('sound/music/cmode/antag/combat_thrall.ogg')
+
+	/datum/combat_music/acolyte
+	name = "Acolyte"
+	desc = "Serve the Ten faithfully- and be rewarded."
+	shortname = "Acolyte"
+	musicpath = list('sound/music/cmode/church/combat_acolyte.ogg')
+
+	/datum/combat_music/default
+	name = "Astrata"
+	desc = "The tyranny of the Sun grows brighter."
+	shortname = "Astrata"
+	musicpath = list('sound/music/cmode/church/')
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list('sound/music/cmode/church/')
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list('sound/music/cmode/church/')
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list('sound/music/cmode/church/')
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
+	/datum/combat_music/default
+	name = "Default"
+	desc = "I let my current status sing for itself; its song will change dynamically."
+	shortname = "Default"
+	musicpath = list()
+
 	/datum/combat_music/default
 	name = "Default"
 	desc = "I let my current status sing for itself; its song will change dynamically."
