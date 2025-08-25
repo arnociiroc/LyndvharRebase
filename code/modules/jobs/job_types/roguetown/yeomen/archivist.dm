@@ -59,7 +59,9 @@
 	H.grant_language(/datum/language/dunargi)
 	H.grant_language(/datum/language/saltlian)
 	H.grant_language(/datum/language/draconic)
-	H.grant_language(/datum/language/kargradi) // All but beast, which is associated with werewolves.
+	H.grant_language(/datum/language/kargradi)
+	H.grant_language(/datum/language/forvheipan)
+	H.grant_language(/datum/language/zybanti)  // All but beast, which is associated with werewolves.
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, "[type]")
 	ADD_TRAIT(H, TRAIT_INTELLECTUAL, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
@@ -136,7 +138,15 @@
 	/datum/language/elvish,
 	/datum/language/grenzelhoftian,
 	/datum/language/hellspeak,
-	/datum/language/orcish
+	/datum/language/orcish,
+	/datum/language/valorian,
+	/datum/language/rhaenvalian,
+	/datum/language/dunargi,
+	/datum/language/saltlian,
+	/datum/language/draconic,
+	/datum/language/kargradi,
+	/datum/language/forvheipan,
+	/datum/language/zybanti
 
 
     )
