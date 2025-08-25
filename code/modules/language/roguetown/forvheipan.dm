@@ -1,4 +1,4 @@
-/datum/language/forvhish
+/datum/language/forvheipan
 	name = "Forvheipan"
 	desc = "A somewhat simple language consisting of heavily articulate sounds, vocalizations, noises, and combined movements of the tail and ears- if any. It's natively spoken by the Lupian and Vulpkian of Forvheipal."
 	speech_verb = "rrrfts"
