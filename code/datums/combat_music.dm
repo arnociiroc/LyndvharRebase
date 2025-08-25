@@ -238,29 +238,167 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Noble"
 	musicpath = list('sound/music/combat_noble.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/orthodoxist
+	name = "Orthodoxy"
+	desc = "Psydon's will is your beck and call- and you serve."
+	shortname = "Orthodoxy"
+	musicpath = list('sound/music/combat_orthodoxist.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/ozium
+	name = "Ozium"
+	desc = "Perhaps you've taken too much of this stuff.."
+	shortname = "Ozium"
+	musicpath = list('sound/music/combat_ozium.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/physician
+	name = "Physicker"
+	desc = "And that's how I lost my medical license!"
+	shortname = "Physician"
+	musicpath = list('sound/music/combat_physician.ogg')
 
-	/datum/combat_music/default
-	name = "Default"
-	desc = "I let my current status sing for itself; its song will change dynamically."
-	shortname = "Default"
-	musicpath = list()
+	/datum/combat_music/poacher
+	name = "Poacher"
+	desc = "An arrow let loose from its bow- into the heart of the saiga. Nobody will miss this one- even if it's not your woods."
+	shortname = "Poacher"
+	musicpath = list('sound/music/combat_poacher.ogg')
+
+	/datum/combat_music/psydonia
+	name = "Psydonian Templar"
+	desc = "Ordinator of the One - Follower of Him."
+	shortname = "Psydonite"
+	musicpath = list('sound/music/combat_psydonia.ogg')
+
+	/datum/combat_music/routier
+	name = "Valorian"
+	desc = "The brethren song of the brothers and sisters of Valoria. Many are the Routier."
+	shortname = "Routier"
+	musicpath = list('sound/music/combat_routier.ogg')
+
+	/datum/combat_music/saltlia
+	name = "Saltlia"
+	desc = "The melody of the Xingyi beckons to you. Perhaps the will can be enforced this far west."
+	shortname = "Saltlia"
+	musicpath = list('sound/music/combat_saltlia.ogg')
+
+	/datum/combat_music/shaman
+	name = "Shaman"
+	desc = "Winds whisper to you- words of wisdom.."
+	shortname = "Shaman"
+	musicpath = list('sound/music/combat_shaman.ogg')
+
+	/datum/combat_music/shamanalt
+	name = "Shaman (alt)"
+	desc = "Winds whisper to you- words of wisdom.."
+	shortname = "Shaman"
+	musicpath = list('sound/music/combat_shaman2.ogg')
+
+	/datum/combat_music/squire
+	name = "Squire"
+	desc = "You have a long road ahead of you to learn.."
+	shortname = "Squire"
+	musicpath = list('sound/music/combat_squire.ogg')
+
+	/datum/combat_music/starsugar
+	name = "Starsugar"
+	desc = "Okay- you really need to get off this stuff. (LOUD)"
+	shortname = "Starsugar"
+	musicpath = list('sound/music/combat_starsugar.ogg')
+
+	/datum/combat_music/steppe
+	name = "Steppesman"
+	desc = "The plateau of the Great North calls- your home of Rhaenval."
+	shortname = "Steppe"
+	musicpath = list('sound/music/combat_steppe.ogg')
+
+	/datum/combat_music/swashbuckler
+	name = "Swashbuckler"
+	desc = "The seas call upon you- make a prayer to Abyssor for these fair winds we have been blessed with!"
+	shortname = "Pirate"
+	musicpath = list('sound/music/combat_swashbuckler.ogg')
+
+	/datum/combat_music/varangian
+	name = "Varangian"
+	desc = "You've never found much that couldn't be solved with an axe."
+	shortname = "Varangian"
+	musicpath = list('sound/music/combat_vagarian.ogg')
+
+	/datum/combat_music/vaquero
+	name = "Calmirixian"
+	desc = "Those swamps and great plains may be inhospitable to many- but to you? Right at home."
+	shortname = "Vaquero"
+	musicpath = list('sound/music/combat_vaquero.ogg')
+
+	/datum/combat_music/veteran
+	name = "Veteran"
+	desc = "You've seen more than most- and you have the scars to show for it. Physically, and mentally."
+	shortname = "Veteran"
+	musicpath = list('sound/music/combat_veteran.ogg')
+
+	/datum/combat_music/viscount
+	name = "Viscount"
+	desc = "The symphony of the autocrat. The force that binds stability together."
+	shortname = "Viscount"
+	musicpath = list('sound/music/combat_viscount.ogg')
+
+	/datum/combat_music/weird
+	name = "Weird"
+	desc = "The thrumming sound of the drums- the mystery of this world. If only you weren't dead."
+	shortname = "Weird"
+	musicpath = list('sound/music/combat_weird.ogg')
+
+	/datum/combat_music/iconoclast
+	name = "Iconoclast"
+	desc = "And thus- my justice was served."
+	shortname = "Iconoclast"
+	musicpath = list('sound/music/combat_iconoclast.ogg')
+
+	/datum/combat_music/outlander
+	name = "Outlander"
+	desc = "Not of this region. Not of anywhere. Just alone."
+	shortname = "Outlander"
+	musicpath = list('sound/music/cmode/adventurer/combat_outlander.ogg')
+
+	/datum/combat_music/outlander2
+	name = "Outlander 2"
+	desc = "Not of this region. Not of anywhere. Just alone."
+	shortname = "Outlander"
+	musicpath = list('sound/music/cmode/adventurer/combat_outlander2.ogg')
+
+	/datum/combat_music/outlander3
+	name = "Outlander 3"
+	desc = "Not of this region. Not of anywhere. Just alone."
+	shortname = "Outlander"
+	musicpath = list('sound/music/cmode/adventurer/combat_outlander3.ogg')
+
+	/datum/combat_music/outlander4
+	name = "Outlander 4"
+	desc = "Not of this region. Not of anywhere. Just alone."
+	shortname = "Outlander"
+	musicpath = list('sound/music/cmode/adventurer/combat_outlander4.ogg')
+
+	/datum/combat_music/cutpurse
+	name = "Cutpurse"
+	desc = "Give me everything in the bag!"
+	shortname = "Cutpurse"
+	musicpath = list('sound/music/cmode/antag/combat_cutpurse.ogg')
+
+	/datum/combat_music/darkstar
+	name = "Darkstar"
+	desc = "An eclipse upon the stars."
+	shortname = "Darkstar"
+	musicpath = list('sound/music/cmode/antag/combat_darkstar.ogg')
+
+	/datum/combat_music/deadlyshadows
+	name = "Deadly Shadows"
+	desc = "A knife in the dark- a shadow pigment upon the cobblestone."
+	shortname = "Shadows"
+	musicpath = list('sound/music/cmode/antag/combat_deadlyshadows.ogg')
+
+	/datum/combat_music/thewall
+	name = "The Wall"
+	desc = "Nothing gets past you. You are unstoppable."
+	shortname = "Wall"
+	musicpath = list('sound/music/cmode/antag/combat_thewall.ogg')
 
 	/datum/combat_music/default
 	name = "Default"
