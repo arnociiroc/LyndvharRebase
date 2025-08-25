@@ -1658,7 +1658,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					to_chat(user, "<span class='notice'>Please use a relatively SFW image of the head and shoulder area to maintain immersion level. Lastly, ["<span class='bold'>do not use a real life photo or use any image that is less than serious.</span>"]</span>")
 					to_chat(user, "<span class='notice'>If the photo doesn't show up properly in-game, ensure that it's a direct image link that opens properly in a browser.</span>")
 					to_chat(user, "<span class='notice'>Keep in mind that the photo will be downsized to 325x325 pixels, so the more square the photo, the better it will look.</span>")
-					var/new_headshot_link = browser_input_text(user, "Input the headshot link <br>(https, hosts: gyazo, lensdump, imgbox, catbox):", "", headshot_link, encode = FALSE, max_length = "")
+					var/new_headshot_link = browser_input_text(user, "Input the headshot link <br>(https, hosts: gyazo, lensdump, imgbox, catbox):", "", headshot_link, encode = FALSE, max_length = "", savemode = TRUE)
 					if(new_headshot_link == null)
 						return
 					if(new_headshot_link == "")
@@ -1743,7 +1743,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					log_game("[user] has set their OOC notes'.")
 				if("nsfw_headshot")
 					to_chat(user, "<span class='notice'>Finally a place to show it all.</span>")
-					var/new_nsfw_headshot_link = browser_input_text(user, "Input the bodyshot link <br> (https, hosts: gyazo, lensdump, imgbox, catbox):", "", nsfw_headshot_link, "", encode = FALSE)
+					var/new_nsfw_headshot_link = browser_input_text(user, "Input the bodyshot link <br> (https, hosts: gyazo, lensdump, imgbox, catbox):", "", nsfw_headshot_link, "", encode = FALSE, savemode = TRUE)
 					if(new_nsfw_headshot_link == null)
 						return
 					if(new_nsfw_headshot_link == "")
@@ -1797,7 +1797,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					to_chat(user, "<span class='notice'>Videos will be shrunk to a ~300x300 square. Keep this in mind.</span>")
 					to_chat(user, "<font color = '#d6d6d6'>Leave a single space to delete it from your OOC notes.</font>")
 					to_chat(user, "<font color ='red'>Abuse of this will get you banned.</font>")
-					var/new_extra_link = browser_input_text(user, "Input the accessory link <br>(https, hosts: gyazo, lensdump, imgbox, catbox):", "", ooc_extra_link, "")
+					var/new_extra_link = browser_input_text(user, "Input the accessory link <br>(https, hosts: gyazo, lensdump, imgbox, catbox):", "", ooc_extra_link, "", savemode = TRUE)
 					if(new_extra_link == null)
 						return
 					if(new_extra_link == "")
