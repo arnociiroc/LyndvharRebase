@@ -41,13 +41,13 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	musicpath = list()
 
 /datum/combat_music/classic
-	name = "True Origin"
+	name = "Classic"
 	desc = "The true original song of battle - from the old daes."
 	shortname = "Classic"
 	musicpath = list('sound/music/combat_old.ogg')
 
 /datum/combat_music/original
-	name = "Origin"
+	name = "Original"
 	desc = "The original song of battle."
 	shortname = "Original"
 	musicpath = list('sound/music/combat.ogg')
