@@ -428,9 +428,9 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Chain Leash"
 	path = /obj/item/leash/chain
 
-/datum/loadout_item/forlon_collar
+/datum/loadout_item/forvheipal_collar
 	name = "Light Forvheipal Collar"
-	path = /obj/item/clothing/neck/roguetown/collar/forvheipal
+	path = /obj/item/clothing/neck/roguetown/collar/forvlight
 
 /datum/loadout_item/cursed_collar
 	name = "Cursed Collar"
