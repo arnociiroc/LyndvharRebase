@@ -40,7 +40,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Default"
 	musicpath = list()
 
-/datum/combat_music/trueoriginal
+/datum/combat_music/classic
 	name = "True Origin"
 	desc = "The true original song of battle - from the old daes."
 	shortname = "Classic"
