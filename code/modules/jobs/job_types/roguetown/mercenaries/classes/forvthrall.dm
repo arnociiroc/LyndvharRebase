@@ -1,15 +1,15 @@
-/datum/advclass/mercenary/forlorn
+/datum/advclass/mercenary/forvthrall
 	name = "Forvheipal Thrall"
 	tutorial = "A thrall-warrior from the strange and enigmatic kingdom in Yoheon, Forvheipal. The thralls are a sellsword contingent of the Zapyrixian Order- mostly made up of Lupians and Vulpkian slaves-from-birth. They will do any work for the highest bidder as per their contract made from birth- and thus you will, too."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-	outfit = /datum/outfit/job/roguetown/mercenary/forlorn
+	outfit = /datum/outfit/job/roguetown/mercenary/forvthrall
 	min_pq = 2
 	cmode_music = 'sound/music/combat_blackstar.ogg'
 	traits_applied = list(TRAIT_OUTLANDER)
 	category_tags = list(CTAG_MERCENARY)
 
-/datum/outfit/job/roguetown/mercenary/forlorn/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/mercenary/forvthrall/pre_equip(mob/living/carbon/human/H)
 	..()
 
 	// CLASS ARCHETYPES
@@ -43,7 +43,7 @@
 			H.change_stat("perception", 1)
 			H.change_stat("constitution", 2)
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
+			neck = /obj/item/clothing/neck/roguetown/gorget/forvcollar
 			mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 			pants = /obj/item/clothing/under/roguetown/splintlegs
 			gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
@@ -90,7 +90,7 @@
 			H.change_stat("speed", 2)
 			H.change_stat("endurance", 2)
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-			neck = /obj/item/clothing/neck/roguetown/gorget/forlorncollar
+			neck = /obj/item/clothing/neck/roguetown/gorget/forvcollar
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
 			pants = /obj/item/clothing/under/roguetown/splintlegs
 			gloves = /obj/item/clothing/gloves/roguetown/leather

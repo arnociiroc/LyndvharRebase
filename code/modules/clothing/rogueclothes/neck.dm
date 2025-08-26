@@ -317,7 +317,7 @@
 	. = ..()		
 	update_icon()		
 
-/obj/item/clothing/neck/roguetown/gorget/forlorncollar
+/obj/item/clothing/neck/roguetown/gorget/forvcollar
 	name = "zaprixys collar"
 	desc = "A collar that denotes a slave-warrior of the Zaprixys Order. A general item used across Forvheipal."
 	icon_state = "iwolfcollaralt"
@@ -684,7 +684,7 @@
 	bellsound = FALSE
 	bell = FALSE
 
-/obj/item/clothing/neck/roguetown/collar/forlorn
+/obj/item/clothing/neck/roguetown/collar/forvlight
 	name = "light forvheipal collar"
 	desc = "A spiked collar that denotes a slave to Forvheipal."
 	icon = 'icons/roguetown/clothing/neck.dmi'

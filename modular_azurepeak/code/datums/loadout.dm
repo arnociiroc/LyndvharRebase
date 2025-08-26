@@ -430,7 +430,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 
 /datum/loadout_item/forlon_collar
 	name = "Light Forvheipal Collar"
-	path = /obj/item/clothing/neck/roguetown/collar/forlorn
+	path = /obj/item/clothing/neck/roguetown/collar/forvheipal
 
 /datum/loadout_item/cursed_collar
 	name = "Cursed Collar"
