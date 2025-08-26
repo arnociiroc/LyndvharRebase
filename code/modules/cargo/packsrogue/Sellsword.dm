@@ -194,9 +194,9 @@
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/volfplate)
 
 /datum/supply_pack/rogue/Sellsword/forloncollar
-	name = "Forlon Collar"
+	name = "Forvheipal Collar"
 	cost = 20
-	contains = list(/obj/item/clothing/neck/roguetown/gorget/forlorncollar)
+	contains = list(/obj/item/clothing/neck/roguetown/gorget/forvcollar)
 
 /datum/supply_pack/rogue/Sellsword/brigandine
 	name = "Brigandine"

@@ -73,7 +73,7 @@
 	others think them marks of favor from the highest echelons of the Ziggurat. The desert riders confirm neither rumour."
 	icon_state = "rider_sash"
 
-/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forlorn
+/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forvheipal
 	name = "laughing volf medal"
 	desc ="A trinket bearing the snarling visage of a volf and bolt, a mark of distinction among the Forvheipal thralldom. Often taken from the dead and issued anew to the living, each bearing \
 	lyfetymes of nicks and scratches."

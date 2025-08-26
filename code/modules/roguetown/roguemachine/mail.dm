@@ -190,7 +190,7 @@
 					if(4)
 						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/desertrider(src.loc)
 					if(5)
-						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forlorn(src.loc)
+						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forvheipal(src.loc)
 					if(6)
 						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/freifechter(src.loc)
 					if(7)
