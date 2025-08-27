@@ -44,6 +44,7 @@
 		"lantern": "lamtarnia",
 		"lamptern": "lamtarnia",
 		"yes": "tak",
+		"no": "nie",
 		"hey": "hej",
 		"hello": "czesc",
 		"hi": "czesc",
@@ -113,45 +114,45 @@
 		"zizo": "ziza"
 	},
 	"start": {
-		"fuck!": "kurwa!",
-		"fool!": "glupiec!",
-		"fucking hell!": "o kurwa mac!",
-		"fuckingk hell!": "o kurwa mac!",
-		"fucker!": [
+		"fuck": "kurwa",
+		"fool": "glupiec",
+		"fucking hell": "o kurwa mac",
+		"fuckingk hell": "o kurwa mac",
+		"fucker": [
 		 "mrdka!",
 		 "skurwiel!",
 		 "chuj!"
 		],
-		"fuck it!": "jebat!",
-		"fuck you!": "pieprzyc cie!",
-		"oh fuck!": "no kurva!",
-		"fuck this!": "do pici!",
-		"shite!": "ja pierdole!",
-		"fuck off!": "jdi do prdele!",
-		"eat shit!": "zjesc gowno!",
-		"shit!": "do prdele!",
-		"go to hell!": "idi do Ziza!",
-		"damn!": [
+		"fuck it": "jebat",
+		"fuck you": "pieprzyc cie",
+		"oh fuck": "no kurva",
+		"fuck this": "do pici",
+		"shite": "ja pierdole",
+		"fuck off": "jdi do prdele",
+		"eat shit": "zjesc gowno",
+		"shit": "do prdele",
+		"go to hell": "idi do Ziza",
+		"damn": [
 			"sakra!",
 			"cholera!",
 			"kurwa!",
 			"kurwa!",
 			"kurwa!"
 		],
-		"damn it!": [
-			"sakra!",
-			"cholera!",
-			"kurwa!",
-			"kurwa!",
-			"kurwa!"
+		"damn it": [
+			"sakra",
+			"cholera",
+			"kurwa",
+			"kurwa",
+			"kurwa"
 		],
-		"screw you!": "do psi diry!",
-		"asshole!": "psi zadek!",
-		"curse it!": "kurvafix!",
-		"curses!": "kurvafix!",
-		"fucking cunt!": "kurwa cipka!",
-		"fuckingk cunt!": "kurwa cipka!",
-		"cunt!": "kunda!"
+		"screw you": "do psi diry",
+		"asshole": "psi zadek",
+		"curse it": "kurvafix",
+		"curses": "kurvafix",
+		"fucking cunt": "kurwa cipka",
+		"fuckingk cunt": "kurwa cipka",
+		"cunt": "kunda"
 	},
 	"end": {
 		"ng": [
