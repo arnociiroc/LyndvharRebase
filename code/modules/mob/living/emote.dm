@@ -1774,7 +1774,7 @@
 
 	emote("ffsalute", intentional =  TRUE)
 
-/datum/emote/living/yip
+/*//datum/emote/living/yip
 	key = "yip"
 	key_third_person = "yips"
 	message = "yips!"
@@ -1787,4 +1787,4 @@
 	set name = "Yip"
 	set category = "Noises"
 
-	emote("yip", intentional = TRUE)
+	emote("yip", intentional = TRUE)*/
