@@ -194,7 +194,7 @@
 		var/mob/living/carbon/human/target = targets[1]
 
 		if(user.z != target.z) //Stopping no-interaction snipes
-			to_chat(user, "<font color='yellow'>The Free-God compels me to face [target] on level ground before I transact.</font>")
+			to_chat(user, "<font color='yellow'>The Daemon of Envy compels me to face [target] on level ground before I transact.</font>")
 			revert_cast()
 			return
 		var/mammonsonperson = get_mammons_in_atom(target)
@@ -203,31 +203,31 @@
 		if(HAS_TRAIT(target, TRAIT_NOBLE))
 			totalvalue += 101 // We're ALWAYS going to do a medium level smite minimum to nobles.
 		if(totalvalue <=10)
-			to_chat(user, "<font color='yellow'>[target] one has no wealth to hold against them.</font>")
+			to_chat(user, "<font color='yellow'>[target] has no wealth to hold against them.</font>")
 			revert_cast()
 			return
 		if(totalvalue <=30)
 			user.say("Wealth becomes woe!")
-			target.visible_message(span_danger("[target] is burned by holy light!"), span_userdanger("I feel the weight of my wealth burning at my soul!"))
+			target.visible_message(span_danger("[target] is burned by daemonic heat!"), span_userdanger("I feel the weight of my miniscule wealth burning at my soul!"))
 			target.adjustFireLoss(30)
 			playsound(user, 'sound/magic/churn.ogg', 100, TRUE)
 			return
 		if(totalvalue <=60)
 			user.say("Wealth becomes woe!")
-			target.visible_message(span_danger("[target] is burned by holy light!"), span_userdanger("I feel the weight of my wealth burning at my soul!"))
+			target.visible_message(span_danger("[target] is burned by daemonic embers!"), span_userdanger("I feel the weight of my purse burning at my soul!"))
 			target.adjustFireLoss(60)
 			playsound(user, 'sound/magic/churn.ogg', 100, TRUE)
 			return
 		if(totalvalue <=100)
 			user.say("Wealth becomes woe!")
-			target.visible_message(span_danger("[target] is burned by holy light!"), span_userdanger("I feel the weight of my wealth burning at my soul!"))
+			target.visible_message(span_danger("[target] is burned by daemonic flames!"), span_userdanger("I feel the weight of my wealth burning at my soul!"))
 			target.adjustFireLoss(80)
 			target.Stun(20)
 			playsound(user, 'sound/magic/churn.ogg', 100, TRUE)
 			return
 		if(totalvalue <=200)
-			user.say("The Free-God rebukes!")
-			target.visible_message(span_danger("[target] is burned by holy light!"), span_userdanger("I feel the weight of my wealth tearing at my soul!"))
+			user.say("Daemon of Envy rebuke you!")
+			target.visible_message(span_danger("[target] is burned by daemonic fire!"), span_userdanger("I feel the weight of my envious wealth tearing at my soul!"))
 			target.adjustFireLoss(100)
 			target.adjust_divine_fire_stacks(7)
 			target.Stun(20)
@@ -235,8 +235,8 @@
 			playsound(user, 'sound/magic/churn.ogg', 100, TRUE)
 			return
 		if(totalvalue <=500)
-			user.say("The Free-God rebukes!")
-			target.visible_message(span_danger("[target] is burned by holy light!"), span_userdanger("I feel the weight of my wealth tearing at my soul!"))
+			user.say("MATTHIOS rebukes you!!")
+			target.visible_message(span_danger("[target] is burned by plumes of daemonic fire!"), span_userdanger("I feel the weight of my envious wealth tearing at my soul!"))
 			target.adjustFireLoss(120)
 			target.adjust_divine_fire_stacks(9)
 			target.IgniteMob()
@@ -244,8 +244,8 @@
 			playsound(user, 'sound/magic/churn.ogg', 100, TRUE)
 			return
 		if(totalvalue >= 501)
-			target.visible_message(span_danger("[target] is smited with holy light!"), span_userdanger("I feel the weight of my wealth rend my soul apart!"))
-			user.say("Your final transaction! The Free-God rebukes!!")
+			target.visible_message(span_danger("[target] is obliterated by daemonic fire!"), span_userdanger("I feel the weight of my wealth rend my soul apart!"))
+			user.say("YOUR FINAL TRANSACTION!! MATTHIOS REBUKES!!")
 			target.Stun(60)
 			target.emote("agony")
 			playsound(user, 'sound/magic/churn.ogg', 100, TRUE)
