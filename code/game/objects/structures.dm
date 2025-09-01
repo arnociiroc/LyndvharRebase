@@ -50,6 +50,7 @@
 					H.apply_damage(200, BRUTE, "chest", H.run_armor_check("chest", "blunt", damage = 200))
 					audible_message(span_warning("\The [src] shakes under the force of a great impact!"))
 					playsound(src, "meteor", 100, TRUE)
+					addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, Knockdown), 10), 10)
 				else if(is_bigguy && obj_integrity <= max_integrity / 3)	//This charge will wreck it
 					take_damage(max_integrity)
 					H.Immobilize(5)
@@ -58,6 +59,8 @@
 					H.Immobilize(10)
 					H.apply_damage(15, BRUTE, "head", H.run_armor_check("head", "blunt", damage = 15))
 					playsound(src, "genblunt", 100, TRUE)
+					if(H.has_status_effect(/datum/status_effect/compliance))
+						addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, Knockdown), 10), 10)
 				H.toggle_rogmove_intent(MOVE_INTENT_WALK, TRUE)
 				H.visible_message(span_warning("[H] runs into [src]!"), span_warning("I run into [src]!"))
 
