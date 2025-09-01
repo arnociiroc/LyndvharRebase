@@ -23,11 +23,19 @@
 
 	if(!length(message))
 		return
+
+	if(HAS_TRAIT(src, TRAIT_TALKTOOOC))	
+		if(message)
+			if(client)
+				if(GLOB.ooc_allowed)
+					client.ooc(message)
+
 	if(GLOB.say_disabled)	//This is here to try to identify lag problems
 		to_chat(usr, "<span class='danger'>Speech is currently admin-disabled.</span>")
 		return
 	clear_typing_indicator()		// clear it immediately!
-
+	winset(usr.client, "map", "focus=true")
+	winset(usr.client, "input", "background-color=[COLOR_INPUT_DISABLED]")
 	say(message)
 
 ///Whisper verb
