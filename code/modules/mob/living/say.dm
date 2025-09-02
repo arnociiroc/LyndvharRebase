@@ -186,7 +186,8 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 	if(!can_speak_vocal(message))
 //		visible_message("<b>[src]</b> makes a muffled noise.")
-		to_chat(src, span_warning("I can't talk."))
+		if(!HAS_TRAIT(src, TRAIT_TALKTOOOC))
+			to_chat(src, span_warning("I can't talk."))
 		return
 
 	var/message_range = 7
