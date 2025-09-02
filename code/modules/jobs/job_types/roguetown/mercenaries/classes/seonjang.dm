@@ -17,13 +17,12 @@
 
 /datum/outfit/job/roguetown/mercenary/kashira/pre_equip(mob/living/carbon/human/H)
 	..()
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
 	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
 	beltl = /obj/item/rogueweapon/scabbard/sword/saltlian/gold
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
-		/obj/item/flashlight/flare/torch,
 		/obj/item/flashlight/flare/torch/lantern,
 		)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -44,17 +43,21 @@
 	H.adjust_blindness(-3)
 
 	if(should_wear_masc_clothes(H))
+		head = /obj/item/clothing/head/roguetown/mentorhat
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
 		cloak = /obj/item/clothing/cloak/eastcloak1
 		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants1
 		gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
 		armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
-		shoes = /obj/item/clothing/shoes/roguetown/boots
+		shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 		H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 	else if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/armor/basiceast/captainrobe
+		cloak = /obj/item/clothing/cloak/eastcloak1
+		gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
-		shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
+		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
+		shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 
 	ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)

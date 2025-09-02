@@ -1338,7 +1338,7 @@
 	icon_state = "declongsword"
 	sellprice = 140
 
-// kazengite content
+// saltliac content
 
 /obj/item/rogueweapon/sword/sabre/mulyeog
 	force = 25
