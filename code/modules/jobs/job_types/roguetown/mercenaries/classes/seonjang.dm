@@ -24,7 +24,9 @@
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
-		/obj/item/storage/belt/rogue/pouch/coins/poor
+		/obj/item/storage/belt/rogue/pouch/coins/poor,
+		/obj/item/rogueweapon/scabbard/sheath,
+		/obj/item/rogueweapon/huntingknife/idagger/steel/saltlian
 		)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
