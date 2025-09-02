@@ -117,7 +117,7 @@
 /area/rogue/outdoors/mountains/decap/minotaurfort
 	name = "Minotaur Fort"
 	icon_state = "decap"
-	droning_sound = 'sound/music/area/prospector.ogg'
+	droning_sound = 'sound/music/area/spidercave.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	first_time_text = "ANCIENT DWARVEN FORGE"
