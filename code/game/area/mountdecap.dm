@@ -42,7 +42,7 @@
 				new /datum/ambush_config/medium_skeleton_party = 20,
 				new /datum/ambush_config/heavy_skeleton_party = 10,
 				)
-	droning_sound = 'sound/music/area/decap_deeper.ogg'
+	droning_sound = 'sound/music/area/caldera.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	first_time_text = "SCORCHED CALDERA"
