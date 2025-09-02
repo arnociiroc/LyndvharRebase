@@ -50,21 +50,16 @@
 
 // Proc for wretch to select a bounty
 /proc/wretch_select_bounty(mob/living/carbon/human/H)
-	var/wanted = list("I am a well-known outlaw!", "I am a nobody. For now.")
-	var/wanted_choice = input(H, "Are you a known outlaw?") as anything in wanted
-	switch(wanted_choice)
-		if("I am a well-known outlaw!") //Extra challenge for those who want it
-		
-		if("I am a nobody. For now.") //Nothing ever happens
-			return
-	var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Lyndvhar", "The Bisphoric of Valoria", "The Holy Mother Church of Lyndhardtia")
-	if(bounty_poster == "The Justiciary of Lyndvhar")
-		GLOB.outlawed_players += H.real_name
-	else
-		GLOB.excommunicated_players += H.real_name
-	
+	var/bounty_poster = input(H, "Who placed a bounty on you?", "Bounty Poster") as anything in list("The Justiciary of Azuria", "The Grenzelhoftian Holy See", "The Otavan Orthodoxy")
+	// Felinid said we should gate it at 100 or so on at the lowest, so that wretch cannot ezmode it.
 	var/bounty_severity = input(H, "How severe are your crimes?", "Bounty Amount") as anything in list("Misdeed", "Harm towards lyfe", "Horrific atrocities")
-	var/bounty_total = rand(100, 400)
+	var/race = H.dna.species
+	var/gender = H.gender
+	var/list/d_list = H.get_mob_descriptors()
+	var/descriptor_height = build_coalesce_description_nofluff(d_list, H, list(MOB_DESCRIPTOR_SLOT_HEIGHT), "%DESC1%")
+	var/descriptor_body = build_coalesce_description_nofluff(d_list, H, list(MOB_DESCRIPTOR_SLOT_BODY), "%DESC1%")
+	var/descriptor_voice = build_coalesce_description_nofluff(d_list, H, list(MOB_DESCRIPTOR_SLOT_VOICE), "%DESC1%")
+	var/bounty_total = rand(100, 400) // Just in case
 	switch(bounty_severity)
 		if("Misdeed")
 			bounty_total = rand(100, 250)
@@ -72,8 +67,13 @@
 			bounty_total = rand(250, 400)
 		if("Horrific atrocities")
 			bounty_total = rand(400, 600)
+			bounty_total = rand(300, 400) // Let's not make it TOO profitable
+			if(bounty_poster == "The Justiciary of Azuria")
+				GLOB.outlawed_players += H.real_name
+			else
+				GLOB.excommunicated_players += H.real_name
 	var/my_crime = input(H, "What is your crime?", "Crime") as text|null
 	if (!my_crime)
 		my_crime = "crimes against the Crown"
-	add_bounty(H.real_name, bounty_total, FALSE, my_crime, bounty_poster)
-	to_chat(H, span_danger("You are an Antagonistic role. You are expected, by choosing to be a wretch, to sow chaos and division amongst the city while driving a story. Failure to use proper gravitas for this may get you punished for Low Roleplay standards and disrupting immersion."))
+	add_bounty(H.real_name, race, gender, descriptor_height, descriptor_body, descriptor_voice, bounty_total, FALSE, my_crime, bounty_poster)
+	to_chat(H, span_danger("You are an Antagonistic role. You are expected, by choosing to be a wretch, to sow chaos and division amongst the town while driving a story. Failure to use proper gravitas for this may get you punished for Low Role Play standards."))

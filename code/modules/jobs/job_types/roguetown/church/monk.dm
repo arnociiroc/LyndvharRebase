@@ -27,7 +27,7 @@
 /datum/outfit/job/roguetown/monk/pre_equip(mob/living/carbon/human/H)
 	..()
 	belt = /obj/item/storage/belt/rogue/leather/rope
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/storage/keyring/churchie
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(/obj/item/ritechalk)
@@ -37,7 +37,8 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/undivided
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/white
+			cloak = /obj/item/clothing/cloak/undivided
 		if(/datum/patron/divine/astrata)
 			head = /obj/item/clothing/head/roguetown/roguehood/astrata
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
@@ -140,6 +141,8 @@
 		H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE) // Really good at reading... does this really do anything? No. BUT it's soulful.
 		H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE) // for their arcane spells, very little CDR and cast speed.
+		if(H.mind)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		ADD_TRAIT(H, TRAIT_ARCYNE_T1, TRAIT_GENERIC) // So that they can take arcyne potential and not break.
 	if(H.patron?.type == /datum/patron/divine/abyssor) // The Sea and Weather - probably would be good at fishing
 		H.adjust_skillrank(/datum/skill/labor/fishing, 3, TRUE)

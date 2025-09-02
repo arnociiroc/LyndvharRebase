@@ -12,8 +12,8 @@
 
 /datum/statpack/physical/muscular
 	name = "Muscular"
-	desc = "Tall and imposing, yet deceptively fast for your size - your opponents dread the thought of being within arms reach of you."
-	stat_array = list(STAT_STRENGTH = 2, STAT_PERCEPTION = -1, STAT_INTELLIGENCE = -2, STAT_CONSTITUTION = 2)
+	desc = "Hard labor has honed you into a mass of sinew - a valuable trait in a world where might makes right."
+	stat_array = list(STAT_STRENGTH = 2, STAT_CONSTITUTION = 1, STAT_PERCEPTION = -1, STAT_SPEED = -2)
 
 /datum/statpack/physical/tactician
 	name = "Alert"

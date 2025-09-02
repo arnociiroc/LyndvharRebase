@@ -99,3 +99,4 @@
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC) //i swear this isn't as good as it sounds
 	H.grant_language(/datum/language/saltlian)
+	H.merctype = 9
