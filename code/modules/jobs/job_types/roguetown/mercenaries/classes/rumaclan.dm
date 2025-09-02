@@ -27,11 +27,11 @@
 		if("Gun-in")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are well versed and experienced in swordfighting, you have no problem in taking up most jobs so long as the coin is good, for either yourself or the clan and the seonjang."))
-			belt = /obj/item/storage/belt/rogue/leather
+			belt = /obj/item/storage/belt/rogue/leather/black
 			beltr = /obj/item/rogueweapon/scabbard/sword/saltlian/steel
 			beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
-			cloak = /obj/item/clothing/cloak/eastcloak1
+			cloak = /obj/item/clothing/cloak/eastcloak2
 			armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
@@ -40,6 +40,7 @@
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary,
 				/obj/item/flashlight/flare/torch/lantern,
+				/obj/item/storage/belt/rogue/pouch/coins/poor
 				)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
@@ -60,11 +61,11 @@
 		if("Sasu")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are an archer of the clan, many have called you an true marksman for your skills with the bow. You have no problem in taking up most jobs so long as the coin is good, for either yourself or the clan and the seonjang."))
-			belt = /obj/item/storage/belt/rogue/leather
+			belt = /obj/item/storage/belt/rogue/leather/black
 			beltr = /obj/item/quiver/arrows
 			beltl = /obj/item/flashlight/flare/torch/lantern
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
-			cloak = /obj/item/clothing/cloak/eastcloak1
+			cloak = /obj/item/clothing/cloak/eastcloak2
 			armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
