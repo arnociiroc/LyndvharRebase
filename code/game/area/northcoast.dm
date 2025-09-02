@@ -7,7 +7,7 @@
 	ambientnight = AMB_FORESTNIGHT
 	spookysounds = SPOOKY_CROWS
 	spookynight = SPOOKY_FOREST
-	droning_sound = 'sound/music/area/forest.ogg'
+	droning_sound = 'sound/music/area/forestold.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleepingold.ogg'
 	soundenv = 15
@@ -30,7 +30,7 @@
 
 /area/rogue/outdoors/beach/forest/hamlet
 	name = "LILAC BAY - RAIDER CAMP"
-	first_time_text = "THE HAMLET"
+	first_time_text = "RHAENVALI CAMP"
 	ambush_mobs = null // We don't want actual ambushes in Hamlet but we also don't want to misuse outdoors/beach lol
 	threat_region = THREAT_REGION_NORTH_COAST
 
