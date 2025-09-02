@@ -9,7 +9,7 @@
 		/datum/species/demihuman,
 		/datum/species/vulpkanin,
 	)
-	outfit = /datum/outfit/job/roguetown/mercenary/kashira
+	outfit = /datum/outfit/job/roguetown/mercenary/seonjang
 	category_tags = list(CTAG_MERCENARY)
 	traits_applied = list(TRAIT_OUTLANDER)
 	cmode_music = 'sound/music/combat_saltlia.ogg'

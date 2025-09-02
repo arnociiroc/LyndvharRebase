@@ -32,7 +32,7 @@ SUBSYSTEM_DEF(vote)
 		else
 			var/datum/browser/noclose/client_popup
 			for(var/client/C in voting)
-				client_popup = new(C, "vote", "Voting Panel", nwidth = vote_width, nheight = vote_height)
+				client_popup = new(C, "vote", "Voting Panel", width = vote_width, height = vote_height)
 				client_popup.set_window_options("can_close=0")
 				client_popup.width = vote_width
 				client_popup.height = vote_height

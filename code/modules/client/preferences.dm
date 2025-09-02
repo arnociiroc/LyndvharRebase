@@ -1879,7 +1879,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 							continue
 						species += race
 
-					var/result = browser_input_list(user, "SELECT A RACE", "THE BESTIARY", crap, pref_species)
+					var/result = browser_input_list(user, "SELECT A RACE", "THE BESTIARY", species, pref_species)
 
 					if(result)
 						set_new_race(result, user)

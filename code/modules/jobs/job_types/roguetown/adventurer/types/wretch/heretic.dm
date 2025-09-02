@@ -95,7 +95,7 @@
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 				if(/datum/patron/inhumen/baotha)
 					H.cmode_music = 'sound/music/combat_baotha.ogg'
-					head = /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan
+					head = /obj/item/clothing/head/roguetown/helmet/bascinet/dunargi
 				if(/datum/patron/inhumen/graggar)
 					H.cmode_music = 'sound/music/combat_graggar.ogg'
 					head = /obj/item/clothing/head/roguetown/helmet/heavy/guard

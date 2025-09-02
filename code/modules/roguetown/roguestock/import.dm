@@ -292,27 +292,3 @@
 	new /obj/item/storage/keyring/guardcastle(src)
 	new /obj/item/storage/keyring/guardcastle(src)
 	new /obj/item/storage/keyring/guardcastle(src)
-
-/datum/roguestock/import/alcoholset
-	name = "Alcohol Crate"
-	desc = "A crate with a selection of beers and liquors, fit for a party."
-	item_type = /obj/structure/closet/crate/chest/steward/alcoholset
-	export_price = 800
-	importexport_amt = 1
-
-/obj/structure/closet/crate/chest/steward/alcoholset/Initialize()
-	. = ..()
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/nred(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/whitewine(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/redwine(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/elfred(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunplum(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/butterhairs(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunshochu(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/apfelweinheim(src)
-
