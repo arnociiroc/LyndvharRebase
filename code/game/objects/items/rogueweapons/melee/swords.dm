@@ -1342,12 +1342,12 @@
 
 /obj/item/rogueweapon/sword/sabre/mulyeog
 	force = 25
-	name = "foreign straight blade"
+	name = "dangeom"
 	desc = "A foreign sword used by cut-throats & thugs. There's a red tassel on the hilt."
 	sheathe_icon = "mulyeog"
 	icon_state = "eastsword1"
 	smeltresult = /obj/item/ingot/steel
-	wdefense = 3
+	wdefense = 5
 
 /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 	name = "hwang blade"
@@ -1360,7 +1360,7 @@
 	desc = "A gold-stained with cloud patterns on the groove. One of a kind. It is a symbol of status within the Ruma clan."
 	icon_state = "eastsword3"
 	max_integrity = 180
-	wdefense = 4
+	wdefense = 8
 
 /obj/item/rogueweapon/sword/sabre/hook
 	force = 20
