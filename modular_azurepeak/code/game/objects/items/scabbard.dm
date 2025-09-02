@@ -512,7 +512,7 @@
 	associated_skill = /datum/skill/combat/shields
 	possible_item_intents = list(SHIELD_BASH, SHIELD_BLOCK)
 	can_parry = TRUE
-	wdefense = 8
+	wdefense = 5
 
 	max_integrity = 0
 
