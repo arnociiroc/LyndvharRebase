@@ -104,6 +104,7 @@
 	adjustEarDamage(0, 6000)
 	Stun(6000, 1, 1)
 	ADD_TRAIT(src, TRAIT_MUTE, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_TALKTOOOC, TRAIT_GENERIC)
 	walk(src, 0) //stops them mid pathing even if they're stunimmune
 	if(isanimal(src))
 		var/mob/living/simple_animal/S = src
