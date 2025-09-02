@@ -551,7 +551,7 @@
 	flags_inv = null
 	slot_flags = ITEM_SLOT_SHIRT
 
-//kazengite content
+//saltliac content
 /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "black foreign shirt"
