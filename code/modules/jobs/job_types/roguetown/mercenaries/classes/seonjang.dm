@@ -55,6 +55,7 @@
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 		H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 	else if(should_wear_femme_clothes(H))
+		head = /obj/item/clothing/head/roguetown/mentorhat
 		armor = /obj/item/clothing/suit/roguetown/armor/basiceast/captainrobe
 		cloak = /obj/item/clothing/cloak/eastcloak1
 		gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
