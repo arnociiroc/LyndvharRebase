@@ -21,6 +21,7 @@
 	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
 	beltl = /obj/item/rogueweapon/scabbard/sword/saltlian/gold
 	backr = /obj/item/storage/backpack/rogue/satchel/short
+	neck = /obj/item/clothing/neck/roguetown/leather
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,

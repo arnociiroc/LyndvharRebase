@@ -32,6 +32,7 @@
 			beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 			cloak = /obj/item/clothing/cloak/eastcloak2
+			neck = /obj/item/clothing/neck/roguetown/leather
 			armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
@@ -67,6 +68,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 			cloak = /obj/item/clothing/cloak/eastcloak2
 			armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
+			neck = /obj/item/clothing/neck/roguetown/leather
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 			shoes = /obj/item/clothing/shoes/roguetown/armor/rumaclan
 			gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
