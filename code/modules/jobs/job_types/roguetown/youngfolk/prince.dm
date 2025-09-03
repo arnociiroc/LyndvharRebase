@@ -70,44 +70,6 @@
 	H.change_stat("speed", 1)
 	H.change_stat("fortune", 1)
 
-/datum/advclass/heir/bookworm
-	name = "Introverted Bookworm"
-	tutorial = "Despite your standing, sociability is not your strong suit, and you have kept mostly to yourself and your books. This hardly makes you a favourite among the lords and ladies of the court, and an exit from your room is often met with amusement from nobility and servants alike. But maybe... just maybe, some of your reading interests may be bearing fruit."
-	outfit = /datum/outfit/job/roguetown/heir/bookworm
-
-/datum/outfit/job/roguetown/heir/bookworm/pre_equip(mob/living/carbon/human/H)
-	..()
-	ADD_TRAIT(H, TRAIT_ARCYNE_T1, TRAIT_GENERIC)
-	if(should_wear_masc_clothes(H))
-		pants = /obj/item/clothing/under/roguetown/tights/random
-		armor = /obj/item/clothing/suit/roguetown/armor/longcoat
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince
-	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
-	head = /obj/item/clothing/head/roguetown/circlet
-	belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-	beltr = /obj/item/storage/keyring/heir
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/special
-	backr = /obj/item/storage/backpack/rogue/satchel
-	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
-	mask = /obj/item/clothing/mask/rogue/spectacles
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-
-	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
-	H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
-	ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
-	if(H.mind)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-		H.mind.adjust_spellpoints(9)
-	H.change_stat("strength", -1)
-	H.change_stat("intelligence", 2)
-	H.change_stat("speed", 1)
-	H.change_stat("constitution", -1)
-	H.change_stat("fortune", 1)
-
 /datum/advclass/heir/aristocrat
 	name = "Sheltered Aristocrat"
 	tutorial = "Life has been kind to you; you've an entire keep at your disposal, servants to wait on you, and a whole retinue of guards to guard you. You've nothing to prove; just live the good life and you'll be a lord someday, too. A lack of ambition translates into a lacking skillset beyond schooling, though, and your breaks from boredom consist of being a damsel or court gossip."
