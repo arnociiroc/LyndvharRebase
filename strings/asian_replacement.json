@@ -29,6 +29,15 @@
 		"churl": "linsegui",
 		"stranger": "mosheng ren",
 		"friend": "pengyou",
+		"you": "anata",
+		"i": "watashi",
+		"me": "jibun",
+		"what": "nani",
+		"crazy": "michin",
+		"idea": "aidieo",
+		"ok": "wakata",
+		"okay": "wakata",
+		"retarded": "jiche",
 		"fag": "jilao",
 		"sodomite": "jijian zhe",
 		"sodomites": "jijian zhe",
@@ -148,10 +157,12 @@
 		],
 		"screw you": "kuso kurae",
 		"asshole": "gesu yaro",
+		"dumbass": "babo",
 		"curse it": "jeojuhae",
 		"curses": "jeoju",
 		"fucking cunt": "kusoon'na",
-		"cunt": "josei-ki"
+		"cunt": "josei-ki",
+		"what the fuck": "mwoya ssibal"
 },
 	"end": {
 		"ng": [
