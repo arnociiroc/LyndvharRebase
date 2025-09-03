@@ -201,7 +201,6 @@
 #define TRAIT_COMBAT_AWARE	"Combat Aware"
 // ARMOR / CLOTHING GIVEN TRAITS (GIVEN BY WEARING CLOTHES/ARMOR PIECES)
 #define TRAIT_MONK_ROBE	"Holy Vestatures"
-#define TRAIT_RACISMISBAD "Heritage Vision"
 
 // If you want description to show up you gotta have the trait name defined BEFORE this lol
 
