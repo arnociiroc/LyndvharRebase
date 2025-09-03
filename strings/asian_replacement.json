@@ -31,6 +31,7 @@
 		"friend": "pengyou",
 		"you": "anata",
 		"i": "watashi",
+		"me": "jibun",
 		"what": "nani",
 		"crazy": "michin",
 		"idea": "aidieo",
@@ -160,7 +161,8 @@
 		"curse it": "jeojuhae",
 		"curses": "jeoju",
 		"fucking cunt": "kusoon'na",
-		"cunt": "josei-ki"
+		"cunt": "josei-ki",
+		"what the fuck": "mwoya ssibal"
 },
 	"end": {
 		"ng": [
