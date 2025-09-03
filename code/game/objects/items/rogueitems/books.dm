@@ -248,7 +248,7 @@
 					user.say("PSY 23:4... And so, PSYDON wept; for he had been cast from the annals of history, VANQUISHED by the most devoutly heathen of sects..")
 					user.psydo_nyte()
 				else
-					user.say(m)	
+					user.say(m)
 
 /obj/item/book/rogue/bibble/psy/MiddleClick(mob/user, params)
 	. = ..()

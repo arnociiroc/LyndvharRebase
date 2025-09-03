@@ -15,6 +15,7 @@
 #define ISDIAGONALDIR(d) (d&(d-1))
 
 //Human Overlays Indexes/////////
+
 #define MUTATIONS_LAYER			50		//mutations. Tk headglows, cold resistance glow, etc
 #define CLOAK_BEHIND_LAYER		49
 #define HANDS_BEHIND_LAYER		48
@@ -28,11 +29,11 @@
 #define FRONT_MUTATIONS_LAYER	40		//mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
 #define DAMAGE_LAYER			39		//damage indicators (cuts and burns)
 #define LEG_PART_LAYER			38
-#define PANTS_LAYER				37
-#define SHOES_LAYER				36
-#define LEG_DAMAGE_LAYER		35
-#define LEGSLEEVE_LAYER			34
-#define SHOESLEEVE_LAYER		33
+#define LEGWEAR_LAYER			37
+#define PANTS_LAYER				36
+#define SHOES_LAYER				35
+#define LEG_DAMAGE_LAYER		34
+#define LEGSLEEVE_LAYER			33
 #define SHIRT_LAYER				32
 #define WRISTS_LAYER			31
 #define ARMOR_LAYER				30
