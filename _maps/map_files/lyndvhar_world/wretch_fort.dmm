@@ -45,8 +45,10 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "bO" = (
-/obj/structure/chair/bench/church,
-/turf/open/floor/rogue/concrete,
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
+/turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "bX" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
@@ -161,6 +163,12 @@
 "fg" = (
 /obj/structure/roguerock,
 /turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
+"fD" = (
+/obj/structure/fluff/walldeco/church/line{
+	dir = 1
+	},
+/turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "fR" = (
 /obj/item/chair/rogue,
@@ -358,6 +366,21 @@
 /area/rogue/under/cave/inhumen)
 "op" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red,
+/area/rogue/under/cave/inhumen)
+"os" = (
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"pf" = (
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "pC" = (
 /obj/machinery/light/rogue/firebowl{
@@ -639,6 +662,10 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave/inhumen)
+"Fl" = (
+/obj/structure/fluff/walldeco/church/line,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "Fo" = (
 /obj/structure/fluff/railing/border{
@@ -971,16 +998,20 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/inhumen)
 "TO" = (
-/obj/structure/chair/bench/church/mid,
-/turf/open/floor/rogue/concrete,
+/obj/structure/chair/bench/church/mid{
+	dir = 1
+	},
+/turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave/inhumen)
 "UG" = (
 /obj/structure/fluff/alch,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/inhumen)
 "UP" = (
-/obj/structure/chair/bench/church/r,
-/turf/open/floor/rogue/concrete,
+/obj/structure/chair/bench/church/r{
+	dir = 1
+	},
+/turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave/inhumen)
 "UU" = (
 /obj/machinery/light/rogue/forge,
@@ -1030,7 +1061,7 @@
 /obj/structure/chair/bench/church{
 	dir = 1
 	},
-/turf/open/floor/rogue/concrete,
+/turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave/inhumen)
 "ZN" = (
 /obj/structure/roguewindow/stained/zizo,
@@ -2057,9 +2088,9 @@ CM
 nj
 je
 Tl
-Tl
-Tl
-Tl
+bO
+bO
+bO
 Tl
 op
 xK
@@ -2108,11 +2139,11 @@ pC
 nj
 nj
 je
-Tl
+Fl
 ZI
 ZI
-bO
-Tl
+ZI
+fD
 Tl
 VA
 rb
@@ -2160,11 +2191,11 @@ EC
 nj
 nj
 Iy
-Tl
+Fl
 TO
 TO
 TO
-Tl
+fD
 Tl
 ZN
 bX
@@ -2212,11 +2243,11 @@ lN
 mT
 ys
 hq
-Tl
+Fl
 UP
 UP
 UP
-Tl
+fD
 Tl
 op
 yp
@@ -2265,9 +2296,9 @@ XM
 Rx
 Ld
 Tl
-Tl
-Tl
-Tl
+os
+os
+os
 Tl
 Tl
 ma
@@ -2316,11 +2347,11 @@ lN
 mT
 yx
 hq
-Tl
+Fl
 ZI
 ZI
-bO
-Tl
+ZI
+fD
 Tl
 op
 yp
@@ -2368,11 +2399,11 @@ lv
 nj
 nj
 Iy
-Tl
+Fl
 TO
 TO
 TO
-Tl
+fD
 Tl
 ZN
 bX
@@ -2420,11 +2451,11 @@ pC
 nj
 nj
 je
-Tl
+Fl
 UP
 UP
 UP
-Tl
+fD
 Tl
 xK
 rb
@@ -2473,9 +2504,9 @@ CS
 nj
 je
 Tl
-Tl
-Tl
-Tl
+pf
+pf
+pf
 Tl
 op
 VA
