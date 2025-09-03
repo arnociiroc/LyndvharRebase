@@ -124,7 +124,6 @@
 
 	},
 	"start": {
-		"fuck": "kuso",
 		"fool": "baka",
 		"fucking hell": "kuso jigoku",
 		"fucker": [
@@ -162,11 +161,11 @@
 		"curses": "jeoju",
 		"fucking cunt": "kusoon'na",
 		"cunt": "josei-ki",
-		"what the fuck": "mwoya ssibal"
+		"what the fuck": "mwoya ssibal",
+		"fuck": "kuso"
 },
 	"end": {
 		"ng": [
-			"ngk",
 			"ng"
 		]
 	},
@@ -174,11 +173,7 @@
 	"syllable": {
 		"r": [
 			"rr",
-			"rr",
-			"r",
-			"r",
-			"r",
-			"rrr"
+			"r"
 		],
 		"ra": [
 			"rah",
