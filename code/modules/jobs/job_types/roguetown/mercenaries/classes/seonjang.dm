@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/seonjang //shitcode approved by free
 	name = "Seonjang"
-	tutorial = "The respected leader and singular representative of the Ruma clan, you're an experienced swordsman. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi-Duvalti triad and its conflicts, now in strange lands."
+	tutorial = "The respected leader and singular representative of the Xuefeng clan remnants, you're an experienced swordsman. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi-Duvalti triad and its conflicts, now in strange lands."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		/datum/species/human/northern,
@@ -18,7 +18,7 @@
 /datum/outfit/job/roguetown/mercenary/seonjang/pre_equip(mob/living/carbon/human/H)
 	..()
 	belt = belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
-	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
+	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
 	beltl = /obj/item/rogueweapon/scabbard/sword/saltlian/gold
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/clothing/neck/roguetown/leather

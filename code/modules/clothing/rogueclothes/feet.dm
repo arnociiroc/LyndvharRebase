@@ -434,7 +434,7 @@
 	armor = ARMOR_BOOTS_BAD
 
 //kazen update
-/obj/item/clothing/shoes/roguetown/armor/rumaclan
+/obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	name = "raised sandals"
 	desc = "A pair of strange sandals that push you off the ground."
 	icon_state = "eastsandals"

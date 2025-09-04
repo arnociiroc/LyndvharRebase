@@ -1372,15 +1372,15 @@
 	smeltresult = /obj/item/ingot/steel
 	wdefense = 5
 
-/obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
-	name = "ruma hwando"
-	desc = "A foreign steel single-edged sword with cloud patterns on the groove. The Ruma Clan's insignia is engraved on the blade."
+/obj/item/rogueweapon/sword/sabre/mulyeog/xuefenghench
+	name = "xuefeng hwando"
+	desc = "A foreign steel single-edged sword with cloud patterns on the groove. The Xuefeng Clan's insignia is engraved on the blade."
 	icon_state = "eastsword2"
 
-/obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
+/obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
 	force = 30
 	name = "samjeongdo"
-	desc = "A gold-stained sword with cloud patterns on the groove. One of a kind. It is a symbol of status within the Ruma clan."
+	desc = "A gold-stained sword with cloud patterns on the groove. One of a kind. It is a symbol of status within the Xuefeng clan."
 	icon_state = "eastsword3"
 	max_integrity = 180
 	wdefense = 8
