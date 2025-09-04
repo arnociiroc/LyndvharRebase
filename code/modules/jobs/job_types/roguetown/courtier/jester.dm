@@ -38,13 +38,13 @@
 		H.adjust_skillrank(/datum/skill/misc/music, 5, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
-		H.STASTR = rand(1, 20)
-		H.STAINT = rand(1, 20)
-		H.STALUC = rand(1, 20)
-		H.STAEND = rand(1, 20)
-		H.STACON = rand(1, 20)
-		H.STASPD = rand(1, 20)
-		H.STAPER = rand(1, 20)
+		H.STASTR = rand(1, 20) // we
+		H.STAINT = rand(1, 20) // do
+		H.STALUC = rand(1, 20) // a 
+		H.STAEND = rand(1, 20) // bit
+		H.STACON = rand(1, 20) // of
+		H.STASPD = rand(1, 20) // trolling
+		H.STAPER = rand(1, 20) // :)
 		H.cmode_music = 'sound/music/combat_jester.ogg'
 	H.verbs |= /mob/living/carbon/human/proc/ventriloquate
 	H.verbs |= /mob/living/carbon/human/proc/ear_trick
