@@ -136,15 +136,15 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	if(prob(50))
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/vagrant
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
 	if(prob(50))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/tunic
+		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	if(prob(50))
 		pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	if(prob(50))
-		head = /obj/item/clothing/head/roguetown/helmet/horned
+		head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	if(prob(50))
 		neck = /obj/item/clothing/neck/roguetown/gorget
 	if(prob(50))
