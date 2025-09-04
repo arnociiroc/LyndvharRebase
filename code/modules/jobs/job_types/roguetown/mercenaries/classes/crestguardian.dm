@@ -60,7 +60,8 @@
 		if("Arrowslinger")
 			H.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
@@ -74,22 +75,22 @@
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 3)
 			head = /obj/item/clothing/head/roguetown/helmet/elvenbarbute/winged
-			armor = /obj/item/clothing/suit/roguetown/armor/leather/trophyfur
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			neck = /obj/item/clothing/neck/roguetown/gorget/steel
-			beltr = /obj/item/rogueweapon/scabbard/sheath
-			r_hand = /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
+			beltr = /obj/item/rogueweapon/scabbard/sword
+			r_hand = /obj/item/rogueweapon/sword/sabre/elf
 			beltl = /obj/item/quiver/arrows
 			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve/warden
 			backpack_contents = list(
 				/obj/item/roguekey/mercenary = 1,
 				/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
-				/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
+				/obj/item/rogueweapon/huntingknife/idagger/silver/elvish = 1,
 				/obj/item/rogueweapon/scabbard/sheath = 1,
 				/obj/item/flashlight/flare/torch = 1,
 				)
-			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	//Shared minor skillblock from Wardens
