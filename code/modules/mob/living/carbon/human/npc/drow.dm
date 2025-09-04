@@ -82,7 +82,7 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 	dna.species.handle_body(src)
 
 	if(organ_eyes)
-		organ_eyes.eye_color = "#FFBF00"
+		organ_eyes.eye_color = "#bb2c1a"
 		organ_eyes.accessory_colors = "#FFBF00#FFBF00"
 	
 	if(organ_ears)
