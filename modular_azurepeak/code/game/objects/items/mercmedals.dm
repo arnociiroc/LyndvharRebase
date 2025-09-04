@@ -1,6 +1,6 @@
 /obj/item/merctoken
 	name = "writ of commendation"
-	desc = "A small, palm-fitting bound scroll - a writ of commendation for a mercenary in the Duchy of Azure Peak."
+	desc = "A small, palm-fitting bound scroll - a writ of commendation for a mercenary in the Ruby Empire."
 	icon_state = "merctoken"
 	icon = 'modular_azurepeak/icons/clothing/mercmedals.dmi'
 	lefthand_file = 'icons/mob/inhands/misc/food_lefthand.dmi'
@@ -27,12 +27,12 @@
 			if(user.mind.assigned_role == "Mercenary")
 				to_chat(user, "<span class='warning'>...have I really stooped so low as to sign my own commendation?</span>")
 				return
-			if(user.mind.assigned_role != "Mercenary") // AZURE: anyone can hire a mercenary
+			if(user.mind.assigned_role != "Mercenary") // LYNDVHAR: anyone can hire a mercenary
 				signee = user.real_name
 				signeejob = user.mind.assigned_role
 				visible_message("<span class='warning'>[user] writes their name down on the token.</span>")
 				playsound(src, 'sound/items/write.ogg', 100, FALSE)
-				desc = "A small, palm-fitting bound scroll that can be sent by mail to the Guild. Most of the fine print is unintelligible, save for one bold SIGNEE: [signee], [signeejob] of Azure Peak."
+				desc = "A small, palm-fitting bound scroll that can be sent by mail to the Guild. Most of the fine print is unintelligible, save for one bold SIGNEE: [signee], [signeejob] of Lyndhardtia."
 				signed = 1
 				return
 		else
