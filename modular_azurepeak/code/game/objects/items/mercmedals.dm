@@ -81,14 +81,14 @@
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/freifechter
 	name = "freifechter's obol"
-	desc = "A descendant of the oft-forgotten astilen, with a hole through one end for hanging on a string. With the advent of mammon as the Western Continent's currency of choice, \
-	they find new lyfe worn as marks of skill by freifechters."
+	desc = "A descendant of the oft-forgotten astilen, with a hole through one end for hanging on a string. The origins for why the Freifechter Potentate has adopted this insignia is still unknown, \
+	even to most of their own folk. Perhaps a long forgotten mythos shrouded in the Gilded."
 	icon_state = "freif_obol"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/atgervi
 	name = "northmanne's idol"
 	desc = "A humble token of tightly-wound canvas, fur, and wood. A piece of home, clutched tight against the chest. Feel its heart beat in tyme with your own. Even here, in distant Lyndvhar, \
-	the gods walk, and they walk with you."
+	the winds whisper, and they walk with you."
 	icon_state = "atgervi_idol"
 
 /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/grudgebearer
