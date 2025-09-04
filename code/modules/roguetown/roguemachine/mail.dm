@@ -186,7 +186,7 @@
 					if(1)
 						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/atgervi(src.loc)
 					if(2)
-						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/blackoak(src.loc)
+						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/crestguardian(src.loc)
 					if(3)
 						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero(src.loc)
 					if(4)
@@ -711,9 +711,9 @@
 	contents = "<center>✤ ── LA GLORIOSA INQUISIZIONE DI VALORIA ── ✤<BR>"
 	contents += "PER LA PURIFICAZIONE DELL'ERESIA, POSSA PERSEVERARE PSYDON.<BR>"
 	if(HAS_TRAIT(user, TRAIT_PURITAN))		
-		contents += "✤ ── <a href='?src=[REF(src)];locktoggle=1]'> PURITAN'S LOCK: [inqonly ? "OUI":"NON"]</a> ── ✤<BR>"
+		contents += "✤ ── <a href='?src=[REF(src)];locktoggle=1]'> PURITAN'S LOCK: [inqonly ? "SI":"NO"]</a> ── ✤<BR>"
 	else
-		contents += "✤ ── PURITAN'S LOCK: [inqonly ? "OUI":"NON"] ── ✤<BR>"
+		contents += "✤ ── PURITAN'S LOCK: [inqonly ? "SI":"NO"] ── ✤<BR>"
 	contents += "ᛉ <a href='?src=[REF(src)];eject=1'>MARQUES LOADED: [inqcoins]</a>ᛉ<BR>"
 
 	if(cat_current == "1")

@@ -16,7 +16,7 @@
 	var/classes = list("Swordsman","Macebearer","Flailman", "Lancer")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 	H.set_blindness(0)
-	to_chat(H, span_warning("You are a one of the Routiers, decently experienced in the use of your chosen arms."))
+	to_chat(H, span_warning("You are one of the Routiers, decently experienced in the use of your chosen arms."))
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)

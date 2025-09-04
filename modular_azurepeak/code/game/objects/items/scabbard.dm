@@ -522,13 +522,13 @@
 	desc = "A cloud-patterned scabbard with a cloth sash. Used for blocking."
 	icon_state = "kazscab_steel"
 	item_state = "kazscab_steel"
-	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
+	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefenghench
 
 
 /obj/item/rogueweapon/scabbard/sword/saltlian/gold
-	name = "gold-stained Xinyi scabbard"
+	name = "gold-stained Guiying scabbard"
 	desc = "An ornate, wooden scabbard with a sash. Great for parrying."
 	icon_state = "kazscab_gold"
 	item_state = "kazscab_gold"
-	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/rumacaptain
+	valid_blade = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
 	sellprice = 10

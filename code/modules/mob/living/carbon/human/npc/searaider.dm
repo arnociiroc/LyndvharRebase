@@ -135,26 +135,26 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	if(prob(50))
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/vagrant
 	if(prob(50))
 		shirt = /obj/item/clothing/suit/roguetown/shirt/tunic
-	pants = /obj/item/clothing/under/roguetown/tights
+	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	if(prob(50))
 		pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	head = /obj/item/clothing/head/roguetown/helmet/leather
+	head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	if(prob(50))
 		head = /obj/item/clothing/head/roguetown/helmet/horned
 	if(prob(50))
 		neck = /obj/item/clothing/neck/roguetown/gorget
 	if(prob(50))
-		gloves = /obj/item/clothing/gloves/roguetown/leather
+		gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
 	if(prob(50))
-		r_hand = /obj/item/rogueweapon/sword/iron
-		l_hand = /obj/item/rogueweapon/shield/wood
+		r_hand = /obj/item/rogueweapon/sword/short/messer/iron
+		l_hand = /obj/item/rogueweapon/shield/atgervi
 	else
 		r_hand = /obj/item/rogueweapon/greataxe
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	H.STASPD = 9
 	H.STACON = rand(10,12) //so their limbs no longer pop off like a skeleton
 	H.STAEND = 15
