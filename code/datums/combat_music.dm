@@ -76,8 +76,8 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 	shortname = "Baotha"
 	musicpath = list('sound/music/combat_baotha.ogg')
 
-/datum/combat_music/blackoak
-	name = "Black Oak"
+/datum/combat_music/crestguardian
+	name = "Crestborne Guardian"
 	desc = "The songs of those protective of the woodlands."
 	shortname = "Warden"
 	musicpath = list('sound/music/combat_blackoak.ogg')

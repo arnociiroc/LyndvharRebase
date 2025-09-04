@@ -56,7 +56,7 @@
 	name = "imperial gryphon"
 	desc = "A parody of the brass medal issued to Grenzelhoftian soldiers of great honor and renown. Frequently adopted as medals by other, younger guilds among the mercenaries of Yoheon, with slight adjustment."
 
-/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/blackoak
+/obj/item/clothing/neck/roguetown/luckcharm/mercmedal/crestguardian
 	name = "guardian's seedpouch"
 	desc = "A pouch, sealed tight, bearing the acorn of an oak native to the Crestborne forests. May your end be a new beginning for Greencrest."
 	icon_state = "blackoak_pouch"

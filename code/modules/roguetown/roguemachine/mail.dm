@@ -186,7 +186,7 @@
 					if(1)
 						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/atgervi(src.loc)
 					if(2)
-						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/blackoak(src.loc)
+						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/crestguardian(src.loc)
 					if(3)
 						new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero(src.loc)
 					if(4)
