@@ -17,7 +17,7 @@
 	bypass_jobban = FALSE
 	min_pq = 100 //the magic of an allowlist server.
 	max_pq = null
-	tutorial = "The Lunatic, shunned by society and a magnet for misfortune. Your task is simple yet perilous: survive by any means, though your very existence invites danger from every corner. It is said that Lyndvhar drives those most familiar with it, the most insane."
+	tutorial = "The writings on the wall- the whispers spoken in the back of your mind. You know it is true- that nothing is real, and everything is a falsehood. You lost everything in the pursuit of this madness, and have become completely undesired and hated for it. Your task is simple yet perilous: survive by any means necessary and spread the truth, though your very existence invites danger from every corner. It is said that Beowricke drives those most familiar with its setting, the most insane. Wake up."
 	display_order = JDO_LUNATIC
 
 	cmode_music = 'sound/music/combat_bum.ogg'
