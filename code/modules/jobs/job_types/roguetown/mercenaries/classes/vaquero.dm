@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/vaquero
 	name = "Vaquero"
-	tutorial = "A localized Calmirixian subculture of fencing, bounty hunting charismatic nomads who are known for their skill in mounted combat and their flashy yet practical clothing."
+	tutorial = "A localized Calmirixian subculture of fencing, the Vaquero are bounty hunting charismatic nomads who are known for their skill in mounted combat and their flashy yet practical clothing. While the original term for Vaquero was coined by settlers first set to establish ranches and homesteads in the marshes of Calmirixia, it has since grown into a moderately sized mercenary order, working for the highest bidder."
 	outfit = /datum/outfit/job/roguetown/mercenary/vaquero
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	cmode_music = 'sound/music/combat_vaquero.ogg'
