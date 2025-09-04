@@ -526,7 +526,7 @@
 
 
 /obj/item/rogueweapon/scabbard/sword/saltlian/gold
-	name = "gold-stained Xinyi scabbard"
+	name = "gold-stained Guiying scabbard"
 	desc = "An ornate, wooden scabbard with a sash. Great for parrying."
 	icon_state = "kazscab_gold"
 	item_state = "kazscab_gold"

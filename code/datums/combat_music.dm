@@ -282,7 +282,7 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 
 /datum/combat_music/saltlia
 	name = "Saltlia"
-	desc = "The melody of the Xingyi beckons to you. Perhaps the will can be enforced this far west."
+	desc = "The melody of the lands of salt beckon to you. Perhaps the will can be enforced this far west."
 	shortname = "Saltlia"
 	musicpath = list('sound/music/combat_saltlia.ogg')
 
