@@ -11,8 +11,8 @@
 
 	allowed_races = RACES_ALL_KINDS
 
-	tutorial = "You are a member of the Lyndvhar Guild of Crafts, a massive guild formed to represent the interests of all craftsmen in the township of Lyndvhar.\
-	As a Guildsman, you hail from the three most important constituent guilds: The Smith's Guild, the Artificer's Guild, and the Architect's Guild. The Guildsmaster has sway over you, but it is not absolute."
+	tutorial = "You studied for many decades under your master with a few other apprentices to become a member of the Maker's Guild--a trade that certainly has seen a boom in recent times, with many a bannerlord keenly aware of the importance in maintaining a well-equipped army..\
+	As a Guildsman, you hail from the three most important constituent sub-guilds: the Smiths, the Artificers, and the Architects. Obey instruction from your Guildmaster, and you will see your business prosper."
 
 	outfit = /datum/outfit/job/roguetown/guildsman
 	selection_color = JCOLOR_YEOMAN
@@ -98,9 +98,9 @@
 
 /datum/advclass/guildsman/artificer
 	name = "Artificer"
-	tutorial = "You are an Artificer, oft known by the longer name of Artificer-Enchanter. You have basic training in the arts of smithing, and can substitute for a blacksmith's work if needed.\
+	tutorial = "You found a keen interest in ancient technologies lost forgotten, and thus have devoted yourself to artificery. You have basic training in the arts of smithing, and can substitute for a blacksmith's work if needed.\
 	But your true calling is the creation and enchantment of magical items, alongside feats of engineering, creating mechanical and magical wonders whose art of creation has been passed down\
-	from a certain elven Artificer..."
+	from ancient smiths of the Gilded Age.."
 	outfit = /datum/outfit/job/roguetown/guildsman/artificer
 
 	category_tags = list(CTAG_GUILDSMEN)
@@ -116,7 +116,7 @@
 	H.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE) // Artificer makes for a crappy substitute blacksmith but have the same spread
 	H.adjust_skillrank(/datum/skill/craft/armorsmithing, 2, TRUE) 
 	H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)
@@ -147,7 +147,7 @@
 						/obj/item/recipe_book/magic = 1,
 						/obj/item/chalk = 1,
 						)
-	// Not a real mage, no free spell point. Take Arcyne Potential if you want it.
+	// Not a real mage, no free spell point.
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
@@ -160,7 +160,7 @@
 
 /datum/advclass/guildsman/architect
 	name = "Architect"
-	tutorial = "You are a Guild Architect, a master of the art of building and construction. You build castles, fortifications and entire cities with your own hands. And you know how to source those materials yourself too.\
+	tutorial = "Unlike others, you found interest in the writing in stone- chiseling, masonry, and craftsmanship- a master artist of building and construction. You build castles, fortifications and entire cities with your own hands. And you know how to source those materials yourself too.\
 	When there is no construction work around, your fellow Guildsmen appreciate your help with gathering materials."
 	outfit = /datum/outfit/job/roguetown/guildsman/architect
 
@@ -173,7 +173,7 @@
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/labor/mining, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/labor/mining, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
 	H.adjust_skillrank(/datum/skill/craft/crafting, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/carpentry, 4, TRUE)

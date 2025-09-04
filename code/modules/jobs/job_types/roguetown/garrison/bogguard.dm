@@ -11,7 +11,7 @@
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_NICE_PATRONS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "Whether through forced conscription, or the desire to serve, you have found a place in the Draguippe Wardens. You are the frontline defense against evil, and protector of the frontier roads. The life is not easy, but this is what you were conscripted for. Protect the forests well, for if you fall, then nothing will stop what lurks outside from seeping in.."
+	tutorial = "The life of a Warden is not an easy one- as you found out upon recruitment. Whether your recruitment was through forced conscription or through willingnes to serve- you still find yourself amongst the Brotherhood of the Draguippe- sworn to protect the forests and the main foot-entrance into the city at any cost. You are the frontline defense against evil, and protector of the frontier roads. The life is not easy, but this is what you were brought on for. Protect the forests well, for if you fall, then nothing will stop what lurks outside from seeping in.."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 

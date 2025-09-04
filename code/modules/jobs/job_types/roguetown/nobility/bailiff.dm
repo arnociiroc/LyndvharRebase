@@ -10,7 +10,7 @@
 	allowed_races = RACES_TOLERATED_UP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	display_order = JDO_MARSHAL
-	tutorial = "You are an agent of the Viscount in matters of local law and levy, making sure that laws are pushed, verified and carried out by the retinue upon the citizenry. While you preside over the knights and men-at-arms, much of your work happens behind a desk, deferring to the Retinue Captain to make sure your will is carried out in the field."
+	tutorial = "From the time since you were young you have served the realm. From a noble squire at a young age to now- you have served the Viscount diligently and been awarded for such- now the Marshal of the city watch. You are an agent in matters of local law and levy, making sure that laws are pushed, verified and carried out by the retinue upon the citizenry. While you preside over the knights and men-at-arms, much of your work happens behind a desk, deferring to the Retinue Captain to make sure your will is carried out in the field."
 	whitelist_req = FALSE
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard) // /obj/effect/proc_holder/spell/self/convertrole/bog
