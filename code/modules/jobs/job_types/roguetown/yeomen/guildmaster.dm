@@ -12,8 +12,8 @@
 
 	allowed_races = RACES_SHUNNED_UP
 
-	tutorial = "You are the leader of the Craftsman Guild of Lyndvhar. You represents the interests of all of the craftsmen underneath you - including the Tailor\
-	the Blacksmiths, the Artificers and the Architects. Other townspeople may look to you for guidance, but they are not under your control. Due to the increasing demand for material you were given privileged status as a member of nobility. Use this however you must.."  
+	tutorial = "You've spent your entire life devoted to Malum's craft. There is not a single thing you have not smithed, nor a business transaction not seen. In light of your worth, you have made yourself one of the most important smiths in the city, and have been bestowed with the position of Guildmaster of the Maker's Guild. You represents the interests of all of the craftsmen underneath you - including but not limited to-\
+	the Blacksmiths, the Artificers and the Architects. Other townspeople may look to you for guidance, but they are not under your control. Due to the increasing demand for material you were given privileged status as a member of nobility. Keep your hammer ready- for there is much work to be done."  
 
 	outfit = /datum/outfit/job/roguetown/guildmaster
 	selection_color = JCOLOR_YEOMAN
