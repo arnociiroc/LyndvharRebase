@@ -31,6 +31,7 @@
 /area/rogue/outdoors/beach/forest/hamlet
 	name = "LILAC BAY - RAIDER CAMP"
 	first_time_text = "RHAENVALI CAMP"
+	droning_sound = 'sound/music/area/siege.ogg'
 	ambush_mobs = null // We don't want actual ambushes in Hamlet but we also don't want to misuse outdoors/beach lol
 	threat_region = THREAT_REGION_NORTH_COAST
 
