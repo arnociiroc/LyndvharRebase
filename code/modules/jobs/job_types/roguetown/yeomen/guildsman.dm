@@ -11,7 +11,7 @@
 
 	allowed_races = RACES_ALL_KINDS
 
-	tutorial = "You studied for many decades under your master with a few other apprentices to become a member of the Maker's Guild--a trade that certainly has seen a boom in recent times, with many a bannerlord keenly aware of the importance in maintaining a well-equipped army..\
+	tutorial = "You studied for many yils under your master with a few other apprentices to become a member of the Maker's Guild--a trade that certainly has seen a boom in recent times, with many a bannerlord keenly aware of the importance in maintaining a well-equipped army..\
 	As a Guildsman, you hail from the three most important constituent sub-guilds: the Smiths, the Artificers, and the Architects. Obey instruction from your Guildmaster, and you will see your business prosper."
 
 	outfit = /datum/outfit/job/roguetown/guildsman
