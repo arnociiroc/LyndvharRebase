@@ -16,7 +16,7 @@ GLOBAL_LIST_INIT(hedgeknight_aggro, world.file2list("strings/rt/hedgeknightaggro
 	faction = list("dundead")
 	ambushable = FALSE
 	dodgetime = 30
-	flee_in_pain = TRUE
+	flee_in_pain = FALSE
 	possible_rmb_intents = list(
 		/datum/rmb_intent/feint,\
 		/datum/rmb_intent/aimed,\
@@ -227,6 +227,7 @@ GLOBAL_LIST_INIT(hedgeknight_aggro, world.file2list("strings/rt/hedgeknightaggro
 /datum/outfit/job/roguetown/quest_miniboss/matthios/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 
+	H.set_patron(/datum/patron/inhumen/matthios)
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/matthios
 	pants = /obj/item/clothing/under/roguetown/platelegs/matthios
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/matthios
@@ -240,6 +241,7 @@ GLOBAL_LIST_INIT(hedgeknight_aggro, world.file2list("strings/rt/hedgeknightaggro
 /datum/outfit/job/roguetown/quest_miniboss/zizo/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 
+	H.set_patron(/datum/patron/inhumen/zizo)
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/zizo
 	pants = /obj/item/clothing/under/roguetown/platelegs/zizo
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/zizo
@@ -253,6 +255,7 @@ GLOBAL_LIST_INIT(hedgeknight_aggro, world.file2list("strings/rt/hedgeknightaggro
 /datum/outfit/job/roguetown/quest_miniboss/graggar/pre_equip(mob/living/carbon/human/H)
 	. = ..()
 
+	H.set_patron(/datum/patron/inhumen/graggar)
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/fluted/graggar
 	pants = /obj/item/clothing/under/roguetown/platelegs/graggar
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/graggar
