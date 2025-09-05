@@ -16,25 +16,24 @@
 	switch(random_deserter_weapon)
 		if(1)
 			r_hand = /obj/item/rogueweapon/sword/iron
-			l_hand = /obj/item/rogueweapon/shield/heater
+			l_hand = /obj/item/rogueweapon/shield/wood
 		if(2)
 			r_hand = /obj/item/rogueweapon/spear
 		if(3)
-			r_hand = /obj/item/rogueweapon/stoneaxe/battle
-			l_hand = /obj/item/rogueweapon/shield/heater
+			r_hand = /obj/item/rogueweapon/stoneaxe/handaxe
+			l_hand = /obj/item/rogueweapon/shield/wood
 
 /datum/outfit/job/roguetown/human/northern/bog_deserters/proc/add_random_deserter_weapon_hard(mob/living/carbon/human/H)
 	var/add_random_deserter_weapon_hard = rand(1,4)
 	switch(add_random_deserter_weapon_hard)
 		if(1)
-			r_hand = /obj/item/rogueweapon/sword/iron
+			r_hand = /obj/item/rogueweapon/sword/saber/iron
 			l_hand = /obj/item/rogueweapon/shield/heater
 		if(2)
 			r_hand = /obj/item/rogueweapon/mace/warhammer
 			l_hand = /obj/item/rogueweapon/shield/heater
 		if(3)
-			r_hand = /obj/item/rogueweapon/stoneaxe/battle
-			l_hand = /obj/item/rogueweapon/shield/heater
+			r_hand = /obj/item/rogueweapon/greataxe/militia
 		if(4)
 			r_hand = /obj/item/rogueweapon/flail
 			l_hand = /obj/item/rogueweapon/shield/heater
@@ -83,7 +82,7 @@
 		if(2)
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 		if(3)
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 
 /mob/living/carbon/human/species/human/northern/bog_deserters
 	aggressive=1
@@ -145,8 +144,63 @@
 	ADD_TRAIT(src, TRAIT_KNEESTINGER_IMMUNITY, TRAIT_GENERIC) //For when they're just kinda patrolling around/ambushes
 	equipOutfit(new /datum/outfit/job/roguetown/human/northern/bog_deserters)
 	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)
+	gender = pick(MALE, FEMALE)
+	regenerate_icons()
+
+	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
+	var/hairf = pick(list(/datum/sprite_accessory/hair/head/lowbraid, 
+						/datum/sprite_accessory/hair/head/himecut, 
+						/datum/sprite_accessory/hair/head/countryponytailalt, 
+						/datum/sprite_accessory/hair/head/stacy,
+						/datum/sprite_accessory/hair/head/stacybun,
+						/datum/sprite_accessory/hair/head/kusanagi_alt))
+	var/hairm = pick(list(/datum/sprite_accessory/hair/head/ponytailwitcher, 
+						/datum/sprite_accessory/hair/head/lowbraid,
+						/datum/sprite_accessory/hair/head/dave, 
+						/datum/sprite_accessory/hair/head/emo, 
+						/datum/sprite_accessory/hair/head/sabitsuki,
+						/datum/sprite_accessory/hair/head/sabitsuki_ponytail))
+	var/beard = pick(list(/datum/sprite_accessory/hair/facial/viking,
+						/datum/sprite_accessory/hair/facial/manly,
+						/datum/sprite_accessory/hair/facial/longbeard))
+
+	var/datum/bodypart_feature/hair/head/new_hair = new()
+	var/datum/bodypart_feature/hair/facial/new_facial = new()
+
+	if(gender == FEMALE)
+		new_hair.set_accessory_type(hairf, null, src)
+	else
+		new_hair.set_accessory_type(hairm, null, src)
+		new_facial.set_accessory_type(beard, null, src)
+
+	if(prob(50))
+		new_hair.accessory_colors = "#C1A287"
+		new_hair.hair_color = "#C1A287"
+		new_facial.accessory_colors = "#C1A287"
+		new_facial.hair_color = "#C1A287"
+		hair_color = "#C1A287"
+	else
+		new_hair.accessory_colors = "#A56B3D"
+		new_hair.hair_color = "#A56B3D"
+		new_facial.accessory_colors = "#A56B3D"
+		new_facial.hair_color = "#A56B3D"
+		hair_color = "#A56B3D"
+
+	head.add_bodypart_feature(new_hair)
+	head.add_bodypart_feature(new_facial)
+
+	dna.update_ui_block(DNA_HAIR_COLOR_BLOCK)
+	dna.species.handle_body(src)
+
 	if(organ_eyes)
-		organ_eyes.eye_color = pick("27becc", "35cc27", "000000")
+		organ_eyes.eye_color = "#336699"
+		organ_eyes.accessory_colors = "#336699#336699"
+
+	if(gender == FEMALE)
+		real_name = pick(world.file2list("strings/rt/names/human/humnorf.txt"))
+	else
+		real_name = pick(world.file2list("strings/rt/names/human/humnorm.txt"))
+	head.sellprice = 45
 	update_hair()
 	update_body()
 	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
@@ -205,10 +259,10 @@
 	H.STAINT = 11
 	//Chest Gear
 	add_random_deserter_cloak(H)
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	//Head Gear
-	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
+	neck = /obj/item/clothing/neck/roguetown/leather
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
@@ -256,12 +310,65 @@
 	ADD_TRAIT(src, TRAIT_KNEESTINGER_IMMUNITY, TRAIT_GENERIC) //For when they're just kinda patrolling around/ambushes
 	equipOutfit(new /datum/outfit/job/roguetown/human/northern/bog_deserters/better_gear)
 	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)
+	gender = pick(MALE, FEMALE)
+	regenerate_icons()
+
+	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
+	var/hairf = pick(list(/datum/sprite_accessory/hair/head/lowbraid, 
+						/datum/sprite_accessory/hair/head/himecut, 
+						/datum/sprite_accessory/hair/head/countryponytailalt, 
+						/datum/sprite_accessory/hair/head/stacy,
+						/datum/sprite_accessory/hair/head/stacybun,
+						/datum/sprite_accessory/hair/head/kusanagi_alt))
+	var/hairm = pick(list(/datum/sprite_accessory/hair/head/ponytailwitcher, 
+						/datum/sprite_accessory/hair/head/lowbraid,
+						/datum/sprite_accessory/hair/head/dave, 
+						/datum/sprite_accessory/hair/head/emo, 
+						/datum/sprite_accessory/hair/head/sabitsuki,
+						/datum/sprite_accessory/hair/head/sabitsuki_ponytail))
+	var/beard = pick(list(/datum/sprite_accessory/hair/facial/viking,
+						/datum/sprite_accessory/hair/facial/manly,
+						/datum/sprite_accessory/hair/facial/longbeard))
+
+	var/datum/bodypart_feature/hair/head/new_hair = new()
+	var/datum/bodypart_feature/hair/facial/new_facial = new()
+
+	if(gender == FEMALE)
+		new_hair.set_accessory_type(hairf, null, src)
+	else
+		new_hair.set_accessory_type(hairm, null, src)
+		new_facial.set_accessory_type(beard, null, src)
+
+	if(prob(50))
+		new_hair.accessory_colors = "#C1A287"
+		new_hair.hair_color = "#C1A287"
+		new_facial.accessory_colors = "#C1A287"
+		new_facial.hair_color = "#C1A287"
+		hair_color = "#C1A287"
+	else
+		new_hair.accessory_colors = "#A56B3D"
+		new_hair.hair_color = "#A56B3D"
+		new_facial.accessory_colors = "#A56B3D"
+		new_facial.hair_color = "#A56B3D"
+		hair_color = "#A56B3D"
+
+	head.add_bodypart_feature(new_hair)
+	head.add_bodypart_feature(new_facial)
+
+	dna.update_ui_block(DNA_HAIR_COLOR_BLOCK)
+	dna.species.handle_body(src)
+
 	if(organ_eyes)
-		organ_eyes.eye_color = pick("27becc", "35cc27", "000000")
+		organ_eyes.eye_color = "#336699"
+		organ_eyes.accessory_colors = "#336699#336699"
+
+	if(gender == FEMALE)
+		real_name = pick(world.file2list("strings/rt/names/human/humnorf.txt"))
+	else
+		real_name = pick(world.file2list("strings/rt/names/human/humnorm.txt"))
+	head.sellprice = 45
 	update_hair()
 	update_body()
-	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
-	head.sellprice = 50 // Big sellprice for these guys since they're deserters
 
 /datum/outfit/job/roguetown/human/northern/bog_deserters/better_gear/pre_equip(mob/living/carbon/human/H)
 	//Body Stuff
