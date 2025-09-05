@@ -5,7 +5,7 @@
 	name = "Zardman"
 	id = "lizardfolk"
 	desc = "<b>Zardman</b><br>\
-	Composed of scales resembling what could be seen in the common lizard, the Zardman is anything but this. Once the slave chattel of the Draconae of the Calmirixial province, they are a very industrious and martial race, having served under the direct oppression of Draconae overlordship for years. When Naexidor came to Calmirixial and destroyed Draconae hegemony over the region, what followed was a complete schism of Draconae and Zardman society. Zardmen often kill their young that form into their draconic counterparts as a result of this deep hatred for each other.<br>"
+	Composed of scales and hardened hides - the Zards of Calmirixia are some of the hardiest beings of this central area of the Ruby Sea. Once the slave chattel of the Draconae of the Calmirixia province, they are a very industrious and martial race, having served under the direct oppression of Draconae overlordship for years. They have adapted hardily to modern societies and are very quick to integrate with communities. When Naexidor came to Calmirixia and destroyed Draconae hegemony over the region, what followed was a complete schism of Draconae and Zardman society. Zardmen often kill their young that form into their draconic counterparts as a result of this deep hatred for each other- a practice that is currently banned in most provinces but has seen an increase with the vacuum of power in the wake of the Empire’s destruction.<br>"
 	skin_tone_wording = "Skin Colors"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	possible_ages = ALL_AGES_LIST
