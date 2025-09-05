@@ -5,7 +5,7 @@
 	name = "Verminvolk"
 	id = "anthromorphsmall"
 	desc = "<b>Verminvolk</b><br>\
-	Crafted in much the same way as the Wild-Kin, the Verminvolk, or Small-Wildlings, these beings face even more resentment and hatred compared to their Wild-Kin siblings, as they were formed from pest animals, such as rodents.<br>"
+	This species in particular does not have anything written for it yet. If you are reading this, it might not even exist soon. Why are you playing it?<br>"
 	default_color = "444"
 	species_traits = list(
 		MUTCOLORS,
