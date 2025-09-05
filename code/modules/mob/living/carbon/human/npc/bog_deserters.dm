@@ -203,7 +203,6 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	head.sellprice = 45
 	update_hair()
 	update_body()
-	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
 	head.sellprice = 50 // Big sellprice for these guys since they're deserters
 
 /mob/living/carbon/human/species/human/northern/bog_deserters/npc_idle()
