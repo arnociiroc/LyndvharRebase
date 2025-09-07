@@ -106,7 +106,7 @@
 	..()
 	if(prob(50))//WRIST
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	if(prob(10))//ARMOUR
+	if(prob(25))//ARMOUR
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	if(prob(50))//SHIRT
 		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
