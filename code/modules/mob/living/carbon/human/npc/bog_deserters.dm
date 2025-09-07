@@ -2,11 +2,9 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 //After the bogfort fell to undead, the remaining guard who didn't flea turned to bandirty. Wellarmed and trained.
 //These guys use alot of iron stuff with small amounts of steel mixed in, not really one for finetuned balance might be too hard or easy idk. Going off vibes atm
 /datum/outfit/job/roguetown/human/northern/bog_deserters/proc/add_random_deserter_cloak(mob/living/carbon/human/H)
-	var/random_deserter_cloak = rand(1,3)
+	var/random_deserter_cloak = rand(1,2)
 	switch(random_deserter_cloak)
 		if(1)
-			cloak = /obj/item/clothing/cloak/wardencloak
-		if(2)
 			cloak = /obj/item/clothing/cloak/wickercloak
 
 /datum/outfit/job/roguetown/human/northern/bog_deserters/proc/add_random_deserter_weapon(mob/living/carbon/human/H)
