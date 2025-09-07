@@ -107,7 +107,7 @@
 	if(prob(50))//WRIST
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	if(prob(10))//ARMOUR
-		armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+		armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	if(prob(50))//SHIRT
 		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 		if(prob(15))
@@ -115,19 +115,19 @@
 			if(prob(15))
 				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	if(prob(50))//PANTS
-		pants = /obj/item/clothing/under/roguetown/tights/vagrant
+		pants = /obj/item/clothing/under/roguetown/trou/leather
 		if(prob(25))
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			if(prob(25))
 				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	if(prob(50))//HEAD
-		head = /obj/item/clothing/neck/roguetown/coif
+		head = /obj/item/clothing/head/roguetown/helmet/sallet/iron
 		if(prob(30))
-			head = /obj/item/clothing/head/roguetown/helmet/kettle
+			head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 	if(prob(50))
-		neck= /obj/item/clothing/neck/roguetown/chaincoif
+		neck= /obj/item/clothing/neck/roguetown/chaincoif/iron
 	if(prob(50))//CLOAK
-		cloak = /obj/item/clothing/cloak/stabard/bog
+		cloak = /obj/item/clothing/cloak/wickercloak
 	if(prob(45))//HANDS
 		r_hand = /obj/item/rogueweapon/sword
 		if(prob(45))
@@ -151,16 +151,17 @@
 
 /datum/outfit/job/roguetown/npc/skeleton/npc/bogguard/master/pre_equip(mob/living/carbon/human/H)
 	. = ..()
-	head = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull
-	gloves = /obj/item/clothing/gloves/roguetown/plate
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/warden/bear
+	mask = /obj/item/clothing/head/roguetown/roguehood/warden/antler
+	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	cloak = /obj/item/clothing/cloak/stabard/bog
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	cloak = /obj/item/clothing/cloak/wardencloak
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden/upgraded
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather
-	r_hand = /obj/item/rogueweapon/halberd
+	r_hand = /obj/item/rogueweapon/greataxe/steel/doublehead
 	H.STASTR = 18
 	H.STASPD = 10
 	H.STACON = 10
