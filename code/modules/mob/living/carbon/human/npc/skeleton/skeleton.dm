@@ -128,11 +128,11 @@
 		neck= /obj/item/clothing/neck/roguetown/chaincoif/iron
 	if(prob(50))//CLOAK
 		cloak = /obj/item/clothing/cloak/wickercloak
-	if(prob(45))//HANDS
+	if(prob(50))//HANDS
 		r_hand = /obj/item/rogueweapon/sword/iron
 		if(prob(45))
 			r_hand = /obj/item/rogueweapon/spear
-			if(prob(10))
+			if(prob(5))
 				r_hand = /obj/item/rogueweapon/mace
 	H.STASTR = rand(15,16)
 	H.STASPD = 8
