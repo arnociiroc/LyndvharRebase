@@ -1,9 +1,9 @@
-/datum/migrant_role/grenzelhoft/envoy
+/datum/migrant_role/grenzel/envoy
 	greet_text = "On missive from the western elector of Huttsingen, you have been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war. What exactly you have been sent here to speak about- only you know."
-	outfit = /datum/outfit/job/roguetown/grenzelhoft/envoy
+	outfit = /datum/outfit/job/roguetown/grenzel/envoy
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-/datum/outfit/job/roguetown/grenzelhoft/envoy/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/grenzel/envoy/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/circlet
 	neck = /obj/item/clothing/neck/roguetown/leather
@@ -49,12 +49,12 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	H.grant_language(/datum/language/grenzelhoftian)
 
-/datum/migrant_role/grenzelhoft/doppelsoldner
+/datum/migrant_role/grenzel/doppelsoldner
 	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that his mission goes as planned."
-	outfit = /datum/outfit/job/roguetown/grenzelhoft/doppelsoldner
+	outfit = /datum/outfit/job/roguetown/grenzel/doppelsoldner
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-/datum/outfit/job/roguetown/grenzelhoft/doppelsoldner/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/grenzel/doppelsoldner/pre_equip(mob/living/carbon/human/H)
 	..()
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	belt = /obj/item/storage/belt/rogue/leather
@@ -99,12 +99,12 @@
 	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
 	H.grant_language(/datum/language/grenzelhoftian)
 
-/datum/migrant_role/grenzelhoft/boltslinger
+/datum/migrant_role/grenzel/boltslinger
 	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that his mission goes as planned."
-	outfit = /datum/outfit/job/roguetown/grenzelhoft/boltslinger
+	outfit = /datum/outfit/job/roguetown/grenzel/boltslinger
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-/datum/outfit/job/roguetown/grenzelhoft/boltslinger/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/grenzel/boltslinger/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/grenzelhofthat
 	neck = /obj/item/clothing/neck/roguetown/leather

@@ -5,9 +5,9 @@
 	weight = 50
 	downgrade_wave = /datum/migrant_wave/grenzelhoft_down_one
 	roles = list(
-		/datum/migrant_role/grenzelhoft/envoy = 1,
-		/datum/migrant_role/grenzelhoft/doppelsoldner = 2,
-		/datum/migrant_role/grenzelhoft/boltslinger = 1,
+		/datum/migrant_role/grenzel/envoy = 1,
+		/datum/migrant_role/grenzel/doppelsoldner = 2,
+		/datum/migrant_role/grenzel/boltslinger = 1,
 	)
 	greet_text = "On missive from the western elector of Huttsingen, this party has been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war."
 
@@ -17,8 +17,8 @@
 	can_roll = FALSE
 	downgrade_wave = /datum/migrant_wave/grenzelhoft_down_two
 	roles = list(
-		/datum/migrant_role/grenzelhoft/envoy = 1,
-		/datum/migrant_role/grenzelhoft/doppelsoldner = 2,
+		/datum/migrant_role/grenzel/envoy = 1,
+		/datum/migrant_role/grenzel/doppelsoldner = 2,
 	)
 	greet_text = "On missive from the western elector of Huttsingen, this party has been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war. The journey was difficult, and thus the Boltslinger was lost."
 
@@ -28,8 +28,8 @@
 	can_roll = FALSE
 	downgrade_wave = /datum/migrant_wave/grenzelhoft_down_three
 	roles = list(
-		/datum/migrant_role/grenzelhoft/envoy = 1,
-		/datum/migrant_role/grenzelhoft/doppelsoldner = 1,
+		/datum/migrant_role/grenzel/envoy = 1,
+		/datum/migrant_role/grenzel/doppelsoldner = 1,
 	)
 	greet_text = "On missive from the western elector of Huttsingen, this party has been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war. The journey was difficult, and a Doppelsoldner and the Boltslinger were lost."
 
@@ -38,6 +38,6 @@
 	shared_wave_type = /datum/migrant_wave/grenzelhoft
 	can_roll = FALSE
 	roles = list(
-		/datum/migrant_role/grenzelhoft/envoy = 1,
+		/datum/migrant_role/grenzel/envoy = 1,
 	)
 	greet_text = "On missive from the western elector of Huttsingen, this party has been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war. What horrible luck- everyone but the Envoy was lost in the journey."
