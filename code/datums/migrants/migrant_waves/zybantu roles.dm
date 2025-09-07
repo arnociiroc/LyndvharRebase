@@ -1,7 +1,7 @@
 /datum/migrant_role/zybantu/emir
 	name = "Emir"
 	greet_text = "On missive from the western authority of the Raj, you have been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war. What exactly you have been sent here to speak about- only you know."
-	outfit = /datum/outfit/job/roguetown/zybantu/envoy
+	outfit = /datum/outfit/job/roguetown/zybantu/emir
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 /datum/outfit/job/roguetown/zybantu/emir/pre_equip(mob/living/carbon/human/H)
