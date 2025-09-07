@@ -52,7 +52,7 @@
 
 /datum/migrant_role/grenzel/doppelsoldner
 	name = "Doppelsoldner"
-	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that his mission goes as planned."
+	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that their mission goes as planned."
 	outfit = /datum/outfit/job/roguetown/grenzel/doppelsoldner
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -103,7 +103,7 @@
 
 /datum/migrant_role/grenzel/boltslinger
 	name = "Boltslinger"
-	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that his mission goes as planned."
+	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that their mission goes as planned."
 	outfit = /datum/outfit/job/roguetown/grenzel/boltslinger
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
