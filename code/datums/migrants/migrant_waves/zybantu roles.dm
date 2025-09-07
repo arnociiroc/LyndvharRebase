@@ -4,7 +4,7 @@
 	outfit = /datum/outfit/job/roguetown/zybantu/envoy
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-/datum/outfit/job/roguetown/zybantu/envoy/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/zybantu/emir/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/circlet
 	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
