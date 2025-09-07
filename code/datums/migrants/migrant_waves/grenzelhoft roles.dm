@@ -1,5 +1,5 @@
 /datum/migrant_role/grenzelhoft/envoy
-	greet_text = ""
+	greet_text = "On missive from the western elector of Huttsingen, you have been sent to this continent to try and establish contact with one of the few standing cities unaffected by the Lyndhardtian civil war. What exactly you have been sent here to speak about- only you know."
 	outfit = /datum/outfit/job/roguetown/grenzelhoft/envoy
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -50,7 +50,7 @@
 	H.grant_language(/datum/language/grenzelhoftian)
 
 /datum/migrant_role/grenzelhoft/doppelsoldner
-	greet_text = ""
+	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that his mission goes as planned."
 	outfit = /datum/outfit/job/roguetown/grenzelhoft/doppelsoldner
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
@@ -100,7 +100,7 @@
 	H.grant_language(/datum/language/grenzelhoftian)
 
 /datum/migrant_role/grenzelhoft/boltslinger
-	greet_text = ""
+	greet_text = "You are a dilligent soldier in employ of the Envoy for protection and to assure that his mission goes as planned."
 	outfit = /datum/outfit/job/roguetown/grenzelhoft/boltslinger
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
