@@ -75,14 +75,12 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 			beltr = /obj/item/rogueweapon/scabbard/sword
 
 /datum/outfit/job/roguetown/human/northern/bog_deserters/proc/add_random_deserter_armor_hard(mob/living/carbon/human/H)
-	var/random_deserter_armor_hard = rand(1,3)
+	var/random_deserter_armor_hard = rand(1,2)
 	switch(random_deserter_armor_hard)
 		if(1)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 		if(2)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden/upgraded
-		if(3)
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 
 /mob/living/carbon/human/species/human/northern/bog_deserters
 	aggressive=1
@@ -263,8 +261,8 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	//Head Gear
-	neck = /obj/item/clothing/neck/roguetown/leather
-	head = /obj/item/clothing/head/roguetown/roguehood/warden
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
@@ -405,14 +403,14 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	add_random_deserter_cloak(H)
 	//Head Gear
 	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
-	head = /obj/item/clothing/head/roguetown/roguehood/warden/antler
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	//Lower Gear
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	//Weapons
 	add_random_deserter_weapon_hard(H)
 	add_random_deserter_beltl_stuff(H)
