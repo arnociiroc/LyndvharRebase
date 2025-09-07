@@ -7,7 +7,7 @@
 /datum/outfit/job/roguetown/zybantu/emir/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/circlet
-	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
+	mask = /obj/item/clothing/head/roguetown/roguehood/red
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	cloak = /obj/item/clothing/cloak/half/rider/red
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
