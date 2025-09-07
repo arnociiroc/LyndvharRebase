@@ -130,9 +130,9 @@
 		cloak = /obj/item/clothing/cloak/wickercloak
 	if(prob(50))//HANDS
 		r_hand = /obj/item/rogueweapon/sword/iron
-		if(prob(45))
+		if(prob(40))
 			r_hand = /obj/item/rogueweapon/spear
-			if(prob(5))
+			if(prob(10))
 				r_hand = /obj/item/rogueweapon/mace
 	H.STASTR = rand(15,16)
 	H.STASPD = 8
