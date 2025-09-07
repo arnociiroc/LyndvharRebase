@@ -119,7 +119,7 @@
 		if(prob(25))
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			if(prob(25))
-				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+				pants = /obj/item/clothing/under/roguetown/splintlegs/iron
 	if(prob(50))//HEAD
 		head = /obj/item/clothing/head/roguetown/helmet/sallet/iron
 		if(prob(30))
