@@ -93,8 +93,10 @@
 	H.change_stat("constitution", 3)
 	H.change_stat("perception", 1)
 	H.change_stat("speed", -2)
+	H.cmode_music = 'sound/music/combat_grenzelhoft.ogg'
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
 	H.grant_language(/datum/language/grenzelhoftian)
 
 /datum/migrant_role/grenzelhoft/boltslinger
@@ -124,3 +126,25 @@
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/flashlight/flare/torch/lantern = 1
 		)
+	H.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/slings, 2, TRUE) 
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+	H.change_stat("perception", 3)
+	H.change_stat("constitution", -1)
+	H.change_stat("endurance", 2)
+	H.change_stat("speed", 2)
+	H.cmode_music = 'sound/music/combat_grenzelhoft.ogg'
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
+	H.grant_language(/datum/language/grenzelhoftian)
