@@ -7,7 +7,7 @@
 /datum/outfit/job/roguetown/grenzel/envoy/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/circlet
-	neck = /obj/item/clothing/neck/roguetown/leather
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	cloak = /obj/item/clothing/cloak/stabard/surcoat/bailiff
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
