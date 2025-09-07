@@ -5,11 +5,11 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	var/random_deserter_cloak = rand(1,4)
 	switch(random_deserter_cloak)
 		if(1)
-			cloak = /obj/item/clothing/cloak/stabard/bog
+			cloak = /obj/item/clothing/cloak/wardencloak
 		if(2)
-			cloak = /obj/item/clothing/cloak/stabard/guard
+			cloak = /obj/item/clothing/cloak/wickercloak
 		if(3)
-			cloak = /obj/item/clothing/suit/roguetown/armor/longcoat/brown
+			cloak = /obj/item/clothing/cloak/raincloak/furcloak/woad
 
 /datum/outfit/job/roguetown/human/northern/bog_deserters/proc/add_random_deserter_weapon(mob/living/carbon/human/H)
 	var/random_deserter_weapon = rand(1,3)
@@ -78,9 +78,9 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	var/random_deserter_armor_hard = rand(1,3)
 	switch(random_deserter_armor_hard)
 		if(1)
-			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light
+			armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 		if(2)
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+			armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden/upgraded
 		if(3)
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 
@@ -261,17 +261,17 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	//Chest Gear
 	add_random_deserter_cloak(H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	//Head Gear
 	neck = /obj/item/clothing/neck/roguetown/leather
-	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
+	head = /obj/item/clothing/head/roguetown/roguehood/warden
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	//Lower Gear
 	belt = /obj/item/storage/belt/rogue/leather
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+	pants =/obj/item/clothing/under/roguetown/trou/leather
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	//Weapons
 	add_random_deserter_weapon(H)
 	add_random_deserter_beltl_stuff(H)
@@ -404,8 +404,8 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	add_random_deserter_armor_hard(H)
 	add_random_deserter_cloak(H)
 	//Head Gear
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
+	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
+	head = /obj/item/clothing/head/roguetown/roguehood/warden/antler
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron

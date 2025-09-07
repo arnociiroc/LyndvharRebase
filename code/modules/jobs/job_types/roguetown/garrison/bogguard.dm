@@ -52,8 +52,8 @@
 	..()
 	neck = /obj/item/clothing/neck/roguetown/coif/padded
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-	pants = /obj/item/clothing/under/roguetown/trou/leather
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve/warden
 	beltr = /obj/item/quiver/arrows
 	beltl = /obj/item/rogueweapon/huntingknife/idagger
