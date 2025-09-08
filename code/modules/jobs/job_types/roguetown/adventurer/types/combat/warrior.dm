@@ -230,7 +230,7 @@
 		if("Monster Hunter")
 			to_chat(H, span_warning("You specialize in hunting down monsters and the undead, carrying a silver blade."))
 			H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
