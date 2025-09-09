@@ -312,3 +312,6 @@
 
 /obj/item/storage/keyring/tailor
 	keys = list(/obj/item/roguekey/crafterguild, /obj/item/roguekey/tailor)
+
+/obj/item/storage/keyring/veteran
+	keys = list(/obj/item/roguekey/farm, /obj/item/roguekey/apartments/stable1, /obj/item/roguekey/apartments/stable2, /obj/item/roguekey/garrison, /obj/item/roguekey/walls)
