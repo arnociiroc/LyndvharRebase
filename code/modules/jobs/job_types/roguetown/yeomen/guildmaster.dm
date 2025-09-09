@@ -19,7 +19,7 @@
 	selection_color = JCOLOR_YEOMAN
 	display_order = JDO_GUILDMASTER
 	give_bank_account = 25
-	min_pq = 2
+	min_pq = 1
 	max_pq = null
 	round_contrib_points = 4
 	cmode_music = 'sound/music/cmode/towner/combat_retired.ogg'

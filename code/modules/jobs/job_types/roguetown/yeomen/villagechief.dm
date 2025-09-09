@@ -13,7 +13,7 @@
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/elder
 	display_order = JDO_CHIEF
-	min_pq = 2
+	min_pq = 1
 	max_pq = null
 	give_bank_account = 16
 	round_contrib_points = 5
