@@ -12,7 +12,7 @@
 	outfit = null
 	outfit_female = null
 	display_order = JDO_ORTHODOXIST
-	min_pq = 3
+	min_pq = 0
 	max_pq = null
 	round_contrib_points = 2
 	advclass_cat_rolls = list(CTAG_INQUISITION = 20)

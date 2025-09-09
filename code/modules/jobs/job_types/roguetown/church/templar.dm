@@ -9,7 +9,7 @@
 	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_DIVINE_PATRONS
 	outfit = /datum/outfit/job/roguetown/templar
-	min_pq = 5
+	min_pq = 4
 	max_pq = null
 	round_contrib_points = 2
 	total_positions = 4

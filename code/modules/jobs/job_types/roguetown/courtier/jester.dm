@@ -14,7 +14,7 @@
 	outfit = /datum/outfit/job/roguetown/jester
 	display_order = JDO_JESTER
 	give_bank_account = TRUE
-	min_pq = -5
+	min_pq = -10
 	max_pq = null
 	round_contrib_points = 2
 

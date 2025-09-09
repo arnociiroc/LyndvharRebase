@@ -17,7 +17,7 @@
 	display_order = JDO_PURITAN
 	advclass_cat_rolls = list(CTAG_PURITAN = 20)
 	give_bank_account = 35
-	min_pq = 6
+	min_pq = 3
 	max_pq = null
 	round_contrib_points = 3
 

@@ -15,7 +15,7 @@
 	whitelist_req = TRUE
 	give_bank_account = 44
 	noble_income = 22
-	min_pq = 7
+	min_pq = 4
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_hand.ogg'

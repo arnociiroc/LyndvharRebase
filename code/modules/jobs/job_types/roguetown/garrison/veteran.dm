@@ -15,7 +15,7 @@
 	display_order = JDO_VET
 	whitelist_req = TRUE
 	give_bank_account = 35
-	min_pq = 5
+	min_pq = 4
 	max_pq = null
 	round_contrib_points = 3
 

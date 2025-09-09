@@ -18,7 +18,7 @@
 	whitelist_req = TRUE
 
 	give_bank_account = 30
-	min_pq = 3
+	min_pq = 2
 	max_pq = null
 	round_contrib_points = 4
 
