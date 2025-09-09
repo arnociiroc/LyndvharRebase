@@ -58,7 +58,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	l_hand = /obj/item/rogueweapon/sword/sabre
 	beltl = /obj/item/rogueweapon/scabbard/sword
-	beltr = /obj/item/storage/keyring/guardcastle
+	beltr = /obj/item/storage/keyring/veteran
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	cloak = /obj/item/clothing/cloak/half/vet
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
