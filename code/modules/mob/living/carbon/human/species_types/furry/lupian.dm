@@ -177,7 +177,7 @@
 	returned["mcolor3"] = "373330"
 	return returned
 
-/datum/species/lupian/random_name(gender)
+/datum/species/lupian/random_name(gender,unique,lastname)
 	var/randname
 	if(gender == MALE)
 		randname = pick(world.file2list("strings/names/roguetown/lupianm.txt"))
