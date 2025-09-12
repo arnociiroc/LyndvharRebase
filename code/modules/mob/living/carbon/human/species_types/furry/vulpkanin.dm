@@ -152,3 +152,11 @@
 
 /datum/species/vulpkanin/get_random_body_markings(list/passed_features)
 	return assemble_body_markings_from_set(GLOB.body_marking_sets_by_type[/datum/body_marking_set/bellysockstertiary], passed_features, src)
+
+/datum/species/vulpkanin/random_name(gender,unique,lastname)
+	var/randname
+	if(gender == MALE)
+		randname = pick(world.file2list("strings/names/roguetown/vulpkianm.txt"))
+	else(gender == FEMALE)
+		randname = pick(world.file2list("strings/names/roguetown/vulpkianf.txt"))
+	return randname

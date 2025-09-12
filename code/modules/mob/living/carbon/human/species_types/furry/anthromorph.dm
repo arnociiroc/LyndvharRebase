@@ -178,3 +178,10 @@
 	returned["mcolor3"] = third_color
 	return returned
 
+/datum/species/anthromorph/random_name(gender,unique,lastname)
+	var/randname
+	if(gender == MALE)
+		randname = pick(world.file2list("strings/names/roguetown/wildkinm.txt"))
+	else(gender == FEMALE)
+		randname = pick(world.file2list("strings/names/roguetown/wildkinf.txt"))
+	return randname

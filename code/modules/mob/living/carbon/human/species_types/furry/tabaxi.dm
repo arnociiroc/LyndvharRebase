@@ -172,3 +172,11 @@
 /datum/species/tabaxi/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
+
+/datum/species/tabaxi/random_name(gender,unique,lastname)
+	var/randname
+	if(gender == MALE)
+		randname = pick(world.file2list("strings/names/roguetown/tabaxim.txt"))
+	else(gender == FEMALE)
+		randname = pick(world.file2list("strings/names/roguetown/tabaxif.txt"))
+	return randname
