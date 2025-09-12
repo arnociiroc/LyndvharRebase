@@ -182,6 +182,6 @@
 	var/randname
 	if(gender == MALE)
 		randname = pick(world.file2list("strings/names/roguetown/wildkinm.txt"))
-	else(gender == FEMALE)
+	if(gender == FEMALE)
 		randname = pick(world.file2list("strings/names/roguetown/wildkinf.txt"))
-	return randname
+	else randname
