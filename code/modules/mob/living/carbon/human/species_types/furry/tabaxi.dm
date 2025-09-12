@@ -173,7 +173,7 @@
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 
-/datum/species/tabaxi/random_name(gender,unique,lastname)
+/datum/species/tabaxi/random_name(gender)
 	var/randname
 	if(gender == MALE)
 		randname = pick(world.file2list("strings/names/roguetown/tabaxim.txt"))

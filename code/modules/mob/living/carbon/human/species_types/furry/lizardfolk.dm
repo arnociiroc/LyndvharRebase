@@ -161,7 +161,7 @@
 	returned["mcolor3"] = second_color
 	return returned
 
-/datum/species/lizardfolk/random_name(gender,unique,lastname)
+/datum/species/lizardfolk/random_name(gender)
 	var/randname
 	if(gender == MALE)
 		randname = pick(world.file2list("strings/names/roguetown/lizardm.txt"))
