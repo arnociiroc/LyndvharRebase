@@ -128,6 +128,14 @@
 		/datum/descriptor_choice/prominent_four_wild,
 	)
 
+/datum/species/anthromorph/random_name(gender,unique,lastname)
+	var/randname
+	if(gender == MALE)
+		randname = pick(world.file2list("strings/names/roguetown/wildkinm.txt"))
+	if(gender == FEMALE)
+		randname = pick(world.file2list("strings/names/roguetown/wildkinf.txt"))
+	else randname
+
 /datum/species/anthromorph/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
@@ -177,11 +185,3 @@
 	returned["mcolor2"] = second_color
 	returned["mcolor3"] = third_color
 	return returned
-
-/datum/species/anthromorph/random_name(gender,unique,lastname)
-	var/randname
-	if(gender == MALE)
-		randname = pick(world.file2list("strings/names/roguetown/wildkinm.txt"))
-	if(gender == FEMALE)
-		randname = pick(world.file2list("strings/names/roguetown/wildkinf.txt"))
-	else randname
