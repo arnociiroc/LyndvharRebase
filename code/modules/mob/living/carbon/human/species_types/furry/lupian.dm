@@ -179,8 +179,20 @@
 
 /datum/species/lupian/random_name(gender,unique,lastname)
 	var/randname
-	if(gender == MALE)
-		randname = pick(world.file2list("strings/names/roguetown/lupianm.txt"))
-	if(gender == FEMALE)
-		randname = pick(world.file2list("strings/names/roguetown/lupianf.txt"))
-	else randname
+	if(unique)
+		if(gender == MALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/rt/names/roguetown/lupianm.txt") )
+				if(!findname(randname))
+					break
+		if(gender == FEMALE)
+			for(var/i in 1 to 10)
+				randname = pick( world.file2list("strings/rt/names/roguetown/lupianf.txt") )
+				if(!findname(randname))
+					break
+	else
+		if(gender == MALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorm.txt") )
+		if(gender == FEMALE)
+			randname = pick( world.file2list("strings/rt/names/human/humnorf.txt") )
+	return randname
