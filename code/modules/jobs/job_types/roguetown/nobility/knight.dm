@@ -100,10 +100,11 @@
 
 
 	H.change_stat("strength", 3)
-	H.change_stat("intelligence", 3)
-	H.change_stat("constitution", 1)
-	H.change_stat("endurance", 1)
-	H.change_stat("speed", -1)
+	H.change_stat("intelligence", 2)
+	H.change_stat("constitution", 2)
+	H.change_stat("endurance", 3)
+	H.change_stat("perception", 2)
+	H.change_stat("speed", -2)
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Zweihander","Great Mace","Battle Axe","Greataxe","Estoc","Lucerne", "Partizan")
@@ -111,7 +112,7 @@
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Zweihander")
-			r_hand = /obj/item/rogueweapon/greatsword/zwei
+			r_hand = /obj/item/rogueweapon/greatsword/grenz
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 		if("Great Mace")
 			r_hand = /obj/item/rogueweapon/mace/goden/steel
@@ -130,8 +131,8 @@
 			r_hand = /obj/item/rogueweapon/spear/partizan
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	pants = /obj/item/clothing/under/roguetown/platelegs
 
 	var/helmets = list(
 		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
@@ -190,10 +191,11 @@
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	H.verbs |= /mob/proc/haltyell
 
-	H.change_stat("strength", 1)
+	H.change_stat("strength", 2)
 	H.change_stat("constitution", 3)
 	H.change_stat("endurance", 3)
 	H.change_stat("intelligence", 1)
+	H.change_stat("perception", 1)
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Longsword","Flail","Warhammer","Sabre")
@@ -206,7 +208,7 @@
 		if("Flail")
 			beltr = /obj/item/rogueweapon/flail/sflail
 		if ("Warhammer")
-			beltr = /obj/item/rogueweapon/mace/warhammer //Iron warhammer. This is one-handed and pairs well with shields. They can upgrade to steel in-round.
+			beltr = /obj/item/rogueweapon/mace/warhammer/steel //warhammer. This is one-handed and pairs well with shields. They can upgrade to steel in-round.
 		if("Sabre")
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			l_hand = /obj/item/rogueweapon/sword/sabre
@@ -275,9 +277,9 @@
 	H.verbs |= /mob/proc/haltyell
 
 	H.change_stat("strength", 2) //Decent all-around stats. Nothing spectacular. Ranged/melee hybrid class on horseback.
-	H.change_stat("endurance", 1)
-	H.change_stat("constitution", 1)
-	H.change_stat("perception", 2)
+	H.change_stat("endurance", 2)
+	H.change_stat("constitution", 2)
+	H.change_stat("perception", 3)
 	H.change_stat("intelligence", 1)
 
 	H.adjust_blindness(-3)
@@ -299,24 +301,24 @@
 		if("Billhook + Recurve Bow")
 			r_hand = /obj/item/rogueweapon/spear/billhook
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
-			beltr = /obj/item/quiver/arrows
+			beltr = /obj/item/quiver/bodkin
 			beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 		if("Grand Mace + Longbow")
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
-			beltr = /obj/item/quiver/arrows
+			beltr = /obj/item/quiver/bodkin
 			beltl = /obj/item/rogueweapon/mace/goden/steel
 		if("Sabre + Recurve Bow")
 			l_hand = /obj/item/rogueweapon/scabbard/sword
 			r_hand = /obj/item/rogueweapon/sword/sabre
-			beltr = /obj/item/quiver/arrows
+			beltr = /obj/item/quiver/bodkin
 			beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 		if("Lance + Kite Shield")
 			r_hand = /obj/item/rogueweapon/spear/lance
 			backl = /obj/item/rogueweapon/shield/tower/metal
-			H.adjust_skillrank_up_to(/datum/skill/combat/shields, 2, TRUE) // Let them skip dummy hitting
+			H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE) // Let them skip dummy hitting
 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs
+	pants = /obj/item/clothing/under/roguetown/platelegs
 
 	var/helmets = list(
 		"Pigface Bascinet" 	= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
@@ -352,7 +354,7 @@
 
 
 /datum/advclass/knight/irregularknight
-	name = "Champion Duelist"
+	name = "Duelist Cataphract"
 	tutorial = "Your skillset is abnormal for a Cataphract. Your swift maneuvers and masterful technique impress both lords and ladies alike, and you have a preference for quicker, more elegant blades. While you are an effective fighting force in medium armor, your evasive skills will only truly shine if you don even lighter protection."
 	outfit = /datum/outfit/job/roguetown/knight/irregularknight
 
@@ -381,8 +383,9 @@
 
 	H.change_stat("strength", 1)
 	H.change_stat("endurance", 2)
-	H.change_stat("speed", 2)
-	H.change_stat("intelligence", 1)
+	H.change_stat("speed", 3)
+	H.change_stat("intelligence", 2)
+	H.change_stat("perception", 2)
 
 	H.adjust_blindness(-3)
 	var/weapons = list("Rapier + Longbow","Estoc + Recurve Bow","Sabre + Buckler","Whip + Crossbow","Greataxe + Sling")
@@ -393,12 +396,12 @@
 			r_hand = /obj/item/rogueweapon/sword/rapier
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
-			beltr = /obj/item/quiver/arrows
+			beltr = /obj/item/quiver/bodkin
 
 		if("Estoc + Recurve Bow")
 			r_hand = /obj/item/rogueweapon/estoc
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
-			beltr = /obj/item/quiver/arrows
+			beltr = /obj/item/quiver/bodkin
 			beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 		
 		if("Sabre + Buckler")
