@@ -45,7 +45,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	belt = /obj/item/storage/belt/rogue/leather/steel
+	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(/obj/item/signal_horn = 1)
@@ -92,7 +92,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	backl = /obj/item/rogueweapon/shield/tower
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/storage/keyring/guardcastle
-	belt = /obj/item/storage/belt/rogue/leather/steel
+	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 	H.verbs |= /mob/proc/haltyell
@@ -175,20 +175,20 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/storage/keyring/guardcastle
 	beltr = /obj/item/rogueweapon/scabbard/sword
-	l_hand = /obj/item/rogueweapon/sword/short/messer/iron
-	belt = /obj/item/storage/belt/rogue/leather/steel
+	l_hand = /obj/item/rogueweapon/sword/short
+	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/rope/chain = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 	var/weapontype = pickweight(list("Spear" = 5, "Bardiche" = 3, "Lucerne" = 2)) //pooors
 	switch(weapontype)
 		if("Spear")
 			r_hand = /obj/item/rogueweapon/spear
-			backl = /obj/item/rogueweapon/scabbard/
+			backl = /obj/item/gwstrap
 		if("Bardiche")
-			r_hand = /obj/item/rogueweapon/halberd/bardiche
-			backl = /obj/item/rogueweapon/scabbard/
+			r_hand = /obj/item/rogueweapon/halberd
+			backl = /obj/item/gwstrap
 		if("Lucerne")
-			backl = /obj/item/rogueweapon/scabbard/
+			backl = /obj/item/gwstrap
 			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
    H.verbs |= /mob/proc/haltyell
 
