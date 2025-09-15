@@ -183,12 +183,12 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	switch(weapontype)
 		if("Spear")
 			r_hand = /obj/item/rogueweapon/spear
-			backl = /obj/item/gwstrap
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 		if("Bardiche")
 			r_hand = /obj/item/rogueweapon/halberd
-			backl = /obj/item/gwstrap
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 		if("Lucerne")
-			backl = /obj/item/gwstrap
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
    H.verbs |= /mob/proc/haltyell
 
