@@ -1,7 +1,7 @@
 //Dwarf-exclusive mercenary class with unique armor setups.
 /datum/advclass/mercenary/grudgebearer
 	name = "Grudgebearer"
-	tutorial = "Bound by eternal grudges of eons past that have not been forgotten, the Grudgebearers are left to wander the surface, as every other clan has a grudge against you, and you against them. This putrid shithole of a city has also wronged you and your people, you care little for it. Coins are a means to an end -- something you can mine and forge yourself. Trinkets -- made by true smiths, now that will carry respect among your clan. However, such artifacts might not buy you food, or a roof."
+	tutorial = "Bound by eternal grudges of eons past that have not been forgotten, the Grudgebearers are left to wander the surface, as every other clan has a grudge against you, and you against them. This putrid shithole of a city has also wronged you and your people, and you care little for it. Coins are a means to an end -- something you can mine and forge yourself. Trinkets -- made by true smiths, now that will carry respect among your clan. However, such artifacts might not buy you food, or a roof."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
 		/datum/species/dwarf,
@@ -23,7 +23,7 @@
 				H.change_stat("endurance", 3)
 				H.change_stat("strength", 1)
 				H.change_stat("speed", -2)
-				H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+				H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 				H.adjust_skillrank(/datum/skill/craft/armorsmithing, 3, TRUE)
 				H.adjust_skillrank(/datum/skill/craft/blacksmithing, 3, TRUE)
 				H.adjust_skillrank(/datum/skill/craft/smelting, 3, TRUE)
