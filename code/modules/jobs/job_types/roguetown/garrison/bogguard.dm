@@ -84,7 +84,8 @@
 	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 	H.change_stat("perception", 2)
 	H.change_stat("endurance", 1)
-	H.change_stat("speed", 2)
+	H.change_stat("constitution", 2)
+	H.change_stat("speed", 3)
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTDOORSMAN, TRAIT_GENERIC)
@@ -153,8 +154,8 @@
 	H.adjust_skillrank(/datum/skill/labor/butchering, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 	H.change_stat("perception", 1)
-	H.change_stat("constitution", 1)
-	H.change_stat("endurance", 1)
+	H.change_stat("constitution", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("strength", 2)
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
