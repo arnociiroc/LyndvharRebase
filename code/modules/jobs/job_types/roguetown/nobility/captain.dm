@@ -218,7 +218,7 @@
 		"Mace & Crossbow",
 		"Spear & Shield",
 		"Sabre & Shield",
-		"Lance + Kite Shield"
+		"Lance"
 		)
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
@@ -245,27 +245,10 @@
 			l_hand = /obj/item/rogueweapon/sword/sabre
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			backl = /obj/item/rogueweapon/shield/tower/metal
-		if("Lance + Kite Shield")
+		if("Lance")
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 			r_hand = /obj/item/rogueweapon/spear/lance
-	if(weapon_choice in list("Battle Axe", "Great Mace", "Longsword", "Flail", "Sabre", "Lance"))
-		var/secondary = list(
-			"Kite Shield",
-			"Crossbow",
-			"Recurve Bow",
-		)
-		var/secondary_choice = input("Choose your secondary.", "TAKE UP ARMS") as anything in secondary
-		switch(secondary_choice)
-			if("Kite Shield")
-				backl = /obj/item/rogueweapon/shield/tower/metal
-			if("Crossbow")
-				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 4, TRUE)
-				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
-				beltl = /obj/item/quiver/bolts
-			if("Recurve Bow")
-				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 4, TRUE)
-				beltl = /obj/item/quiver/arrows
-				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 
 /obj/effect/proc_holder/spell/self/convertrole
 	name = "Recruit Beggar"
