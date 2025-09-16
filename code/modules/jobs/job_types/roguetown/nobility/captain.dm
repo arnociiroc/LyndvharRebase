@@ -75,6 +75,7 @@
 /datum/outfit/job/roguetown/captain/infantry/pre_equip(mob/living/carbon/human/H)
 	..()
 	backr = /obj/item/storage/backpack/rogue/satchel/short
+	beltl = /obj/item/flashlight/flare/torch/lantern/prelit
 	backpack_contents = list(
 		/obj/item/storage/keyring/sheriff = 1,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
@@ -170,12 +171,13 @@
 
 /datum/outfit/job/roguetown/captain/cavalry/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/keyring/sheriff = 1,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 1,
+		/obj/item/flashlight/flare/torch/lantern/prelit = 1
 		)
 	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
@@ -223,12 +225,14 @@
 	switch(weapon_choice)
 		if("Longsword & Recurve Bow")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			r_hand = /obj/item/rogueweapon/sword/long
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			beltr = /obj/item/quiver/arrows
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 		if("Mace & Crossbow")
 			H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
+			H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 5, TRUE)
 			r_hand = /obj/item/rogueweapon/mace/steel/morningstar
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			beltr = /obj/item/quiver/bolts
