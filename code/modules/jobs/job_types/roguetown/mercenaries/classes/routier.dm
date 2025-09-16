@@ -52,7 +52,7 @@
 			H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			r_hand = /obj/item/rogueweapon/spear/lance
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	neck = /obj/item/clothing/neck/roguetown/fencerguard
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/valorian

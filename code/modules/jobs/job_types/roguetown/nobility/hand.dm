@@ -25,6 +25,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/steel
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	beltl = /obj/item/rogueweapon/scabbard/sheath
+	head = /obj/item/clothing/head/roguetown/circlet
 	job_bitflag = BITFLAG_ROYALTY
 
 /datum/job/roguetown/hand/after_spawn(mob/living/L, mob/M, latejoin = TRUE)

@@ -9,10 +9,10 @@
 	allowed_races = RACES_TOLERATED_UP
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_STEWARD
-	tutorial = "Coin, Coin, Coin! Oh beautiful coin: You're addicted to it, and you hold the position as the Viscount's personal treasurer of both coin and information. You know the power silver and gold has on a man's mortal soul, and you know just what lengths they'll go to in order to get even more. Keep your festering economy and your clerks alive--they're the only two things you can weigh any trust into anymore."
+	tutorial = "Coin, Coin, Coin! Oh beautiful coin: You're addicted to it, and you hold the position as the Viscount's personal treasurer of both coin and information. Your importance in the economic drive of the city has led to you being as almost close a confidant as the Hand themself, bestowed with large amount of authority. You know the power silver and gold has on a man's mortal soul, and you know just what lengths they'll go to in order to get even more. Keep your festering economy and your clerks alive--they're the only two things you can weigh any trust into anymore."
 	outfit = /datum/outfit/job/roguetown/steward
-	give_bank_account = 22
-	noble_income = 16
+	give_bank_account = 75
+	noble_income = 25
 	min_pq = 4
 	max_pq = null
 	round_contrib_points = 4
@@ -30,6 +30,7 @@
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 		pants = /obj/item/clothing/under/roguetown/tights/random
 		armor = /obj/item/clothing/suit/roguetown/shirt/tunic/silktunic
+	head = /obj/item/clothing/head/roguetown/circlet
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold/steward
 	beltr = /obj/item/storage/keyring/steward
@@ -47,7 +48,7 @@
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-	H.change_stat("intelligence", 2)
+	H.change_stat("intelligence", 4)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", -1)
 	if(H.mind)
