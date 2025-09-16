@@ -30,7 +30,7 @@
 /datum/outfit/job/roguetown/magician/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/clothing/neck/roguetown/talkstone
-	cloak = /obj/item/clothing/cloak/black_cloak
+	cloak = /obj/item/clothing/cloak/cape/archivist
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 	pants = /obj/item/clothing/under/roguetown/tights/black

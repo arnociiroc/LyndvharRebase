@@ -118,7 +118,7 @@
 	sellprice = 400
 
 /obj/item/rogueweapon/woodstaff/riddle_of_steel/magos
-	name = "\improper Staff of the Court Magos"
+	name = "\improper Archmagus Staff"
 	icon_state = "courtstaff"
 
 /obj/item/rogueweapon/woodstaff/khazumian
