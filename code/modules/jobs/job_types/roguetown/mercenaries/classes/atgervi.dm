@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/atgervi
-	name = "Atgervi"
-	tutorial = "Atgervians are the term for those who live in the far north of Rhaenval. This land is particular known for its highlands and more hostile weather patterns- those who live here are the hardiest and most fiercesome of people. In past daes the Atgervians were known as fierce sea raiders. But those daes have passed."
+	name = "Atgervian Varangian"
+	tutorial = "Atgervians are the term for those who live in the far north of Rhaenval. This land is particular known for its highlands and more hostile weather patterns- those who live here are the hardiest and most fiercesome of people. In past ages the Atgervians were known as fierce sea raiders- amassing wealth across the seas. But those daes have passed, and now most of the Varangian are seen doing mercenary work abroad."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/mercenary/atgervi
@@ -40,8 +40,8 @@
 			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 
 			H.change_stat("strength", 2)	
-			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 2)
+			H.change_stat("endurance", 3)
+			H.change_stat("constitution", 3)
 			H.change_stat("perception", 1)
 			H.change_stat("speed", -1)	
 
@@ -64,7 +64,7 @@
 			H.cmode_music = 'sound/music/combat_vagarian.ogg'
 		if("Shaman")
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Shaman of the Atgervian. Savage combatants who commune with their gods through gut-wrenching violence, rather than idle prayer."))
+			to_chat(H, span_warning("You are a Shaman of the Atgervian. Savage combatants who commune with the winds through gut-wrenching violence, rather than idle prayer."))
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
@@ -76,7 +76,7 @@
 
 			H.change_stat("strength", 3) 
 			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 1)
+			H.change_stat("constitution", 2)
 			H.change_stat("speed", 1)
 
 			head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
@@ -107,14 +107,14 @@
 
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
-	name = "vagarian hauberk"
-	desc = "The pride of the Rhaenval mercenaries a well crafted blend of chain and leather into a dense protective coat."
+	name = "varangian hauberk"
+	desc = "Considered a masterwork of Rhaenish Atgervi crafting, this hauberk is a well crafted blend of chain and leather into a dense protective coat."
 	icon_state = "atgervi_raider_mail"
 	item_state = "atgervi_raider_mail"
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
 	name = "shamanic coat"
-	desc = "A furred protective coat, Often made by hand it embodies the second trial of the Iskarn Shamans. To honor the leopard is too desire for more."
+	desc = "A furred protective coat, often made by hand. It embodies the second trial of the Atgervi Shamans. To honor the winds is too desire for more."
 	icon_state = "atgervi_shaman_coat"
 	item_state = "atgervi_shaman_coat"
 
@@ -132,7 +132,7 @@
 
 /obj/item/clothing/gloves/roguetown/plate/atgervi
 	name = "beast claws"
-	desc = "A menacing pair of plated claws, A closely protected tradition of the Shamans. The four claws embodying the four great beasts. Decorated with symbols of the gods they praise and the Gods they reject."
+	desc = "A menacing pair of plated claws, of which is a closely protected tradition of the northern Rhaenish. The four claws embodying the four great winds. Decorated with symbols of the gods they praise and the gods they reject."
 	icon_state = "atgervi_shaman_gloves"
 	item_state = "atergvi_shaman_gloves"
 
@@ -150,7 +150,7 @@
 
 /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	name = "moose hood"
-	desc = "A deceptively strong hood of hide with a pair of large heavy antlers. It is the reward of the fourth trial of the Iskarn Shamans, To slay a Grinning moose in the final hunt alone and fashion a hood from it's head."
+	desc = "A deceptively strong hood of hide with a pair of large heavy antlers. It is a reward given to those who succeed in their coming-of-age ritual, to slay a saiga in a hunt alone and to bring back its antlers in one piece."
 	icon_state = "atgervi_shaman"
 	item_state = "atgervi_shaman"
 	flags_inv = HIDEEARS|HIDEFACE
