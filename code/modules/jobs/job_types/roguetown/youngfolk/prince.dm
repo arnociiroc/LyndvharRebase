@@ -91,7 +91,7 @@
 		shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	if(should_wear_femme_clothes(H))
 		belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-		head = /obj/item/clothing/head/roguetown/hennin
+		head = /obj/item/clothing/head/roguetown/circlet
 		armor = /obj/item/clothing/suit/roguetown/armor/silkcoat
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
@@ -134,7 +134,7 @@
 		shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
 	if(should_wear_femme_clothes(H))
 		belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-		head = /obj/item/clothing/head/roguetown/hennin
+		head = /obj/item/clothing/head/roguetown/circlet
 		armor = /obj/item/clothing/suit/roguetown/armor/silkcoat
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/princess
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots
