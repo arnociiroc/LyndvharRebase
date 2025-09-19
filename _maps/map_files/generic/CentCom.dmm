@@ -3409,7 +3409,7 @@
 /turf/open/floor/rogue/carpet,
 /area/rogue)
 "OQ" = (
-/obj/structure/fermentation_keg/avarrice,
+/obj/structure/fermentation_keg/okalbergrice,
 /turf/open/floor/rogue/tile{
 	icon_state = "chess"
 	},
