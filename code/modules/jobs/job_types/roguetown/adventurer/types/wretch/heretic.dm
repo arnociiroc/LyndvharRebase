@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_RITUALIST, TRAIT_OUTLAW, TRAIT_HERESIARCH)
 	maximum_possible_slots = 3 //Ppl dont like heavy armor antags.
-	classes = list("Heretic" = "You father your unholy cause through the most time-tested of ways: hard, heavy steel in both arms and armor.",
+	classes = list("Heretic" = "You father your unholy cause through the most time-tested of ways: hard, heavy iron in both arms and armor.",
 					"Spy" = "Nimble of dagger and foot both, you are the shadowy herald of the cabal. They will not see you coming.")
 
 
@@ -20,7 +20,7 @@
 	switch(classchoice)
 
 		if("Heretic")
-			to_chat(H, span_warning("You father your unholy cause through the most time-tested of ways: hard, heavy steel in both arms and armor."))
+			to_chat(H, span_warning("You father your unholy cause through the most time-tested of ways: hard, heavy iron in both arms and armor."))
 			H.mind.current.faction += "[H.name]_faction"
 			H.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
@@ -36,25 +36,31 @@
 			H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-			var/weapons = list("Longsword", "Mace", "Flail", "Axe")
+			var/weapons = list("Longsword", "Warhammer", "Flail", "Axe", "Greataxe")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Longsword")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					r_hand = /obj/item/rogueweapon/sword/long
-				if("Mace")
+				if("Warhammer")
 					H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-					beltr = /obj/item/rogueweapon/mace/steel
+					beltr = /obj/item/rogueweapon/mace/warhammer/steel
 				if("Flail")
 					H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 					beltr = /obj/item/rogueweapon/flail/sflail
 				if("Axe")
 					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
-			H.change_stat("strength", 2)  // Heretic is by far the best class with access to rituals (as long as they play a god with ritual), holy and heavy armor. So they keep 7 points.
+				if("Greataxe")
+					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+					l_hand = /obj/item/rogueweapon/greataxe/steel/doublehead
+					r_hand = /obj/item/rogueweapon/scabbard/gwstrap
+			H.change_stat("strength", 3)  // Heretic is by far the best class with access to rituals (as long as they play a god with ritual), holy and heavy armor. So they keep 7 points.
 			H.change_stat("constitution", 2)
-			H.change_stat("endurance", 1)
+			H.change_stat("intelligence", 1)
+			H.change_stat("endurance", 2)
+			H.change_stat("speed", -2)
 			// You can convert those the church has shunned.
 			H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/convert_heretic)
 			if (istype (H.patron, /datum/patron/inhumen/zizo))
@@ -63,16 +69,17 @@
 					H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravemark)
 					H.mind.current.faction += "[H.name]_faction"
 				ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
-			mask = /obj/item/clothing/mask/rogue/facemask/steel
-			neck = /obj/item/clothing/neck/roguetown/gorget
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-			gloves = /obj/item/clothing/gloves/roguetown/chain
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			pants = /obj/item/clothing/under/roguetown/chainlegs
-			shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-			backl = /obj/item/storage/backpack/rogue/satchel
-			backr = /obj/item/rogueweapon/shield/tower/metal
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron
+			mask = /obj/item/clothing/mask/rogue/facemask/hound
+			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+			gloves = /obj/item/clothing/gloves/roguetown/plate/iron
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
+			pants = /obj/item/clothing/under/roguetown/platelegs/iron
+			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+			backl = /obj/item/storage/backpack/rogue/satchel/short
+			backr = /obj/item/rogueweapon/shield/iron
 			belt = /obj/item/storage/belt/rogue/leather
 			beltl = /obj/item/rogueweapon/huntingknife
 			backpack_contents = list(
@@ -89,72 +96,58 @@
 			switch(H.patron?.type)
 				if(/datum/patron/inhumen/zizo)
 					H.cmode_music = 'sound/music/combat_heretic.ogg'
-					head = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface
 				if(/datum/patron/inhumen/matthios)
 					H.cmode_music = 'sound/music/combat_matthios.ogg'
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 				if(/datum/patron/inhumen/baotha)
 					H.cmode_music = 'sound/music/combat_baotha.ogg'
-					head = /obj/item/clothing/head/roguetown/helmet/bascinet/dunargi
 				if(/datum/patron/inhumen/graggar)
 					H.cmode_music = 'sound/music/combat_graggar.ogg'
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/guard
 				if(/datum/patron/divine/astrata)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
 					H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
 				if(/datum/patron/divine/abyssor)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/abyssor
-					head = /obj/item/clothing/head/roguetown/helmet/heavy
 					H.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 					ADD_TRAIT(H, TRAIT_WATERBREATHING, TRAIT_GENERIC)
 				if(/datum/patron/divine/xylix)
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle
 					H.cmode_music = 'sound/music/combat_jester.ogg'
 					H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
 				if(/datum/patron/divine/dendor)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/volfplate
 					H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 					H.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 				if(/datum/patron/divine/necra)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/necra
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/guard
 					ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 					ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
 				if(/datum/patron/divine/pestra)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/pestra
-					head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
 					ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 					H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
 				if(/datum/patron/divine/eora)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/eora
-					head = /obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull
 					ADD_TRAIT(H, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 					ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 				if(/datum/patron/divine/noc)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/noc
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 					H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE) // Really good at reading... does this really do anything? No. BUT it's soulful.
 					H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 				if(/datum/patron/divine/ravox)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/ravox
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 					H.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 				if(/datum/patron/divine/malum)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/malum
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
 					H.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
 				if(/datum/patron/old_god)
-					head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet
+					head = /obj/item/clothing/head/roguetown/helmet/blacksteel/psythorns
 					wrists = /obj/item/clothing/neck/roguetown/psicross
 					cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
 					H.change_stat("endurance", 2) //ENDVRE
@@ -165,12 +158,12 @@
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-			backl = /obj/item/storage/backpack/rogue/satchel
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
+			backl = /obj/item/storage/backpack/rogue/satchel/short
 			belt = /obj/item/storage/belt/rogue/leather
-			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+			gloves = /obj/item/clothing/gloves/roguetown/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-			neck = /obj/item/clothing/neck/roguetown/gorget
+			neck = /obj/item/clothing/neck/roguetown/gorget/steel
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 			mask = /obj/item/clothing/mask/rogue/ragmask/black
 			backpack_contents = list(
@@ -211,11 +204,11 @@
 					beltl = /obj/item/rogueweapon/scabbard/sheath
 					l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/special
 				if("Bow")
-					H.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
+					H.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 					beltl = /obj/item/quiver/arrows
 					backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				if("Crossbow")
-					H.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE) //have to specifically go into bows/crossbows unlike outlaw
+					H.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE) //have to specifically go into bows/crossbows unlike outlaw
 					beltr = /obj/item/quiver/bolts
 					backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 
@@ -298,7 +291,7 @@
 	invocation_type = "whisper"
 	sound = 'sound/magic/bless.ogg'
 	devotion_cost = 100
-	recharge_time = 60 MINUTES
+	recharge_time = 30 MINUTES
 	// Long to prevent combat casting and forcing popups.
 	chargetime = 10 SECONDS
 	associated_skill = /datum/skill/magic/holy
