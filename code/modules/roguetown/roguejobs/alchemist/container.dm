@@ -176,13 +176,13 @@
 	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalianmead = 48)
 	desc = "A bottle with a Shieldmaiden Brewerey cork-seal. A deep red honey-wine, refined with the red berries native to far northern Rhaenvalian highlands."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead
-	list_reagents = list(/datum/reagent/consumable/ethanol/avarmead = 48)
-	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Avar Steppes. Manages to keep a proper taste while staying strong."
+/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead
+	list_reagents = list(/datum/reagent/consumable/ethanol/vruiridmead = 48)
+	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Vruirid Steppes. Manages to keep a proper taste while staying strong."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/avarrice
-	list_reagents = list(/datum/reagent/consumable/ethanol/avarrice = 48)
-	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the hills of southern Rhaenval."
+/obj/item/reagent_containers/glass/bottle/rogue/beer/okalbergrice
+	list_reagents = list(/datum/reagent/consumable/ethanol/okalbergrice = 48)
+	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the hills of Okalberg."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/saigamilk
 	list_reagents = list(/datum/reagent/consumable/ethanol/saigamilk = 48)

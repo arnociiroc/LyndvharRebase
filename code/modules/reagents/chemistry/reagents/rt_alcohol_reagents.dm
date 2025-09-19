@@ -421,23 +421,23 @@
 	color = "#772C48"
 	quality = DRINK_GOOD
 
-//Avar boozes
+//steppe boozes
 
-/datum/reagent/consumable/ethanol/avarmead
+/datum/reagent/consumable/ethanol/vruiridmead
 	name = "Zögiin bal"
 	boozepwr = 30
 	taste_description = "spicy honey"
 	color = "#e0a400"
 	quality = DRINK_GOOD
 
-/datum/reagent/consumable/ethanol/avarrice
+/datum/reagent/consumable/ethanol/okalbergrice
 	name = "Makkolir"
 	boozepwr = 30
 	taste_description = "tangy sweetness"
 	color = "#ddcbc9"
 	quality = DRINK_GOOD
 
-/datum/reagent/consumable/ethanol/saigamilk //No way, kumys from avar!!!
+/datum/reagent/consumable/ethanol/saigamilk
 	name = "Bökhiin Arkhi"
 	boozepwr = 15
 	taste_description = "bubbly, sour salt"

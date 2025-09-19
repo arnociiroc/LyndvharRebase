@@ -114,15 +114,15 @@
 	cost = 25
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead)
 
-/datum/supply_pack/rogue/alcohol/avarmead
-	name = "Zögiin Bal (Avar Mead)"
+/datum/supply_pack/rogue/alcohol/vruiridmead
+	name = "Zögiin Bal (Vruirid Mead)"
 	cost = 20
-	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead)
+	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead)
 
-/datum/supply_pack/rogue/alcohol/avarrice
-	name = "Makkolir (Avar Rice Wine)"
+/datum/supply_pack/rogue/alcohol/okalbergrice
+	name = "Makkolir (Okalberg Rice Wine)"
 	cost = 30
-	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/avarrice)
+	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/okalbergrice)
 
 /datum/supply_pack/rogue/alcohol/saigamilk
 	name = "Bökhiin Arkhi (Saiga Milk Drink)"
