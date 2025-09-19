@@ -174,7 +174,7 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead
 	list_reagents = list(/datum/reagent/consumable/ethanol/rhaenvalianmead = 48)
-	desc = "A bottle with a Shieldmaiden Brewerey cork-seal. A deep red honey-wine, refined with the red berries native to far northern Rhaenvalian highlands."
+	desc = "A bottle with a Shieldmaiden Brewery cork-seal. A deep red honey-wine, refined with the red berries native to far northern Rhaenvalian highlands."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead
 	list_reagents = list(/datum/reagent/consumable/ethanol/vruiridmead = 48)
