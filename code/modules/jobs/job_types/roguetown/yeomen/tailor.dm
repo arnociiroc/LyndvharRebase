@@ -23,7 +23,7 @@
 /datum/outfit/job/roguetown/tailor/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/sewing, 5, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sewing, 6, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/tanning, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
@@ -32,7 +32,7 @@
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	pants = /obj/item/clothing/under/roguetown/tights
-	belt = /obj/item/storage/belt/rogue/leather/cloth
+	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/rogueweapon/huntingknife/scissors/steel
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
@@ -45,10 +45,10 @@
 		/obj/item/recipe_book/leatherworking
 		)
 	if(should_wear_femme_clothes(H))
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress
+		armor = /obj/item/clothing/suit/roguetown/armor/armordress/winterdress
 	else if(should_wear_masc_clothes(H))
-		armor = /obj/item/clothing/suit/roguetown/shirt/tunic/random
-	H.change_stat("intelligence", 2)
+		armor = /obj/item/clothing/suit/roguetown/shirt/tunic/noblecoat
+	H.change_stat("intelligence", 3)
 	H.change_stat("perception", 1)
 	H.change_stat("speed", 1)
 	H.change_stat("strength", -1)
