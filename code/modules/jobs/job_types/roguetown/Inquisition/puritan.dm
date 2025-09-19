@@ -72,7 +72,6 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MAJOR, devotion_limit = CLERIC_REQ_1) //Capped to T1 miracles.
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_BLACKBAGGER, TRAIT_GENERIC) // Probably trained the Confessors. Or was one. Who knows.
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SILVER_BLESSED, TRAIT_GENERIC)
@@ -92,7 +91,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	id = /obj/item/clothing/ring/signet/silver
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat/armored
 	backpack_contents = list(
 		/obj/item/storage/keyring/puritan = 1,
 		/obj/item/lockpickring/mundane = 1,
@@ -155,6 +154,7 @@
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_BLACKBAGGER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_SILVER_BLESSED, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_INQUISITION, TRAIT_GENERIC)
@@ -170,11 +170,14 @@
 	pants = /obj/item/clothing/under/roguetown/platelegs
 	cloak = /obj/item/clothing/cloak/ordinatorcape
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/ordinatorhelm
-	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/ordinatorhelm/plume
+	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
 	backpack_contents = list(
 		/obj/item/storage/keyring/puritan = 1,
-		/obj/item/paper/inqslip/arrival/inq = 1
+		/obj/item/paper/inqslip/arrival/inq = 1,
+		/obj/item/clothing/head/inqarticles/blackbag = 1,
+		/obj/item/inqarticles/garrote = 1,
+		/obj/item/rope/inqarticles/inquirycord = 1
 		)
 
 /datum/outfit/job/roguetown/puritan/ordinator/choose_loadout(mob/living/carbon/human/H)

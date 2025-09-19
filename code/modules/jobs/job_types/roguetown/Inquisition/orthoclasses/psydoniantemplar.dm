@@ -15,7 +15,7 @@
 	has_loadout = TRUE
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	cloak = /obj/item/clothing/cloak/psydontabard
-	backr = /obj/item/rogueweapon/shield/tower
+	backr = /obj/item/rogueweapon/shield/tower/metal
 	gloves = /obj/item/clothing/gloves/roguetown/chain/psydon
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	pants = /obj/item/clothing/under/roguetown/chainlegs
@@ -23,7 +23,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/inq
 	shoes = /obj/item/clothing/shoes/roguetown/boots/psydonboots
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate
-	/obj/item/clothing/head/roguetown/helmet/heavy/psydonhelm
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	id = /obj/item/clothing/ring/signet/silver
