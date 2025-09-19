@@ -34,7 +34,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	cloak = /obj/item/clothing/cloak/captain
-	backr = /obj/item/rogueweapon/shield/tower/metal
+	l_hand = /obj/item/rogueweapon/shield/tower/metal
 	job_bitflag = BITFLAG_ROYALTY | BITFLAG_GARRISON
 
 /datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
@@ -88,14 +88,14 @@
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, 4, TRUE)
 	H.change_stat("strength", 2)
 	H.change_stat("perception", 1)
@@ -193,7 +193,7 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 5, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, 5, TRUE)
 	H.change_stat("strength", 2)
 	H.change_stat("perception", 1)
@@ -217,8 +217,8 @@
 	var/weapons = list(
 		"Longsword & Recurve Bow",
 		"Mace & Crossbow",
-		"Spear & Shield",
-		"Sabre & Shield",
+		"Spear",
+		"Sabre",
 		"Lance"
 		)
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
@@ -237,15 +237,13 @@
 			r_hand = /obj/item/rogueweapon/mace/steel/morningstar
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			beltr = /obj/item/quiver/bolts
-		if("Spear & Shield")
+		if("Spear")
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 			r_hand = /obj/item/rogueweapon/spear
-			backl = /obj/item/rogueweapon/shield/tower/metal
-		if("Sabre & Shield")
+		if("Sabre")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
-			l_hand = /obj/item/rogueweapon/sword/sabre
+			r_hand = /obj/item/rogueweapon/sword/sabre
 			beltl = /obj/item/rogueweapon/scabbard/sword
-			backl = /obj/item/rogueweapon/shield/tower/metal
 		if("Lance")
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
 			r_hand = /obj/item/rogueweapon/spear/lance
