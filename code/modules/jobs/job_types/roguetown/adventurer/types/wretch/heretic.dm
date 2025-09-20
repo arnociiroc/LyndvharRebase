@@ -36,7 +36,7 @@
 			H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-			var/weapons = list("Longsword", "Warhammer", "Flail", "Axe", "Greataxe")
+			var/weapons = list("Longsword", "Warhammer", "Flail", "Axe", "Greatmace")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Longsword")
@@ -52,10 +52,9 @@
 				if("Axe")
 					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 					beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
-				if("Greataxe")
-					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-					l_hand = /obj/item/rogueweapon/greataxe/steel/doublehead
-					r_hand = /obj/item/rogueweapon/scabbard/gwstrap
+				if("Greatmace")
+					H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
+					l_hand = /obj/item/rogueweapon/mace/goden/steel
 			H.change_stat("strength", 3)  // Heretic is by far the best class with access to rituals (as long as they play a god with ritual), holy and heavy armor. So they keep 7 points.
 			H.change_stat("constitution", 2)
 			H.change_stat("intelligence", 1)
@@ -72,12 +71,11 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron
 			mask = /obj/item/clothing/mask/rogue/facemask/hound
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
-			gloves = /obj/item/clothing/gloves/roguetown/plate/iron
-			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
-			pants = /obj/item/clothing/under/roguetown/platelegs/iron
-			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/full/iron
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+			gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 			backl = /obj/item/storage/backpack/rogue/satchel/short
 			backr = /obj/item/rogueweapon/shield/iron
 			belt = /obj/item/storage/belt/rogue/leather
@@ -96,17 +94,27 @@
 			switch(H.patron?.type)
 				if(/datum/patron/inhumen/zizo)
 					H.cmode_music = 'sound/music/combat_heretic.ogg'
+					cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
+					wrists = /obj/item/clothing/neck/roguetown/zcross/aalloy
 				if(/datum/patron/inhumen/matthios)
 					H.cmode_music = 'sound/music/combat_matthios.ogg'
+					cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
+					wrists = /obj/item/clothing/neck/roguetown/zcross/aalloy
 				if(/datum/patron/inhumen/baotha)
 					H.cmode_music = 'sound/music/combat_baotha.ogg'
+					cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
+					wrists = /obj/item/clothing/neck/roguetown/zcross/aalloy
 				if(/datum/patron/inhumen/graggar)
 					H.cmode_music = 'sound/music/combat_graggar.ogg'
+					cloak = /obj/item/clothing/cloak/graggar
+					wrists = /obj/item/clothing/neck/roguetown/zcross/aalloy
 				if(/datum/patron/divine/astrata)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
+					cloak = /obj/item/clothing/cloak/templar/astrata
 					H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
 				if(/datum/patron/divine/abyssor)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/abyssor
+					cloak = /obj/item/clothing/cloak/templar/abyssor
 					H.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 					ADD_TRAIT(H, TRAIT_WATERBREATHING, TRAIT_GENERIC)
 				if(/datum/patron/divine/xylix)
@@ -114,31 +122,39 @@
 					H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
+					wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
+					cloak = /obj/item/clothing/cloak/templar/xylix
 				if(/datum/patron/divine/dendor)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/dendor
+					cloak = /obj/item/clothing/cloak/templar/dendor
 					H.cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 					H.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
 				if(/datum/patron/divine/necra)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/necra
+					cloak = /obj/item/clothing/cloak/templar/necra
 					ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 					ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
 				if(/datum/patron/divine/pestra)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/pestra
+					cloak = /obj/item/clothing/cloak/templar/pestra
 					ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 					H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
 				if(/datum/patron/divine/eora)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/eora
+					cloak = /obj/item/clothing/cloak/templar/eora
 					ADD_TRAIT(H, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 					ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
 				if(/datum/patron/divine/noc)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/noc
+					cloak = /obj/item/clothing/cloak/templar/noc
 					H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE) // Really good at reading... does this really do anything? No. BUT it's soulful.
 					H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 				if(/datum/patron/divine/ravox)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/ravox
+					cloak = /obj/item/clothing/cloak/cleric/ravox
 					H.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 				if(/datum/patron/divine/malum)
 					wrists = /obj/item/clothing/neck/roguetown/psicross/malum
@@ -149,7 +165,7 @@
 				if(/datum/patron/old_god)
 					head = /obj/item/clothing/head/roguetown/helmet/blacksteel/psythorns
 					wrists = /obj/item/clothing/neck/roguetown/psicross
-					cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
+					cloak = /obj/item/clothing/cloak/cape/inquisitor
 					H.change_stat("endurance", 2) //ENDVRE
 
 		if("Spy")
@@ -163,9 +179,9 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-			neck = /obj/item/clothing/neck/roguetown/gorget/steel
+			neck = /obj/item/clothing/neck/roguetown/gorget
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-			mask = /obj/item/clothing/mask/rogue/ragmask/black
+			mask = /obj/item/clothing/mask/rogue/facemask
 			backpack_contents = list(
 				/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 				/obj/item/lockpickring/mundane = 1,
