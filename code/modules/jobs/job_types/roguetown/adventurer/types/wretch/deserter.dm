@@ -137,7 +137,7 @@
 				if("Sabre & Shield")
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					r_hand = /obj/item/rogueweapon/sword/sabre
-					backl = /obj/item/rogueweapon/shield/wood
+					backl = /obj/item/rogueweapon/shield/iron
 				if("Axe & Shield")
 					beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
 					backl = /obj/item/rogueweapon/shield/iron
