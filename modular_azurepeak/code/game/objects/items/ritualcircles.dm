@@ -851,7 +851,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 				return
 			if(!do_after(user, 5 SECONDS))
 				return
-			user.say("ZIZO! ZIZO! DAME OF PROGRESS!!")
+			user.say("ZIZO! ZIZO! DAEMON OF AMBITION!!")
 			if(!do_after(user, 5 SECONDS))
 				return
 			user.say("ZIZO! ZIZO! HEED MY CALL!!")
