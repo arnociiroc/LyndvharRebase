@@ -153,7 +153,7 @@
 			r_hand = /obj/item/rogueweapon/mace/goden/steel
 		if("Longsword")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
-			r_hand = /obj/item/rogueweapon/sword/long
+			r_hand = /obj/item/rogueweapon/sword/long/dec
 			beltr = /obj/item/rogueweapon/scabbard/sword
 		if("Flail")
 			H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 5, TRUE)
@@ -161,7 +161,7 @@
 		if("Sabre")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 			beltr = /obj/item/rogueweapon/scabbard/sword
-			r_hand = /obj/item/rogueweapon/sword/sabre
+			r_hand = /obj/item/rogueweapon/sword/sabre/dec
 
 /datum/advclass/captain/cavalry
 	name = "Cavalry Captain"
@@ -227,7 +227,7 @@
 		if("Longsword & Recurve Bow")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 			H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
-			r_hand = /obj/item/rogueweapon/sword/long
+			r_hand = /obj/item/rogueweapon/sword/long/dec
 			beltl = /obj/item/rogueweapon/scabbard/sword
 			beltr = /obj/item/quiver/arrows
 			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
@@ -242,7 +242,7 @@
 			r_hand = /obj/item/rogueweapon/spear
 		if("Sabre")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
-			r_hand = /obj/item/rogueweapon/sword/sabre
+			r_hand = /obj/item/rogueweapon/sword/sabre/dec
 			beltl = /obj/item/rogueweapon/scabbard/sword
 		if("Lance")
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE)
