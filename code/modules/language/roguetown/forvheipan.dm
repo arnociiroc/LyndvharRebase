@@ -1,6 +1,6 @@
 /datum/language/forvheipan
 	name = "Forvheipan"
-	desc = "A somewhat simple language consisting of heavily articulate sounds, vocalizations, noises, and combined movements of the tail and ears- if any. It's natively spoken by the peoples of Forvheipal."
+	desc = "A somewhat simple language consisting of articulated sounds, vocalizations, noises and many other animalistic sounds- mixed with combined movements of the tail and ears- if any are even present, that is. This language was relatively merged and co-opted by the differing cultures of Lupian, Vulpkian, and other assorted races that merged and formed the Kingdom of Forvheipal."
 	speech_verb = "rrrfts"
 	ask_verb = "rurs"
 	exclaim_verb = "snaps"
