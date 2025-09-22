@@ -1,6 +1,6 @@
 /obj/effect/proc_holder/spell/invoked/projectile/divineblast
 	name = "Divine Blast"
-	desc = "Shoot out a blast of divine power! Deals more damage to heretics(Psydonians/Inhumen) and Undead! \n\
+	desc = "Release a blast of power channeled through a divine conduit! This blast deals more damage to heretics and the undead. \n\
 	Damage is increased by 100% versus simple-minded creechurs.\n\
 	Can be fired in an arc over an ally's head with a mage's staff, spellbook or psicross on arc intent. It will deals 25% less damage that way."
 	clothes_req = FALSE
@@ -16,7 +16,7 @@
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
-	invocations = list("Goettlichen macht!")
+	invocations = list("Ledakan ilahi!")
 	invocation_type = "shout"
 	glow_color = GLOW_COLOR_LIGHTNING
 	glow_intensity = GLOW_INTENSITY_LOW

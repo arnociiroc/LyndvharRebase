@@ -11,7 +11,7 @@
 	warnie = "spellwarning"
 	school = "transmutation"
 	spell_tier = 2
-	invocations = list("Oculi Accipitris.") // Oculi - Eyes. Accipitris - Hawk, singular.
+	invocations = list("Oculi accipitris") // Oculi - Eyes. Accipitris - Hawk, singular.
 	invocation_type = "whisper"
 	glow_color = GLOW_COLOR_BUFF
 	glow_intensity = GLOW_INTENSITY_LOW

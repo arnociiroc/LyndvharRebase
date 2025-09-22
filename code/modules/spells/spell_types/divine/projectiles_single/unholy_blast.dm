@@ -1,10 +1,10 @@
 /obj/effect/proc_holder/spell/invoked/projectile/divineblast/unholyblast
 	name = "Unholy Blast"
-	desc = "Channel unholy power and sunder the unbelievers. Deals additional damage to wretched conformists and Psydonites! \n\
+	desc = "Channel unholy power and sunder your enemy. Deals additional damage to Tennites and Psydon worshippers! \n\
 	Damage is increased by 100% versus simple-minded creechurs.\n\
 	Can be fired in an arc over an ally's head with a mage's staff, spellbook or psicross on arc intent. It will deals 25% less damage that way."
 	projectile_type = /obj/projectile/energy/unholyblast
-	invocations = list("Fortschritt macht!")
+	invocations = list("Ledakan dahsyat!")
 
 /obj/projectile/energy/unholyblast
 	name = "Unholy Blast"

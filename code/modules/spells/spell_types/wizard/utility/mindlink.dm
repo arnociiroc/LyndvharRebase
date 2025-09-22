@@ -8,7 +8,7 @@
 	xp_gain = TRUE
 	recharge_time = 5 MINUTES
 	spell_tier = 3
-	invocations = list("Mens Nexu")
+	invocations = list("Mens nexu")
 	invocation_type = "whisper"
 	
 	// Charged spell variables
