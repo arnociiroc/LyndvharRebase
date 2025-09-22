@@ -15,7 +15,8 @@
 	chargedloop = /datum/looping_sound/invokefire
 	associated_skill = /datum/skill/magic/arcane
 	spell_tier = 2
-	invocation_type = "none"
+	invocations = list("Teguran neraka!")
+	invocation_type = "shout"
 	glow_color = GLOW_COLOR_FIRE
 	glow_intensity = GLOW_INTENSITY_LOW
 	gesture_required = TRUE
