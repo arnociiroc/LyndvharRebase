@@ -20,7 +20,7 @@
 	spell_tier = 1 // Utility, with situational combat use. Great for fighting trolls..
 	ignore_los = FALSE
 
-	invocations = list("Ignis Castrensis Magicae.") // Literally "Magical Campfire"
+	invocations = list("Buatkan aku api unggun!")
 	invocation_type = "shout"
 	glow_color = GLOW_COLOR_FIRE
 	glow_intensity = GLOW_INTENSITY_LOW
