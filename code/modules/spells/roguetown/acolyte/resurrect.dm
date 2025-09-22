@@ -161,7 +161,7 @@
 
 /obj/effect/proc_holder/spell/invoked/resurrect/abyssor
 	name = "Abyssal Revival"
-	desc = "Revive the target at a cost, cast on yourself to check.<br>a dreamfiend will stalk the target and sap their stats until confronted by them."
+	desc = "Revive the target at a cost, cast on yourself to check.<br>A dreamfiend will stalk the target and sap their stats until confronted by them."
 	sound = 'sound/magic/whale.ogg'
 	//A medley of common ocean fish, totalling 10
 	required_items = list(
