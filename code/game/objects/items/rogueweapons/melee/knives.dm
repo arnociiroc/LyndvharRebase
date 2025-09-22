@@ -323,7 +323,7 @@
 	AddElement(/datum/element/tipped_item)	//Lets you tip your weapon in poison
 /*
 	name = "facón"
-	desc = "An ornate traditional Dunargi knife inlaid with silver, passed down through generations of farmhands and warlords alike."
+	desc = "An ornate traditional Kargradi knife inlaid with silver, passed down through generations of farmhands and warlords alike."
 	icon_state = "facon" */
 
 /obj/item/rogueweapon/huntingknife/idagger/dtace

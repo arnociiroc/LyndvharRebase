@@ -392,7 +392,7 @@
 
 /obj/item/rogueweapon/sword/long/dunargi
 	name = "basket-hilted longsword"
-	desc = "An uncommon and elaborate type of longsword with a compound hilt like those seen on rapiers and smallswords. It has a marked unsharpened section for safe unarmored half-swording, and it's made of Calorian steel."
+	desc = "An uncommon and elaborate type of longsword with a compound hilt like those seen on rapiers and smallswords. It has a marked unsharpened section for safe unarmored half-swording, and it's made of a mixture of Kargradi steel smelted from Khaliphate weapons, and Grenz techniques."
 	icon_state = "elongsword"
 
 /obj/item/rogueweapon/sword/long/frei		//Challenge weapon
