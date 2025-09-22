@@ -16,7 +16,7 @@
 	gesture_required = TRUE
 	associated_skill = /datum/skill/magic/arcane
 	spell_tier = 2
-	invocations = list("Congelationis!")
+	invocations = list("Radang dingin!")
 	invocation_type = "shout"
 	glow_color = GLOW_COLOR_ICE
 	glow_intensity = GLOW_INTENSITY_LOW
