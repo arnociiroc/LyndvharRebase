@@ -204,8 +204,8 @@
 			var/armor_choice = input("Choose your armor.", "TAKE UP ARMS") as anything in armors
 			switch(armor_choice)
 				if("Light Armor")
-					armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
-					pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+					armor = /obj/item/clothing/suit/roguetown/armor/leather
+					pants = /obj/item/clothing/under/roguetown/trou/leather
 					gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 					ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 					H.change_stat("speed", 2)

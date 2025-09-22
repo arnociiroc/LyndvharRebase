@@ -100,17 +100,17 @@
 			ADD_TRAIT(H, TRAIT_MAGEARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SENTINELOFWITS, TRAIT_GENERIC)
-			var/weapons = list("Bastard Sword", "Falchion & Wooden Shield", "Messer & Wooden Shield", "Foreign Straight Sword") // Much smaller selection with only three swords. You will probably want to upgrade.
+			var/weapons = list("Bastard Sword", "Sabre & Wooden Shield", "Messer & Wooden Shield", "Foreign Straight Sword") // Much smaller selection with only three swords. You will probably want to upgrade.
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Bastard Sword")
 					beltr = /obj/item/rogueweapon/scabbard/sword
-					r_hand = /obj/item/rogueweapon/sword/long
+					r_hand = /obj/item/rogueweapon/sword/long/heirloom
 					armor = /obj/item/clothing/suit/roguetown/armor/leather
-				if("Falchion & Wooden Shield")
+				if("Sabre & Wooden Shield")
 					beltr = /obj/item/rogueweapon/scabbard/sword
 					backr = /obj/item/rogueweapon/shield/wood
-					r_hand = /obj/item/rogueweapon/sword/falchion
+					r_hand = /obj/item/rogueweapon/sword/saber/iron
 					armor = /obj/item/clothing/suit/roguetown/armor/leather
 					H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 				if("Messer & Wooden Shield")
@@ -134,7 +134,7 @@
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			belt = /obj/item/storage/belt/rogue/leather
-			neck = /obj/item/clothing/neck/roguetown/gorget
+			neck = /obj/item/clothing/neck/roguetown/leather
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/spellcasterrobe
 			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor

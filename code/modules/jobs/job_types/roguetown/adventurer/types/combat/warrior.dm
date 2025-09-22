@@ -38,12 +38,12 @@
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander2.ogg'
-			var/weapons = list("Longsword","Mace","Billhook","Battle Axe","Short Sword & Iron Shield","Iron Saber & Wood Shield")
+			var/weapons = list("Longsword","Mace","Billhook","Greataxe","Short Sword & Iron Shield","Iron Saber & Wood Shield")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			switch(weapon_choice)
 				if("Longsword")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-					backr = /obj/item/rogueweapon/sword/long
+					backr = /obj/item/rogueweapon/sword/long/heirloom
 					beltr = /obj/item/rogueweapon/scabbard/sword
 				if("Mace")
 					H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
@@ -52,9 +52,10 @@
 					H.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 					r_hand = /obj/item/rogueweapon/spear/billhook
 					backr = /obj/item/rogueweapon/scabbard/gwstrap
-				if("Battle Axe")
+				if("Greataxe")
 					H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
-					backr = /obj/item/rogueweapon/stoneaxe/battle
+					r_hand = /obj/item/rogueweapon/greataxe
+					backr = /obj/item/rogueweapon/scabbard/gwstrap
 				if("Short Sword & Iron Shield")
 					H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
@@ -72,21 +73,20 @@
 			switch(armor_choice)
 				if("Chainmaille Set")
 					armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
-					shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random//giving them something to wear under their armors
+					shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 					pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 					neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 					gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 				if("Iron Breastplate")
 					armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
-					neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
-					shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
+					neck = /obj/item/clothing/neck/roguetown/gorget
+					shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 					pants = /obj/item/clothing/under/roguetown/splintlegs/iron
 					gloves = /obj/item/clothing/gloves/roguetown/leather
 				if("Gambeson & Helmet")
-					armor = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-					neck = /obj/item/clothing/neck/roguetown/coif/padded//neck cover
-					shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/random
-					wrists = /obj/item/clothing/wrists/roguetown/splintarms/iron//adding it since this set feels far too weak compared to the other two, gets one helmet and arm cover at least
+					armor = /obj/item/clothing/suit/roguetown/armor/gambeson
+					neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
+					shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 					pants = /obj/item/clothing/under/roguetown/trou/leather
 					head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 					gloves = /obj/item/clothing/gloves/roguetown/leather
