@@ -465,7 +465,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			if(headshot_link != null)
 				dat += "<br><img src='[headshot_link]' width='100px' height='100px'>"
 
-			dat += "<br><b>NSFW Bodyshot:</b> [nsfw_headshot_link ? "<font color = '#802929'><b>SET</b></font>" : "UNSET"] <a href='?_src_=prefs;preference=nsfw_headshot;task=input'>Change</a>"
+			dat += "<br><b>Bedshot:</b> [nsfw_headshot_link ? "<font color = '#802929'><b>SET</b></font>" : "UNSET"] <a href='?_src_=prefs;preference=nsfw_headshot;task=input'>Change</a>"
 
 			if(is_legacy)
 				dat += "<br><i><font size = 1>(Legacy)<a href='?_src_=prefs;preference=legacyhelp;task=input'>(?)</a></font></i>"
@@ -1702,7 +1702,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					log_game("[user] has set their OOC notes'.")
 				if("nsfw_headshot")
 					to_chat(user, "<span class='notice'>Finally a place to show it all.</span>")
-					var/new_nsfw_headshot_link = browser_input_text(user, "Input the bodyshot link <br> (https, hosts: gyazo, lensdump, imgbox, catbox):", "", nsfw_headshot_link, "", encode = FALSE, savemode = TRUE)
+					var/new_nsfw_headshot_link = browser_input_text(user, "Input the bedshot link <br> (https, hosts: gyazo, lensdump, imgbox, catbox):", "", nsfw_headshot_link, "", encode = FALSE, savemode = TRUE)
 					if(new_nsfw_headshot_link == null)
 						return
 					if(new_nsfw_headshot_link == "")
@@ -1714,7 +1714,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						ShowChoices(user)
 						return
 					nsfw_headshot_link = new_nsfw_headshot_link
-					to_chat(user, "<span class='notice'>Successfully updated NSFW Bodyshot picture</span>")
+					to_chat(user, "<span class='notice'>Successfully updated NSFW picture</span>")
 					log_game("[user] has set their NSFW Headshot image to '[nsfw_headshot_link]'.")	
 				if("ooc_preview")	//Unashamedly copy pasted from human_topic.dm L:7. Sorry!
 					var/list/dat = list()
