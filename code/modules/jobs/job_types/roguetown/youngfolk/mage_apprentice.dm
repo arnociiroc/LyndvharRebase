@@ -8,6 +8,7 @@
 
 	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT)
+	allowed_sexes = list(MALE, FEMALE)
 	spells = list(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 	advclass_cat_rolls = list(CTAG_WAPPRENTICE = 20)
 
