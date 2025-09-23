@@ -36,7 +36,7 @@
 	..()
 	pants = /obj/item/clothing/under/roguetown/tights
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
@@ -76,12 +76,11 @@
 
 /datum/outfit/job/roguetown/seneschal/headmaid/pre_equip(mob/living/carbon/human/H)
 	..()
-	armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen
-	pants = pick(/obj/item/clothing/under/roguetown/tights/stockings/silk/white, /obj/item/clothing/under/roguetown/tights/stockings/silk/black) 
 	armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/black
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+	pants = /obj/item/clothing/under/roguetown/tights/stockings/silk/white 
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 	cloak = /obj/item/clothing/cloak/apron/waist
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
@@ -119,9 +118,9 @@
 /datum/outfit/job/roguetown/seneschal/chiefbutler/pre_equip(mob/living/carbon/human/H)
 	..() // They need a monocle.
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	backl = /obj/item/storage/backpack/rogue/satchel
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/servant
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
