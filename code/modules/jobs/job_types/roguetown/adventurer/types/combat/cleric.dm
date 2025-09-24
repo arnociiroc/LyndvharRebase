@@ -99,7 +99,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel/short
 			backr = /obj/item/rogueweapon/shield/iron
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
-			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
