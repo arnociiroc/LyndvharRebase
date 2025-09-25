@@ -32,7 +32,7 @@
 			belt = /obj/item/storage/belt/rogue/leather/black
 			backr = /obj/item/storage/backpack/rogue/satchel/short
 			H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)		//to encourage use of the scabbard as a shield	
+			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)		//to encourage use of the scabbard as a shield
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -43,6 +43,7 @@
 			backpack_contents = list(
 				/obj/item/recipe_book/survival = 1,
 				/obj/item/flashlight/flare/torch,
+				/obj/item/mundane/adventurer_kit = 1
 				)
 			H.change_stat("strength", 2)
 			H.change_stat("endurance", 1)
@@ -60,7 +61,7 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			belt = /obj/item/storage/belt/rogue/leather
 			backl = /obj/item/storage/backpack/rogue/satchel/short
-			H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)		
+			H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
