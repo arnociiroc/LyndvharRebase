@@ -108,6 +108,7 @@
 			backpack_contents = list(
 				/obj/item/flashlight/flare/torch = 1,
 				/obj/item/recipe_book/survival = 1,
+				/obj/item/mundane/adventurer_kit = 1
 				)
 			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)

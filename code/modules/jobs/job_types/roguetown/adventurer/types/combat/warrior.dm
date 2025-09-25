@@ -34,6 +34,8 @@
 			H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+			H.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+			H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 			H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 			H.set_blindness(0)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
@@ -108,7 +110,8 @@
 				/obj/item/flashlight/flare/torch = 1,
 				/obj/item/rogueweapon/huntingknife = 1,
 				/obj/item/recipe_book/survival = 1,
-				/obj/item/rogueweapon/scabbard/sheath = 1
+				/obj/item/rogueweapon/scabbard/sheath = 1,
+				/obj/item/mundane/adventurer_kit = 1
 				)
 
 		if("Duelist")

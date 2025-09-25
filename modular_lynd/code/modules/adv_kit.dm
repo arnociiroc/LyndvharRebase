@@ -36,7 +36,7 @@
 			new /obj/item/natural/bundle/cloth(get_turf(src))
 			totalitemcount++
 		if(prob(10))
-			new /obj/item/rogueweapon/hammer/aalloy(get_turf(src)
+			new /obj/item/rogueweapon/hammer/aalloy(get_turf(src))
 			totalitemcount++
 		if(totalitemcount == 0)
 			to_chat(user, span_warning("Everything inside \the [src] seems to have decayed or crumbled to uselessness. Cack."))
