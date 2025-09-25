@@ -7,8 +7,8 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/mage
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	traits_applied = list(TRAIT_OUTLANDER)
-	classes = list("Sorcerer" = "You are a learned mage and a scholar, having spent your life studying the arcane and its ways.", 
-					"Spellblade" = "You are skilled in both the arcyne art and swordsmanship. But you are not a master of either nor could you channel your magick in armor.",			
+	classes = list("Sorcerer" = "You are a learned mage and a scholar, having spent your life studying the arcane and its ways.",
+					"Spellblade" = "You are skilled in both the arcyne art and swordsmanship. But you are not a master of either nor could you channel your magick in armor.",
 					"Spellsinger" = "You belong to a school of bards renowned for their study of both the arcane and the arts.")
 
 /datum/outfit/job/roguetown/adventurer/mage/pre_equip(mob/living/carbon/human/H)
@@ -18,7 +18,7 @@
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
-	
+
 		if("Sorcerer")
 			to_chat(H, span_warning("You are a learned mage and a scholar, having spent your life studying the arcane and its ways."))
 			head = /obj/item/clothing/head/roguetown/roguehood/mage
@@ -76,7 +76,7 @@
 			backl = /obj/item/storage/backpack/rogue/satchel/short
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/recipe_book/survival = 1)
+			backpack_contents = list(/obj/item/flashlight/flare/torch = 1, /obj/item/recipe_book/survival = 1, /obj/item/mundane/adventurer_kit = 1)
 			if(H.mind)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/airblade)

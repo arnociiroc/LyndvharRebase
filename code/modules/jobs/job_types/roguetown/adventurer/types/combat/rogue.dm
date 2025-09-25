@@ -17,9 +17,9 @@
 	var/classes = list("Treasure Hunter","Thief","Bard","Swashbuckler")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 	switch(classchoice)
-	
+
 		if("Treasure Hunter")
-			
+
 			to_chat(H, span_warning("You are a treasure hunter trained in hunting for valuables. Discern what is treasure or not, your fortune could be hidden anywhere."))
 			pants = /obj/item/clothing/under/roguetown/trou/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
@@ -33,8 +33,8 @@
 			head = /obj/item/clothing/head/roguetown/fedora
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 			backpack_contents = list(
-				/obj/item/lockpick = 1, 
-				/obj/item/rogueweapon/huntingknife = 1, 
+				/obj/item/lockpick = 1,
+				/obj/item/rogueweapon/huntingknife = 1,
 				/obj/item/recipe_book/survival = 1,
 				/obj/item/rogueweapon/scabbard/sheath = 1
 				)
@@ -51,6 +51,7 @@
 			H.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/craft/traps, 3, TRUE)
+			H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 			H.cmode_music = 'sound/music/cmode/adventurer/combat_outlander3.ogg'
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SEEPRICES, TRAIT_GENERIC)

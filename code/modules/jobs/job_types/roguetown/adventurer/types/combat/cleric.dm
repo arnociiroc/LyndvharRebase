@@ -43,7 +43,7 @@
 			belt = /obj/item/storage/belt/rogue/leather/rope
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(
-				/obj/item/flashlight/flare/torch = 1, 
+				/obj/item/flashlight/flare/torch = 1,
 				/obj/item/recipe_book/survival = 1,
 				)
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -106,7 +106,7 @@
 			gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			backpack_contents = list(
-				/obj/item/flashlight/flare/torch = 1, 
+				/obj/item/flashlight/flare/torch = 1,
 				/obj/item/recipe_book/survival = 1,
 				)
 			H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
@@ -120,6 +120,8 @@
 			H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+			H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 			H.cmode_music = 'sound/music/cmode/church/combat_reckoning.ogg'
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			switch(H.patron?.type)
@@ -214,7 +216,8 @@
 			backpack_contents = list(
 				/obj/item/flashlight/flare/torch = 1,
 				/obj/item/recipe_book/survival = 1,
-				/obj/item/rogueweapon/scabbard/sheath = 1
+				/obj/item/rogueweapon/scabbard/sheath = 1,
+				/obj/item/mundane/adventurer_kit = 1
 				)
 			H.adjust_skillrank(/datum/skill/misc/music, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
@@ -291,6 +294,7 @@
 				/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 				/obj/item/flashlight/flare/torch = 1,
 				/obj/item/recipe_book/survival = 1,
+				/obj/item/mundane/adventurer_kit = 1,
 				)
 			H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
@@ -301,6 +305,8 @@
 			H.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+			H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 			H.cmode_music = 'sound/music/cmode/church/combat_reckoning.ogg'
 			H.change_stat("intelligence", 3)
 			H.change_stat("endurance", 1)
@@ -335,7 +341,7 @@
 				if (/datum/patron/divine/xylix)
 					cloak = /obj/item/clothing/cloak/templar/xylix
 				if(/datum/patron/inhumen/zizo)
-					cloak = /obj/item/clothing/suit/roguetown/shirt/robe 
+					cloak = /obj/item/clothing/suit/roguetown/shirt/robe
 					head = /obj/item/clothing/head/roguetown/roguehood
 					H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
 					H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravemark)
