@@ -7,19 +7,19 @@ GLOBAL_LIST_EMPTY(heretical_players)
 #define PRIEST_APOSTASY_COOLDOWN (5 MINUTES)
 #define PRIEST_EXCOMMUNICATION_COOLDOWN (5 MINUTES)
 #define PRIEST_CURSE_COOLDOWN (10 MINUTES)
-#define PRIEST_SWAP_COOLDOWN (20 MINUTES)
+#define PRIEST_SWAP_COOLDOWN (15 MINUTES)
 
 /datum/job/roguetown/priest
-	title = "Priest"
+	title = "Bishop"
 	flag = PRIEST
 	department_flag = CHURCHMEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_CHURCH
-	f_title = "Priestess"
-	allowed_races = RACES_SHUNNED_UP
-	allowed_patrons = ALL_DIVINE_PATRONS
+	f_title = "Bishop"
+	allowed_races = RACES_TOLERATED_UP
+	allowed_patrons = list(/datum/patron/divine/undivided)
 	allowed_sexes = list(MALE, FEMALE)
 	tutorial = "In this time of strife and destruction, only the power of the PANTHEON is what truly matters against those of immorality. You have served the Ten for as long as you can remember- from your birth swaddled in cloth to your anointment as a member of the upper echelons of the Mother Church- bestowed with the position of Priest of Lyndvhar. You control and oversee the entire Church in this city, and are respected as such- with almost as much influence as the Viscount themself. Keep the spirits of those under you uplifted and the city faithful, for danger may always come from within."
 	whitelist_req = FALSE
@@ -33,19 +33,59 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	max_pq = null
 	round_contrib_points = 5
 
+	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
+	
+	job_traits = list(TRAIT_CHOSEN, TRAIT_RITUALIST, TRAIT_GRAVEROBBER)
+	advclass_cat_rolls = list(CTAG_BISHOP = 2)
+	job_subclasses = list(
+		/datum/advclass/bishop
+	)
+
+/datum/advclass/bishop
+	name = "Bishop"
+	tutorial = "In this time of strife and destruction, only the power of the PANTHEON is what truly matters against those of immorality. You have served the Ten for as long as you can remember- from your birth swaddled in cloth to your anointment as a member of the upper echelons of the Mother Church- bestowed with the position of Priest of Lyndvhar. You control and oversee the entire Church in this city, and are respected as such- with almost as much influence as the Viscount themself. Keep the spirits of those under you uplifted and the city faithful, for danger may always come from within."
+	outfit = /datum/outfit/job/roguetown/priest/basic
+	subclass_languages = list(/datum/language/celestial)
+	category_tags = list(CTAG_BISHOP)
+	subclass_stats = list(
+		STATKEY_INT = 4,
+		STATKEY_WIL = 2,
+		STATKEY_STR = -1,
+		STATKEY_CON = -1,
+		STATKEY_SPD = -1
+	)
+	subclass_skills = list(
+		/datum/skill/combat/wrestling = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/polearms = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/shields = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/misc/medicine = SKILL_LEVEL_EXPERT,
+		/datum/skill/craft/cooking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/crafting = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/sewing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/labor/farming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/magic/holy = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/craft/alchemy = SKILL_LEVEL_JOURNEYMAN,
+	)
+	subclass_stashed_items = list(
+		"The Verses and Acts of the Ten" = /obj/item/book/rogue/bibble,
+	)
+
 /datum/outfit/job/roguetown/priest
 	job_bitflag = BITFLAG_CHURCH
 	has_loadout = TRUE
 	allowed_patrons = list(/datum/patron/divine/undivided)	//We lock this cus head of church, acktully
 
-/datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/priest/basic/pre_equip(mob/living/carbon/human/H)
 	..()
+	H.adjust_blindness(-3)
 	neck = /obj/item/clothing/neck/roguetown/psicross/undivided
-	cloak = /obj/item/clothing/cloak/undivided
 	head = /obj/item/clothing/head/roguetown/priestmask
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	shoes = /obj/item/clothing/shoes/roguetown/boots
+	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	beltl = /obj/item/storage/keyring/priest
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
@@ -59,29 +99,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		/obj/item/rogueweapon/huntingknife/idagger/steel/holysee = 1,	//Unique knife from the Holy See
 		/obj/item/rogueweapon/scabbard/sheath = 1
 	)
-	ADD_TRAIT(H, TRAIT_CHOSEN, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_UNDIVIDED, TRAIT_GENERIC)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 6, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/medicine, 5, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/crafting, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/magic/holy, 6, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/alchemy, 3, TRUE)
-	H.grant_language(/datum/language/celestial)
-	H.change_stat("strength", -1)
-	H.change_stat("intelligence", 3)
-	H.change_stat("constitution", -1)
-	H.change_stat("endurance", 1)
-	H.change_stat("speed", -1)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
 	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MAJOR, start_maxed = TRUE)	//Starts off maxed out.
 
@@ -94,7 +111,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/convert_heretic_priest)
 	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/revive)
 
-/datum/outfit/job/roguetown/priest/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/priest/basic/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/t3_count = 2
 	var/list/t4 = list()
@@ -150,7 +167,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
 		if(!HU.mind)
 			continue
-		if(HU.mind.assigned_role == "Viscount")
+		if(HU.mind.assigned_role == "Grand Duke")
 			continue
 		if(!HU.head)
 			continue
@@ -174,7 +191,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		var/dispjob = mind.assigned_role
 		removeomen(OMEN_NOLORD)
 		say("By the authority of the gods, I pronounce you Viscount of the city of Lyndvhar!")
-		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of the city of Lyndvhar!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/coronation.ogg')
+		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of the city of LYNDVHAR!", title = "Long Live [HU.real_name]!", sound = 'sound/misc/coronation.ogg')
 		var/datum/job/roguetown/nomoredukes = SSjob.GetJob("Viscount")
 		if(nomoredukes)
 			nomoredukes.total_positions = -1000 //We got what we got now.
@@ -199,9 +216,9 @@ GLOBAL_LIST_EMPTY(heretical_players)
 			to_chat(src, span_warning("You must wait before speaking again."))
 			return
 		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
-		if(do_after(src, 5 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
+		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			say(announcementinput)
-			priority_announce("[announcementinput]", "The Priest Speaks", 'sound/misc/bellold.ogg', sender = src)
+			priority_announce("[announcementinput]", "The Bishop Preaches", 'sound/misc/bellold.ogg', sender = src)
 			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
 		else
 			to_chat(src, span_warning("Your announcement was interrupted!"))
@@ -272,7 +289,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 /mob/living/carbon/human/proc/churchecancurse(var/mob/living/carbon/human/H, apostasy = FALSE)
 	if (!H.devotion && apostasy)
-		to_chat(src, span_warning("This one's connection to the Ten is too shallow."))
+		to_chat(src, span_warning("This one's connection to the ten is too shallow."))
 		return FALSE
 
 	//Flavor messages for cursing certain god's faithful.
@@ -282,7 +299,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		//If we check this here there's no need to apply this trait preemtively to a bunch of people, and allows for greater fluff feedback.
 		ADD_TRAIT(H, TRAIT_CURSE_RESIST, TRAIT_GENERIC)
 
-	//Abyssor's clergy are gripped by his dream.
+	//Abyssor's clergy are gripped by her dream.
 	if (istype(H.patron, /datum/patron/divine/abyssor))
 		to_chat(src, span_warning("The Maiden of the Sea, Abyssor, has her clutches grasped firmly around this one. The light of the Ten only barely penetrates the depths."))
 		ADD_TRAIT(H, TRAIT_CURSE_RESIST, TRAIT_GENERIC)
@@ -353,7 +370,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		else
 			to_chat(H, span_warning("A holy silence falls upon you..."))
 
-		priority_announce("[real_name] has placed a mark of shame upon [inputty]! Their prayers fall on deaf ears..", title = "APOSTASY", sound = 'sound/misc/excomm.ogg')
+		priority_announce("[real_name] has placed mark of shame upon [inputty]. Their prayers fall on deaf ears.", title = "APOSTASY", sound = 'sound/misc/excomm.ogg')
 		message_admins("APOSTASY: [real_name] ([ckey]) has used apostasy at [H.real_name] ([H.ckey])")
 		log_game("APOSTASY: [real_name] ([ckey]) has used apostasy at [H.real_name] ([H.ckey])")
 		return TRUE
@@ -425,7 +442,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 			return FALSE
 
 	GLOB.excommunicated_players += inputty
-	priority_announce("[real_name] has excommunicated [inputty] from the Holy Pantheon! SHAME!", title = "EXCOMMUNICATION", sound = 'sound/misc/excomm.ogg')
+	priority_announce("[real_name] has excommunicated [inputty]! SHAME!", title = "EXCOMMUNICATION", sound = 'sound/misc/excomm.ogg')
 	message_admins("EXCOMMUNICATION: [real_name] ([ckey]) has excommunicated [H.real_name] ([H.ckey])")
 	log_game("EXCOMMUNICATION: [real_name] ([ckey]) has excommunicated [H.real_name] ([H.ckey])")
 
@@ -496,7 +513,7 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 			COOLDOWN_START(src, priest_curse, PRIEST_CURSE_COOLDOWN)
 			H.add_curse(curse_type)
 			
-			priority_announce("[real_name] has stricken [H.real_name] with [curse_pick]! WOE UPON THEM!", title = "JUDGEMENT", sound = 'sound/misc/excomm.ogg')
+			priority_announce("[real_name] has stricken [H.real_name] with [curse_pick]! SHAME!", title = "JUDGEMENT", sound = 'sound/misc/excomm.ogg')
 			message_admins("DIVINE CURSE: [real_name] ([ckey]) has stricken [H.real_name] ([H.ckey] with [curse_pick])")
 			log_game("DIVINE CURSE: [real_name] ([ckey]) has stricken [H.real_name] ([H.ckey] with [curse_pick])")
 
@@ -526,7 +543,7 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 		revert_cast()
 		return FALSE
 
-	if(alert(target, "[user.real_name] is trying to convert you back to the light. Do you accept?", "Conversion Request", "Yes", "No") != "Yes")
+	if(alert(target, "[user.real_name] is trying to convert you back to the church. Do you accept?", "Conversion Request", "Yes", "No") != "Yes")
 		to_chat(user, span_warning("[target] refused your offer of conversion."))
 		revert_cast()
 		return FALSE
@@ -571,7 +588,7 @@ code\modules\admin\verbs\divinewrath.dm has a variant with all the gods so keep 
 	user.apply_status_effect(/datum/status_effect/debuff/devitalised)
 	target.apply_status_effect(/datum/status_effect/debuff/devitalised)
 
-	var/announcement_text = "[user.real_name] has brought [target.real_name] back into the fold of the Pantheon! [target.real_name] now follows [user.patron.name]. Praise be!"
+	var/announcement_text = "[user.real_name] has brought [target.real_name] back into the fold of the church! [target.real_name] now follows [user.patron.name]!"
 	priority_announce(announcement_text, title = "REDEMPTION", sound = 'sound/misc/bellold.ogg')
 	message_admins("HERETIC CONVERSION: [user.real_name] ([user.ckey]) has converted [target.real_name] ([target.ckey]) to [user.patron.name]")
 	log_game("HERETIC CONVERSION: [user.real_name] ([user.ckey]) converted [target.real_name] ([target.ckey]) to [user.patron.name]")

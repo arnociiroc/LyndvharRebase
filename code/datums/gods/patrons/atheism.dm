@@ -5,7 +5,7 @@
 	worshippers = "Some Grenzers, Madmen, Narcissists, beasts, powerful nobility, and some dwarves"
 	associated_faith = /datum/faith/godless
 	mob_traits = list(TRAIT_NOFAITHHEAL)
-	preference_accessible = FALSE
+	preference_accessible = TRUE
 	undead_hater = FALSE
 	confess_lines = list(
 		"Gods are WORTHLESS!",
