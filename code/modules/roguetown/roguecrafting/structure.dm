@@ -504,14 +504,14 @@
 
 /datum/crafting_recipe/roguetown/structure/chest
 	name = "chest"
-	result = /obj/structure/closet/crate/chest/crafted
+	result = /obj/structure/closet/crate/chest/neu/crafted
 	reqs = list(/obj/item/grown/log/tree/small = 1)
 	verbage_simple = "construct"
 	verbage = "constructs"
 	skillcraft = /datum/skill/craft/carpentry
 	craftdiff = 0
 
-/obj/structure/closet/crate/chest/crafted
+/obj/structure/closet/crate/chest/neu/crafted
 	keylock = FALSE
 	sellprice = 6
 
