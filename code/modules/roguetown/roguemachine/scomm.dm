@@ -165,6 +165,10 @@
 			say("There are no rats running this jabberline.", spans = list("info"))
 			return
 		var/obj/structure/roguemachine/scomm/S = SSroguemachine.scomm_machines[nightcall]
+		if(istype(S, /obj/item/scomstone))
+			say("The jabberline's rats cannot travel to SCOMstones.") //Check prevents a runtime and leaves room to potentially make scomstones callable by ID later.
+			playsound(src, 'sound/vo/mobs/rat/rat_life.ogg', 100, TRUE, -1)
+			return
 		if(!S)
 			to_chat(user, span_warning("Nothing but rats squeaking back at you."))
 			playsound(src, 'sound/vo/mobs/rat/rat_life.ogg', 100, TRUE, -1)
@@ -241,7 +245,7 @@
 	animate(pixel_x = oldx-1, time = 0.5)
 	animate(pixel_x = oldx, time = 0.5)
 
-/obj/structure/roguemachine/scomm/proc/repeat_message(message, atom/A, tcolor, message_language)
+/obj/structure/roguemachine/scomm/proc/repeat_message(message, atom/A, tcolor, message_language, list/tspans, broadcaster_tag)
 	if(A == src)
 		return
 	if(tcolor)
@@ -340,6 +344,7 @@
 	var/listening = TRUE
 	var/speaking = TRUE
 	var/messagereceivedsound = 'sound/misc/scom.ogg'
+	var/scomstone_number
 	var/hearrange = 1 // change to 0 if you want your special scomstone to be only hearable by wearer
 	drop_sound = 'sound/foley/coinphy (1).ogg'
 	sellprice = 100
@@ -366,6 +371,13 @@
 		S.repeat_message(input_text, src, usedcolor)
 	SSroguemachine.crown?.repeat_message(input_text, src, usedcolor)
 
+	//Log message to global broadcast list.
+	GLOB.broadcast_list += list(list(
+	"message"   = input_text,
+	"tag"		= "SCOMSTONE #[scomstone_number]",
+	"timestamp" = station_time_timestamp("hh:mm:ss")
+	))
+
 /obj/item/scomstone/MiddleClick(mob/user)
 	if(.)
 		return
@@ -386,6 +398,12 @@
 	become_hearing_sensitive()
 	update_icon()
 	SSroguemachine.scomm_machines += src
+	scomstone_number = SSroguemachine.scomm_machines.len
+
+/obj/item/scomstone/examine(mob/user)
+	. = ..()
+	if(scomstone_number)
+		. += "Its designation is #[scomstone_number]."
 
 /obj/item/scomstone/proc/repeat_message(message, atom/A, tcolor, message_language)
 	if(A == src)
@@ -463,7 +481,7 @@
 /obj/item/listenstone/Initialize()
 	. = ..()
 	update_icon()
-	SSroguemachine.scomm_machines += src//dont know what this is for
+	SSroguemachine.scomm_machines += src
 
 
 /obj/item/listenstone/proc/repeat_message(message, atom/A, tcolor, message_language)
@@ -701,6 +719,7 @@
 	var/label = null
 	var/inqdesc = null
 	var/hidden = FALSE
+	layer = TURF_LAYER
 	var/active = FALSE
 	var/datum/status_effect/bugged/effect
 

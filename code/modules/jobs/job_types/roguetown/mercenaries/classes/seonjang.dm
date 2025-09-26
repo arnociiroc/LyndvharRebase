@@ -1,5 +1,5 @@
 /datum/advclass/mercenary/seonjang //shitcode approved by free
-	name = "Seonjang"
+	name = "Xuefeng Seonjang"
 	tutorial = "The respected leader and singular representative of the Xuefeng clan remnants, you're an experienced swordsman. It matters not where the coin comes from, so long as you can make enough to support the clan in its survival from the Xinyi-Duvalti triad and its conflicts, now in strange lands."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
@@ -10,18 +10,38 @@
 		/datum/species/vulpkanin,
 	)
 	outfit = /datum/outfit/job/roguetown/mercenary/seonjang
+	subclass_languages = list(/datum/language/saltlian)
+	class_select_category = CLASS_CAT_SALTLIA
 	category_tags = list(CTAG_MERCENARY)
-	traits_applied = list(TRAIT_OUTLANDER)
+	traits_applied = list(TRAIT_CRITICAL_RESISTANCE, TRAIT_HARDDISMEMBER, TRAIT_NOPAINSTUN)
 	cmode_music = 'sound/music/combat_saltlia.ogg'
 	maximum_possible_slots = 1
-
+	subclass_stats = list(
+		STATKEY_CON = 3,
+		STATKEY_WIL = 3,
+		STATKEY_STR = 2,
+		STATKEY_PER = 1,
+		STATKEY_SPD = -1
+	)
+	subclass_skills = list(
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/shields = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+	)
+	extra_context = "This subclass is race-limited to: Humens, Half-Elves, Elves, Half-kin, and Vulpkians."
 /datum/outfit/job/roguetown/mercenary/seonjang/pre_equip(mob/living/carbon/human/H)
 	..()
-	belt = belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
+	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
 	beltr = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefengcaptain
 	beltl = /obj/item/rogueweapon/scabbard/sword/saltlian/gold
 	backr = /obj/item/storage/backpack/rogue/satchel/short
-	neck = /obj/item/clothing/neck/roguetown/leather
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
@@ -29,21 +49,6 @@
 		/obj/item/rogueweapon/scabbard/sheath,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/saltlian
 		)
-	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-	H.change_stat("strength", 3)
-	H.change_stat("endurance", 2)
-	H.change_stat("constitution", 2)
-	H.change_stat("perception", 3)
-	H.change_stat("speed", -1)
 	H.adjust_blindness(-3)
 
 	if(should_wear_masc_clothes(H))
@@ -64,8 +69,4 @@
 		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
 
-	ADD_TRAIT(H, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC) //i swear this isn't as good as it sounds
-	H.grant_language(/datum/language/saltlian)
 	H.merctype = 9

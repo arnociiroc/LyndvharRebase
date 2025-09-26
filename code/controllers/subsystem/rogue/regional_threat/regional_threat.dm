@@ -6,10 +6,8 @@
 #define DANGER_LEVEL_BLEAK "Bleak"
 
 #define THREAT_REGION_CITY_OUTSKIRT "City Outskirts"
-#define THREAT_REGION_NORTH_FOREST "North Draguippe Forest"
-#define THREAT_REGION_SOUTH_FOREST "South Draguippe Forest" // Grove west of the road
-#define THREAT_REGION_SOUTH_COAST "Southern Coastline"
-#define THREAT_REGION_NORTH_COAST "Northern Coastline"
+#define THREAT_REGION_FOREST "Draguippe Forest"
+#define THREAT_REGION_COAST "Coastline"
 #define THREAT_REGION_MOUNT_DECAP "Mount Decapitation"
 #define THREAT_REGION_TERRORBOG "Terrorbog"
 
@@ -33,22 +31,13 @@ SUBSYSTEM_DEF(regionthreat)
 			_highpop_tick = 1,
 		),
 		new /datum/threat_region(
-			_region_name = THREAT_REGION_NORTH_FOREST,
+			_region_name = THREAT_REGION_FOREST,
 			_latent_ambush = DANGER_MODERATE_FLOOR,
 			_min_ambush = DANGER_SAFE_FLOOR,
 			_max_ambush = DANGER_DANGEROUS_LIMIT,
 			_fixed_ambush = FALSE,
 			_lowpop_tick = 1,
-			_highpop_tick = 1
-		),
-		new /datum/threat_region(
-			_region_name = THREAT_REGION_SOUTH_COAST,
-			_latent_ambush = DANGER_DANGEROUS_FLOOR,
-			_min_ambush = DANGER_SAFE_FLOOR,
-			_max_ambush = DANGER_DIRE_LIMIT,
-			_fixed_ambush = FALSE,
-			_lowpop_tick = 1,
-			_highpop_tick = 1
+			_highpop_tick = 2
 		),
 		new /datum/threat_region(
 			_region_name = THREAT_REGION_TERRORBOG,
@@ -61,16 +50,7 @@ SUBSYSTEM_DEF(regionthreat)
 		),
 		// All regions after are meant to stay somewhat dangerous no matter what
 		new /datum/threat_region(
-			_region_name = THREAT_REGION_SOUTH_FOREST,
-			_latent_ambush = DANGER_MODERATE_LIMIT,
-			_min_ambush = DANGER_MODERATE_FLOOR,
-			_max_ambush = DANGER_DIRE_LIMIT,
-			_fixed_ambush = FALSE,
-			_lowpop_tick = 1,
-			_highpop_tick = 2
-		),
-		new /datum/threat_region(
-			_region_name = THREAT_REGION_NORTH_COAST,
+			_region_name = THREAT_REGION_COAST,
 			_latent_ambush = DANGER_DANGEROUS_FLOOR,
 			_min_ambush = DANGER_MODERATE_FLOOR,
 			_max_ambush = DANGER_DIRE_LIMIT,

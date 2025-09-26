@@ -315,3 +315,6 @@
 
 /obj/item/storage/keyring/veteran
 	keys = list(/obj/item/roguekey/farm, /obj/item/roguekey/apartments/stable1, /obj/item/roguekey/apartments/stable2, /obj/item/roguekey/garrison)
+	
+/obj/item/storage/keyring/vampire
+	keys = list(/obj/item/roguekey/vampire, /obj/item/roguekey/vampire/guest, /obj/item/roguekey/vampire/maid)

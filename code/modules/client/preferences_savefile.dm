@@ -205,6 +205,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["chat_toggles"]		>> chat_toggles
 	S["toggles"]			>> toggles
 	S["floating_text_toggles"]>> floating_text_toggles
+	S["admin_chat_toggles"]	>> admin_chat_toggles
 	S["ghost_form"]			>> ghost_form
 	S["ghost_orbit"]		>> ghost_orbit
 	S["ghost_accs"]			>> ghost_accs
@@ -250,6 +251,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	default_slot	= sanitize_integer(default_slot, 1, max_save_slots, initial(default_slot))
 	toggles			= sanitize_integer(toggles, 0, INFINITY, initial(toggles))
 	floating_text_toggles = sanitize_integer(floating_text_toggles, 0, INFINITY, initial(floating_text_toggles))
+	admin_chat_toggles = sanitize_integer(admin_chat_toggles, 0, INFINITY, initial(admin_chat_toggles))
+	chat_toggles = sanitize_integer(chat_toggles, 0, INFINITY, initial(chat_toggles))
 	clientfps		= sanitize_integer(clientfps, 0, 1000, 0)
 	parallax		= sanitize_integer(parallax, PARALLAX_INSANE, PARALLAX_DISABLE, null)
 	ambientocclusion	= sanitize_integer(ambientocclusion, 0, 1, initial(ambientocclusion))
@@ -328,6 +331,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["toggles"], toggles)
 	WRITE_FILE(S["chat_toggles"], chat_toggles)
 	WRITE_FILE(S["floating_text_toggles"], floating_text_toggles)
+	WRITE_FILE(S["admin_chat_toggles"], admin_chat_toggles)
 	WRITE_FILE(S["ghost_form"], ghost_form)
 	WRITE_FILE(S["ghost_orbit"], ghost_orbit)
 	WRITE_FILE(S["ghost_accs"], ghost_accs)
@@ -381,6 +385,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		charflaw = pick(GLOB.character_flaws)
 		charflaw = GLOB.character_flaws[charflaw]
 		charflaw = new charflaw()
+
+/datum/preferences/proc/_load_culinary_preferences(S)
+	var/list/loaded_culinary_preferences
+	S["culinary_preferences"] >> loaded_culinary_preferences
+	if(loaded_culinary_preferences)
+		culinary_preferences = loaded_culinary_preferences
+		validate_culinary_preferences()
+	else
+		reset_culinary_preferences()
 
 /datum/preferences/proc/_load_statpack(S)
 	var/statpack_type
@@ -498,6 +511,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	_load_virtue(S)
 	_load_flaw(S)
 
+	_load_culinary_preferences(S)
+
 	// LETHALSTONE edit: jank-ass load our statpack choice
 	_load_statpack(S)
 
@@ -543,6 +558,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//Quirks
 	S["all_quirks"] >> all_quirks
+
+	S["dnr"] >> dnr_pref
 
 	S["update_mutant_colors"]			>> update_mutant_colors
 	update_mutant_colors = sanitize_integer(update_mutant_colors, FALSE, TRUE, initial(update_mutant_colors))
@@ -684,6 +701,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["feature_ethcolor"]					, features["ethcolor"])
 	WRITE_FILE(S["nickname"]			, nickname)
 	WRITE_FILE(S["highlight_color"]		, highlight_color)
+	WRITE_FILE(S["culinary_preferences"], culinary_preferences)
 
 	//Custom names
 	for(var/custom_name_id in GLOB.preferences_custom_names)
@@ -712,6 +730,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["descriptor_entries"] , descriptor_entries)
 	WRITE_FILE(S["custom_descriptors"] , custom_descriptors)
 
+	WRITE_FILE(S["dnr"] , dnr_pref)
 	WRITE_FILE(S["update_mutant_colors"] , update_mutant_colors)
 	WRITE_FILE(S["headshot_link"] , headshot_link)
 	WRITE_FILE(S["nsfw_headshot_link"] , nsfw_headshot_link)

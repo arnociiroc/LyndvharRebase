@@ -1,12 +1,37 @@
 // Meant for cave-races, less boons than other mercs but unique weapon + mining skill and helmet-torch combo. ALSO gets alchemy now for bomb-making.
 /datum/advclass/mercenary/underdweller
-	name = "Underdweller"
+	name = "Underdweller Contractor"
 	tutorial = "A member of the Underdwellers, you've taken many of the deadliest contracts known to man in literal underground circles. No matter the race, you've put your differences aside for coin and adventure."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/mercenary/underdweller
+	class_select_category = CLASS_CAT_RACIAL
 	category_tags = list(CTAG_MERCENARY)
-	traits_applied = list(TRAIT_OUTLANDER)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_WEBWALK)
+	subclass_stats = list(
+		STATKEY_CON = 2,
+		STATKEY_WIL = 2,
+		STATKEY_SPD = 1,
+		STATKEY_STR = 1,
+		STATKEY_LCK = 2
+	)
+	subclass_skills = list(
+		/datum/skill/combat/axes = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/labor/mining = SKILL_LEVEL_MASTER,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/alchemy = SKILL_LEVEL_APPRENTICE,	//Gets this for bomb making.
+		/datum/skill/craft/engineering = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/swimming = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/smelting = SKILL_LEVEL_APPRENTICE,	//Accompanies mining; they know how to smelt, not make armor though.
+	)
 
 /datum/outfit/job/roguetown/mercenary/underdweller/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -30,30 +55,7 @@
 		/obj/item/bomb = 2,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
-	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/labor/mining, 5, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)	//Gets this for bomb making.
-	H.adjust_skillrank(/datum/skill/craft/engineering, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/smelting, 2, TRUE)	//Accompanies mining; they know how to smelt, not make armor though.
-	H.change_stat("fortune", 2)
-	H.change_stat("strength", 1)
-	H.change_stat("constitution", 2)
-	H.change_stat("endurance", 3)
-	H.change_stat("speed", -1)
-
-	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_WEBWALK, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)	//A cave dweller fears no spider.
+	H.merctype = 12
 
 
 //Clothing here to avoid overcrowding the hats.dm with snowflake gear. It's just a kettle with a light.

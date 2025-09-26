@@ -9,7 +9,7 @@
 	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_DIVINE_PATRONS
 	outfit = /datum/outfit/job/roguetown/templar
-	min_pq = 4
+	min_pq = 3
 	max_pq = null
 	round_contrib_points = 2
 	total_positions = 4
@@ -18,19 +18,19 @@
 	display_order = JDO_TEMPLAR
 
 	give_bank_account = TRUE
+	job_traits = list(TRAIT_RITUALIST, TRAIT_STEELHEARTED)
+
+	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
+	
+	job_subclasses = list(
+		/datum/advclass/templar/monk,
+		/datum/advclass/templar/crusader
+	)
 
 /datum/outfit/job/roguetown/templar
 	job_bitflag = BITFLAG_CHURCH
 	has_loadout = TRUE
 	allowed_patrons = ALL_DIVINE_PATRONS
-
-/datum/job/roguetown/templar/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
-	. = ..()
-	if(ishuman(L))
-		var/mob/living/carbon/human/H = L
-		H.advsetup = 1
-		H.invisibility = INVISIBILITY_MAXIMUM
-		H.become_blind("advsetup")
 
 /datum/advclass/templar/monk
 	name = "Monk"
@@ -38,6 +38,28 @@
 	outfit = /datum/outfit/job/roguetown/templar/monk
 
 	category_tags = list(CTAG_TEMPLAR)
+	traits_applied = list(TRAIT_CIVILIZEDBARBARIAN, TRAIT_DODGEEXPERT)
+	subclass_stats = list(
+		STATKEY_STR = 3,
+		STATKEY_CON = 2,
+		STATKEY_WIL = 2,
+		STATKEY_SPD = 2
+	)
+	subclass_skills = list(
+		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/magic/holy = SKILL_LEVEL_JOURNEYMAN,
+	)
+	subclass_stashed_items = list(
+		"The Verses and Acts of the Ten" = /obj/item/book/rogue/bibble,
+	)
 
 /datum/outfit/job/roguetown/templar/monk/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -52,13 +74,14 @@
 	switch(H.patron?.type)
 		if(/datum/patron/divine/undivided)
 			neck = /obj/item/clothing/neck/roguetown/psicross/undivided
-			var/cloaks = list("Cloak", "Tabard")
-			var/cloakchoice = input(H,"Choose your covering", "TAKE UP FASHION") as anything in cloaks
-			switch(cloakchoice)
-				if("Cloak")
-					cloak = /obj/item/clothing/cloak/undivided
-				if("Tabard")
-					cloak = /obj/item/clothing/cloak/templar/undivided
+			if(H.mind)
+				var/cloaks = list("Cloak", "Tabard")
+				var/cloakchoice = input(H,"Choose your covering", "TAKE UP FASHION") as anything in cloaks
+				switch(cloakchoice)
+					if("Cloak")
+						cloak = /obj/item/clothing/cloak/undivided
+					if("Tabard")
+						cloak = /obj/item/clothing/cloak/templar/undivided
 		if(/datum/patron/divine/astrata)
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 			cloak = /obj/item/clothing/cloak/tabard/crusader/astrata
@@ -98,19 +121,33 @@
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltr = /obj/item/storage/keyring/churchie
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	gloves = /obj/item/clothing/gloves/roguetown/angle
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
-	H.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-	H.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
+
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_2)	//Capped to T2 miracles.
+
+/datum/outfit/job/roguetown/templar/monk/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Katar","Knuckle Dusters")
+	switch(H.patron?.type)
+		if(/datum/patron/divine/eora)
+			weapons += "Close Caress"
+		if(/datum/patron/divine/abyssor)
+			weapons += "Barotrauma"
+
+	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	switch(weapon_choice)
+		if("Katar")
+			H.put_in_hands(new /obj/item/rogueweapon/katar(H), TRUE)
+		if("Knuckle Dusters")
+			H.put_in_hands(new /obj/item/rogueweapon/knuckles(H), TRUE)
+		if("Close Caress")
+			H.put_in_hands(new /obj/item/rogueweapon/knuckles/eora(H), TRUE)
+		if("Barotrauma")
+			H.put_in_hands(new /obj/item/rogueweapon/katar/abyssor(H), TRUE)
+
 	// -- Start of section for god specific bonuses --
 	if(H.patron?.type == /datum/patron/divine/undivided)
 		H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
@@ -151,43 +188,38 @@
 		H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
 	// -- End of section for god specific bonuses --
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_CIVILIZEDBARBARIAN, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
-	H.change_stat("strength", 3)
-	H.change_stat("constitution", 2)
-	H.change_stat("endurance", 2)
-	H.change_stat("speed", 2)
-
-	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_2)	//Capped to T2 miracles.
-
-/datum/outfit/job/roguetown/templar/monk/choose_loadout(mob/living/carbon/human/H)
-	. = ..()
-	var/weapons = list("Katar","Knuckle Dusters")
-	switch(H.patron?.type)
-		if(/datum/patron/divine/eora)
-			weapons += "Close Caress"
-		if(/datum/patron/divine/abyssor)
-			weapons += "Barotrauma"
-
-	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
-	switch(weapon_choice)
-		if("Katar")
-			H.put_in_hands(new /obj/item/rogueweapon/katar(H), TRUE)
-		if("Knuckle Dusters")
-			H.put_in_hands(new /obj/item/rogueweapon/knuckles(H), TRUE)
-		if("Close Caress")
-			H.put_in_hands(new /obj/item/rogueweapon/knuckles/eora(H), TRUE)
-		if("Barotrauma")
-			H.put_in_hands(new /obj/item/rogueweapon/katar/abyssor(H), TRUE)
 
 /datum/advclass/templar/crusader
 	name = "Templar"
 	tutorial = "You are a templar of the Church, trained in heavy weaponry and zealous warfare. You are the instrument of your God's wrath, clad in steel and faith."
 	outfit = /datum/outfit/job/roguetown/templar/crusader
 	category_tags = list(CTAG_TEMPLAR)
+	traits_applied = list(TRAIT_HEAVYARMOR)
+	subclass_stats = list(
+		STATKEY_WIL = 3,
+		STATKEY_STR = 2,
+		STATKEY_CON = 2,
+	)
+	subclass_skills = list(
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/axes = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/magic/holy = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/shields = SKILL_LEVEL_JOURNEYMAN,	//May tone down to 2; seems OK.
+	)
+	subclass_stashed_items = list(
+		"The Verses and Acts of the Ten" = /obj/item/book/rogue/bibble,
+	)
+	extra_context = "This subclass gains Expert skill in their weapon of choice."
 
 /datum/outfit/job/roguetown/templar/crusader/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -196,7 +228,7 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	id = /obj/item/clothing/ring/silver
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
 		/obj/item/ritechalk = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
@@ -206,15 +238,16 @@
 	switch(H.patron?.type)
 		if(/datum/patron/divine/undivided)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/undivided
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/crusader
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 			backr = /obj/item/rogueweapon/shield/tower/holysee
-			var/cloaks = list("Cloak", "Tabard")
-			var/cloakchoice = input(H,"Choose your covering", "TAKE UP FASHION") as anything in cloaks
-			switch(cloakchoice)
-				if("Cloak")
-					cloak = /obj/item/clothing/cloak/undivided
-				if("Tabard")
-					cloak = /obj/item/clothing/cloak/templar/undivided
+			if(H.mind)
+				var/cloaks = list("Cloak", "Tabard")
+				var/cloakchoice = input(H,"Choose your covering", "TAKE UP FASHION") as anything in cloaks
+				switch(cloakchoice)
+					if("Cloak")
+						cloak = /obj/item/clothing/cloak/undivided
+					if("Tabard")
+						cloak = /obj/item/clothing/cloak/templar/undivided
 		if(/datum/patron/divine/astrata)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/astratan
@@ -262,73 +295,13 @@
 			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
 	gloves = /obj/item/clothing/gloves/roguetown/chain
-	neck = /obj/item/clothing/neck/roguetown/gorget
+	neck = /obj/item/clothing/neck/roguetown/chaincoif
 	pants = /obj/item/clothing/under/roguetown/chainlegs
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	beltr = /obj/item/storage/keyring/churchie
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
-	// -- Start of section for god specific bonuses --
-	if(H.patron?.type == /datum/patron/divine/undivided)
-		H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
-	if(H.patron?.type == /datum/patron/divine/astrata)
-		H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
-		H.cmode_music = 'sound/music/cmode/church/combat_astrata.ogg'
-	if(H.patron?.type == /datum/patron/divine/dendor)
-		H.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
-	if(H.patron?.type == /datum/patron/divine/noc)
-		H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE) // Really good at reading... does this really do anything? No. BUT it's soulful.
-		H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
-	if(H.patron?.type == /datum/patron/divine/abyssor)
-		H.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
-		ADD_TRAIT(H, TRAIT_WATERBREATHING, TRAIT_GENERIC)
-	if(H.patron?.type == /datum/patron/divine/necra)
-		ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
-		H.cmode_music = 'sound/music/cmode/church/combat_necra.ogg'
-	if(H.patron?.type == /datum/patron/divine/pestra)
-		H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
-		ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
-	if(H.patron?.type == /datum/patron/divine/eora)
-		ADD_TRAIT(H, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
-		ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
-		H.cmode_music = 'sound/music/cmode/church/combat_eora.ogg'
-	if(H.patron?.type == /datum/patron/divine/malum)
-		H.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
-	if(H.patron?.type == /datum/patron/divine/ravox)
-		H.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-	if(H.patron?.type == /datum/patron/divine/xylix)
-		H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
-	// -- End of section for god specific bonuses --
-	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.change_stat("strength", 2)
-	H.change_stat("constitution", 2)
-	H.change_stat("endurance", 3)
-
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_2)	//Capped to T2 miracles.
@@ -357,6 +330,8 @@
 			weapons += "Duel Settler"
 		if(/datum/patron/divine/eora)
 			weapons += "The Heartstring"
+		if(/datum/patron/divine/abyssor)
+			weapons += "Tidecleaver"
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Longsword")
@@ -366,10 +341,10 @@
 			H.put_in_hands(new /obj/item/rogueweapon/spear/holysee(H), TRUE)
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
 		if("Flail")
-			H.put_in_hands(new /obj/item/rogueweapon/flail(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/flail/sflail(H), TRUE)
 			H.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 		if("Mace")
-			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/mace/steel(H), TRUE)
 			H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		if("Battle Axe")
 			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/battle(H), TRUE)
@@ -390,7 +365,6 @@
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/pestrasickle(H), TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/pestrasickle(H), TRUE)
 			H.adjust_skillrank_up_to(/datum/skill/combat/knives, 4, TRUE) // actually makes them usable for the templar.
-			ADD_TRAIT(H, TRAIT_DUALWIELDER, TRAIT_GENERIC)
 		if("Forgefiend")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/malumflamm(H), TRUE)
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
@@ -406,3 +380,49 @@
 		if("The Heartstring")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/rapier/eora(H), TRUE)
 			H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		if("Tidecleaver")
+			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/battle/abyssoraxe(H), TRUE)
+			H.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+			
+	// -- Start of section for god specific bonuses --
+	if(H.patron?.type == /datum/patron/divine/undivided)
+		H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
+	if(H.patron?.type == /datum/patron/divine/astrata)
+		H.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
+		H.cmode_music = 'sound/music/cmode/church/combat_astrata.ogg'
+	if(H.patron?.type == /datum/patron/divine/dendor)
+		H.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
+	if(H.patron?.type == /datum/patron/divine/noc)
+		H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE) // Really good at reading... does this really do anything? No. BUT it's soulful.
+		H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
+	if(H.patron?.type == /datum/patron/divine/abyssor)
+		H.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+		ADD_TRAIT(H, TRAIT_WATERBREATHING, TRAIT_GENERIC)
+	if(H.patron?.type == /datum/patron/divine/necra)
+		ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
+		H.cmode_music = 'sound/music/cmode/church/combat_necra.ogg'
+	if(H.patron?.type == /datum/patron/divine/pestra)
+		H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
+		ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
+	if(H.patron?.type == /datum/patron/divine/eora)
+		ADD_TRAIT(H, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
+		ADD_TRAIT(H, TRAIT_EMPATH, TRAIT_GENERIC)
+		H.cmode_music = 'sound/music/cmode/church/combat_eora.ogg'
+	if(H.patron?.type == /datum/patron/divine/malum)
+		H.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/smelting, 1, TRUE)
+	if(H.patron?.type == /datum/patron/divine/ravox)
+		H.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
+	if(H.patron?.type == /datum/patron/divine/xylix)
+		H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
+	// -- End of section for god specific bonuses --
+

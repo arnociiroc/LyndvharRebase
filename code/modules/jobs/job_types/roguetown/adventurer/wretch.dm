@@ -28,25 +28,22 @@
 	job_reopens_slots_on_death = TRUE
 	same_job_respawn_delay = 1 MINUTES
 	virtue_restrictions = list(/datum/virtue/heretic/zchurch_keyholder) //all wretch classes automatically get this
-
-/datum/job/roguetown/wretch/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
-	..()
-	if(L)
-		var/mob/living/carbon/human/H = L
-		H.advsetup = 1
-		H.invisibility = INVISIBILITY_MAXIMUM
-		H.become_blind("advsetup")
-
-		if(GLOB.adventurer_hugbox_duration)
-			addtimer(CALLBACK(H, TYPE_PROC_REF(/mob/living/carbon/human, adv_hugboxing_start)), 1)
-
-	var/wanted = list("I am a well-known outlaw!", "I am a nobody. For now.")
-	var/wanted_choice = input("Are you a known outlaw?") as anything in wanted
-	switch(wanted_choice)
-		if("I am a well-known outlaw!") //Extra challenge for those who want it
-		
-		if("I am a nobody. For now.") //Nothing ever happens
-			return
+	job_traits = list(TRAIT_STEELHEARTED, TRAIT_OUTLANDER, TRAIT_OUTLAW, TRAIT_HERESIARCH)
+	job_subclasses = list(
+		/datum/advclass/wretch/deserter,
+		/datum/advclass/wretch/deserter/maa,
+		/datum/advclass/wretch/berserker,
+		/datum/advclass/wretch/hedgemage,
+		/datum/advclass/wretch/necromancer,
+		/datum/advclass/wretch/heretic,
+		/datum/advclass/wretch/heretic/spy,
+		/datum/advclass/wretch/outlaw,
+		/datum/advclass/wretch/outlaw/marauder,
+		/datum/advclass/wretch/poacher,
+		/datum/advclass/wretch/plaguebearer,
+		/datum/advclass/wretch/pyromaniac,
+		/datum/advclass/wretch/vigilante,
+	)
 
 // Proc for wretch to select a bounty
 /proc/wretch_select_bounty(mob/living/carbon/human/H)
