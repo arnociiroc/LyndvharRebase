@@ -9,7 +9,7 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 		if(2)
 			cloak = /obj/item/clothing/cloak/stabard/dungeon
 		if(3)
-			cloak = /obj/item/clothing/suit/roguetown/armor/longcoat/brown
+			cloak = /obj/item/clothing/cloak/wickercloak
 
 /datum/outfit/job/roguetown/human/northern/bog_deserters/proc/add_random_deserter_weapon(mob/living/carbon/human/H)
 	var/random_deserter_weapon = rand(1,3)
