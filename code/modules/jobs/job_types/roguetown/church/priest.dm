@@ -10,14 +10,14 @@ GLOBAL_LIST_EMPTY(heretical_players)
 #define PRIEST_SWAP_COOLDOWN (15 MINUTES)
 
 /datum/job/roguetown/priest
-	title = "Bishop"
+	title = "Priest"
 	flag = PRIEST
 	department_flag = CHURCHMEN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
 	selection_color = JCOLOR_CHURCH
-	f_title = "Bishop"
+	f_title = "Priestess"
 	allowed_races = RACES_TOLERATED_UP
 	allowed_patrons = list(/datum/patron/divine/undivided)
 	allowed_sexes = list(MALE, FEMALE)
@@ -42,7 +42,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	)
 
 /datum/advclass/bishop
-	name = "Bishop"
+	name = "Priest"
 	tutorial = "In this time of strife and destruction, only the power of the PANTHEON is what truly matters against those of immorality. You have served the Ten for as long as you can remember- from your birth swaddled in cloth to your anointment as a member of the upper echelons of the Mother Church- bestowed with the position of Priest of Lyndvhar. You control and oversee the entire Church in this city, and are respected as such- with almost as much influence as the Viscount themself. Keep the spirits of those under you uplifted and the city faithful, for danger may always come from within."
 	outfit = /datum/outfit/job/roguetown/priest/basic
 	subclass_languages = list(/datum/language/celestial)
@@ -218,7 +218,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
 		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			say(announcementinput)
-			priority_announce("[announcementinput]", "The Bishop Preaches", 'sound/misc/bellold.ogg', sender = src)
+			priority_announce("[announcementinput]", "The Priest Preaches", 'sound/misc/bellold.ogg', sender = src)
 			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
 		else
 			to_chat(src, span_warning("Your announcement was interrupted!"))

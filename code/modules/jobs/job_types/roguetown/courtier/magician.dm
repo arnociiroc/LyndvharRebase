@@ -70,12 +70,11 @@
 		H.change_stat(STATKEY_INT, 1)
 		H.change_stat(STATKEY_PER, 1)
 		H.mind?.adjust_spellpoints(6)
-		if(ishumannorthern(H))
-			belt = /obj/item/storage/belt/rogue/leather/plaquegold
-			cloak = null
-			head = /obj/item/clothing/head/roguetown/wizhat
-			armor = /obj/item/clothing/suit/roguetown/shirt/robe/wizard
-			H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
+		belt = /obj/item/storage/belt/rogue/leather/plaquegold
+		cloak = null
+		head = /obj/item/clothing/head/roguetown/wizhat
+		armor = /obj/item/clothing/suit/roguetown/shirt/robe/wizard
+		H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
 	switch(H.patron?.type)
 		if(/datum/patron/inhumen/zizo)
 			H.cmode_music = 'sound/music/combat_heretic.ogg'

@@ -3,8 +3,8 @@
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	allowed_races = RACES_TOLERATED_UP
 	allowed_patrons = ALL_NICE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
@@ -67,7 +67,6 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/steel
 	backr = /obj/item/storage/backpack/rogue/satchel/short
-	id = /obj/item/scomstone/bad/garrison
 	backpack_contents = list(
 		/obj/item/storage/keyring/guardknight = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 1,

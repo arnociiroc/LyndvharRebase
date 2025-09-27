@@ -80,7 +80,6 @@
 	beltl = /obj/item/storage/keyring/archivist
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
 	mask = /obj/item/clothing/mask/rogue/spectacles
-	id = /obj/item/scomstone/bad
 	backpack_contents = list(
 		/obj/item/recipe_book/alchemy
 	)

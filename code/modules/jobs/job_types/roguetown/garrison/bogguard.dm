@@ -36,7 +36,6 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	id = /obj/item/scomstone/bad/garrison
 	job_bitflag = BITFLAG_GARRISON
 
 /datum/advclass/bogguardsman/ranger

@@ -515,4 +515,5 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CLASS_CAT_RHAENVAL "Rhaenval"
 #define CLASS_CAT_VALORIA "Valoria"
 #define CLASS_CAT_SALTLIA "Saltlia"
+#define CLASS_CAT_FORVHEIPAL "Forvheipal" 
 #define CLASS_CAT_RACIAL "Race Exclusive" //Used for black oaks, grudgebearer dwarves, etc.
