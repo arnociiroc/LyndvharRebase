@@ -206,14 +206,17 @@
 /datum/outfit/job/roguetown/adventurer/refugee/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("An asylum-seeker from the war-torn deserts that contain the skirmishes between Grenzelhoft and Khazumia, driven off the continent as your homeland continues to be ravaged by an endless conflict against the Khaliphate."))
-	head = /obj/item/clothing/head/roguetown/roguehood/hierophant
+	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
 	mask = /obj/item/clothing/mask/rogue/lordmask/khazumian
+	neck = /obj/item/clothing/neck/roguetown/leather
+	cloak = /obj/item/clothing/cloak/hierophant
 	r_hand = /obj/item/rogueweapon/spear/assegai
 	backl = /obj/item/rogueweapon/scabbard/gwstrap
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	wrists = /obj/item/clothing/neck/roguetown/psicross/khazumian
-	shoes = /obj/item/clothing/shoes/roguetown/sandals
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/civilian
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
+	armor = /obj/item/clothing/suit/roguetown/armor/longcoat
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -257,14 +260,13 @@
 	You hail from the Zybanti Ziggurat, more commonly known as the Raj, where the market of flesh is ancient and unbroken, and your coin is earned in the trade of living souls."))
 	head = /obj/item/clothing/head/roguetown/roguehood/shalal/purple
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/purple
 	belt = /obj/item/storage/belt/rogue/leather/shalal/purple
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
-	cloak = /obj/item/clothing/cloak/cape/purple
 	backr = /obj/item/rogueweapon/shield/heater
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/flashlight/flare/torch
