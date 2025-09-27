@@ -262,7 +262,7 @@
 	name = "decrepit ingot"
 	desc = "A decrepit slab of wrought bronze, uncomfortably cold to the touch. The gales shift into whispers, when held for long enough; 'progress commands sacrifice'."
 	icon_state = "ingotancient"
-	smeltresult = /obj/item/ingot/aaslag
+	smeltresult = /obj/item/ingot/aalloy
 	color = "#bb9696"
 	sellprice = 33
 
@@ -279,5 +279,5 @@
 	name = "glimmering slag"
 	desc = "A mass of wrought bronze, rendered lame from the forge's heat. Sometimes, dead is better."
 	icon_state = "ancientslag"
-	smeltresult = /obj/item/ingot/aaslag
+	smeltresult = /obj/item/ingot/aalloy
 	sellprice = 1
