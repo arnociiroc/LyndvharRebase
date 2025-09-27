@@ -64,6 +64,7 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 						/datum/sprite_accessory/hair/head/emo, 
 						/datum/sprite_accessory/hair/head/sabitsuki,
 						/datum/sprite_accessory/hair/head/sabitsuki_ponytail))
+	head.sellprice = 40
 
 	var/datum/bodypart_feature/hair/head/new_hair = new()
 

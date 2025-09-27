@@ -161,6 +161,7 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	var/beard = pick(list(/datum/sprite_accessory/hair/facial/viking,
 						/datum/sprite_accessory/hair/facial/manly,
 						/datum/sprite_accessory/hair/facial/longbeard))
+	head.sellprice = 30
 
 	var/datum/bodypart_feature/hair/head/new_hair = new()
 	var/datum/bodypart_feature/hair/facial/new_facial = new()

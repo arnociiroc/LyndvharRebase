@@ -40,7 +40,7 @@
 	update_hair()
 	update_body()
 	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
-	head.sellprice = 40
+	head.sellprice = 70
 
 /mob/living/carbon/human/species/human/northern/mad_touched_treasure_hunter/npc_idle()
 	if(m_intent == MOVE_INTENT_SNEAK)
