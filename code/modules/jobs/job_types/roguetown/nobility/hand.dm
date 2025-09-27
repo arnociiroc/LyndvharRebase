@@ -84,7 +84,6 @@
 		)
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
 	pants = /obj/item/clothing/under/roguetown/tights/black
-	id = /obj/item/scomstone/garrison
 
 /datum/advclass/hand/spymaster
 	name = "Spymaster"

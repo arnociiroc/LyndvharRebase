@@ -3,8 +3,8 @@
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	allowed_races = RACES_TOLERATED_UP
 	allowed_patrons = ALL_NICE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
@@ -67,7 +67,6 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/steel
 	backr = /obj/item/storage/backpack/rogue/satchel/short
-	id = /obj/item/scomstone/bad/garrison
 	backpack_contents = list(
 		/obj/item/storage/keyring/guardknight = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 1,
@@ -110,7 +109,7 @@
 	H.adjust_blindness(-3)
 	if(H.mind)
 		var/weapons = list("Zweihander","Great Mace","Battle Axe","Greataxe","Estoc","Lucerne", "Partizan")
-		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		var/weapon_choice = browser_input_list(H, "Choose your weapon.", "TAKE UP ARMS", weapons)
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Zweihander")
@@ -150,7 +149,7 @@
 			"Slitted Kettle" = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
 			"None"
 		)
-		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+		var/helmchoice = browser_input_list(H, "Choose your Helm.", "TAKE UP HELMS", helmets)
 		if(helmchoice != "None")
 			head = helmets[helmchoice]
 
@@ -160,7 +159,7 @@
 			"Steel Cuirass"		= /obj/item/clothing/suit/roguetown/armor/plate/half,
 			"Fluted Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/half/fluted,
 		)
-		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
+		var/armorchoice = browser_input_list(H, "Choose your armor.", "TAKE UP ARMOR", armors)
 		armor = armors[armorchoice]
 
 	backpack_contents = list(
@@ -205,7 +204,7 @@
 	H.adjust_blindness(-3)
 	if(H.mind)
 		var/weapons = list("Longsword","Flail","Warhammer","Sabre")
-		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		var/weapon_choice = browser_input_list(H, "Choose your weapon.", "TAKE UP ARMS", weapons)
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Longsword")
@@ -236,7 +235,7 @@
 			"Slitted Kettle"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
 			"None"
 		)
-		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+		var/helmchoice = browser_input_list(H, "Choose your Helm.", "TAKE UP HELMS", helmets)
 		if(helmchoice != "None")
 			head = helmets[helmchoice]
 
@@ -246,7 +245,7 @@
 			"Steel Cuirass"		= /obj/item/clothing/suit/roguetown/armor/plate/half,
 			"Fluted Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/half/fluted,
 		)
-		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
+		var/armorchoice = browser_input_list(H, "Choose your armor.", "TAKE UP ARMOR", armors)
 		armor = armors[armorchoice]
 
 	backpack_contents = list(
@@ -302,7 +301,7 @@
 			"Sabre + Recurve Bow",
 			"Lance + Kite Shield"
 		)
-		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		var/weapon_choice = browser_input_list(H, "Choose your weapon.", "TAKE UP ARMS", weapons)
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Longsword + Crossbow")
@@ -346,7 +345,7 @@
 			"Slitted Kettle"	= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
 			"None"
 		)
-		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+		var/helmchoice = browser_input_list(H, "Choose your Helm.", "TAKE UP HELMS", helmets)
 		if(helmchoice != "None")
 			head = helmets[helmchoice]
 
@@ -356,7 +355,7 @@
 			"Steel Cuirass"		= /obj/item/clothing/suit/roguetown/armor/plate/half,
 			"Fluted Cuirass"	= /obj/item/clothing/suit/roguetown/armor/plate/half/fluted,
 		)
-		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
+		var/armorchoice = browser_input_list(H, "Choose your armor.", "TAKE UP ARMOR", armors)
 		armor = armors[armorchoice]
 
 	backpack_contents = list(
@@ -406,8 +405,8 @@
 	if(H.mind)
 		var/weapons = list("Rapier + Longbow","Estoc + Recurve Bow","Sabre + Buckler","Whip + Crossbow","Greataxe + Sling")
 		var/armor_options = list("Light Armor", "Medium Armor", "Medium Cuirass")
-		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
-		var/armor_choice = input(H, "Choose your armor.", "TAKE UP ARMS") as anything in armor_options
+		var/weapon_choice = browser_input_list(H, "Choose your weapon.", "TAKE UP ARMS", weapons)
+		var/armor_choice = browser_input_list(H, "Choose your armor.", "TAKE UP ARMS", armor_options)
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Rapier + Longbow")
@@ -468,7 +467,7 @@
 			"None"
 		)
 		
-		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+		var/helmchoice = browser_input_list(H, "Choose your Helm.", "TAKE UP HELMS", helmets)
 		if(helmchoice != "None")
 			head = helmets[helmchoice]
 	backpack_contents = list(
