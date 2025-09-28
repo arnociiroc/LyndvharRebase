@@ -14,7 +14,7 @@
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/alchemy/roachdust_gold
-	name = "gold repairpowder (one loose zenar)"
+	name = "golden repairpowder (one loose zenar)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
 	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/gold/pile = 1)
@@ -24,17 +24,17 @@
 //...o??? and supply datums?!
 
 /datum/supply_pack/rogue/adventure_supplies/roachdust_bronze
-	name = "bronze repairpowder x5"
-	cost = 6
+	name = "Bronze Repairpowder"
+	cost = 10
 	contains = list(/obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder)
 
 /datum/supply_pack/rogue/adventure_supplies/roachdust_silver
-	name = "silver repairpowder x4"
+	name = "Silver Repairpowder"
 	cost = 20
 	contains = list(/obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver)
 
 /datum/supply_pack/rogue/adventure_supplies/roachdust_gold
-	name = "gold repairpowder x4"
+	name = "Golden Repairpowder"
 	cost = 30
 	contains = list(/obj/item/mundane/repair_powder/gold, /obj/item/mundane/repair_powder/gold, /obj/item/mundane/repair_powder/gold)
 
@@ -45,7 +45,6 @@
 	icon = 'modular_lynd/icons/roachpowder.dmi'
 	icon_state = "copperpowder"
 	item_state = "copperpowder"
-	color = "#ffe100"
 	sellprice = 1
 	grid_width = 32
 	grid_height = 32
