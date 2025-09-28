@@ -20,6 +20,25 @@
 	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/gold = 1)
 	craftdiff = 3
 
+
+//...o??? and supply datums?!
+
+/datum/supply_pack/rogue/adventure_supplies/roachdust_bronze
+	name = "bronze repairpowder x5"
+	cost = 6
+	contains = list(/obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder)
+
+/datum/supply_pack/rogue/adventure_supplies/roachdust_bronze
+	name = "silver repairpowder x4"
+	cost = 20
+	contains = list(/obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver)
+
+/datum/supply_pack/rogue/adventure_supplies/roachdust_bronze
+	name = "gold repairpowder x4"
+	cost = 30
+	contains = list(/obj/item/mundane/repair_powder/gold, /obj/item/mundane/repair_powder/gold, /obj/item/mundane/repair_powder/gold)
+
+
 /obj/item/mundane/repair_powder
 	name = "bronze roachpowder"
 	desc = "Crushed hilo pillow't softly yonder buckram an frieze. Repairs equipment, but not the lout wearing it."
@@ -30,7 +49,7 @@
 	sellprice = 1
 	grid_width = 32
 	grid_height = 32
-	var/repair_percent = 0.25
+	var/repair_percent = 0.05
 	var/charges = 2
 
 /obj/item/mundane/repair_powder/attack_obj(obj/O, mob/living/user, params)
@@ -69,10 +88,12 @@
 
 /obj/item/mundane/repair_powder/silver
 	name = "silver roachpowder"
-	repair_percent = 0.33
+	repair_percent = 0.25
+	sellprice = 5
 
 /obj/item/mundane/repair_powder/gold
 	name = "golden roachpowder"
 	desc = "Crushed hilo pillow't softly yonder buckram an frieze. Rumor speaks of the Golden Cockroach's gift to the downtrodden; the Third Transaction "
 	repair_percent = 0.50
+	sellprice = 10
 
