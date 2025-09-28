@@ -3,21 +3,21 @@
 	name = "bronze repairhpowder (one loose zenny)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
-	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/copper = 1)
+	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/copper/pile = 1)
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/alchemy/roachdust_silver
 	name = "silver repairpowder (one loose zilqua)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
-	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/silver = 1)
+	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/silver/pile = 1)
 	craftdiff = 2
 
-/datum/crafting_recipe/roguetown/alchemy/roachdust_bronze
+/datum/crafting_recipe/roguetown/alchemy/roachdust_gold
 	name = "gold repairpowder (one loose zenar)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
-	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/gold = 1)
+	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/gold/pile = 1)
 	craftdiff = 3
 
 
@@ -28,12 +28,12 @@
 	cost = 6
 	contains = list(/obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder, /obj/item/mundane/repair_powder)
 
-/datum/supply_pack/rogue/adventure_supplies/roachdust_bronze
+/datum/supply_pack/rogue/adventure_supplies/roachdust_silver
 	name = "silver repairpowder x4"
 	cost = 20
 	contains = list(/obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver, /obj/item/mundane/repair_powder/silver)
 
-/datum/supply_pack/rogue/adventure_supplies/roachdust_bronze
+/datum/supply_pack/rogue/adventure_supplies/roachdust_gold
 	name = "gold repairpowder x4"
 	cost = 30
 	contains = list(/obj/item/mundane/repair_powder/gold, /obj/item/mundane/repair_powder/gold, /obj/item/mundane/repair_powder/gold)
@@ -95,7 +95,7 @@
 
 /obj/item/mundane/repair_powder/gold
 	name = "golden roachpowder"
-	desc = "Crushed hilo pillow't softly yonder buckram an frieze. Rumor speaks of the Golden Cockroach's gift to the downtrodden; the Third Transaction "
+	desc = "Crushed hilo pillow't softly yonder buckram an frieze. Rumor speaks of the Golden Cockroach's gift to the downtrodden; the Third Transaction."
 	icon_state = "goldpowder"
 	item_state = "goldpowder"
 	repair_percent = 0.50
