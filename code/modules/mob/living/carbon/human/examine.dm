@@ -72,11 +72,11 @@
 		var/is_returning = FALSE
 		if(observer_privilege)
 			used_name = real_name
-		if(migrant_type)
-			var/datum/migrant_role/migrant = MIGRANT_ROLE(migrant_type)
-			if(migrant.show_wanderer_examine)
-				display_as_wanderer = TRUE
-		else if(job)
+		// if(migrant_type)
+		//	var/datum/migrant_role/migrant = MIGRANT_ROLE(migrant_type)
+		//	if(migrant.show_wanderer_examine)
+		//		display_as_wanderer = TRUE
+		if(job)
 			var/datum/job/J = SSjob.GetJob(job)
 			if(!J || J.wanderer_examine)
 				display_as_wanderer = TRUE

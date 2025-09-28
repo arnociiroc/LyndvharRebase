@@ -13,8 +13,8 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
 "aF" = (
-/obj/structure/roguemachine/crier,
-/turf/open/floor/rogue/tile/harem,
+/obj/effect/landmark/start/adventurerlate,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors)
 "aO" = (
 /obj/item/millstone{
@@ -197,10 +197,6 @@
 /area/rogue/outdoors)
 "im" = (
 /obj/structure/table/vtable/v2,
-/obj/structure/broadcast_horn/loudmouth/guest{
-	pixel_y = 18;
-	dir = 4
-	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors)
 "iq" = (
@@ -446,11 +442,6 @@
 /area/rogue/indoors)
 "pV" = (
 /obj/structure/table/vtable,
-/obj/structure/broadcast_horn/loudmouth{
-	pixel_y = 16;
-	dir = 8;
-	broadcaster_tag = "Golden Mouth"
-	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors)
 "qI" = (
@@ -908,11 +899,6 @@
 /area/rogue/indoors)
 "DG" = (
 /obj/machinery/light/rogue/wallfire/candle/r,
-/obj/structure/broadcast_horn/paid{
-	dir = 8;
-	pixel_y = 12;
-	broadcaster_tag = "Test Broadcaster 2"
-	},
 /obj/structure/table/wood,
 /turf/open/floor/rogue/tile/harem,
 /area/rogue/indoors)
@@ -990,9 +976,6 @@
 	dir = 1;
 	icon_state = "longtable"
 	},
-/obj/item/clothing/gloves/roguetown/otavan,
-/obj/item/clothing/gloves/roguetown/otavan,
-/obj/item/clothing/gloves/roguetown/otavan,
 /turf/open/floor/rogue/grass,
 /area/rogue/indoors)
 "GG" = (
@@ -1399,11 +1382,6 @@
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors)
 "WY" = (
-/obj/structure/broadcast_horn/paid{
-	dir = 4;
-	pixel_y = 12;
-	broadcaster_tag = "Test Broadcaster 1"
-	},
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/table/wood,
 /turf/open/floor/rogue/tile/harem,
@@ -1595,7 +1573,7 @@ AO
 zo
 nk
 Nb
-aF
+Ey
 zo
 WY
 zo
@@ -3053,7 +3031,7 @@ nv
 sw
 mL
 Ns
-xy
+aF
 yK
 yK
 yK
