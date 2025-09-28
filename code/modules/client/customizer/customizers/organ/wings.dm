@@ -41,18 +41,6 @@
 		/datum/sprite_accessory/wings/large/harpyfolded,
 		/datum/sprite_accessory/wings/large/harpyowl,
 		/datum/sprite_accessory/wings/large/harpybat_alt,
-		)
-
-/datum/customizer/organ/wings/moth
-	name = "Fluvian Wings"
-	allows_disabling = TRUE
-	default_disabled = FALSE
-	customizer_choices = list(/datum/customizer_choice/organ/wings/moth)
-
-/datum/customizer_choice/organ/wings/moth
-	name = "Fluvian Wings"
-	organ_type = /obj/item/organ/wings/moth
-	sprite_accessories = list(
 		/datum/sprite_accessory/wings/moth/plain,
 		/datum/sprite_accessory/wings/moth/monarch,
 		/datum/sprite_accessory/wings/moth/luna,

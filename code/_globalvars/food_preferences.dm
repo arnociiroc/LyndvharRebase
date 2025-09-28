@@ -103,7 +103,6 @@ GLOBAL_LIST_EMPTY(cached_drink_flat_icons)
 		/obj/item/reagent_containers/food/snacks/rogue/sandwich,
 		/obj/item/reagent_containers/food/snacks/store,
 		/obj/item/reagent_containers/food/snacks/grown,
-		/obj/item/reagent_containers/food/snacks/clothing,
 		/obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison,
 		/obj/item/reagent_containers/food/snacks/eoran_aril,
 		/obj/item/reagent_containers/food/snacks/organ,,
