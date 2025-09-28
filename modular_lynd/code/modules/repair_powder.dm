@@ -14,12 +14,12 @@
 /obj/item/mundane/repair_powder/attack_obj(list/targets, mob/living/user)
 
 	var/obj/item/I = targets[1]
-	playsound(I, 'sound/foley/cloth_wipe.ogg', 50, TRUE, -2)
+	playsound(I, 'sound/foley/cloth_wipe (1).ogg', 50, TRUE, -2)
 	if(do_after(user,70, target = src))
 		if(istype(targets[1], /obj/item))
 			if(!I.anvilrepair && !I.sewrepair)
-			to_chat(user, span_warning("Not even the Golden Cockroach may repair this item."))
-			return
+				to_chat(user, span_warning("Not even the Golden Cockroach may repair this item."))
+				return
 
 		if(I.obj_integrity < I.max_integrity)
 			repair_percent *= I.max_integrity
