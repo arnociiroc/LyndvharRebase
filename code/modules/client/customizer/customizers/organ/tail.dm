@@ -216,7 +216,7 @@
 		/datum/sprite_accessory/tail/tentacle,
 		/datum/sprite_accessory/tail/tiger,
 		/datum/sprite_accessory/tail/wolf,
-		/datum/sprite_accessory/tail/pinecone
+		/datum/sprite_accessory/tail/pinecone,
 		/datum/sprite_accessory/tail/guilmon,
 		/datum/sprite_accessory/tail/sharknofin,
 		/datum/sprite_accessory/tail/raptor,
