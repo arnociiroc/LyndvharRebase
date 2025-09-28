@@ -67,7 +67,7 @@
 				/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 				/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 				/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-				/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE
+				/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
 				H.change_stat(STATKEY_STR, 2)
 				H.change_stat(STATKEY_WIL, 1)
 				H.change_stat(STATKEY_CON, 2)
@@ -101,10 +101,10 @@
 				/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 				/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 				/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
-				/datum/skill/misc/carpentry = SKILL_LEVEL_APPRENTICE	//To avoid virtue cheese
-				/datum/skill/misc/crafting = SKILL_LEVEL_APPRENTICE		//Ditto
-				/datum/skill/misc/mining = SKILL_LEVEL_APPRENTICE		//Ditto
-				/datum/skill/misc/traps = SKILL_LEVEL_JOURNEYMAN		//Ditto
+				/datum/skill/misc/carpentry = SKILL_LEVEL_APPRENTICE,	//To avoid virtue cheese
+				/datum/skill/misc/crafting = SKILL_LEVEL_APPRENTICE,	//Ditto
+				/datum/skill/misc/mining = SKILL_LEVEL_APPRENTICE,		//Ditto
+				/datum/skill/misc/traps = SKILL_LEVEL_JOURNEYMAN,		//Ditto
 				H.change_stat(STATKEY_STR, 2)		//Statblock prone to revision. Probably will be revised. Currently weighted for 7 points and not 9.
 				H.change_stat(STATKEY_WIL, 3)
 				H.change_stat(STATKEY_CON, 2)
@@ -141,9 +141,9 @@
 				/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
 				/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 				/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
-				/datum/skill/combat/shields = SKILL_LEVEL_NOVICE
+				/datum/skill/combat/shields = SKILL_LEVEL_NOVICE,
 				/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-				/datum/skill/misc/tracking = SKILL_LEVEL_JOURNEYMAN	//To avoid virtue cheese
+				/datum/skill/misc/tracking = SKILL_LEVEL_JOURNEYMAN,	//To avoid virtue cheese
 				H.change_stat(STATKEY_PER, 3)
 				H.change_stat(STATKEY_WIL, 2)
 				H.change_stat(STATKEY_SPD, 2)
@@ -165,9 +165,9 @@
 				/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 				/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN
 				/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
-				/datum/skill/combat/shields = SKILL_LEVEL_NOVICE
+				/datum/skill/combat/shields = SKILL_LEVEL_NOVICE,
 				/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
-				/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE	//Bit high but he doesn't get huge strength boons so makes up for it. Same as a guard.
+				/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,	//Bit high but he doesn't get huge strength boons so makes up for it. Same as a guard.
 				H.change_stat(STATKEY_STR, 1)
 				H.change_stat(STATKEY_PER, 2)
 				H.change_stat(STATKEY_WIL, 1)
