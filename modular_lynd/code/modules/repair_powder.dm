@@ -42,9 +42,9 @@
 /obj/item/mundane/repair_powder
 	name = "bronze roachpowder"
 	desc = "Crushed hilo pillow't softly yonder buckram an frieze. Repairs equipment, but not the lout wearing it."
-	icon = 'icons/roguetown/items/produce.dmi'
-	icon_state = "salt"
-	item_state = "salt"
+	icon = 'modular_lynd/icons/roachpowder.dmi'
+	icon_state = "copperpowder"
+	item_state = "copperpowder"
 	color = "#ffe100"
 	sellprice = 1
 	grid_width = 32
@@ -88,12 +88,16 @@
 
 /obj/item/mundane/repair_powder/silver
 	name = "silver roachpowder"
+	icon_state = "silverpowder"
+	item_state = "silverrpowder"
 	repair_percent = 0.25
 	sellprice = 5
 
 /obj/item/mundane/repair_powder/gold
 	name = "golden roachpowder"
 	desc = "Crushed hilo pillow't softly yonder buckram an frieze. Rumor speaks of the Golden Cockroach's gift to the downtrodden; the Third Transaction "
+	icon_state = "goldpowder"
+	item_state = "goldpowder"
 	repair_percent = 0.50
 	sellprice = 10
 
