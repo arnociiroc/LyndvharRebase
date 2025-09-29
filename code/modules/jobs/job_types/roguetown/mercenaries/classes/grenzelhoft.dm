@@ -194,7 +194,7 @@
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
 	H.merctype = 7
-
+/*
 /datum/advclass/mercenary/grenzelhoft/mage
 	name = "Gefechtsgelehrter"
 	tutorial = "You are a Gefechtsgelehrter - \"Combat Scholar\" - A proud magos from the Celestial Academy of Magos, who's skills in Siege Magic and Arcyne Physics are unmatched."
@@ -275,3 +275,4 @@
 	else
 		ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC) // Only T2 arcyne (Unless they're old) so if they get spell points from something they can only pick from the curated spellblade list
 	H.merctype = 7
+*/
