@@ -45,20 +45,19 @@
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
-		/obj/item/storage/belt/rogue/pouch/coins/poor,
-		/obj/item/rogueweapon/scabbard/sheath,
-		/obj/item/rogueweapon/huntingknife/idagger/steel/saltlian
+		/obj/item/storage/belt/rogue/pouch/coins/rich,
 		)
 	H.adjust_blindness(-3)
 
 	if(should_wear_masc_clothes(H))
-		head = /obj/item/clothing/head/roguetown/mentorhat
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 		cloak = /obj/item/clothing/cloak/eastcloak1
 		pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants1
 		gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
-		armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
-		shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+		armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt1
+		shoes = /obj/item/clothing/shoes/roguetown/boots
+		H.change_stat(STATKEY_WIL, 1)
+		H.change_stat(STATKEY_CON, 1) //to compensate for the permanent lack of armor
 		H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 	else if(should_wear_femme_clothes(H))
 		head = /obj/item/clothing/head/roguetown/mentorhat

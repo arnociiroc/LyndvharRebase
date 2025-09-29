@@ -39,11 +39,11 @@
 	..()
 	to_chat(H, span_warning("You are well versed and experienced in swordfighting, you have no problem in taking up most jobs so long as the coin is good, for either yourself or the Xuefeng."))
 	belt = /obj/item/storage/belt/rogue/leather
-	beltr = /obj/item/rogueweapon/scabbard/sword/saltlian/steel
-	beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/xuefenghench
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
+	beltr = /obj/item/rogueweapon/scabbard/sword/kazengun/steel
+	beltl = /obj/item/rogueweapon/sword/sabre/mulyeog/rumahench
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 	cloak = /obj/item/clothing/cloak/eastcloak1
-	armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
+	armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 	shoes = /obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
@@ -51,6 +51,7 @@
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
+		/obj/item/storage/belt/rogue/pouch/coins/poor,
 		)
 	H.merctype = 9
 
@@ -86,9 +87,9 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/quiver/arrows
 	beltl = /obj/item/flashlight/flare/torch/lantern
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
 	cloak = /obj/item/clothing/cloak/eastcloak1
-	armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/easttats
+	armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants2
 	shoes = /obj/item/clothing/shoes/roguetown/armor/xuefengclan
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
