@@ -1261,7 +1261,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 	if(victim.mind?.assigned_role in GLOB.noble_positions) // Intentionally stacked with rulermob/regent/prince to get extra payout for royals
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
-	// Draining nobility from the duke or the heirs increases payout and causes CHAOS. Astrata weeps!
+	// Draining nobility from the viscount or the heirs increases payout and causes CHAOS. Astrata weeps!
 	if((victim == SSticker.rulermob) || (victim == SSticker.regentmob) || (victim.mind?.assigned_role in list ("Heir", "Heiress")))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
 		new /obj/item/roguecoin/gold/virtuepile(get_turf(src))
