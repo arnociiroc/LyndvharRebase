@@ -211,7 +211,7 @@ window "preferencess_window"
 	elem "character_preview_map"
 		type = MAP
 		pos = 320,230
-		size = 172x192
+		size = 160x192
 		anchor1 = 75,30
 		anchor2 = 100,20
 		background-color = #000000
