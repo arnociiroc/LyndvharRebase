@@ -1732,7 +1732,7 @@
 
 /obj/item/clothing/cloak/stabard/grenzelmage
 	name = "grenzelhoftian magos mantle"
-	desc = "A fashionable Mantle often worn by Celestial Academy Magos."
+	desc = "A fashionable Mantle often worn by acclaimed magi of the Grenzelhoftian Arcyne Academy."
 	color = CLOTHING_WHITE
 	detail_color = CLOTHING_WHITE
 	detail_tag = "_spl"
