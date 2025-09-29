@@ -372,7 +372,7 @@
 	picked = TRUE
 
 /obj/item/clothing/cloak/tabard/knight/guard
-	desc = "A tabard with the lord's heraldic colors."
+	desc = "A tabard with the viscount's heraldic colors."
 	color = CLOTHING_AZURE
 	detail_tag = "_spl"
 	detail_color = CLOTHING_WHITE
@@ -525,7 +525,7 @@
 
 /obj/item/clothing/cloak/stabard/guard
 	name = "guard tabard"
-	desc = "A tabard with the lord's heraldic colors."
+	desc = "A tabard with the viscount's heraldic colors."
 	color = CLOTHING_AZURE
 	detail_tag = "_spl"
 	detail_color = CLOTHING_WHITE
@@ -688,7 +688,7 @@
 		add_overlay(pic)
 
 /obj/item/clothing/cloak/stabard/surcoat/guard
-	desc = "A surcoat with the lord's heraldic colors."
+	desc = "A surcoat with the viscount's heraldic colors."
 	color = CLOTHING_AZURE
 	detail_tag = "_quad"
 	detail_color = CLOTHING_WHITE
@@ -1649,7 +1649,7 @@
 
 /obj/item/clothing/cloak/stabard/guardhood
 	name = "guard hood"
-	desc = "A hood with the lord's heraldic colors."
+	desc = "A hood with the viscount's heraldic colors."
 	color = CLOTHING_AZURE
 	detail_tag = "_spl"
 	detail_color = CLOTHING_WHITE
