@@ -26,7 +26,7 @@
 	armor = ARMOR_RHAENVAL_LIGHT
 
 /obj/item/clothing/under/roguetown/trou/leather/rhaenval
-	name = "gronnic fur pants"
+	name = "rhaenish fur pants"
 	desc = "A pair of hardened leather pants with bone reinforcements along the legs, \
 			A wild design that offers superior protection against blunt and slashing. The attack of beasts."
 	icon_state = "gronnleatherpants"
@@ -38,7 +38,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	
 /obj/item/clothing/gloves/roguetown/angle/rhaenval
-	name = "gronnic fur-lined leather gloves"
+	name = "rhaenish fur-lined leather gloves"
 	desc = "Thick, padded gloves made for the harshest of climates, and wildest of beasts encountered in the untamed lands."
 	icon_state = "gronnleathergloves"
 	item_state = "gronnleathergloves"
@@ -46,7 +46,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 
 /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
-	name = "gronnic fur-lined bone gloves"
+	name = "rhaenish fur-lined bone gloves"
 	desc = "A pair of hardened leather gloves with a bone reinforcement across the wrist\
 			and the back of the hand offering superior protection against\
 			the claws of beasts and the claw of nature and plant common for gatherers."
