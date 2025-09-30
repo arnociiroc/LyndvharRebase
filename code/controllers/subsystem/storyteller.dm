@@ -1178,8 +1178,7 @@ SUBSYSTEM_DEF(gamemode)
         STATS_ALIVE_AXIAN,
         STATS_ALIVE_TABAXI,
         STATS_ALIVE_VULPS,
-        STATS_ALIVE_LUPIANS,
-        STATS_ALIVE_MOTHS
+        STATS_ALIVE_LUPIANS
 	)
 
 	for(var/stat_name in statistics_to_clear)
@@ -1304,8 +1303,6 @@ SUBSYSTEM_DEF(gamemode)
 				record_round_statistic(STATS_ALIVE_VULPS)
 			if(islupian(human_mob))
 				record_round_statistic(STATS_ALIVE_LUPIANS)
-			if(ismoth(human_mob))
-				record_round_statistic(STATS_ALIVE_MOTHS)
 
 			// Chronicle statistics
 			if(human_mob.STASTR > highest_strength)

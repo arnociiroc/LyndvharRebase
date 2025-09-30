@@ -194,7 +194,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
@@ -232,7 +231,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/anthromorphsmall,\
 	/datum/species/goblinp,\
 	/datum/species/kobold,\
-	/datum/species/moth,\
 	/datum/species/construct/metal,\
 
 #define RACES_RESPECTED_UP list(RACES_RESPECTED, RACES_ESTEEMED)
@@ -261,7 +259,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
@@ -284,7 +281,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/anthromorphsmall,\
@@ -308,7 +304,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
@@ -325,7 +320,6 @@ Balloon Alert / Floating Text defines
 	/datum/species/tabaxi,\
 	/datum/species/vulpkanin,\
 	/datum/species/akula,\
-	/datum/species/moth,\
 	/datum/species/dracon,\
 	/datum/species/anthromorph,\
 	/datum/species/demihuman,\
