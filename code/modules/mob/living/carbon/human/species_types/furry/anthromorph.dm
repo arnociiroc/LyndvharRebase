@@ -75,6 +75,7 @@
 		/datum/customizer/organ/breasts/animal,
 		/datum/customizer/organ/vagina/anthro,
 		)
+
 	body_marking_sets = list(
 		/datum/body_marking_set/none,
 		/datum/body_marking_set/belly,
@@ -82,6 +83,19 @@
 		/datum/body_marking_set/tiger,
 		/datum/body_marking_set/tiger_dark,
 		/datum/body_marking_set/gradient,
+		/datum/body_marking_set/moth/reddish,
+		/datum/body_marking_set/moth/royal,
+		/datum/body_marking_set/moth/gothic,
+		/datum/body_marking_set/moth/whitefly,
+		/datum/body_marking_set/moth/burnt_off,
+		/datum/body_marking_set/moth/deathhead,
+		/datum/body_marking_set/moth/poison,
+		/datum/body_marking_set/moth/ragged,
+		/datum/body_marking_set/moth/moonfly,
+		/datum/body_marking_set/moth/oakworm,
+		/datum/body_marking_set/moth/jungle,
+		/datum/body_marking_set/moth/witchwing,
+		/datum/body_marking_set/moth/lovers,
 	)
 	body_markings = list(
 		/datum/body_marking/flushed_cheeks,
@@ -113,6 +127,19 @@
 		/datum/body_marking/bangs,
 		/datum/body_marking/bun,
 		/datum/body_marking/gradient,
+		/datum/body_marking/moth/grayscale/reddish,
+		/datum/body_marking/moth/grayscale/royal,
+		/datum/body_marking/moth/grayscale/gothic,
+		/datum/body_marking/moth/grayscale/whitefly,
+		/datum/body_marking/moth/grayscale/burnt_off,
+		/datum/body_marking/moth/grayscale/deathhead,
+		/datum/body_marking/moth/grayscale/poison,
+		/datum/body_marking/moth/grayscale/ragged,
+		/datum/body_marking/moth/grayscale/moonfly,
+		/datum/body_marking/moth/grayscale/oakworm,
+		/datum/body_marking/moth/grayscale/jungle,
+		/datum/body_marking/moth/grayscale/witchwing,
+		/datum/body_marking/moth/grayscale/lovers,
 	)
 	descriptor_choices = list(
 		/datum/descriptor_choice/height,

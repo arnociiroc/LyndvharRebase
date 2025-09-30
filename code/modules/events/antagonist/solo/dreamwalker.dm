@@ -24,8 +24,8 @@
 	antag_datum = /datum/antagonist/dreamwalker
 
 	restricted_roles = list(
-		"Grand Duke",
-		"Grand Duchess",
+		"Viscount",
+		"Viscountess",
 		"Consort",
 		"Dungeoneer",
 		"Sergeant",

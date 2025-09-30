@@ -101,7 +101,7 @@
 
 /obj/item/roguekey/lord
 	name = "master key"
-	desc = "The Lord's key."
+	desc = "The Viscount's key."
 	icon_state = "bosskey"
 	lockid = "lord"
 	visual_replacement = /obj/item/roguekey/royal
