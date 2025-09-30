@@ -147,7 +147,7 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	if(prob(50))
 		head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	if(prob(50))
-		neck = /obj/item/clothing/neck/roguetown/leather
+		neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	if(prob(50))
 		gloves = /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
 	if(prob(50))
