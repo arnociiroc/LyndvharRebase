@@ -43,7 +43,7 @@
 	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi
 	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/gronn
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
 	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
@@ -100,7 +100,7 @@
 	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
 
 	head = /obj/item/clothing/head/roguetown/helmet/leather/shaman_hood
-	gloves = /obj/item/clothing/gloves/roguetown/angle/gronnfur
+	gloves = /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
@@ -110,7 +110,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/flashlight/flare/torch
-	H.put_in_hands(new /obj/item/rogueweapon/handclaw/gronn, FALSE)
+	H.put_in_hands(new /obj/item/rogueweapon/handclaw/rhaenval, FALSE)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_WEAK, devotion_limit = CLERIC_REQ_1)	//Capped to T2 miracles.

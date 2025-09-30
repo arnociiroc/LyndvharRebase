@@ -74,11 +74,11 @@
 	cost = 409
 	contains = list(/obj/item/rogueweapon/sword/long/dunargi)
 /datum/supply_pack/rogue/merc_weapons/handclaw_iron
-	name = "Gronnic Iron Claw"
+	name = "Rhaenish Iron Claw"
 	cost = 150
 	contains = list(/obj/item/rogueweapon/handclaw)
 
 /datum/supply_pack/rogue/merc_weapons/handclaw_steel
-	name = "Gronnic Steel Claw"
+	name = "Rhaenish Steel Claw"
 	cost = 200
 	contains = list(/obj/item/rogueweapon/handclaw/steel)
