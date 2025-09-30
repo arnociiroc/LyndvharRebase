@@ -31,20 +31,18 @@
 		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/magic/holy = SKILL_LEVEL_APPRENTICE,
 	)
 
 /datum/outfit/job/roguetown/mercenary/atgervi
-	allowed_patrons = ALL_INHUMEN_PATRONS
 
 /datum/outfit/job/roguetown/mercenary/atgervi/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("You are a Varangian Mercenary of Rhaenvali. The Varangians are one of the more prestigious mercenary groups of their time, known for their loyalty to their clients."))
-	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi
-	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
+	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval/ownel
+	gloves = /obj/item/clothing/gloves/roguetown/chain/rhaenval
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
-	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
+	pants = /obj/item/clothing/under/roguetown/splintlegs/iron/rhaenval
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	backr = /obj/item/rogueweapon/shield/atgervi
@@ -54,8 +52,6 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle //They didn't have neck protection before.
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 
-	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_WEAK, devotion_limit = CLERIC_REQ_2)	//Capped to T1 miracles.
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
@@ -87,11 +83,9 @@
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/tanning = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/magic/holy = SKILL_LEVEL_JOURNEYMAN,
 	)
 
 /datum/outfit/job/roguetown/mercenary/atgervishaman
-	allowed_patrons = ALL_INHUMEN_PATRONS
 
 /datum/outfit/job/roguetown/mercenary/atgervishaman/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -112,8 +106,6 @@
 	beltl = /obj/item/flashlight/flare/torch
 	H.put_in_hands(new /obj/item/rogueweapon/handclaw/rhaenval, FALSE)
 
-	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T2, passive_gain = CLERIC_REGEN_WEAK, devotion_limit = CLERIC_REQ_1)	//Capped to T2 miracles.
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
