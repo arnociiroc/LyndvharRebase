@@ -138,17 +138,18 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
 	if(prob(50))
-		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
+		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
+		armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/rhaenval
 	pants = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	if(prob(50))
-		pants = /obj/item/clothing/under/roguetown/chainlegs/iron
-	head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
+		pants = /obj/item/clothing/under/roguetown/trou/leather/rhaenval
+	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval
 	if(prob(50))
-		head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+		head = /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	if(prob(50))
-		neck = /obj/item/clothing/neck/roguetown/gorget
+		neck = /obj/item/clothing/neck/roguetown/leather
 	if(prob(50))
-		gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
+		gloves = /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
 	if(prob(50))
 		r_hand = /obj/item/rogueweapon/sword/short/messer/iron
 		l_hand = /obj/item/rogueweapon/shield/atgervi
