@@ -142,7 +142,7 @@
 
 /datum/storyteller/abyssor
 	name = "Abyssor"
-	vote_desc = "Water reigns. Occurrences are tame, though their temperance oft-sways with the tide's flow. His favor shines upon the fished, leeched, and drowned."
+	vote_desc = "Water reigns. Occurrences are tame, though their temperance oft-sways with the tide's flow. Her favor shines upon the fished, leeched, and drowned."
 	desc = "Abyssor likes to send water and trade-related events."
 	welcome_text = "The horizon grows dark, as its clouds gather for a coming storm.."
 	weight = 4
