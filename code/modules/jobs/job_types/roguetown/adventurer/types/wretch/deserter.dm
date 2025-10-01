@@ -105,7 +105,7 @@
 			)
 		var/maskchoice = input(H, "Choose your Mask.", "MASK MASK MASK") as anything in masks // Run from it. MASK. MASK. MASK.
 		if(maskchoice != "None")
-		mask = masks[maskchoice]
+			mask = masks[maskchoice]
 
 		wretch_select_bounty(H)
 
