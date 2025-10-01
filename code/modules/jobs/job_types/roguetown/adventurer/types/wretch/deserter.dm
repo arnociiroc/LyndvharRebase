@@ -48,7 +48,7 @@
 			"Estoc",
 			"Mace + Shield",
 			"Flail + Shield",
-			"Longsword + Shield", 
+			"Decorated + Shield", 
 			"Lucerne",
 			"Battle Axe",
 			"Lance + Kite Shield",
@@ -60,9 +60,9 @@
 			if("Estoc")
 				r_hand = /obj/item/rogueweapon/estoc
 				backr = /obj/item/rogueweapon/scabbard/gwstrap
-			if("Longsword + Shield")
+			if("Decorated Sword + Shield")
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				r_hand = /obj/item/rogueweapon/sword/long
+				r_hand = /obj/item/rogueweapon/sword/decorated
 				backr = /obj/item/rogueweapon/shield/tower/metal
 			if("Mace + Shield")
 				beltr = /obj/item/rogueweapon/mace/steel
@@ -96,13 +96,25 @@
 			)
 		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
 		armor = armors[armorchoice]
+
+		var/masks = list(
+				"Iron Houndmask" 	= /obj/item/clothing/mask/rogue/facemask/hound,
+				"Iron Mask"		= /obj/item/clothing/mask/rogue/facemask,
+				"Wildguard"			= /obj/item/clothing/mask/rogue/wildguard,
+				"None"
+			)
+		var/maskchoice = input(H, "Choose your Mask.", "MASK MASK MASK") as anything in masks // Run from it. MASK. MASK. MASK.
+		if(maskchoice != "None")
+		mask = masks[maskchoice]
+
 		wretch_select_bounty(H)
+
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	pants = /obj/item/clothing/under/roguetown/platelegs/iron
 	neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backl = /obj/item/storage/backpack/rogue/satchel/short //gwstraps landing on backr asyncs with backpack_contents
@@ -195,8 +207,8 @@
 			head = helmets[helmchoice]
 
 		var/masks = list(
-		"Steel Houndmask" 	= /obj/item/clothing/mask/rogue/facemask/steel/hound,
-		"Steel Mask"		= /obj/item/clothing/mask/rogue/facemask/steel,
+		"Iron Houndmask" 	= /obj/item/clothing/mask/rogue/facemask/hound,
+		"Iron Mask"		= /obj/item/clothing/mask/rogue/facemask,
 		"Wildguard"			= /obj/item/clothing/mask/rogue/wildguard,
 		"None"
 		)
@@ -213,7 +225,7 @@
 	cloak = /obj/item/clothing/cloak/stabard/surcoat 
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	beltl = /obj/item/rogueweapon/mace/cudgel
 	belt = /obj/item/storage/belt/rogue/leather
 	backr = /obj/item/storage/backpack/rogue/satchel/short
