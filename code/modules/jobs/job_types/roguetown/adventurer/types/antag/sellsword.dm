@@ -64,11 +64,13 @@
 				r_hand = /obj/item/rogueweapon/spear/boar
 				l_hand = /obj/item/rogueweapon/scabbard/gwstrap
 				head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms = SKILL_LEVEL_EXPERT, TRUE)
 			if("Sword & Buckler") //Mercenary on the wrong side of the law
 				backl= /obj/item/rogueweapon/shield/buckler
 				beltr = /obj/item/rogueweapon/sword //steel sword like literally every adventurer gets
 				beltl = /obj/item/rogueweapon/scabbard/sword
 				head = /obj/item/clothing/head/roguetown/helmet/sallet/iron
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords = SKILL_LEVEL_EXPERT, TRUE)
 
 	if (!(istype(H.patron, /datum/patron/inhumen/matthios)))
 		to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))

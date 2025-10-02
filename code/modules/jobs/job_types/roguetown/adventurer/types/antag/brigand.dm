@@ -39,9 +39,9 @@
 /datum/outfit/job/roguetown/bandit/brigand/pre_equip(mob/living/carbon/human/H)
 	..()
 	belt = /obj/item/storage/belt/rogue/leather
-	pants = /obj/item/clothing/under/roguetown/trou/leather
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
-	shoes = /obj/item/clothing/shoes/roguetown/boots
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 					/obj/item/needle/thorn = 1,
@@ -51,7 +51,7 @@
 	mask = /obj/item/clothing/mask/rogue/facemask/hound
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
-	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
@@ -63,9 +63,11 @@
 			if("Battleaxe & Cudgel") //one weapon to hurt people one weapon to kill people
 				backl= /obj/item/rogueweapon/stoneaxe/battle
 				beltr = /obj/item/rogueweapon/mace/cudgel
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_EXPERT, TRUE)
 			if("Flail & Shield") //plate users beware, you're in for a scare!
 				backl= /obj/item/rogueweapon/shield/wood
 				beltr = /obj/item/rogueweapon/flail
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT, TRUE)
 
 	if (!(istype(H.patron, /datum/patron/inhumen/matthios)))
 		to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
