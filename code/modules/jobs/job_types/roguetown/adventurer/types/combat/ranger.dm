@@ -31,7 +31,7 @@
 		/datum/skill/craft/traps = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/sewing = SKILL_LEVEL_NOVICE
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/adventurer/ranger/pre_equip(mob/living/carbon/human/H)

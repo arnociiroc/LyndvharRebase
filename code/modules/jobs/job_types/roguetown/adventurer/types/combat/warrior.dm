@@ -26,7 +26,7 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/armorsmithing = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/sewing = SKILL_LEVEL_NOVICE
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/adventurer/sfighter/pre_equip(mob/living/carbon/human/H)
@@ -129,7 +129,7 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/shields = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/sewing = SKILL_LEVEL_NOVICE
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/adventurer/duelist/pre_equip(mob/living/carbon/human/H)
@@ -192,7 +192,7 @@
 		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/alchemy = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/sewing = SKILL_LEVEL_NOVICE
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/adventurer/mhunter/pre_equip(mob/living/carbon/human/H, visualsOnly)

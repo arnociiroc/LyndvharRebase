@@ -26,7 +26,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/sewing = SKILL_LEVEL_NOVICE
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/mercenary/freelancer/pre_equip(mob/living/carbon/human/H)
@@ -92,7 +92,7 @@
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/sewing = SKILL_LEVEL_NOVICE
+		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/mercenary/freelancer_lancer/pre_equip(mob/living/carbon/human/H)

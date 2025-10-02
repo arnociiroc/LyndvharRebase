@@ -271,7 +271,7 @@
 		H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/cooking, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
-		H.adjust_skillrank(/datum/skill/misc/sewing, 4, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/sewing, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
