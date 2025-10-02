@@ -106,8 +106,9 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	r_hand = /obj/item/rogueweapon/sword/sabre/elf
+	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/quiver/arrows
-	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve/warden
+	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
