@@ -360,6 +360,11 @@
 	color_key_names = list("Tail", "Tip")
 	can_wag = TRUE
 
+/datum/sprite_accessory/tail/pinecone
+	name = "Pinecone"
+	icon_state = "expi"
+	color_keys = 2
+	color_key_names = list("Upper", "Tip")
 /datum/sprite_accessory/tail/lynx
 	name = "Lynx"
 	icon_state = "lynx"
