@@ -27,6 +27,7 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
 	)
+	extra_context = "This subclass gain the Wound Heal miracle and the Convert Heretic spell."
 
 /datum/outfit/job/roguetown/wretch/heretic
 	has_loadout = TRUE
@@ -59,6 +60,7 @@
 
 	// You can convert those the church has shunned.
 	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/convert_heretic)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/wound_heal)
 	if (istype (H.patron, /datum/patron/inhumen/zizo))
 		if(H.mind)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/minion_order)
@@ -189,6 +191,8 @@
 		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/traps = SKILL_LEVEL_JOURNEYMAN,
 	)
+	extra_context = "This subclass gain the Wound Heal miracle and the Convert Heretic spell."
+
 
 /datum/outfit/job/roguetown/wretch/hereticspy
 	has_loadout = TRUE
@@ -250,6 +254,7 @@
 			H.mind.current.faction += "[H.name]_faction"
 		ADD_TRAIT(H, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/convert_heretic)
+	H.mind?.AddSpell(new /obj/effect/proc_holder/spell/invoked/wound_heal)
 
 /datum/outfit/job/roguetown/wretch/hereticspy/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
