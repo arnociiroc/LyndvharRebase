@@ -66,6 +66,7 @@
 			if("Shamshir and Shield")
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 				r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
+				beltr = /obj/item/rogueweapon/scabbard/sword
 				backl = /obj/item/rogueweapon/shield/tower/zybantu
 			if("Spear and Shield")
 				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
@@ -133,6 +134,7 @@
 			if("Shamshir and Javelin")
 				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
+				beltr = /obj/item/rogueweapon/scabbard/sword
 				backl = /obj/item/quiver/javelin/iron
 			if("Whips and Knives")	///They DO enslave people after all
 				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_JOURNEYMAN, TRUE)
