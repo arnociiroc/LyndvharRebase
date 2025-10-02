@@ -98,7 +98,7 @@
 	backpack_contents = list(
 		/obj/item/flashlight/flare/torch = 1,
 		/obj/item/recipe_book/survival = 1,
-		/obj/item/smokebomb = 3,
+		/obj/item/bomb/smoke = 3,
 		/obj/item/mundane/adventurer_kit = 1
 		)
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/saltlian
