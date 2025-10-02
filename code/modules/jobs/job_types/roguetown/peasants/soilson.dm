@@ -32,7 +32,7 @@
 
 /datum/advclass/soilson
 	name = "Soilson"
-	maximum_possible_slots = 3
+	maximum_possible_slots = 5
 	tutorial = "It is a simple life you live, your basic understanding of life is something many would be envious of if they knew just how perfect it was. You know a good day's work, the sweat on your brow is yours: Famines and plague may take their toll, but you know how to celebrate life well. Till the soil and produce fresh food for those around you, and maybe you'll be more than an unsung hero someday."
 	outfit = /datum/outfit/job/roguetown/farmer/basic
 	category_tags = list(CTAG_SOILBRIDE)
