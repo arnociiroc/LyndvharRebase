@@ -412,6 +412,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Apothecary"
 	icon_state = "arrow"
 
+/obj/effect/landmark/start/beastmonger
+	name = "Butcher"
+	icon_state = "arrow"
+
 /obj/effect/landmark/start/servant
 	name = "Servant"
 	icon_state = "arrow"
