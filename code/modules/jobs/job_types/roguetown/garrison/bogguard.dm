@@ -23,7 +23,7 @@
 	round_contrib_points = 1
 
 	cmode_music = 'sound/music/combat_blackoak.ogg'
-	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN)
+	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN, TRAIT_SURVIVAL_EXPERT)
 	job_subclasses = list(
 		/datum/advclass/bogguardsman/ranger,
 		/datum/advclass/bogguardsman/forester

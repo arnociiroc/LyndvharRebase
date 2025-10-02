@@ -314,10 +314,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Soilson"
 	icon_state = "arrow"
 
-/obj/effect/landmark/start/beastmonger
-	name = "Butcher"
-	icon_state = "arrow"
-
 /obj/effect/landmark/start/cook
 	name = "Cook"
 	icon_state = "arrow"
@@ -414,6 +410,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 
 /obj/effect/landmark/start/apothecary
 	name = "Apothecary"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/beastmonger
+	name = "Butcher"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/servant
