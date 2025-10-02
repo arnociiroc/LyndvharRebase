@@ -64,14 +64,14 @@
 	
 /datum/outfit/job/roguetown/farmer/basic/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/armingcap
+	head = /obj/item/clothing/head/roguetown/paddedcap
 	mask = /obj/item/clothing/head/roguetown/roguehood
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/storage/keyring/soilson
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/recipe_book/survival = 1,
 		/obj/item/flashlight/flare/torch = 1,
@@ -80,7 +80,6 @@
 		)
 	if(H.age == AGE_OLD)//So ppl have reason to pick this I guess?
 		H.adjust_skillrank_up_to(/datum/skill/labor/farming, 6, TRUE)
-		H.adjust_skillrank_up_to(/datum/skill/labor/butchering, 6, TRUE)
 
 	if(should_wear_femme_clothes(H))
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
@@ -130,7 +129,7 @@
 /datum/outfit/job/roguetown/adventurer/butcher/pre_equip(mob/living/carbon/human/H)
 	..()
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/rogueweapon/huntingknife/cleaver // old tbutcher had no knife. as a butcher.
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
@@ -148,3 +147,5 @@
 	else
 		pants = /obj/item/clothing/under/roguetown/trou
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	if(H.age == AGE_OLD)//So ppl have reason to pick this I guess?
+		H.adjust_skillrank_up_to(/datum/skill/labor/butchering, 6, TRUE)
