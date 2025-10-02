@@ -80,6 +80,7 @@
 				backr = /obj/item/rogueweapon/shield/tower/metal
 			if("Shamshir")
 				r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
+				beltr = /obj/item/rogueweapon/scabbard/sword
 		var/helmets = list(
 				"Bucket Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/bucket/iron,
 				"Knight Helmet"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron,
@@ -113,6 +114,7 @@
 	pants = /obj/item/clothing/under/roguetown/platelegs/iron
 	neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+	cloak = /obj/item/clothing/cloak/tabard/blkknight
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	belt = /obj/item/storage/belt/rogue/leather
@@ -196,11 +198,8 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/order/charge)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/convertrole/brotherhood)
 		var/helmets = list(
-		"Simple Helmet" 	= /obj/item/clothing/head/roguetown/helmet,
 		"Kettle Helmet" 	= /obj/item/clothing/head/roguetown/helmet/kettle/iron,
-		"Bascinet Helmet"		= /obj/item/clothing/head/roguetown/helmet/bascinet,
 		"Sallet Helmet"		= /obj/item/clothing/head/roguetown/helmet/sallet/iron,
-		"Winged Helmet" 	= /obj/item/clothing/head/roguetown/helmet/winged,
 		"None"
 		)
 		var/helmchoice = input(H, "Choose your Helm.", "TAKE UP HELMS") as anything in helmets
@@ -223,7 +222,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	cloak = /obj/item/clothing/cloak/stabard/surcoat 
+	cloak = /obj/item/clothing/cloak/tabard/blkknight 
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron

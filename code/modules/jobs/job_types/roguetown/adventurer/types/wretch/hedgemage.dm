@@ -30,14 +30,14 @@
 
 // Hedge Mage on purpose has nearly the same fit as a Adv Mage / Mage Associate who cast conjure armor roundstart. Call it meta disguise.
 /datum/outfit/job/roguetown/wretch/hedgemage/pre_equip(mob/living/carbon/human/H)
-	mask = /obj/item/clothing/mask/rogue/eyepatch // Chuunibyou up to 11.
+	mask = /obj/item/clothing/mask/rogue/shepherd
 	head = /obj/item/clothing/head/roguetown/roguehood/black
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-	cloak = /obj/item/clothing/suit/roguetown/shirt/robe/black
-	gloves = /obj/item/clothing/gloves/roguetown/angle
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/black
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	cloak = /obj/item/clothing/cloak/cape/puritan
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/reagent_containers/glass/bottle/rogue/manapot
