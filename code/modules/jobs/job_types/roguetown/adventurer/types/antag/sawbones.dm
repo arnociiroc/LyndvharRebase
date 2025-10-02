@@ -31,11 +31,12 @@
 
 /datum/outfit/job/roguetown/bandit/sawbones/pre_equip(mob/living/carbon/human/H)
 	..()
-	mask = /obj/item/clothing/mask/rogue/facemask
-	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest
+	mask = /obj/item/clothing/mask/rogue/facemask/steel/hound
+	head = /obj/item/clothing/head/roguetown/roguehood/feld
+	neck = /obj/item/clothing/neck/roguetown/collar/feldcollar
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/feld
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/surgery_bag/full/physician
 	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
 	beltr = /obj/item/rogueweapon/scabbard/sheath

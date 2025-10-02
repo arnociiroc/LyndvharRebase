@@ -44,8 +44,8 @@
 		H.set_patron(/datum/patron/inhumen/matthios)
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	pants = /obj/item/clothing/under/roguetown/trou/leather
-	r_hand = /obj/item/rogueweapon/woodstaff
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/brown
+	r_hand = /obj/item/rogueweapon/woodstaff/wise
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown
 	backr = /obj/item/storage/backpack/rogue/satchel/short
@@ -56,7 +56,7 @@
 					/obj/item/ritechalk = 1,
 					)
 	head = /obj/item/clothing/head/roguetown/roguehood
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe
 	beltr = /obj/item/rogueweapon/katar
 	id = /obj/item/mattcoin
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)

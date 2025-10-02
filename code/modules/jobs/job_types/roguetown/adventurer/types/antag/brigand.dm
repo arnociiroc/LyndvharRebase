@@ -52,6 +52,7 @@
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
 	var/weapons = list("Battleaxe & Cudgel","Flail & Shield")

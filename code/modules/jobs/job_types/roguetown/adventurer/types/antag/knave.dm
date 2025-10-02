@@ -50,6 +50,8 @@
 	mask = /obj/item/clothing/mask/rogue/facemask
 	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
+	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
 	var/weapons = list("Crossbow & Dagger", "Bow & Sword")
@@ -76,7 +78,6 @@
 				l_hand = /obj/item/rogueweapon/sword/short
 				beltl = /obj/item/rogueweapon/scabbard/sword
 				beltr = /obj/item/quiver/arrows
-				head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm //cool hat
 				backr = /obj/item/storage/backpack/rogue/satchel
 				backpack_contents = list(
 							/obj/item/needle/thorn = 1,

@@ -61,13 +61,14 @@
 			if("Spear & Crossbow") //Deserter watchman. Maybe should be shield and spear? spear and crossbow is kinda clumsy
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow //we really need to make this not a grenade launcher subtype
 				beltr = /obj/item/quiver/bolts
-				r_hand = /obj/item/rogueweapon/spear/billhook
-				head = /obj/item/clothing/head/roguetown/helmet/kettle
+				r_hand = /obj/item/rogueweapon/spear/boar
+				l_hand = /obj/item/rogueweapon/scabbard/gwstrap
+				head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 			if("Sword & Buckler") //Mercenary on the wrong side of the law
 				backl= /obj/item/rogueweapon/shield/buckler
 				beltr = /obj/item/rogueweapon/sword //steel sword like literally every adventurer gets
 				beltl = /obj/item/rogueweapon/scabbard/sword
-				head = /obj/item/clothing/head/roguetown/helmet/sallet
+				head = /obj/item/clothing/head/roguetown/helmet/sallet/iron
 
 	if (!(istype(H.patron, /datum/patron/inhumen/matthios)))
 		to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
