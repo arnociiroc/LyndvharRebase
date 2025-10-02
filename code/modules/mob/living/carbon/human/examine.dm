@@ -83,11 +83,15 @@
 			if(islatejoin)
 				is_returning = TRUE
 			if(display_as_wanderer)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name]."))
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The wandering [race_name]."))
 			else if(used_title)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][race_name] [used_title]."))
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The [is_returning ? "returning " : ""][race_name] [used_title]."))
 			else
-				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, the [race_name]."))
+				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, \n The [race_name]."))
+
+		if(!obscure_name || client?.prefs.masked_examine)
+			if((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
+				. += "\n <span class='info'><img src=[headshot_link] width=100 height=100/></span>"
 
 		if(HAS_TRAIT(src, TRAIT_DNR) && src != user)
 			if(HAS_TRAIT(src, TRAIT_DEATHSIGHT))
@@ -241,9 +245,7 @@
 		if(item)
 			. += span_notice("You get the feeling [m2] most valuable possession is \a [item].")
 
-	if(!obscure_name || client?.prefs.masked_examine)
-		if((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
-			. += "<span class='info'><img src=[headshot_link] width=100 height=100/> \nø ------------ ø</span>"
+	. += "<span class='info'>ø ------------ ø</span>"		
 	var/is_stupid = FALSE
 	var/is_smart = FALSE
 	var/is_normal = FALSE
