@@ -4,8 +4,8 @@
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/under/cave/inhumen)
 "aj" = (
-/obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/table/optable,
+/obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "au" = (
@@ -85,6 +85,7 @@
 "cO" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
 /obj/effect/decal/remains/human,
+/obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "cT" = (
@@ -95,6 +96,14 @@
 /obj/item/storage/belt/rogue/surgery_bag/full,
 /obj/effect/decal/cleanable/dirt/cobweb,
 /turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"cW" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cave/inhumen)
+"db" = (
+/obj/structure/far_travel,
+/turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
 "dh" = (
 /obj/structure/table/wood{
@@ -156,8 +165,15 @@
 /obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/inhumen)
+"eK" = (
+/obj/structure/zizo_bane,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/inhumen)
 "eR" = (
 /obj/structure/spider/stickyweb,
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "fg" = (
@@ -269,11 +285,15 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
+"ku" = (
+/obj/structure/flora/rogueshroom/happy,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/inhumen)
 "kv" = (
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "kN" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
 "kQ" = (
@@ -324,13 +344,8 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "mC" = (
-/obj/machinery/light/rogue/wallfire/candle/blue{
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/obj/item/bedsheet/rogue/cloth,
-/obj/structure/bed/rogue/inn/wool,
-/obj/effect/landmark/start/wretchlate,
+/obj/structure/bed/rogue/shit,
+/obj/machinery/light/rogue/wallfire/candle/r,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "mT" = (
@@ -376,6 +391,10 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
+"oK" = (
+/obj/structure/flora/mushroomcluster,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/inhumen)
 "pf" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
@@ -400,6 +419,14 @@
 /obj/item/rogueweapon/pick,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
+"qx" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/reagent_containers/glass/bottle,
+/obj/machinery/light/rogue/wallfire/candle,
+/turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
 "qC" = (
 /obj/effect/landmark/start/wretch,
 /turf/open/floor/rogue/hexstone,
@@ -408,12 +435,9 @@
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cave/inhumen)
 "rw" = (
-/obj/machinery/light/rogue/wallfire/candle/blue{
-	pixel_x = 32;
-	pixel_y = 0
-	},
 /obj/effect/decal/cobbleedge,
 /obj/item/roguebin/water/gross,
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
 "rH" = (
@@ -505,6 +529,10 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave/inhumen)
+"uA" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave/inhumen)
 "vu" = (
 /turf/open/water/cleanshallow,
 /area/rogue/under/cave/inhumen)
@@ -557,6 +585,10 @@
 "yp" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
+"yr" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cave/inhumen)
 "ys" = (
 /obj/structure/table/church,
 /obj/item/roguecoin/aalloy/pile,
@@ -600,6 +632,10 @@
 /obj/item/leash/chain,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
+"Ar" = (
+/obj/structure/flora/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave/inhumen)
 "Au" = (
 /obj/structure/closet/crate/drawer,
 /turf/open/floor/rogue/hexstone,
@@ -615,10 +651,10 @@
 /area/rogue/under/cave/inhumen)
 "Bo" = (
 /obj/structure/noose/gallows,
-/turf/open/floor/rogue/dirt,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/inhumen)
 "BJ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/inhumen)
 "CM" = (
@@ -690,7 +726,6 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/cave/inhumen)
 "Gi" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
 /obj/structure/closet/crate/chest/neu,
 /obj/item/grown/log/tree/small,
 /obj/item/grown/log/tree/small,
@@ -791,7 +826,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/inhumen)
 "Jw" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "Jx" = (
@@ -806,6 +841,11 @@
 "JL" = (
 /obj/structure/fluff/statue/gargoyle,
 /turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/inhumen)
+"Kb" = (
+/obj/structure/closet/crate/drawer,
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "Ku" = (
 /obj/structure/table/wood{
@@ -832,12 +872,7 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "Lh" = (
-/obj/machinery/light/rogue/wallfire/candle/r,
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
-/obj/item/reagent_containers/glass/bottle,
-/turf/open/floor/rogue/hexstone,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/inhumen)
 "Lj" = (
 /turf/closed/wall/mineral/rogue/decostone/mossy/red/long,
@@ -1030,11 +1065,18 @@
 /area/rogue/under/cave/inhumen)
 "WG" = (
 /obj/structure/closet/crate/chest/old_crate,
+/obj/machinery/light/rogue/wallfire/candle{
+	pixel_y = -32
+	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/inhumen)
 "WW" = (
 /obj/structure/bars,
 /turf/open/floor/rogue/hexstone,
+/area/rogue/under/cave/inhumen)
+"Xw" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/inhumen)
 "XM" = (
 /obj/effect/landmark/start/wretch,
@@ -1400,8 +1442,8 @@ rb
 rb
 rb
 rb
-yp
-yp
+db
+db
 rb
 mZ
 of
@@ -1601,10 +1643,10 @@ rb
 rb
 rb
 rb
-yp
+bX
 nZ
 nZ
-nZ
+oK
 yp
 yp
 yp
@@ -1653,14 +1695,14 @@ rb
 rb
 rb
 rb
-nZ
+Ar
 nZ
 jU
 nZ
 nZ
 rb
 rb
-yp
+bX
 rb
 rb
 mZ
@@ -1706,7 +1748,7 @@ rb
 rb
 rb
 rb
-nZ
+eK
 nZ
 nZ
 rb
@@ -1723,8 +1765,8 @@ mZ
 xY
 au
 Tl
-mC
-Au
+tF
+Kb
 tF
 Au
 tF
@@ -1942,9 +1984,9 @@ JE
 JE
 JE
 JE
-vu
+lN
 nZ
-nZ
+dK
 qk
 yp
 JE
@@ -1965,7 +2007,7 @@ rb
 rb
 rb
 mZ
-Tl
+fZ
 YN
 Tl
 Jx
@@ -1993,10 +2035,10 @@ rb
 JE
 JE
 JE
-vu
-vu
+lN
+lN
 nZ
-nZ
+Lh
 yp
 yp
 lW
@@ -2044,9 +2086,9 @@ op
 rb
 JE
 JE
-vu
-vu
-vu
+lN
+lN
+lN
 nZ
 jU
 nZ
@@ -2071,7 +2113,7 @@ rb
 mZ
 iU
 Tl
-iU
+mC
 VA
 Tl
 Ly
@@ -2096,10 +2138,10 @@ op
 xK
 rb
 JE
-vu
-vu
-nZ
-nZ
+lN
+lN
+Lh
+Lh
 nZ
 yp
 yp
@@ -2150,7 +2192,7 @@ rb
 JE
 nZ
 nZ
-nZ
+ku
 yp
 yp
 yp
@@ -2466,7 +2508,7 @@ yp
 nZ
 nZ
 nZ
-nZ
+Lh
 uq
 nZ
 nZ
@@ -2516,10 +2558,10 @@ JE
 JE
 nZ
 nZ
-dK
-nZ
-nZ
-nZ
+yr
+Lh
+Lh
+Lh
 nZ
 JE
 rb
@@ -2568,10 +2610,10 @@ JE
 JE
 JE
 nZ
+Lh
 nZ
 nZ
-nZ
-nZ
+ku
 JE
 JE
 rb
@@ -2745,8 +2787,8 @@ rb
 rb
 rb
 mZ
+qx
 ba
-Lh
 eR
 op
 sY
@@ -2867,7 +2909,7 @@ mZ
 Fr
 wC
 Gi
-AC
+Xw
 AC
 jj
 mZ
@@ -2901,12 +2943,12 @@ rb
 rb
 rb
 rb
+cW
+nZ
+Lh
 nZ
 nZ
-nZ
-nZ
-nZ
-nZ
+Lh
 rb
 rb
 rb
@@ -2921,7 +2963,7 @@ AC
 AC
 AC
 cs
-lN
+vu
 mZ
 rb
 JE
@@ -2952,12 +2994,12 @@ rb
 rb
 rb
 rb
-vu
-nZ
+lN
+Lh
 Bo
 nZ
 nZ
-nZ
+Lh
 yp
 yp
 rb
@@ -2973,8 +3015,8 @@ AC
 AC
 AC
 Sx
-lN
-lN
+vu
+vu
 JE
 JE
 JE
@@ -3004,10 +3046,10 @@ rb
 rb
 rb
 rb
-vu
-vu
-nZ
-nZ
+lN
+lN
+Lh
+Lh
 nZ
 yp
 yp
@@ -3024,10 +3066,10 @@ AC
 AC
 AC
 AC
-lN
-lN
-lN
-lN
+vu
+vu
+vu
+vu
 JE
 JE
 JE
@@ -3056,10 +3098,10 @@ rb
 rb
 rb
 rb
-vu
-vu
-vu
-nZ
+lN
+lN
+lN
+Lh
 yp
 yp
 yp
@@ -3076,11 +3118,11 @@ BJ
 AC
 AC
 Sx
-lN
-lN
-lN
-lN
-lN
+vu
+vu
+vu
+vu
+vu
 JE
 JE
 JE
@@ -3108,17 +3150,17 @@ rb
 rb
 rb
 rb
-vu
-vu
-nZ
-nZ
+lN
+lN
+Lh
+Lh
 yp
 rb
 yp
 yp
 yp
 yp
-bX
+uA
 mZ
 aw
 eb
@@ -3127,10 +3169,10 @@ mZ
 AC
 AC
 HT
-lN
-lN
-lN
-lN
+vu
+vu
+vu
+vu
 JE
 JE
 JE
@@ -3161,9 +3203,9 @@ rb
 rb
 rb
 rb
-vu
-nZ
-bX
+lN
+Lh
+uA
 rb
 rb
 rb
@@ -3179,9 +3221,9 @@ mZ
 UU
 yG
 rw
-lN
-lN
-lN
+vu
+vu
+vu
 mZ
 JE
 JE
