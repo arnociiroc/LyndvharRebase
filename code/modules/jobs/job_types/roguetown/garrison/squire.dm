@@ -134,13 +134,13 @@
 	)
 	H.adjust_blindness(-3)
 	if(H.mind)
-		var/weapons = list("Iron Sword","Cudgel",)
+		var/weapons = list("Sword","Cudgel",)
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Iron Sword")
+			if("Sword")
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				r_hand = /obj/item/rogueweapon/sword/iron
+				r_hand = /obj/item/rogueweapon/sword
 			if("Cudgel")	
 				beltr = /obj/item/rogueweapon/mace/cudgel
 
