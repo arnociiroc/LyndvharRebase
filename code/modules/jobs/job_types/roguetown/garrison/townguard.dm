@@ -90,7 +90,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 /datum/outfit/job/roguetown/guardsman/footsman/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
+	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet/kettle/iron = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
 	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/plate/half = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 7))
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	backl = /obj/item/rogueweapon/shield/tower
@@ -190,7 +190,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 /datum/outfit/job/roguetown/guardsman/pikeman/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
+	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet/kettle/iron = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
 	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/leather/heavy = 4, /obj/item/clothing/suit/roguetown/armor/chainmail = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 2))
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/storage/keyring/guardcastle
