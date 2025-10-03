@@ -55,6 +55,8 @@
 
 /obj/structure/flora/roguegrass/maneater/real/Crossed(atom/movable/AM)
 	..()
+	if(obj_broken)
+		return
 	if(world.time <= last_eat + 5 SECONDS)
 		return
 	if(has_buckled_mobs())
@@ -100,7 +102,7 @@
 		if(!limb)
 			begin_eat(victim)
 		victim.flash_fullscreen("redflash3")
-		playsound(src.loc, list('sound/vo/mobs/plant/attack (1).ogg','sound/vo/mobs/plant/attack (2).ogg','sound/vo/mobs/plant/attack (3).ogg','sound/vo/mobs/plant/attack (4).ogg'), 100, FALSE, -1)
+		playsound(loc, list('sound/vo/mobs/plant/attack (1).ogg','sound/vo/mobs/plant/attack (2).ogg','sound/vo/mobs/plant/attack (3).ogg','sound/vo/mobs/plant/attack (4).ogg'), 100, FALSE, -1)
 		if(prob(chew_factor * 15))
 			if(limb.dismember(damage = 20))
 				limb.forceMove(src)
@@ -111,7 +113,7 @@
 					return
 				maneater_spit_out(victim)
 		else
-			victim.run_armor_check(zone, BCLASS_CUT, 20)
+			victim.run_armor_check(zone, BCLASS_CUT, damage = 20)
 
 	if(victim.stat == DEAD)
 		if(!victim.mind)
