@@ -109,6 +109,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/quiver/arrows
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
