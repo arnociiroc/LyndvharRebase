@@ -27,7 +27,7 @@
 	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(src, TRAIT_INFINITE_STAMINA, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_BREADY, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_LEECHIMMUNE, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
@@ -84,12 +84,12 @@
 
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	//carbon ai is still pretty dumb so making them a threat to players requires pretty crazy looking stats. don't think too hard about it.
-	H.STASTR = 18
+	H.STASTR = 14
 	H.STASPD = 18
-	H.STACON = 18
-	H.STAWIL = 15
-	H.STAPER = 15
-	H.STAINT = 15
+	H.STACON = 11
+	H.STAWIL = 14
+	H.STAPER = 10
+	H.STAINT = 10
 	H.eye_color = "27becc"
 	H.hair_color = "61310f"
 	H.facial_hair_color = H.hair_color
