@@ -89,8 +89,9 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+		/obj/item/rogueweapon/huntingknife/idagger,
+		/obj/item/rogueweapon/scabbard/sheath,
 	)
 
 /datum/advclass/squire/footman
@@ -129,8 +130,9 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpot
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+		/obj/item/rogueweapon/huntingknife/idagger,
+		/obj/item/rogueweapon/scabbard/sheath,
 	)
 	H.adjust_blindness(-3)
 	if(H.mind)
@@ -184,7 +186,6 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger,
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
 		/obj/item/rogueweapon/scabbard/sheath,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot
 		)
