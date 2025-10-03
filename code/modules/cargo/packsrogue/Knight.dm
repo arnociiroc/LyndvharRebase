@@ -186,7 +186,7 @@
 /datum/supply_pack/rogue/Knight/Zweihandersword
 	name = "Zweihander"
 	cost = 40
-	contains = list(/obj/item/rogueweapon/greatsword/zwei)
+	contains = list(/obj/item/rogueweapon/greatsword)
 
 /datum/supply_pack/rogue/Knight/SZweihandersword
 	name = "Steel Zweihander"
@@ -196,7 +196,7 @@
 /datum/supply_pack/rogue/Knight/SFlamberge
 	name = "Steel Flamberge"
 	cost = 60
-	contains = list(/obj/item/rogueweapon/greatsword/grenz/flamberge)
+	contains = list(/obj/item/rogueweapon/greatsword/grenz/flamberge/blacksteel)
 
 /datum/supply_pack/rogue/Knight/greatsword
 	name = "Greatsword"

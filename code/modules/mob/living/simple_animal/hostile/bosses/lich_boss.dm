@@ -386,7 +386,7 @@
 		r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 		l_hand = null
 	else
-		r_hand = /obj/item/rogueweapon/greatsword/zwei
+		r_hand = /obj/item/rogueweapon/greatsword
 		l_hand = null
 
 /obj/effect/oneway

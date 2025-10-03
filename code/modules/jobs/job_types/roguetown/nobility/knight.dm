@@ -113,7 +113,7 @@
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Zweihander")
-				r_hand = /obj/item/rogueweapon/greatsword/zwei
+				r_hand = /obj/item/rogueweapon/greatsword
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 			if("Great Mace")
 				r_hand = /obj/item/rogueweapon/mace/goden/steel

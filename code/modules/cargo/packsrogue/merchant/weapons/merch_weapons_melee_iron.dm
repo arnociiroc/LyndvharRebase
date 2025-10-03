@@ -78,7 +78,7 @@
 	name = "Zweihander"
 	cost = 40 // 2 Iron Ingot
 	contains = list(
-					/obj/item/rogueweapon/greatsword/zwei,
+					/obj/item/rogueweapon/greatsword,
 				)
 
 /datum/supply_pack/rogue/iron_weapons/greataxe
