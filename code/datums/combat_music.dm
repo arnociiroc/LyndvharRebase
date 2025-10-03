@@ -312,8 +312,8 @@ GLOBAL_LIST_EMPTY(cmode_tracks_by_name)
 
 /datum/combat_music/steppe
 	name = "Steppesman"
-	desc = "The plateau of the Great North calls- your home of Rhaenval."
-	shortname = "Steppe"
+	desc = "The plateau of the Great Vruirid calls- your home of Rhaenval."
+	shortname = "Steppes"
 	musicpath = list('sound/music/combat_steppe.ogg')
 
 /datum/combat_music/swashbuckler

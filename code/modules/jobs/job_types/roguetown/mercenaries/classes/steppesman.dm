@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/steppesman
 	name = "Vruirid Kazak"
-	tutorial = "Once serving a Hetmen from the Vruirid Steppe frontiers, you have been rented out as a mercenary in the distant realms to bring coin home. There are three things you value most; saigas, freedom, and coin."
+	tutorial = "Once having lived and came from the Vruirid Steppe frontiers, you have been rented out as a mercenary in the distant realms to bring coin home. There are three things you value most; saigas, freedom, and coin."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
 	class_select_category = CLASS_CAT_RHAENVAL
@@ -12,7 +12,7 @@
 
 	// CLASS ARCHETYPES
 /datum/advclass/mercenary/steppesman/sabrevet
-	name = "Steppesmen SaberVeteran"
+	name = "Vruirid Szabrista"
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman/sabrevet
 	subclass_stats = list(
 		STATKEY_STR = 2,
@@ -76,7 +76,7 @@
 
 
 /datum/advclass/mercenary/steppesman/sapper
-	name = "Steppesmen Sapper"
+	name = "Vruirid Árkászi"
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman/sapper
 	subclass_skills = list(
 		/datum/skill/combat/axes = SKILL_LEVEL_JOURNEYMAN,
@@ -144,7 +144,7 @@
 
 /datum/advclass/mercenary/steppesman/archer
 //Tl;dr - light armor class for Tatar-style archery. Has 'Druzhina' as a name cus czech/polish influence, couldn't think of better one.
-	name = "Steppesmen Archer"
+	name = "Vruirid Druzhina"
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman/archer
 	subclass_stats = list(
 		STATKEY_PER = 3,
@@ -201,7 +201,7 @@
 
 /datum/advclass/mercenary/steppesman/infantry
 //Tl;dr - Old Steppesman whip build, light armor, be the glass canon you always wanted to be. Live your life, king. 
-	name = "Steppesmen Infantry"
+	name = "Vruirid Vayreni"
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman/infantry
 	subclass_stats = list(
 		STATKEY_STR = 1,
@@ -231,7 +231,7 @@
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_OUTDOORSMAN)
 /datum/outfit/job/roguetown/mercenary/steppesman/infantry/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("Being a Kozak is not a title one earns, nor is born with. It's a way of life. Known to be eccentric, living life on the edge - but living as free as possible. Skilled with whips, these madmen are the bane of civilized warriors."))
+	to_chat(H, span_warning("Being a Vayreni is not a title one earns, nor is born with. It's a way of life. Known to be eccentric, living life on the edge - but living as free as possible. Skilled with whips, these madmen are the bane of civilized warriors."))
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	head = /obj/item/clothing/head/roguetown/papakha	//No helm
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
