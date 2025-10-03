@@ -17,6 +17,32 @@
 	experimental_onhip = FALSE
 	var/overarmor = TRUE
 
+/obj/item/clothing/mask/rogue/AltRightClick(mob/user)
+	if(!istype(loc, /mob/living/carbon))
+		return
+	var/mob/living/carbon/H = user
+	if(icon_state == "[initial(icon_state)]_snout")
+		icon_state = initial(icon_state)
+		flags_inv &= ~HIDESNOUT
+		H.update_inv_wear_mask()
+		update_icon()
+		return
+
+	var/icon/J = new('icons/roguetown/clothing/onmob/masks.dmi')
+	var/list/istates = J.IconStates()
+	for(var/icon_s in istates)
+		if(findtext(icon_s, "[icon_state]_snout"))
+			icon_state += "_snout"
+			flags_inv &= HIDESNOUT
+			H.update_inv_wear_mask()
+			update_icon()
+			return
+
+/obj/item/clothing/mask/rogue/examine()
+	. = ..()
+
+	. += "[span_notice("Alt+RMB while on face to swap sprites between snout and standard variant, if it exists.")]"
+
 /obj/item/clothing/mask/rogue/spectacles
 	name = "spectacles"
 	icon_state = "glasses"
@@ -312,24 +338,6 @@
 	desc = "A heavy copper mask that conceals and protects the face, though not very effectively."
 	armor = ARMOR_MASK_METAL_BAD
 	smeltresult = /obj/item/ingot/copper
-
-/obj/item/clothing/mask/rogue/facemask/hound
-	name = "hound mask"
-	icon_state = "imask_hound"
-	max_integrity = 100
-	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	resistance_flags = FIRE_PROOF
-	armor = ARMOR_MASK_METAL
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
-	flags_inv = HIDEFACE|HIDESNOUT
-	body_parts_covered = FACE
-	block2add = FOV_BEHIND
-	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
-	experimental_onhip = TRUE
-	anvilrepair = /datum/skill/craft/armorsmithing
-	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/mask/rogue/facemask/psydonmask
 	name = "psydonian mask"
