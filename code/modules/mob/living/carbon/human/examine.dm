@@ -272,7 +272,7 @@
 
 	var/list/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
-	if(user.lastexamined == name)
+	if(src.lastexamined == name)
 		if(wear_shirt && !(SLOT_SHIRT in obscured))
 			if(!wear_armor)
 				var/str = "[m3] [wear_shirt.get_examine_string(user)]."
@@ -521,7 +521,7 @@
 			else
 				str += "[wear_wrists.integrity_check()]"
 			. += str
-	user.lastexamined = name
+	src.lastexamined = name
 	//handcuffed?
 	if(handcuffed)
 		if(user == src)
