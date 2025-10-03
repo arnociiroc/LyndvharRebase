@@ -177,9 +177,9 @@
 			if("Sabre & Shield")
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				r_hand = /obj/item/rogueweapon/sword/sabre
-				backl = /obj/item/rogueweapon/shield/wood
+				backl = /obj/item/rogueweapon/shield/iron
 			if("Axe & Shield")
-				beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
+				beltr = /obj/item/rogueweapon/stoneaxe/battle
 				backl = /obj/item/rogueweapon/shield/iron
 			if("Billhook")
 				r_hand = /obj/item/rogueweapon/spear/billhook 
@@ -188,7 +188,7 @@
 				r_hand = /obj/item/rogueweapon/halberd
 				backl = /obj/item/rogueweapon/scabbard/gwstrap	
 			if("Greataxe")
-				r_hand = /obj/item/rogueweapon/greataxe
+				r_hand = /obj/item/rogueweapon/greataxe/steel
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 	H.verbs |= list(/mob/living/carbon/human/mind/proc/setorderswretch)
 	if(H.mind)

@@ -61,21 +61,21 @@
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Heavy Mace")
-				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				backl = /obj/item/rogueweapon/mace/goden
 			if("Shamshir and Shield")
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				backl = /obj/item/rogueweapon/shield/tower/zybantu
 			if("Spear and Shield")
-				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				r_hand = /obj/item/rogueweapon/spear
 				backl = /obj/item/rogueweapon/shield/tower/zybantu
-	
+
 	H.merctype = 4
 
-/datum/advclass/mercenary/desert_rider/zeybek
+/datum/advclass/mercenary/desert_rider/zeybek //the gimmick here is their stats and perks are kinda bad/general but they have Expert skills- do NOT use this as an excuse to creep other mercs
 	name = "Desert Zeybek"
 	tutorial = "Blood, like the desert sand, stains your hands, a crimson testament to the gold you covet. A desert rider, renowned mercenary of the far east, your shamshir whispers tales of centuries-old tradition. Your loyalty, a fleeting mirage in the shifting sands, will yield to the allure of fortune."
 	outfit = /datum/outfit/job/roguetown/mercenary/desert_rider_zeybek
@@ -84,12 +84,14 @@
 		STATKEY_SPD = 3,
 		STATKEY_WIL = 2,
 		STATKEY_INT = 1,
+		STATKEY_PER = 1,
+		STATKEY_STR = 1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE, 
-		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/whipsflails = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/bows = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
@@ -132,13 +134,13 @@
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Shamshir and Javelin")
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, SKILL_LEVEL_EXPERT, TRUE)
 				r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				backl = /obj/item/quiver/javelin/iron
 			if("Whips and Knives")	///They DO enslave people after all
-				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_JOURNEYMAN, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_JOURNEYMAN, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/knives, SKILL_LEVEL_EXPERT, TRUE)
 				r_hand = /obj/item/rogueweapon/whip
 				l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
 				backl = /obj/item/rogueweapon/scabbard/sheath
@@ -146,5 +148,5 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_EXPERT, TRUE)
 				r_hand = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				backl = /obj/item/quiver/arrows
-	
+
 	H.merctype = 4

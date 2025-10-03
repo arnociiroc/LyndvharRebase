@@ -4,8 +4,8 @@
 	flag = WRETCH
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 8
+	spawn_positions = 8
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "Somewhere in your lyfe, you fell to the wrong side of civilization- be it voices whispering you off the trail into the arms of evil, or simple criminal activity. Hounded by the consequences of your actions in the form of exclusion from society at large and armed responses to your presence, you now threaten the peace of those who still heed the authority that condemned you. You will make them all pay, eventually."
 	outfit = null

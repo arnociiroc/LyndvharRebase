@@ -3,8 +3,8 @@
 	flag = BANDIT
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 5
+	spawn_positions = 5
 	antag_job = TRUE
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "Long ago you did a crime worthy of your head being drawn on a bounty poster and placed around the walls and buildings dotted around the city of Lyndvhar. It was those of MATTHIOS that took you in afterwards, and they are all have you known since as your closest confidants and allies. Do beware, however: as in the Cult of Matthios- loyalty is often fleeting and set to the highest paying bidders."

@@ -35,6 +35,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/squire
 	cloak = /obj/item/clothing/cloak/stabard/guard
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	job_bitflag = BITFLAG_GARRISON
 
 /datum/job/roguetown/squire/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
@@ -89,8 +90,9 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+		/obj/item/rogueweapon/huntingknife/idagger,
+		/obj/item/rogueweapon/scabbard/sheath,
 	)
 
 /datum/advclass/squire/footman
@@ -129,18 +131,19 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
-		/obj/item/reagent_containers/glass/bottle/rogue/healthpot
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+		/obj/item/rogueweapon/huntingknife/idagger,
+		/obj/item/rogueweapon/scabbard/sheath,
 	)
 	H.adjust_blindness(-3)
 	if(H.mind)
-		var/weapons = list("Iron Sword","Cudgel",)
+		var/weapons = list("Sword","Cudgel",)
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Iron Sword")
+			if("Sword")
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				r_hand = /obj/item/rogueweapon/sword/iron
+				r_hand = /obj/item/rogueweapon/sword
 			if("Cudgel")	
 				beltr = /obj/item/rogueweapon/mace/cudgel
 
@@ -184,7 +187,6 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger,
 		/obj/item/storage/belt/rogue/pouch,
-		/obj/item/clothing/neck/roguetown/chaincoif/iron,
 		/obj/item/rogueweapon/scabbard/sheath,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot
 		)

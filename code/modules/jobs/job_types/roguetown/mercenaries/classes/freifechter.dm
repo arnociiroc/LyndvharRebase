@@ -64,7 +64,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 
 	backpack_contents = list(/obj/item/roguekey/mercenary = 1,
-	/obj/item/flashlight/flare/torch/lantern = 1)	
+	/obj/item/flashlight/flare/torch/lantern = 1)
 	H.merctype = 6
 
 /datum/advclass/mercenary/freelancer/lancer
@@ -73,7 +73,7 @@
 	outfit = /datum/outfit/job/roguetown/mercenary/freelancer_lancer
 	subclass_languages = list(/datum/language/kargradi)
 	traits_applied = list(TRAIT_BADTRAINER, TRAIT_OUTDOORSMAN)
-	
+
 	subclass_stats = list(
 		STATKEY_CON = 3,
 		STATKEY_PER = 3,
