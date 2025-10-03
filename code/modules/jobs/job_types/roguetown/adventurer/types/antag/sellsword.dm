@@ -48,7 +48,7 @@
 					/obj/item/natural/cloth = 1,
 					/obj/item/flashlight/flare/torch = 1,
 					)
-	mask = /obj/item/clothing/mask/rogue/facemask/hound
+	mask = /obj/item/clothing/mask/rogue/facemask
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 	id = /obj/item/mattcoin

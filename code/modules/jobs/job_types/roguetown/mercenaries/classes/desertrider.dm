@@ -36,7 +36,7 @@
 	..()
 	to_chat(H, span_warning("The Janissaries are the Empire's elite infantry units, wielding armament and shield. We do not break."))
 	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
-	mask = /obj/item/clothing/mask/rogue/facemask/hound
+	mask = /obj/item/clothing/mask/rogue/facemask
 	cloak = /obj/item/clothing/cloak/half/rider/red
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
@@ -109,7 +109,7 @@
 	..()
 	to_chat(H, span_warning("Zybantine 'Blade Dancers' are famed and feared the world over. Their expertise in blades both long and short is well known."))
 	head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/zybantu
-	mask = /obj/item/clothing/mask/rogue/facemask/hound
+	mask = /obj/item/clothing/mask/rogue/facemask
 	neck = /obj/item/clothing/neck/roguetown/leather
 	cloak = /obj/item/clothing/cloak/half/rider/red
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/zybantu
