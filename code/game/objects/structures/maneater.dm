@@ -1,4 +1,3 @@
-
 /obj/structure/flora/roguegrass/maneater
 	name = "grass"
 	desc = "Green and vivid. Was that a tendril?"
@@ -83,16 +82,14 @@
 		return
 
 	buckle_mob(victim, TRUE, check_loc = FALSE)
-	begin_eat(victim)
+	visible_message(span_warningbig("[src] begins to gnaw on [victim]!"))
+	addtimer(CALLBACK(src, PROC_REF(begin_eat), victim), 2 SECONDS)
 
 /obj/structure/flora/roguegrass/maneater/real/proc/begin_eat(mob/living/victim, var/chew_factor = 1)
 	if(victim.loc != loc)
 		return
 
-	visible_message(span_warningbig("[src] begins to gnaw on [victim]!"))
-	if(!do_after(victim, 2 SECONDS, progress = FALSE))
-		visible_message(span_warning("[src] stops chewing on [victim]!"))
-		return
+	visible_message(span_warning("[src] chews on [victim]!"))
 
 	playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
 	if(!iscarbon(victim))
@@ -123,7 +120,7 @@
 			return
 		maneater_spit_out(victim)
 
-	begin_eat(victim, chew_factor * 2)
+	addtimer(CALLBACK(src, PROC_REF(begin_eat), victim, chew_factor * 2), 2 SECONDS)
 
 /obj/structure/flora/roguegrass/maneater/real/proc/maneater_spit_out(mob/living/C)
 	if(!C)
