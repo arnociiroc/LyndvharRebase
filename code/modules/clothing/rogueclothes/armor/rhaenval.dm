@@ -47,9 +47,7 @@
 
 /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
 	name = "rhaenish fur-lined bone gloves"
-	desc = "A pair of hardened leather gloves with a bone reinforcement across the wrist\
-			and the back of the hand offering superior protection against\
-			the claws of beasts and the claw of nature and plant common for gatherers."
+	desc = "A pair of hardened leather gloves with a bone reinforcement across the wrist and the back of the hand offering superior protection against the claws of beasts and the claw of nature and plant common for gatherers."
 	icon_state = "gronnfurgloves"
 	item_state = "gronnfurgloves"
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
