@@ -35,6 +35,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/squire
 	cloak = /obj/item/clothing/cloak/stabard/guard
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	job_bitflag = BITFLAG_GARRISON
 
 /datum/job/roguetown/squire/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
