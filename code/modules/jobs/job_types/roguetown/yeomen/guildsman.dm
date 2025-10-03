@@ -35,6 +35,7 @@
 	outfit = /datum/outfit/job/roguetown/guildsman/blacksmith
 
 	category_tags = list(CTAG_GUILDSMEN)
+	traits_applied = list(TRAIT_TRAINED_SMITH)
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_WIL = 2,
