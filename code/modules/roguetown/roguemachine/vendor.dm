@@ -395,16 +395,25 @@
 
 	update_icon()
 
-/obj/structure/roguemachine/vendor/merchant
-	keycontrol = "merchant"
+/obj/structure/roguemachine/vendor/steward
+	keycontrol = "steward"
 
-/obj/structure/roguemachine/vendor/merchant/Initialize()
+/obj/structure/roguemachine/vendor/steward/Initialize()
 	. = ..()
-	for(var/X in list(/obj/item/roguekey/apartments/stall1,/obj/item/roguekey/apartments/stall2,/obj/item/roguekey/apartments/stall3))
+
+	for (var/X in list(/obj/item/roguekey/apartments/stall3, /obj/item/roguekey/apartments/stall4))
 		var/obj/P = new X(src)
 		held_items[P] = list()
 		held_items[P]["NAME"] = P.name
 		held_items[P]["PRICE"] = 10
+
+// stall 1 and 2 are much nicer stalls in comparison
+	for (var/Y in list(/obj/item/roguekey/apartments/stall1, /obj/item/roguekey/apartments/stall2))
+		var/obj/Q = new Y(src)
+		held_items[Q] = list()
+		held_items[Q]["NAME"] = Q.name
+		held_items[Q]["PRICE"] = 30
+
 	update_icon()
 
 /obj/structure/roguemachine/vendor/stablemaster
