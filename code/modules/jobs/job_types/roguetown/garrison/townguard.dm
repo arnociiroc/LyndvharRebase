@@ -42,7 +42,7 @@
 			S.name = "watchman tabard ([index])"
 
 /datum/outfit/job/roguetown/guardsman
-	pants = /obj/item/clothing/under/roguetown/trou/leather
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	cloak = /obj/item/clothing/cloak/stabard/guard
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	neck = /obj/item/clothing/neck/roguetown/gorget
@@ -63,10 +63,10 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	category_tags = list(CTAG_WATCH)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 2,
-		STATKEY_CON = 1,
-		STATKEY_WIL = 1,
-		STATKEY_SPD = 1
+		STATKEY_STR = 1,
+		STATKEY_CON = 2,
+		STATKEY_WIL = 2,
+		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
 		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
@@ -90,7 +90,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 /datum/outfit/job/roguetown/guardsman/footsman/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
+	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet/kettle/iron = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
 	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/plate/half = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 7))
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	backl = /obj/item/rogueweapon/shield/tower
@@ -111,9 +111,9 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	subclass_stats = list(
 		STATKEY_SPD = 2,
 		STATKEY_PER = 2,
-		STATKEY_STR = 1,
+		STATKEY_STR = -1,
 		STATKEY_INT = 1,
-		STATKEY_CON = 1
+		STATKEY_CON = -1
 	)
 	subclass_skills = list(
 		/datum/skill/combat/bows = SKILL_LEVEL_EXPERT,
@@ -137,7 +137,8 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 /datum/outfit/job/roguetown/guardsman/archer/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/roguehood/red		//To-do: Make a guard hood come in kingdom's colors.
+	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet/kettle/iron = 3, /obj/item/clothing/head/roguetown/helmet/leather = 7))
+	mask = /obj/item/clothing/head/roguetown/roguehood/red		//To-do: Make a guard hood come in kingdom's colors.
 	armor = /obj/item/clothing/suit/roguetown/armor/leather	//So they get default-dodge expert usage.
 	beltr = /obj/item/quiver/arrows
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
@@ -164,12 +165,12 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
-		STATKEY_WIL = 2,
+		STATKEY_WIL = 3,
 		STATKEY_SPD = -1
 	)
 	subclass_skills = list(
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/axes = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
@@ -189,8 +190,8 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 
 /datum/outfit/job/roguetown/guardsman/pikeman/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/kettle
-	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/leather/heavy = 4, /obj/item/clothing/suit/roguetown/armor/chainmail/iron = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 2))
+	head = pickweight(list(/obj/item/clothing/head/roguetown/helmet/kettle/iron = 3, /obj/item/clothing/head/roguetown/helmet/kettle = 7))
+	armor = pickweight(list(/obj/item/clothing/suit/roguetown/armor/leather/heavy = 4, /obj/item/clothing/suit/roguetown/armor/chainmail = 3, /obj/item/clothing/suit/roguetown/armor/plate/half/iron = 2))
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/storage/keyring/guardcastle
 	beltr = /obj/item/rogueweapon/scabbard/sword
