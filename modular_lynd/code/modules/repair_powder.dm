@@ -45,6 +45,7 @@
 	icon = 'modular_lynd/icons/roachpowder.dmi'
 	icon_state = "copperpowder"
 	item_state = "copperpowder"
+	w_class = WEIGHT_CLASS_TINY
 	sellprice = 1
 	grid_width = 32
 	grid_height = 32
