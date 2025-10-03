@@ -99,7 +99,6 @@
 		armor = armors[armorchoice]
 
 		var/masks = list(
-				"Iron Houndmask" 	= /obj/item/clothing/mask/rogue/facemask/hound,
 				"Iron Mask"		= /obj/item/clothing/mask/rogue/facemask,
 				"Wildguard"			= /obj/item/clothing/mask/rogue/wildguard,
 				"None"
@@ -207,7 +206,6 @@
 			head = helmets[helmchoice]
 
 		var/masks = list(
-		"Iron Houndmask" 	= /obj/item/clothing/mask/rogue/facemask/hound,
 		"Iron Mask"		= /obj/item/clothing/mask/rogue/facemask,
 		"Wildguard"			= /obj/item/clothing/mask/rogue/wildguard,
 		"None"

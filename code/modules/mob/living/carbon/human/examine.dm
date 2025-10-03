@@ -83,11 +83,15 @@
 			if(islatejoin)
 				is_returning = TRUE
 			if(display_as_wanderer)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the wandering [race_name]."))
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The wandering [race_name]."))
 			else if(used_title)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, the [is_returning ? "returning " : ""][race_name] [used_title]."))
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The [is_returning ? "returning " : ""][race_name] [used_title]."))
 			else
-				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, the [race_name]."))
+				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, \n The [race_name]."))
+
+		if(!obscure_name || client?.prefs.masked_examine)
+			if((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
+				. += "\n <span class='info'><img src=[headshot_link] width=100 height=100/></span>"
 
 		if(HAS_TRAIT(src, TRAIT_DNR) && src != user)
 			if(HAS_TRAIT(src, TRAIT_DEATHSIGHT))
@@ -241,9 +245,7 @@
 		if(item)
 			. += span_notice("You get the feeling [m2] most valuable possession is \a [item].")
 
-	if(!obscure_name || client?.prefs.masked_examine)
-		if((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
-			. += "<span class='info'><img src=[headshot_link] width=100 height=100/> \nø ------------ ø</span>"
+	. += "<span class='info'>ø ------------ ø</span>"		
 	var/is_stupid = FALSE
 	var/is_smart = FALSE
 	var/is_normal = FALSE
@@ -270,7 +272,6 @@
 
 	var/list/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
-
 	if(wear_shirt && !(SLOT_SHIRT in obscured))
 		if(!wear_armor)
 			var/str = "[m3] [wear_shirt.get_examine_string(user)]."
@@ -519,7 +520,6 @@
 		else
 			str += "[wear_wrists.integrity_check()]"
 		. += str
-
 	//handcuffed?
 	if(handcuffed)
 		if(user == src)
@@ -824,6 +824,28 @@
 			. += "<a href='?src=[REF(src)];inspect_limb=[checked_zone]'>Inspect [parse_zone(checked_zone)]</a>"
 			if(!(mobility_flags & MOBILITY_STAND) && user != src && (user.zone_selected == BODY_ZONE_CHEST))
 				. += "<a href='?src=[REF(src)];check_hb=1'>Listen to Heartbeat</a>"
+
+	if(!HAS_TRAIT(src, TRAIT_DECEIVING_MEEKNESS) && user != src)
+		if(isliving(user))
+			var/mob/living/L = user
+			if(L.STAINT > 9 && L.STAPER > 9)
+				if(HAS_TRAIT(src, TRAIT_COMBAT_AWARE))
+					. += span_warning("<i>They look battle-aware.</i>")
+				if(HAS_TRAIT(user, TRAIT_COMBAT_AWARE))
+					var/userheld = user.get_active_held_item()
+					var/srcheld = get_active_held_item()
+					var/datum/skill/user_skill = /datum/skill/combat/unarmed	//default
+					var/datum/skill/src_skill = /datum/skill/combat/unarmed
+					if(userheld)
+						var/obj/item/I = userheld
+						if(I.associated_skill)
+							user_skill = I.associated_skill
+					if(srcheld)
+						var/obj/item/I = srcheld
+						if(I.associated_skill)
+							src_skill = I.associated_skill
+					var/skilldiff = user.get_skill_level(user_skill) - get_skill_level(src_skill)
+					. += "<font size = 3><i>[skilldiff_report(skilldiff)] in my wielded skill than they are in theirs.</i></font>"
 
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
