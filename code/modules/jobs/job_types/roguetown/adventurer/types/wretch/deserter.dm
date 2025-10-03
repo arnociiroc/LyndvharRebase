@@ -60,7 +60,7 @@
 			if("Estoc")
 				r_hand = /obj/item/rogueweapon/estoc
 				backr = /obj/item/rogueweapon/scabbard/gwstrap
-			if("Decorated Sword + Shield")
+			if("Decorated + Shield")
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				r_hand = /obj/item/rogueweapon/sword/decorated
 				backr = /obj/item/rogueweapon/shield/tower/metal
