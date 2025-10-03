@@ -16,7 +16,7 @@
 	extra_context = "This subclass is race-restricted to: Half-Elves, Elves, Humens, and Half-kin."
 	traits_applied = list(TRAIT_OUTDOORSMAN, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 3,
+		STATKEY_STR = 2,
 		STATKEY_WIL = 2,
 		STATKEY_CON = 1,
 		STATKEY_PER = 1,
