@@ -35,7 +35,8 @@
 	head = /obj/item/clothing/head/roguetown/roguehood/feld
 	neck = /obj/item/clothing/neck/roguetown/collar/feldcollar
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/feld
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/surgery_bag/full/physician
 	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
