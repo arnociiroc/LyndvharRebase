@@ -269,8 +269,8 @@
 	desc = "It fits snugly on one's elven head, with special slots for their pointier ears."
 	body_parts_covered = FULL_HEAD
 	body_parts_covered = HEAD|HAIR|NOSE
-	flags_inv = HIDEEARS|HIDEFACE|HIDESNOUT
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	flags_inv = HIDEEARS
+	flags_cover = HEADCOVERSEYES
 	icon_state = "elven_barbute_full"
 	item_state = "elven_barbute_full"
 	armor = ARMOR_HEAD_HELMET
