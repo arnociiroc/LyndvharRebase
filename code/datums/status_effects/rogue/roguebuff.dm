@@ -629,6 +629,7 @@
 		owner.adjustToxLoss(0.15*-healing_on_tick, 0)
 		owner.adjustOrganLoss(ORGAN_SLOT_BRAIN, 0.15*-healing_on_tick)
 		owner.adjustCloneLoss(0.15*-healing_on_tick, 0)
+		owner.energy_add(healing_on_tick+7)
 
 /datum/status_effect/buff/healing/on_remove()
 	owner.remove_filter(MIRACLE_HEALING_FILTER)
