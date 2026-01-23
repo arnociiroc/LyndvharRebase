@@ -396,23 +396,29 @@
 	var/mob/living/carbon/C = grabbed
 	var/armor_block = C.run_armor_check(limb_grabbed, "slash")
 	var/damage = user.get_punch_dmg()
-	if(grabbed == user && limb_grabbed.status == BODYPART_ROBOTIC)	//removing ones own prosthetic should not be violent, nor damaging
-		C.visible_message(span_notice("[user] starts twisting [limb_grabbed] of [C], twisting it out of its socket!"), span_notice("I start twisting [limb_grabbed] from [src]."))
-		playsound(user, 'sound/misc/blackbag2.ogg', 100)
-		if(do_after(user, 60, target = src))
-			C.visible_message(span_notice("[user] twists [limb_grabbed] of [C], popping it out of the socket!"), span_notice("I pop [limb_grabbed] from [src]."))
-			limb_grabbed.drop_limb()
-			return
 	playsound(C.loc, "genblunt", 100, FALSE, -1)
 	C.next_attack_msg.Cut()
-	C.apply_damage(damage, BRUTE, limb_grabbed, armor_block)
+	if(isdoll(C)) {
+		armor_block = C.getarmor(sublimb_grabbed, "blunt")
+		if(armor_block < 1)
+			
+		else
+		
+			C.apply_damage(damage, BRUTE, limb_grabbed, armor_block)
+	}
+	else {
+	
+		armor_block = C.run_armor_check(limb_grabbed, "slash")
+		C.apply_damage(damage, BRUTE, limb_grabbed, armor_block)
+	}	
+		
 	limb_grabbed.bodypart_attacked_by(BCLASS_TWIST, damage, user, sublimb_grabbed, crit_message = TRUE)
 	C.visible_message(span_danger("[user] twists [C]'s [parse_zone(sublimb_grabbed)]![C.next_attack_msg.Join()]"), \
 					span_userdanger("[user] twists my [parse_zone(sublimb_grabbed)]![C.next_attack_msg.Join()]"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE, user)
 	to_chat(user, span_warning("I twist [C]'s [parse_zone(sublimb_grabbed)].[C.next_attack_msg.Join()]"))
 	C.next_attack_msg.Cut()
 	log_combat(user, C, "limbtwisted [sublimb_grabbed] ")
-	if(limb_grabbed.status == BODYPART_ROBOTIC && armor_block == 0) //Twisting off prosthetics.
+	if(limb_grabbed.status == BODYPART_ROBOTIC && armor_block == 0 && limb_grabbed.dismemberable) //Twisting off prosthetics.
 		C.visible_message(span_danger("[C]'s prosthetic [parse_zone(sublimb_grabbed)] twists off![C.next_attack_msg.Join()]"), \
 					span_userdanger("My prosthetic [parse_zone(sublimb_grabbed)] was twisted off of me![C.next_attack_msg.Join()]"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE, user)
 		to_chat(user, span_warning("I twisted [C]'s prosthetic [parse_zone(sublimb_grabbed)] off.[C.next_attack_msg.Join()]"))
@@ -421,7 +427,36 @@
 		var/text = "[bodyzone2readablezone(user.zone_selected)]..."
 		user.filtered_balloon_alert(TRAIT_COMBAT_AWARE, text)
 
-	// Dealing damage to the head beforehand is intentional.
+	if(limb_grabbed.body_zone == sublimb_grabbed && isdoll(C))
+		var/mob/living/carbon/human/target = C
+		armor_block = target.getarmor(sublimb_grabbed, "slash")
+		
+		if(armor_block >= 1)
+			target.visible_message(span_danger("[target]'s [parse_zone(sublimb_grabbed)] fails to be twisted off!"), \
+				span_danger("[user] Tries to twist my [parse_zone(sublimb_grabbed)] out of it's socket but the armor keeps it in place!"))
+			to_chat(user, span_warning("[target]'s [parse_zone(sublimb_grabbed)] stays in it's socket because of [target]'s armor!"))
+			return
+
+		target.visible_message(span_danger("[target]'s [parse_zone(sublimb_grabbed)] is being forcefully popped out of socket!"), \
+			span_danger("My [parse_zone(sublimb_grabbed)] is being forcefully popped out of socket!"))
+		to_chat(user, span_warning("I begin popping [target]'s [parse_zone(sublimb_grabbed)] out of socket."))
+
+		var/delay = (sublimb_grabbed == BODY_ZONE_HEAD) ? 100 : 6
+		
+		if(do_after(user, delay, target = target))
+			target.visible_message(span_danger("[target]'s [parse_zone(sublimb_grabbed)] has been popped out of socket!"), \
+				span_userdanger("My [parse_zone(sublimb_grabbed)] has been popped out of socket!"))
+			to_chat(user, span_warning("I pop [target]'s [parse_zone(sublimb_grabbed)] out of socket."))
+
+			limb_grabbed.drop_limb(FALSE)
+
+			if(QDELETED(limb_grabbed))
+				return
+
+			qdel(src)
+			user.put_in_active_hand(limb_grabbed)
+      
+  // Dealing damage to the head beforehand is intentional.
 	if(limb_grabbed.body_zone == BODY_ZONE_HEAD && isdullahan(C))
 		var/mob/living/carbon/human/target = C
 		var/datum/species/dullahan/target_species = target.dna.species
