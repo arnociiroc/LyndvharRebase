@@ -629,21 +629,22 @@
 /mob/proc/toggle_rogmove_intent(intent, silent = FALSE)
 	var/is_mounted = FALSE
 	if(buckled && intent != MOVE_INTENT_SNEAK)
-		if(istype(buckled, /mob/living/simple_animal/hostile/retaliate/rogue/saiga))
-			if(ishuman(src))
-				var/mob/living/carbon/human/H = src
-				var/mob/living/simple_animal/hostile/retaliate/rogue/saiga/S = buckled
-				is_mounted = TRUE
-				if(H.m_intent == MOVE_INTENT_WALK)
-					H.visible_message(span_notice("[H] digs their heels into \the [S], preparing to gallop!"))
-					S.emote("aggro")
-					if(do_after(H, 20))
-						H.m_intent = MOVE_INTENT_RUN
-				else
-					H.visible_message(span_notice("\The [S] calms, slowing its gait."))
-					S.emote("idle")
-					if(do_after(H, 15))
-						H.m_intent = MOVE_INTENT_WALK
+		if(is_type_in_list(buckled, list(/mob/living/simple_animal/hostile/retaliate/rogue/saiga, /mob/living/simple_animal/hostile/retaliate/rogue/fogbeast)))
+			var/mob/living/simple_animal/hostile/retaliate/rogue/mount = buckled
+			is_mounted = TRUE
+			if(m_intent == MOVE_INTENT_WALK)
+				visible_message(span_notice("[src] digs their heels into \the [mount], preparing to gallop!"))
+				mount.emote("aggro")
+				var/sprint_time = 2 SECONDS - (get_skill_level(/datum/skill/misc/riding) * 0.5 SECONDS)
+				if(do_after(src, sprint_time))
+					m_intent = MOVE_INTENT_RUN
+			else
+				visible_message(span_notice("\The [mount] calms, slowing its gait."))
+				mount.emote("idle")
+				var/slow_time = 1.5 SECONDS - (get_skill_level(/datum/skill/misc/riding) * 0.5 SECONDS)
+				if(do_after(src, slow_time))
+					m_intent = MOVE_INTENT_WALK
+
 	// If we're becoming sprinting from non-sprinting, reset the counter
 	if(!(m_intent == MOVE_INTENT_RUN && intent == MOVE_INTENT_RUN))
 		sprinted_tiles = 0

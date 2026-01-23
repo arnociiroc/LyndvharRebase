@@ -56,11 +56,8 @@
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
 		var/honorary = "Ser"
-		if(should_wear_femme_clothes(H))
-			honorary = "Dame"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
-
 		for(var/X in peopleknowme)
 			for(var/datum/mind/MF in get_minds(X))
 				if(MF.known_people)
@@ -173,7 +170,6 @@
 	name = "Cavalry Captain"
 	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations. Many a man can tell the tale of what your prowess on saigaback has contributed to this city's protection."
 	outfit = /datum/outfit/job/roguetown/captain/cavalry
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_CAPTAIN)
 
 	subclass_stats = list(
@@ -201,7 +197,10 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/riding = SKILL_LEVEL_MASTER,
 	)
-
+	subclass_virtues = list(
+		/datum/virtue/utility/riding
+	)
+	
 /datum/outfit/job/roguetown/captain/cavalry/pre_equip(mob/living/carbon/human/H)
 	..()
 	backr = /obj/item/storage/backpack/rogue/satchel/short
