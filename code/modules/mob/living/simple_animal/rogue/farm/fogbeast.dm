@@ -1,7 +1,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/fogbeast
 	name = "fogbeast mare"
-	desc = "A distant cousin to the saiga, fogbeasts are rare animals shepherded from isolated peninsulas at the eastern edge of Rhaenvali territory. \
-	Taller, imperious and more stubborn than their antlered relatives, a fogbeast is a prized, noble steed indeed. Most commoners do not even know what they are!"
+	desc = "A distant cousin to the saiga, fogbeasts are rare animals shepherded at great cost from isolated peninsulas at the eastern edge of Rhaenvali territory. \
+	Taller, imperious and more stubborn than their antlered relatives, a fogbeast is a prized, noble steed indeed. Most commoners don't even know what they are!"
 	icon = 'icons/roguetown/mob/monster/fogbeast.dmi'
 	icon_state = "fogbeast"
 	icon_living = "fogbeast"
@@ -21,8 +21,8 @@
 	)
 	base_intents = list(/datum/intent/simple/fogbeast)
 	animal_species = /mob/living/simple_animal/hostile/retaliate/rogue/fogbeast/male
-	health = 380
-	maxHealth = 380
+	health = 400
+	maxHealth = 400
 	food_type = list(/obj/item/reagent_containers/food/snacks/grown/wheat, /obj/item/reagent_containers/food/snacks/grown/oat, /obj/item/reagent_containers/food/snacks/grown/apple)
 	tame_chance = 15
 	bonus_tame_chance = 15
