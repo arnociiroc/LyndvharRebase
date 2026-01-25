@@ -15,7 +15,7 @@
 	use_skintones = TRUE
 	disliked_food = NONE
 	liked_food = NONE
-	possible_ages = ALL_AGES_LIST
+	possible_ages = ALL_NATURAL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mt.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fm.dmi'
@@ -126,7 +126,14 @@
 		"Chyerno" = SKIN_COLOR_CHYERNO,
 		"Zierzati" = SKIN_COLOR_ZIERZATI,
 		"Yolzuthboc" = SKIN_COLOR_YOLZUTHBOC,
-		"Yaborys" = SKIN_COLOR_YABORYS
+		"Yaborys" = SKIN_COLOR_YABORYS,
+		"Vesyl"	= SKIN_COLOR_VESYL,
+		"Krosec" = SKIN_COLOR_KROSEC,
+		"Asza" = SKIN_COLOR_ASZA,
+		"Krizzsha" = SKIN_COLOR_KRIZZSHA,
+		"Tosiz" = SKIN_COLOR_TOSIZ,
+		"Velothel" = SKIN_COLOR_VELOTHEL
+		
 	)
 
 /datum/species/tieberian/get_hairc_list()

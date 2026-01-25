@@ -7418,10 +7418,6 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town)
-"bYV" = (
-/turf/closed/wall/mineral/rogue/decostone/long/east_west,
-/turf/open/floor/rogue/church,
-/area/rogue/indoors/town/church/chapel)
 "bZd" = (
 /turf/open/floor/rogue/rooftop/green/corner1{
 	dir = 8
@@ -27606,6 +27602,10 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/item/storage/backpack/rogue/satchel/short,
 /obj/item/storage/backpack/rogue/satchel/short,
+/obj/item/servant_bell{
+	pixel_x = -8;
+	pixel_y = 8
+	},
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/town/manor)
 "hgA" = (
@@ -30238,6 +30238,10 @@
 /area/rogue/outdoors/mountains/decap)
 "hRQ" = (
 /obj/structure/table/wood/long_table/right,
+/obj/item/servant_bell{
+	pixel_x = 5;
+	pixel_y = 1
+	},
 /turf/open/floor/rogue/tile/bfloorz,
 /area/rogue/indoors/town/manor)
 "hRR" = (
@@ -50696,7 +50700,12 @@
 	pixel_y = 0
 	},
 /obj/item/candle/candlestick/silver/lit{
-	pixel_y = 9
+	pixel_y = 12;
+	pixel_x = 8
+	},
+/obj/item/servant_bell{
+	pixel_x = -1;
+	pixel_y = -5
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
@@ -507833,7 +507842,7 @@ ilR
 rcr
 rcr
 iQC
-rcr
+iQC
 upl
 ilR
 ilR
@@ -508168,7 +508177,7 @@ ilR
 yjE
 ilR
 rcr
-rcr
+cFb
 xAa
 xAa
 rcr
@@ -508228,13 +508237,13 @@ ilR
 ilR
 ilR
 ilR
-ilR
-ilR
 xAa
 xAa
 xAa
-rcr
-ilR
+xAa
+xAa
+xAa
+xAa
 xAa
 upl
 kSA
@@ -508621,7 +508630,7 @@ ilR
 rcr
 ilR
 ilR
-ilR
+xAa
 xAa
 xAa
 ilR
@@ -508629,13 +508638,13 @@ ilR
 ajP
 ilR
 ilR
-ilR
+xAa
 xAa
 xAa
 ilR
 ltk
 rcr
-ilR
+xAa
 ltk
 xAa
 xAa
@@ -509021,8 +509030,8 @@ ilR
 ilR
 ilR
 ilR
-ilR
-ilR
+xAa
+xAa
 xAa
 xAa
 xAa
@@ -509030,24 +509039,24 @@ xAa
 ilR
 uFG
 ltk
-ilR
-ilR
+xAa
+xAa
 ilR
 ilR
 ilR
 rcr
 ltk
 ilR
-ilR
-ilR
-ilR
+ltk
+ltk
 xAa
 xAa
-ilR
-ilR
-ilR
-ilR
-ilR
+xAa
+xAa
+xAa
+xAa
+xAa
+xAa
 rcr
 ilR
 rcr
@@ -509422,16 +509431,16 @@ uFG
 ilR
 rcr
 ilR
-ilR
-ilR
+xAa
+xAa
 ilR
 ilR
 rcr
-rcr
-ilR
-ilR
-ilR
-ilR
+xAa
+xAa
+xAa
+xAa
+xAa
 xAa
 xAa
 ilR
@@ -509440,18 +509449,18 @@ ilR
 ilR
 mAj
 ilR
-ilR
-ilR
+ltk
+ltk
 ltk
 ilR
 rcr
 ilR
 ilR
 ilR
-ilR
 xAa
 xAa
-ilR
+xAa
+ltk
 rcr
 ilR
 ilR
@@ -509831,8 +509840,8 @@ rcr
 iQC
 ilR
 ilR
-ilR
-ilR
+xAa
+xAa
 xAa
 xAa
 ilR
@@ -509841,7 +509850,7 @@ ilR
 rcr
 ilR
 ilR
-ilR
+ltk
 byG
 byG
 byG
@@ -509854,7 +509863,7 @@ ilR
 iQC
 xAa
 xAa
-ilR
+ltk
 ilR
 iQC
 ilR
@@ -510244,21 +510253,21 @@ rcr
 ilR
 ilR
 ilR
-ilR
+ltk
 ilR
 byG
 ilR
 ilR
 iQC
 ltk
-ilR
-ilR
+ltk
+ltk
 rcr
-ilR
 xAa
-ilR
-ilR
-ilR
+xAa
+ltk
+ltk
+ltk
 rcr
 ilR
 ilR
@@ -510588,7 +510597,7 @@ xAa
 xAa
 xAa
 xAa
-rcr
+cFb
 rcr
 ilR
 ilR
@@ -510624,7 +510633,7 @@ rcr
 rcr
 ilR
 ilR
-ilR
+xAa
 ilR
 uFG
 ilR
@@ -510653,12 +510662,12 @@ ltk
 ltk
 iQC
 ltk
-ilR
+ltk
 rcr
 uFG
 ilR
-ilR
-ilR
+xAa
+xAa
 ilR
 ltk
 rcr
@@ -511016,16 +511025,16 @@ ilR
 ltk
 ilR
 ilR
-ilR
+xAa
 xAa
 ilR
 ltk
 ilR
 ilR
 ilR
-ilR
-ilR
-ilR
+xAa
+xAa
+xAa
 ilR
 ilR
 ilR
@@ -511059,7 +511068,7 @@ ilR
 ltk
 ajP
 ilR
-ilR
+xAa
 xAa
 ilR
 ltk
@@ -511409,24 +511418,24 @@ rcr
 rcr
 xAa
 xAa
-rcr
 xAa
 xAa
-rcr
-ilR
-ilR
+xAa
+xAa
+xAa
+xAa
 ilR
 uFG
 ilR
-ilR
 xAa
 xAa
-ilR
+xAa
+xAa
 ilR
 uFG
-ilR
-ilR
-ltk
+xAa
+xAa
+xry
 ilR
 ltk
 rcr
@@ -511462,7 +511471,7 @@ ltk
 ltk
 ilR
 xAa
-ilR
+xAa
 ilR
 ilR
 ltk
@@ -511812,19 +511821,19 @@ xAa
 xAa
 xAa
 ltk
-ilR
-xAa
-xAa
-ilR
-rcr
 xAa
 xAa
 xAa
 ilR
+xAa
+xAa
+xAa
+xAa
+xAa
 uFG
 xAa
-ilR
-ilR
+xAa
+xAa
 xAa
 xAa
 xAa
@@ -512212,9 +512221,9 @@ xAa
 xAa
 xAa
 xAa
-rcr
-ilR
-ilR
+xAa
+xAa
+xAa
 ilR
 ilR
 xAa
@@ -512264,7 +512273,7 @@ ilR
 ilR
 xAa
 ltk
-ilR
+xAa
 xAa
 ilR
 ilR
@@ -512608,7 +512617,7 @@ rcr
 rcr
 rcr
 iQC
-rcr
+cFb
 rcr
 ltk
 rcr
@@ -512665,10 +512674,10 @@ xAa
 xAa
 xAa
 xAa
-ilR
-ilR
 xAa
-ilR
+xAa
+xAa
+xAa
 ltk
 ltk
 ilR
@@ -513066,9 +513075,9 @@ xAa
 xAa
 xAa
 xAa
-ilR
-ilR
-ilR
+xAa
+xAa
+xAa
 ilR
 ltk
 ltk
@@ -513472,7 +513481,7 @@ ilR
 ltk
 ilR
 ilR
-ilR
+ltk
 ilR
 ilR
 ilR
@@ -513874,7 +513883,7 @@ xry
 ltk
 ltk
 rcr
-ilR
+ltk
 ilR
 ilR
 ilR
@@ -514275,7 +514284,7 @@ xry
 xry
 ltk
 ltk
-rcr
+iQC
 ilR
 ilR
 rcr
@@ -732819,7 +732828,7 @@ rut
 cpd
 jhP
 xIV
-nfe
+rut
 hdA
 iqE
 mVx
@@ -733623,7 +733632,7 @@ jhP
 jhP
 jhP
 jhP
-bYV
+rut
 mfk
 xxu
 gso
@@ -734427,7 +734436,7 @@ weg
 qad
 jhP
 xIV
-nfe
+rut
 hdA
 iqE
 mVx
