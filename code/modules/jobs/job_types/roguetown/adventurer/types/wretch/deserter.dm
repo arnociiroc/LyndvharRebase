@@ -4,7 +4,6 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ACCEPTED_RACES
 	outfit = /datum/outfit/job/roguetown/wretch/deserter
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_NOBLE)
 	maximum_possible_slots = 1 // disgraced cataphract is quite good, a noble, AND technically leads any disgraced guardsmen
@@ -34,6 +33,11 @@
 		/datum/skill/misc/riding = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
 	)
+
+	subclass_virtues = list(
+		/datum/virtue/utility/riding
+	)
+
 /datum/outfit/job/roguetown/wretch/deserter/pre_equip(mob/living/carbon/human/H)
 	..()
 	to_chat(H, span_warning("You were once a venerated and revered knight in the military - now, a traitor who abandoned your duties. You lyve the lyfe of an outlaw, shunned and looked down upon by Lyndhardtian society."))

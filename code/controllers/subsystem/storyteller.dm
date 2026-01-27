@@ -1172,6 +1172,7 @@ SUBSYSTEM_DEF(gamemode)
         STATS_ALIVE_AASIMAR,
         STATS_ALIVE_TIEFLINGS,
         STATS_ALIVE_HALFKIN,
+		STATS_ALIVE_DOLLS,
         STATS_ALIVE_WILDKIN,
         STATS_ALIVE_AXIAN,
         STATS_ALIVE_TABAXI,
@@ -1290,6 +1291,8 @@ SUBSYSTEM_DEF(gamemode)
 				record_round_statistic(STATS_ALIVE_HALFKIN)
 			if(iswildkin(human_mob))
 				record_round_statistic(STATS_ALIVE_WILDKIN)
+			if(isdoll(human_mob))
+				record_round_statistic(STATS_ALIVE_DOLLS)
 			if(iscervaline(human_mob))
 				record_round_statistic(STATS_ALIVE_CERVALINE)
 			if(isrhaeteian(human_mob))

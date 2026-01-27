@@ -268,7 +268,6 @@
 	name = "Mounted Cataphract"
 	tutorial = "You are the picture-perfect knight from a high tale, knowledgeable in riding steeds into battle. You specialize in weapons most useful on a saiga including spears, swords and maces, but know your way around a shield."
 	outfit = /datum/outfit/job/roguetown/knight/mountedknight
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 
 	category_tags = list(CTAG_ROYALGUARD)
 
@@ -296,7 +295,9 @@
 		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/tracking = SKILL_LEVEL_JOURNEYMAN,
 	)
-
+	subclass_virtues = list(
+		/datum/virtue/utility/riding
+	)
 /datum/outfit/job/roguetown/knight/mountedknight/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
