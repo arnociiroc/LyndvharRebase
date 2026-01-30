@@ -254,6 +254,7 @@
 	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/graggar
 	name = "vicious boots"
@@ -261,6 +262,7 @@
 	max_integrity = ARMOR_INT_SIDE_ANTAG
 	armor = ARMOR_ASCENDANT
 	icon_state = "graggarplateboots"
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/graggar/Initialize()
 	. = ..()
@@ -273,6 +275,7 @@
 	desc = "Gilded tombs do worm enfold."
 	icon_state = "matthiosboots"
 	armor = ARMOR_ASCENDANT
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/matthios/Initialize()
 	. = ..()
@@ -290,6 +293,7 @@
 	desc = "Plate boots. Called forth from the edge of what should be known. In Her name."
 	icon_state = "zizoboots"
 	armor = ARMOR_ASCENDANT
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/armor/zizo/Initialize()
 	. = ..()
@@ -314,6 +318,7 @@
 	armor = ARMOR_PLATE
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/jester
 	name = "funny shoes"
@@ -413,6 +418,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	resistance_flags = FIRE_PROOF
+	sewrepair = FALSE
 
 /obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots
 	name = "ancient blacksteel plate boots"
@@ -430,6 +436,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	resistance_flags = FIRE_PROOF
+	sewrepair = FALSE
 
 // ----------------- BLACKSTEEL END -----------------------
 
