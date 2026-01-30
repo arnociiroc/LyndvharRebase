@@ -51,7 +51,7 @@
 		to_chat(C, "<span class='danger'>\The [src] entraps you!</span>")
 		C.Knockdown(knockdown)
 		C.Immobilize(1 SECONDS)
-		C.OffBalance(1 SECONDS)
+		C.OffBalance(0.5 SECONDS)
 		C.apply_status_effect(/datum/status_effect/debuff/netted)
 		playsound(src, 'sound/blank.ogg', 50, TRUE)
 
