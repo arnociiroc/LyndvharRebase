@@ -8,7 +8,8 @@
 	throwforce = 5
 	w_class = WEIGHT_CLASS_SMALL
 	icon_state = "net"
-	slipouttime = 2 SECONDS //ideally you're using this to catch a dodger, not in the middle of combat
+	slipouttime = 3 SECONDS //ideally you're using this to catch a dodger, not in the middle of combat
+	breakouttime = 0.5 SECONDS //very easy to break out of if you have high strength
 	gender = NEUTER
 	throw_speed = 2
 	var/knockdown = 0
@@ -39,9 +40,6 @@
 	if(..() || !iscarbon(hit_atom))//if it gets caught or the target can't be cuffed,
 		return//abort
 	ensnare(hit_atom)
-	// Nets always fall off after 10 seconds resist or not, so that the advantage it brings you is limited
-	// Being hit by a net and instalossing isn't fun for anyone because removing can be interrupted
-	addtimer(CALLBACK(src, PROC_REF(remove_effect)), 10 SECONDS, TIMER_OVERRIDE|TIMER_UNIQUE)
 
 /obj/item/net/proc/ensnare(mob/living/carbon/C)
 	if(!C.legcuffed && C.get_num_legs(FALSE) >= 2)
@@ -52,6 +50,8 @@
 		SSblackbox.record_feedback("tally", "handcuffs", 1, type)
 		to_chat(C, "<span class='danger'>\The [src] entraps you!</span>")
 		C.Knockdown(knockdown)
+		C.Immobilize(1 SECONDS)
+		C.OffBalance(0.5 SECONDS)
 		C.apply_status_effect(/datum/status_effect/debuff/netted)
 		playsound(src, 'sound/blank.ogg', 50, TRUE)
 
