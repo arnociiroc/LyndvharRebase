@@ -88,7 +88,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/valorian/inqboots
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	backr =  /obj/item/storage/backpack/rogue/satchel/valorian
-	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
 	beltr = /obj/item/quiver/bolts
 	head = /obj/item/clothing/head/roguetown/inqhat
 	mask = /obj/item/clothing/mask/rogue/spectacles/inq/spawnpair
