@@ -63,11 +63,11 @@
 			if("Battleaxe & Cudgel") //one weapon to hurt people one weapon to kill people
 				backl= /obj/item/rogueweapon/stoneaxe/battle
 				beltr = /obj/item/rogueweapon/mace/cudgel
-				H.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
 			if("Flail & Shield") //plate users beware, you're in for a scare!
 				backl= /obj/item/rogueweapon/shield/wood
 				beltr = /obj/item/rogueweapon/flail
-				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails = 4, TRUE)
 
 	if (!(istype(H.patron, /datum/patron/inhumen/matthios)))
 		to_chat(H, span_warning("My former deity has abandoned me.. Matthios is my new master."))
