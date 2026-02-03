@@ -57496,6 +57496,10 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains/decap)
+"sBZ" = (
+/obj/effect/landmark/mapGenerator/rogue/cave/lava,
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/under/cave)
 "sCa" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grass,
@@ -76931,7 +76935,7 @@ dhx
 dhx
 dhx
 dhx
-nVz
+eXO
 "}
 (5,1,1) = {"
 dhx
@@ -77283,7 +77287,7 @@ dhx
 dhx
 dhx
 dhx
-dhx
+nVz
 "}
 (6,1,1) = {"
 dhx
@@ -218084,7 +218088,7 @@ faJ
 faJ
 faJ
 faJ
-faJ
+pQW
 "}
 (6,1,2) = {"
 dhx
@@ -218436,7 +218440,7 @@ faJ
 faJ
 faJ
 faJ
-faJ
+dYN
 "}
 (7,1,2) = {"
 dhx
@@ -358885,7 +358889,7 @@ vmJ
 vmJ
 vmJ
 dhx
-eXO
+sBZ
 "}
 (6,1,3) = {"
 txn
@@ -500038,7 +500042,7 @@ faJ
 faJ
 faJ
 faJ
-pQW
+aYa
 "}
 (7,1,4) = {"
 liH
@@ -500390,7 +500394,7 @@ faJ
 faJ
 faJ
 faJ
-aYa
+faJ
 "}
 (8,1,4) = {"
 liH
