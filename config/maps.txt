@@ -16,10 +16,10 @@ endmap
 map roguetest
 endmap
 
-map dun_manor
+map dun_world
 endmap
 
-map lyndvhar_world
+map lyndvhar_port
 	default
 	votable
 endmap
