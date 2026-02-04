@@ -6492,12 +6492,6 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
-"bXc" = (
-/obj/structure/fluff/statue/psy{
-	desc = "A rather boisterous statue made in the likeness of the founder of Lyndhardtia, Naexidor. Its very presence seems to exhume some form of intimidation- as if he were looking down on you in judgement."
-	},
-/turf/open/floor/rogue/wood,
-/area/rogue/indoors/town/manor)
 "bXd" = (
 /obj/structure/bed/rogue/inn/double{
 	dir = 1
@@ -299829,7 +299823,7 @@ slP
 slP
 kHf
 bGn
-bXc
+bxq
 bxq
 wOB
 uAF
