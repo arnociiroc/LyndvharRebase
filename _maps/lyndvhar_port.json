@@ -5,7 +5,7 @@
 	"lyndvhar_port.dmm"
 	
 	],
-	"traits": [{"Name": "lyndvhar_port", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true},{"Up": true, "Down": true}, {"Down": true}],
+	"traits": [{"Name": "lyndvhar_port", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true}],
 	
 	"minetype": null,
 	"space_empty_levels": 0,
