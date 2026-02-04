@@ -13094,6 +13094,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
+"ejD" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/magician)
 "ejG" = (
 /obj/structure/bed/rogue/shit,
 /turf/open/floor/rogue/grass,
@@ -15336,6 +15340,10 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/manor)
+"eTj" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/magician)
 "eTF" = (
 /obj/effect/decal/cleanable/dirt/cobweb,
 /turf/open/floor/rogue/cobble,
@@ -29006,6 +29014,7 @@
 /obj/item/book/rogue/cardgame,
 /obj/item/book/rogue/law,
 /obj/item/natural/feather,
+/obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/magician)
 "jjy" = (
@@ -61438,6 +61447,9 @@
 /obj/structure/table/wood/poor,
 /obj/item/candle/yellow,
 /obj/item/book/rogue/cardgame,
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_y = -32
+	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician)
 "tFo" = (
@@ -72712,6 +72724,7 @@
 /obj/item/candle/gold/lit{
 	pixel_y = 6
 	},
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician)
 "xfI" = (
@@ -73660,6 +73673,9 @@
 /obj/item/book/rogue/fishing{
 	pixel_x = 4;
 	pixel_y = 9
+	},
+/obj/machinery/light/rogue/wallfire/candle/blue{
+	pixel_y = -32
 	},
 /turf/open/floor/carpet/stellar,
 /area/rogue/indoors/town/magician)
@@ -602166,7 +602182,7 @@ dZA
 swF
 rms
 ssY
-ssY
+eTj
 ssY
 ssY
 lLW
@@ -602867,7 +602883,7 @@ oqZ
 oqZ
 oqZ
 swF
-ssY
+ejD
 iHP
 xby
 ygC
