@@ -22881,6 +22881,12 @@
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
 	})
+"hux" = (
+/obj/machinery/light/rogue/lanternpost{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/town)
 "huJ" = (
 /obj/structure/table/wood{
 	icon_state = "tablewood1";
@@ -53885,6 +53891,7 @@
 /obj/structure/fluff/statue/psy{
 	desc = "A rather boisterous statue made in the likeness of the founder of Lyndhardtia, Naexidor. Its very presence seems to exhume some form of intimidation- as if he were looking down on you in judgement."
 	},
+/obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/concrete,
 /area/rogue/outdoors/town)
 "rnT" = (
@@ -295145,7 +295152,7 @@ ddf
 ddf
 ddf
 ruT
-ruT
+rxt
 nTp
 iZB
 ruT
@@ -304994,7 +305001,7 @@ gSO
 wzX
 ddf
 ddf
-ruT
+rxt
 ruT
 hSy
 hSy
@@ -308850,7 +308857,7 @@ qJw
 eCC
 ruT
 ruT
-ruT
+rxt
 ddf
 ddf
 eRT
@@ -310272,7 +310279,7 @@ ruT
 ddf
 ddf
 ddf
-ruT
+rxt
 ruT
 iZB
 ruT
@@ -312722,7 +312729,7 @@ hSy
 hSy
 pKX
 ruT
-ruT
+rxt
 ddf
 ddf
 cIx
@@ -313441,7 +313448,7 @@ ddf
 ddf
 ddf
 ddf
-ruT
+rxt
 hSy
 ruT
 ruT
@@ -315637,7 +315644,7 @@ nho
 nho
 nho
 nho
-nho
+miz
 nho
 iPW
 rBa
@@ -316593,7 +316600,7 @@ myr
 pKX
 hSy
 ruT
-hSy
+rYh
 ddf
 ddf
 ddf
@@ -317049,7 +317056,7 @@ eOV
 rPL
 xPc
 bBX
-qnh
+mxG
 han
 oPm
 oPm
@@ -318014,7 +318021,7 @@ syI
 hSy
 syI
 syI
-rxt
+ruT
 ruT
 ddf
 ddf
@@ -318366,7 +318373,7 @@ ruT
 ruT
 ruT
 ruT
-ruT
+rxt
 ruT
 ddf
 ddf
@@ -319070,7 +319077,7 @@ pnx
 ruT
 hSy
 vev
-rxt
+ruT
 ruT
 ddf
 ddf
@@ -320483,7 +320490,7 @@ ruT
 ddf
 ddf
 ddf
-ruT
+rxt
 hSy
 hSy
 hSy
@@ -321625,7 +321632,7 @@ qNe
 hSo
 nNs
 uMP
-uMP
+hux
 bBX
 bBX
 eCC
@@ -323285,7 +323292,7 @@ sTW
 ddf
 ddf
 ddf
-ruT
+rxt
 hnh
 hnh
 eCC
@@ -324354,7 +324361,7 @@ ddf
 ddf
 ddf
 ddf
-ruT
+rxt
 hSy
 hSy
 hSy
@@ -326107,7 +326114,7 @@ ruT
 ddf
 ddf
 ddf
-ruT
+rxt
 ruT
 ruT
 ruT
