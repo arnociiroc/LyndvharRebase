@@ -1288,15 +1288,11 @@
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/outdoors/bog/south)
 "aut" = (
-/obj/structure/table/wood{
-	icon_state = "tablewood1"
-	},
 /obj/effect/decal/cobbleedge{
 	dir = 10;
 	icon_state = "cobbleedge-n";
 	pixel_y = 1
 	},
-/obj/item/millstone,
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
@@ -11948,7 +11944,7 @@
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
 	},
-/obj/structure/closet/crate/chest,
+/obj/structure/closet/crate/chest/neu,
 /obj/item/fishingrod,
 /turf/open/floor/rogue/ruinedwood/herringbone,
 /area/rogue/indoors/town)
@@ -20526,7 +20522,9 @@
 	})
 "gJm" = (
 /obj/structure/chair/stool/rogue,
-/turf/open/floor/rogue/cobble,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
 /area/rogue/indoors/town)
 "gJq" = (
 /turf/open/floor/rogue/greenstone/glyph3,
@@ -46687,6 +46685,18 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/shop)
+"oYi" = (
+/obj/structure/closet/crate/roguecloset/inn/south,
+/obj/item/reagent_containers/glass/bucket/pot,
+/obj/item/cooking/platter,
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -8
+	},
+/obj/item/rogueweapon/huntingknife/chefknife,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
+/area/rogue/indoors/town)
 "oYm" = (
 /obj/effect/decal/cobbleedge{
 	dir = 9
@@ -71161,9 +71171,13 @@
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/shelter/mountains/decap)
 "wLq" = (
-/obj/machinery/light/rogue/hearth,
-/obj/machinery/light/rogue/oven/east,
-/turf/open/floor/rogue/cobble,
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/item/millstone,
+/turf/open/floor/rogue/ruinedwood{
+	icon_state = "weird1"
+	},
 /area/rogue/indoors/town)
 "wLw" = (
 /obj/structure/flora/roguegrass,
@@ -326896,8 +326910,8 @@ iKi
 kQq
 rPL
 eCC
-wLq
-gJm
+adY
+vNZ
 aut
 dAN
 rPL
@@ -327251,7 +327265,7 @@ eCC
 wZy
 rlI
 rlI
-rlI
+wLq
 rSo
 nho
 nho
@@ -327599,11 +327613,11 @@ jkb
 jkb
 kQq
 rPL
+oYi
 rlI
 rlI
 rlI
-rlI
-rlI
+gJm
 rPL
 nho
 rVF
