@@ -57,7 +57,7 @@
 		/datum/sprite_accessory/snout/front/scanidalt2,
 		/datum/sprite_accessory/snout/front/scanidalt3,
 		/datum/sprite_accessory/snout/front/wolf,
-		/datum/sprite_accessory/snout/front/wolfalt
+		/datum/sprite_accessory/snout/front/wolfalt,
 		/datum/sprite_accessory/snout/front/husky,
 		/datum/sprite_accessory/snout/front/lcanid,
 		/datum/sprite_accessory/snout/front/lcanidalt,
