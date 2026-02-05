@@ -45,6 +45,19 @@
 		/datum/sprite_accessory/snout/lcanidstripedalt,
 		/datum/sprite_accessory/snout/vulp,
 		/datum/sprite_accessory/snout/hjackal,
+		/datum/sprite_accessory/snout/scanid,
+		/datum/sprite_accessory/snout/scanidalt,
+		/datum/sprite_accessory/snout/scanidalt2,
+		/datum/sprite_accessory/snout/scanidalt3,
+		/datum/sprite_accessory/snout/husky,
+		/datum/sprite_accessory/snout/wolf,
+		/datum/sprite_accessory/snout/wolfalt,
+		/datum/sprite_accessory/snout/front/scanid,
+		/datum/sprite_accessory/snout/front/scanidalt,
+		/datum/sprite_accessory/snout/front/scanidalt2,
+		/datum/sprite_accessory/snout/front/scanidalt3,
+		/datum/sprite_accessory/snout/front/wolf,
+		/datum/sprite_accessory/snout/front/wolfalt
 		/datum/sprite_accessory/snout/front/husky,
 		/datum/sprite_accessory/snout/front/lcanid,
 		/datum/sprite_accessory/snout/front/lcanidalt,
@@ -54,8 +67,6 @@
 		/datum/sprite_accessory/snout/front/scanidalt,
 		/datum/sprite_accessory/snout/front/scanidalt2,
 		/datum/sprite_accessory/snout/front/scanidalt3,
-		/datum/sprite_accessory/snout/front/wolf,
-		/datum/sprite_accessory/snout/front/wolfalt
 		)
 
 /datum/customizer/organ/snout/lupian
