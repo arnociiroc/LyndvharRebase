@@ -1,8 +1,8 @@
 
 /obj/effect/landmark/mapGenerator/rogue/beach
 	mapGeneratorType = /datum/mapGenerator/beach
-	endTurfX = 450
-	endTurfY = 400
+	endTurfX = 400
+	endTurfY = 350
 	startTurfX = 1
 	startTurfY = 1
 
