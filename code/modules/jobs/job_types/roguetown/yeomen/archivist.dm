@@ -19,10 +19,10 @@
 	round_contrib_points = 3
 
 	job_traits = list(
-		TRAIT_ARCYNE_T2,
+		TRAIT_ARCYNE_T3,
 		TRAIT_MAGEARMOR,
 		TRAIT_INTELLECTUAL,
-		TRAIT_SEEPRICES_SHITTY,
+		TRAIT_SEEPRICES,
 		TRAIT_MEDICINE_EXPERT,
 		TRAIT_ALCHEMY_EXPERT,
 		TRAIT_SMITHING_EXPERT,
@@ -59,6 +59,8 @@
 	category_tags = list(CTAG_ARCHIVIST)
 	subclass_stats = list(
 		STATKEY_INT = 4,
+		STATKEY_PER = 2,
+		STATKEY_SPD = 1,
 		STATKEY_CON = -1,
 		STATKEY_STR = -1
 	)
@@ -68,11 +70,16 @@
 		/datum/skill/craft/alchemy = SKILL_LEVEL_LEGENDARY,
 		/datum/skill/misc/medicine = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/climbing = SKILL_LEVEL_NOVICE,
-		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/magic/arcane = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/music = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/engineering = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/archivist/basic/pre_equip(mob/living/carbon/human/H)
@@ -80,26 +87,26 @@
 	H.adjust_blindness(-3)
 	if(should_wear_femme_clothes(H))
 		shirt = /obj/item/clothing/suit/roguetown/shirt/robe/archivist
-		head  = /obj/item/clothing/head/roguetown/roguehood/black
 	else
 		shirt = /obj/item/clothing/suit/roguetown/shirt/robe/archivist
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor/nightman
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		head = /obj/item/clothing/head/roguetown/nightman
+	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
-	beltl = /obj/item/storage/keyring/archivist
+	beltl = /obj/item/rogueweapon/scabbard/sheath
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
-	mask = /obj/item/clothing/mask/rogue/spectacles
+	mask = /obj/item/clothing/mask/rogue/spectacles/golden
 	backpack_contents = list(
 		/obj/item/recipe_book/alchemy,
 		/obj/item/skillbook/unfinished, //give the book man a starter book, enough paper for 3 pages, and a writing instrument to get him started
 		/obj/item/natural/feather,
 		/obj/item/paper,
 		/obj/item/paper,
-		/obj/item/paper
-
+		/obj/item/paper,
+		/obj/item/storage/keyring/archivist
 	)
 
 	if(H.mind)

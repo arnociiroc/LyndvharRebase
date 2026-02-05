@@ -41,7 +41,7 @@
 		STATKEY_STR = -1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/bows = SKILL_LEVEL_APPRENTICE,
@@ -60,16 +60,22 @@
 /datum/outfit/job/roguetown/merchant/basic/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/navaja)
+	mask = /obj/item/clothing/mask/rogue/spectacles/golden
 	neck = /obj/item/clothing/neck/roguetown/horus
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/merchant
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/sailor
 	pants = /obj/item/clothing/under/roguetown/tights/sailor
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/storage/keyring/merchant
+	beltl = /obj/item/rogueweapon/scabbard
 	beltr = /obj/item/storage/belt/rogue/pouch/merchant/coins
-	id = /obj/item/clothing/ring/gold
+	l_hand = /obj/item/rogueweapon/sword/rapier
+	id = /obj/item/clothing/ring/emeralds
 	backr = /obj/item/storage/backpack/rogue/satchel/short
+	backpack_contents = list(
+		/obj/item/rogueweapon/scabbard/sheath,
+		/obj/item/bottle_kit,
+		/obj/item/storage/keyring/merchant,
+	)
 	if(should_wear_masc_clothes(H))
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 		H.dna.species.soundpack_m = new /datum/voicepack/male/wizard()
