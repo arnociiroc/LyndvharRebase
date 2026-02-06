@@ -21038,8 +21038,11 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/church/basement)
 "gvx" = (
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/beach/forest/hamlet)
+/obj/structure/roguewindow/openclose{
+	dir = 8
+	},
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "gvK" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/tile,
@@ -25315,9 +25318,6 @@
 /obj/effect/decal/mossy{
 	dir = 4
 	},
-/obj/structure/fluff/railing/fence{
-	dir = 8
-	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
@@ -26890,10 +26890,6 @@
 /obj/structure/fluff/clock,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/his_vault)
-"ife" = (
-/obj/structure/fluff/railing/wood,
-/turf/open/floor/rogue/wood,
-/area/rogue/outdoors/beach/forest/hamlet)
 "ifh" = (
 /obj/structure/fluff/statue/knight/interior/r,
 /turf/open/floor/rogue/cobble,
@@ -28677,7 +28673,7 @@
 "iEM" = (
 /obj/structure/guillotine,
 /turf/open/floor/rogue/wood,
-/area/rogue/outdoors/beach/forest/hamlet)
+/area/rogue/indoors/shelter)
 "iEO" = (
 /obj/structure/bars,
 /turf/open/water/sewer,
@@ -43695,7 +43691,7 @@
 "nfi" = (
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/wood,
-/area/rogue/outdoors/beach/forest/hamlet)
+/area/rogue/indoors/shelter)
 "nfj" = (
 /obj/effect/decal/remains/human,
 /turf/open/water/swamp,
@@ -45048,7 +45044,7 @@
 	dir = 8
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/beach/forest/hamlet)
+/area/rogue/indoors/shelter)
 "nAI" = (
 /obj/effect/decal/edge{
 	color = "#3f3f3f";
@@ -47762,9 +47758,9 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement)
 "ouW" = (
-/obj/structure/vine,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
+/obj/structure/roguewindow/openclose,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/town)
 "ouZ" = (
 /obj/item/rogueweapon/sword/long/kriegmesser/silver,
 /obj/structure/closet/crate/chest/inqreliquary{
@@ -53772,7 +53768,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/beach/forest/hamlet)
+/area/rogue/indoors/shelter)
 "qku" = (
 /obj/structure/roguemachine/scomm/l{
 	pixel_x = 0;
@@ -70841,7 +70837,7 @@
 /obj/structure/fluff/railing/wood,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/wood,
-/area/rogue/outdoors/beach/forest/hamlet)
+/area/rogue/indoors/shelter)
 "vuG" = (
 /obj/effect/decal/cobbleedge{
 	dir = 5
@@ -310376,7 +310372,7 @@ oef
 jSy
 eOV
 hKH
-rEe
+xeS
 ddf
 jaT
 ddf
@@ -355335,7 +355331,7 @@ cJZ
 cJZ
 cJZ
 tkB
-egF
+fxq
 qkm
 cxd
 hbh
@@ -355687,8 +355683,8 @@ cJZ
 mSW
 mSW
 ybo
-gvx
-ife
+igF
+eOO
 aDb
 hbh
 hZH
@@ -356039,8 +356035,8 @@ cJZ
 cJZ
 fLn
 ybo
-gvx
-ife
+igF
+eOO
 aDb
 hbh
 uDx
@@ -356743,8 +356739,8 @@ mSW
 cJZ
 cJZ
 ybo
-gvx
-ife
+igF
+eOO
 aDb
 hbh
 hZH
@@ -357096,7 +357092,7 @@ cJZ
 cJZ
 ybo
 nfi
-ife
+eOO
 aDb
 hbh
 uDx
@@ -357447,7 +357443,7 @@ mSW
 iOQ
 cJZ
 tkB
-egF
+fxq
 nAF
 cxd
 hbh
@@ -386124,7 +386120,7 @@ oEY
 oEY
 oEY
 dhx
-dhx
+vmJ
 vmJ
 vmJ
 vmJ
@@ -386828,9 +386824,9 @@ oEY
 oEY
 oEY
 dhx
-ouW
-ouW
-hNa
+vmJ
+vmJ
+vmJ
 hNa
 hNa
 hNa
@@ -387180,9 +387176,9 @@ oEY
 oEY
 oEY
 dhx
-ouW
-ouW
-hNa
+vmJ
+vmJ
+vmJ
 vmJ
 vmJ
 hNa
@@ -449412,7 +449408,7 @@ dJa
 dJa
 dJa
 dJa
-eRT
+oJg
 jUn
 fIx
 wpO
@@ -449764,7 +449760,7 @@ dJa
 dJa
 dJa
 dJa
-eRT
+oJg
 uoe
 kOZ
 eZZ
@@ -450118,14 +450114,14 @@ dJa
 dJa
 eCC
 sTW
-oJg
+sTW
 sTW
 eCC
 eCC
 dJa
 dJa
 dJa
-sEB
+ouW
 kgD
 kgD
 kgD
@@ -452230,7 +452226,7 @@ dJa
 dJa
 dJa
 xPc
-rEe
+gvx
 rEe
 xPc
 dJa
@@ -496136,8 +496132,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
@@ -496488,8 +496484,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
@@ -496840,8 +496836,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
@@ -497192,8 +497188,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
@@ -497544,8 +497540,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
@@ -497896,8 +497892,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
@@ -498248,8 +498244,8 @@ dJa
 dJa
 dJa
 dJa
-dJa
-dJa
+mGD
+mGD
 dJa
 dJa
 dJa
