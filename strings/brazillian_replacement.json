@@ -1,6 +1,6 @@
 {
 	"full": {
-		"hiss": "hhissssssssssssss"
+		"hiss": "hissssssssss"
 	},
 	"multiword": {
 
@@ -9,13 +9,13 @@
 
 	},
 	"end": {
-		"ish": "ish"
+		"ish": "issh"
 	},
 	"syllable": {
 		"th": "th",
-		"sh": "sssh",
+		"sh": "ssh",
 		"h": "h",
-		"s": "sss",
+		"s": "ss",
 		"y": "y"
 	}
 }
