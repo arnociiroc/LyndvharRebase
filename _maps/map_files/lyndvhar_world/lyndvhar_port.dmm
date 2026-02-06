@@ -10047,11 +10047,11 @@
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/dwarfin)
 "cUN" = (
-/obj/structure/fluff/buysign{
-	name = "! STILL UNDER CONSTRUCTION !"
+/obj/structure/roguewindow/openclose{
+	dir = 8
 	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/under/cave)
+/turf/open/floor/rogue/ruinedwood/herringbone,
+/area/rogue/indoors/town)
 "cUO" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10
@@ -16555,8 +16555,8 @@
 /obj/structure/fluff/buysign{
 	name = "! STILL UNDER CONSTRUCTION !"
 	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/mountains/decap/stepbelow)
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "eYB" = (
 /obj/structure/roguerock,
 /turf/open/floor/rogue/dirt,
@@ -21037,12 +21037,6 @@
 /obj/structure/stairs,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/church/basement)
-"gvx" = (
-/obj/structure/roguewindow/openclose{
-	dir = 8
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town)
 "gvK" = (
 /obj/structure/chair/stool/rogue,
 /turf/open/floor/rogue/tile,
@@ -26890,6 +26884,10 @@
 /obj/structure/fluff/clock,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/his_vault)
+"ife" = (
+/obj/structure/roguewindow/openclose,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/town)
 "ifh" = (
 /obj/structure/fluff/statue/knight/interior/r,
 /turf/open/floor/rogue/cobble,
@@ -47757,10 +47755,6 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement)
-"ouW" = (
-/obj/structure/roguewindow/openclose,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town)
 "ouZ" = (
 /obj/item/rogueweapon/sword/long/kriegmesser/silver,
 /obj/structure/closet/crate/chest/inqreliquary{
@@ -390249,17 +390243,17 @@ oEY
 oEY
 oEY
 oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
 oEY
 oEY
 oEY
@@ -390600,20 +390594,20 @@ oEY
 oEY
 oEY
 oEY
-oEY
-oEY
+heA
+heA
 dIG
 dIG
 dIG
 dIG
+eYt
 dIG
 dIG
 dIG
 dIG
-dIG
-oEY
-oEY
-oEY
+heA
+heA
+heA
 oEY
 oEY
 oEY
@@ -390952,7 +390946,7 @@ oEY
 oEY
 oEY
 oEY
-oEY
+heA
 dIG
 dIG
 spF
@@ -390965,7 +390959,7 @@ spF
 dIG
 dIG
 dIG
-oEY
+heA
 oEY
 oEY
 oEY
@@ -391304,7 +391298,7 @@ oEY
 oEY
 oEY
 oEY
-oEY
+heA
 dIG
 rEQ
 lec
@@ -391317,7 +391311,7 @@ lec
 rEQ
 nxG
 dIG
-oEY
+heA
 oEY
 oEY
 oEY
@@ -391656,20 +391650,20 @@ oEY
 oEY
 oEY
 oEY
-oEY
+heA
 dIG
 rEQ
 lec
 lec
 lec
-cUN
+lec
 lec
 lec
 lec
 rEQ
 nxG
 dIG
-oEY
+heA
 oEY
 oEY
 oEY
@@ -392008,7 +392002,7 @@ oEY
 oEY
 oEY
 oEY
-oEY
+heA
 dIG
 rEQ
 lec
@@ -392021,7 +392015,7 @@ lec
 rEQ
 nxG
 dIG
-oEY
+heA
 oEY
 oEY
 oEY
@@ -392360,7 +392354,7 @@ oEY
 oEY
 oEY
 oEY
-oEY
+heA
 dIG
 dIG
 spF
@@ -392373,7 +392367,7 @@ spF
 dIG
 dIG
 dIG
-oEY
+heA
 oEY
 oEY
 oEY
@@ -392712,20 +392706,20 @@ oEY
 oEY
 oEY
 oEY
-oEY
-oEY
+heA
+heA
 dIG
 dIG
 dIG
 dIG
+eYt
 dIG
 dIG
 dIG
 dIG
-dIG
-oEY
-oEY
-oEY
+heA
+heA
+heA
 oEY
 oEY
 oEY
@@ -393065,17 +393059,17 @@ oEY
 oEY
 oEY
 oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
-oEY
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
+heA
 oEY
 oEY
 oEY
@@ -450121,7 +450115,7 @@ eCC
 dJa
 dJa
 dJa
-ouW
+ife
 kgD
 kgD
 kgD
@@ -452226,7 +452220,7 @@ dJa
 dJa
 dJa
 xPc
-gvx
+cUN
 rEe
 xPc
 dJa
@@ -532808,7 +532802,7 @@ cWR
 cWR
 cWR
 sMG
-eYt
+sMG
 sMG
 mmX
 wGe
