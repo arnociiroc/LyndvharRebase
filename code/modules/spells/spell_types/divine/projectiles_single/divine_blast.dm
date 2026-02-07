@@ -55,7 +55,7 @@
 	. = ..()
 	if(isliving(target))
 		var/mob/living/H = target
-		if((H.job in list("Templar", "Acolyte", "Priest", "Martyr")))
+		if((H.job in list("Templar", "Acolyte", "Priest", "Martyr", "Druid", "Druidess"))) //Not sure if this neeeds to use the female alt. Better safe then sorry.
 			visible_message(span_warning("[src]'s power brushes off of [H] with no harm!"))
 			playsound(get_turf(H), 'sound/magic/magic_nulled.ogg', 100)
 			qdel(src)
