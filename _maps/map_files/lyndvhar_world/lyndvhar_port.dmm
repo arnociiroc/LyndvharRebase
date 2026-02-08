@@ -1946,7 +1946,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/his_vault)
 "aCp" = (
-/obj/structure/mineral_door/wood/bath/bathmaid,
+/obj/structure/mineral_door/wood/bath/bathmaid{
+	lockid = "nightmaiden"
+	},
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/indoors/town/bath{
 	ceiling_protected = 1
@@ -41808,7 +41810,9 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/mountains/decap)
 "mkB" = (
-/obj/structure/mineral_door/wood/bath/courtesan,
+/obj/structure/mineral_door/wood/bath/courtesan{
+	lockid = "nightmaiden"
+	},
 /turf/open/floor/rogue/tile/brownbrick,
 /area/rogue/indoors/town/bath{
 	ceiling_protected = 1
