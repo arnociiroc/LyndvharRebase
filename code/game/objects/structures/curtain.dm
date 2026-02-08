@@ -88,7 +88,7 @@
 	color = CLOTHING_BROWN
 
 /obj/structure/curtain/purple
-	color = "#41284f"
+	color = "#613c76"
 
 /obj/structure/curtain/magenta
 	color = "#962e5c"
