@@ -3,8 +3,8 @@
 	flag = CLERK
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 
 	allowed_races = RACES_SHUNNED_UP
 	allowed_sexes = list(MALE, FEMALE)
@@ -41,11 +41,14 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/unarmed = SKILL_LEVEL_NOVICE,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_NOVICE,
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/athletics = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/lockpicking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
 	)
 	category_tags = list(CTAG_CLERK)
 	outfit = /datum/outfit/job/roguetown/clerk/basic
@@ -56,13 +59,13 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/appraise/secular)
 
 	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/green
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/silkdress/princess
 	else if(should_wear_masc_clothes(H))
-		armor = /obj/item/clothing/cloak/tabard/knight
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+		armor = /obj/item/clothing/cloak/tabard/knight/guard
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
 
 	pants = /obj/item/clothing/under/roguetown/tights
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/storage/keyring/steward //serously doubt this is gonna be an issue, but if it is, i'll change it
