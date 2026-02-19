@@ -12,6 +12,3 @@ Most content has still been unchanged from this.
 
 ## Ko-fi
 [https://www.patreon.com/c/lyndvhar/posts](https://ko-fi.com/lyndvhar ) - Do not contribute your money to me unless you are absolutely certain it will be worth your time, please. This will simply be to help run the server- maybe benefits later.
-
-## LORE OF BEOWRICKE
-https://docs.google.com/document/d/158B0o8JdhWtQ339GwRcjadCsoigMfCC2jOZiij114eY/edit?usp=sharing
