@@ -94,9 +94,9 @@
 /datum/outfit/job/roguetown/manorguard/footsman/pre_equip(mob/living/carbon/human/H)
 	..()
 
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	neck = /obj/item/clothing/neck/roguetown/gorget
-	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 
 	H.adjust_blindness(-3)
 	if(H.mind)
@@ -155,8 +155,8 @@
 				pants = /obj/item/clothing/under/roguetown/brigandinelegs
 
 			if("Maille Set")
-				armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-				shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+				armor = /obj/item/clothing/suit/roguetown/armor/plate
+				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord/heavy
 				wrists = /obj/item/clothing/wrists/roguetown/bracers
 				pants = /obj/item/clothing/under/roguetown/chainlegs
 
@@ -209,7 +209,7 @@
 	..()
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 
 	H.adjust_blindness(-3)
 	if(H.mind)
@@ -388,8 +388,8 @@
 /datum/outfit/job/roguetown/manorguard/standard_bearer/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	neck = /obj/item/clothing/neck/roguetown/gorget
-	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	neck = /obj/item/clothing/neck/roguetown/gorget/steel
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light/retinue
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
