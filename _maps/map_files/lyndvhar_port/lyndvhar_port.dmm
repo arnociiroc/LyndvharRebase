@@ -1188,6 +1188,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/cell)
 "atG" = (
+/obj/structure/fluff/nest,
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors/town)
 "atL" = (
@@ -29771,6 +29772,11 @@
 "iLW" = (
 /turf/open/floor/carpet/royalblack,
 /area/rogue/under/town/basement/keep)
+"iMc" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/chicken,
+/obj/structure/fluff/nest,
+/turf/open/floor/rogue/hay,
+/area/rogue/indoors/town)
 "iMd" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1;
@@ -314722,7 +314728,7 @@ fBn
 kSp
 lTb
 xeH
-rJR
+iMc
 sdG
 aKE
 nqi
@@ -319298,7 +319304,7 @@ nAz
 fwu
 vWQ
 eAV
-rJR
+iMc
 sdG
 aKE
 dMO
