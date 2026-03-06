@@ -8060,14 +8060,6 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town)
-"ctd" = (
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "heir2";
-	name = "Heir's Apartment II";
-	locked = 1
-	},
-/turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/manor)
 "cth" = (
 /obj/item/restraints/legcuffs/beartrap/armed/camouflage,
 /turf/open/floor/rogue/blocks,
@@ -30146,14 +30138,6 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/town)
-"iPQ" = (
-/obj/structure/mineral_door/wood/fancywood{
-	lockid = "heir1";
-	name = "Heir's Apartment I";
-	locked = 1
-	},
-/turf/open/floor/rogue/concrete,
-/area/rogue/indoors/town/manor)
 "iPW" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n";
@@ -30209,13 +30193,6 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/shelter/mountains/decap)
-"iQI" = (
-/obj/structure/roguemachine/vendor/keep_princes{
-	pixel_y = 32;
-	density = 0
-	},
-/turf/open/floor/carpet/royalblack,
-/area/rogue/indoors/town/manor)
 "iQQ" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 1;
@@ -597838,12 +597815,12 @@ jQz
 bUd
 bUd
 bUd
-iPQ
+gTN
 bUd
 bUd
 bUd
 bUd
-ctd
+gTN
 bUd
 bUd
 gUj
@@ -598542,7 +598519,7 @@ bvo
 jLN
 bUd
 bUd
-iQI
+bvo
 bvo
 bvo
 cze
