@@ -2375,6 +2375,10 @@
 /obj/structure/composter/full,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
+"aKI" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/carpet/red,
+/area/rogue/under/town/basement/keep)
 "aKP" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
@@ -3980,6 +3984,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
+"bkR" = (
+/obj/structure/table/wood/poor,
+/turf/open/floor/carpet/stellar,
+/area/rogue/under/town/basement/keep)
 "bkU" = (
 /obj/effect/landmark/events/haunts,
 /turf/open/floor/rogue/dirt/road,
@@ -4293,7 +4301,7 @@
 "boI" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/roguekey/manor,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/carpet/red,
 /area/rogue/under/town/basement/keep)
 "boM" = (
 /obj/machinery/light/rogue/torchholder/l,
@@ -17326,6 +17334,7 @@
 /turf/open/floor/carpet/red,
 /area/rogue/under/town/basement/keep)
 "flh" = (
+/obj/structure/fluff/walldeco/church/line,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/under/town/basement/keep)
 "flo" = (
@@ -30079,7 +30088,7 @@
 "iPg" = (
 /obj/item/roguekey/manor,
 /obj/structure/closet/crate/drawer,
-/turf/open/floor/carpet/royalblack,
+/turf/open/floor/carpet/purple,
 /area/rogue/under/town/basement/keep)
 "iPj" = (
 /turf/open/floor/rogue/ruinedwood,
@@ -30809,6 +30818,10 @@
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/decap/gunduzirak)
+"iZD" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/under/town/basement/keep)
 "iZM" = (
 /obj/machinery/light/rogue/candle{
 	pixel_y = -32
@@ -42975,6 +42988,7 @@
 /area/rogue/outdoors/mountains)
 "mFC" = (
 /obj/structure/roguewindow/openclose/reinforced,
+/obj/structure/curtain/blue,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/town/basement/keep)
 "mFF" = (
@@ -43314,7 +43328,7 @@
 /area/rogue/under/cave/his_vault/puzzle)
 "mKM" = (
 /obj/structure/closet/crate/roguecloset/inn,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/carpet/red,
 /area/rogue/under/town/basement/keep)
 "mKT" = (
 /obj/structure/roguewindow,
@@ -53442,6 +53456,9 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cave/licharena/bossroom)
+"pQR" = (
+/turf/open/floor/carpet/purple,
+/area/rogue/under/town/basement/keep)
 "pQS" = (
 /obj/structure/lever/wall{
 	name = null;
@@ -53595,6 +53612,11 @@
 "pTx" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/under/cave/licharena/bossroom)
+"pTB" = (
+/obj/structure/roguewindow/openclose/reinforced,
+/obj/structure/curtain/red,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/under/town/basement/keep)
 "pTC" = (
 /turf/closed/mineral/random/rogue/high,
 /area/rogue/outdoors/bog/south)
@@ -59924,6 +59946,11 @@
 /obj/structure/flora/hotspring_rocks/small,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/his_vault)
+"rOy" = (
+/obj/structure/bed/rogue/inn/double,
+/obj/item/bedsheet/rogue/fabric_double,
+/turf/open/floor/carpet/purple,
+/area/rogue/under/town/basement/keep)
 "rOG" = (
 /obj/structure/closet/crate/chest/wicker,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -62681,6 +62708,10 @@
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/beach/south)
+"sGe" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/carpet/purple,
+/area/rogue/under/town/basement/keep)
 "sGh" = (
 /obj/machinery/light/rogue/lanternpost,
 /turf/open/floor/rogue/cobble,
@@ -79979,7 +80010,7 @@
 "xJW" = (
 /obj/structure/bed/rogue/inn/double,
 /obj/item/bedsheet/rogue/fabric_double,
-/turf/open/floor/rogue/ruinedwood/herringbone,
+/turf/open/floor/carpet/red,
 /area/rogue/under/town/basement/keep)
 "xJY" = (
 /obj/structure/ritualcircle/zizo,
@@ -80631,6 +80662,10 @@
 /obj/structure/fluff/walldeco/chains,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/dragonden)
+"xVr" = (
+/obj/structure/closet/crate/roguecloset/inn,
+/turf/open/floor/carpet/purple,
+/area/rogue/under/town/basement/keep)
 "xVw" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10
@@ -179297,7 +179332,7 @@ ahc
 wRz
 wRz
 bUe
-iLW
+iZD
 rZd
 dJI
 dJI
@@ -179644,7 +179679,7 @@ dhx
 dJI
 rxv
 aAa
-wpV
+iSS
 dJI
 kio
 qcf
@@ -180702,11 +180737,11 @@ dJI
 jwl
 aAa
 gnZ
-wRz
 eWT
 eWT
 eWT
 wRz
+aKI
 mKM
 dJI
 eNN
@@ -181054,12 +181089,12 @@ rxv
 aAa
 wpV
 dJI
-vkf
+bkR
 fNj
 eWT
-eWT
 wRz
-wRz
+fTG
+fTG
 dJI
 eNN
 esV
@@ -182114,8 +182149,8 @@ fTG
 fTG
 fTG
 wRz
-gfZ
-gfZ
+sGe
+xVr
 dJI
 eNN
 esV
@@ -182466,8 +182501,8 @@ kpp
 jUC
 fTG
 wRz
-iLW
-iLW
+pQR
+pQR
 dJI
 eNN
 esV
@@ -182819,7 +182854,7 @@ bBi
 imC
 lFk
 iPg
-tPn
+rOy
 dJI
 eNN
 esV
@@ -183521,7 +183556,7 @@ waS
 wRz
 wRz
 wRz
-iLW
+iZD
 iLW
 gfZ
 dJI
@@ -183868,7 +183903,7 @@ doO
 dJI
 rxv
 aAa
-wpV
+iSS
 dJI
 vkf
 qcf
@@ -317601,7 +317636,7 @@ lbD
 lbD
 lbD
 lbD
-mFC
+pTB
 xmn
 oBi
 aFi
@@ -317953,7 +317988,7 @@ lbD
 lbD
 lbD
 lbD
-mFC
+pTB
 lrh
 plK
 oBi
