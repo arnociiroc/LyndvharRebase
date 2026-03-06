@@ -246,7 +246,7 @@
 	sort_category = "Triumphs"
 
 /datum/loadout_item/triumph_weaponkitrock
-	name = "Morphing Elixir, 'Rockhillian Longsword'"
+	name = "Morphing Elixir, 'Old Longsword'"
 	path = /obj/item/enchantingkit/triumph_weaponkit_rock
 	triumph_cost = 3
 	sort_category = "Triumphs"
