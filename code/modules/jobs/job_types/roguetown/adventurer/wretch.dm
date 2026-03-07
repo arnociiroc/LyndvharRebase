@@ -44,7 +44,6 @@
 		/datum/advclass/wretch/pyromaniac,
 		/datum/advclass/wretch/vigilante,
 		/datum/advclass/wretch/munitioneer,
-		/datum/advclass/wretch/pariah,
 		/datum/advclass/wretch/zizite_spellblade
 	)
 
