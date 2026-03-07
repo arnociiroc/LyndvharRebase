@@ -546,6 +546,14 @@
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP|ITEM_SLOT_WRISTS|ITEM_SLOT_RING
 	smeltresult = null
 
+/obj/item/clothing/neck/roguetown/psicross/inhumen/baotha
+	name = "amulet of Baotha"
+	desc = "A hollow promise rendered in gold. It weighs heavy with the memory of sweet wine turned to poison, and the comfort of a sorrow that refuses to fade."
+	icon_state = "baotha"
+	resistance_flags = FIRE_PROOF
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HIP|ITEM_SLOT_WRISTS|ITEM_SLOT_RING
+	smeltresult = null
+
 /obj/item/clothing/neck/roguetown/psicross/undivided
 	name = "amulet of Ten"
 	desc = "The Ten eternal, strength in unity. To be stalwart for centuries against the darkness."
@@ -1178,6 +1186,18 @@
 	icon_state = "amulet_shell"
 	slot_flags = ITEM_SLOT_NECK
 	sellprice = 25
+
+/obj/item/clothing/neck/roguetown/elfears
+	name = "elf ear necklace"
+	desc = "A necklace made from the preserved ears of elves. A trophy to show off the wearer's macabre collection of elven ears."
+	icon_state = "elfears"
+	salvage_result = /obj/item/organ/ears/elf
+
+/obj/item/clothing/neck/roguetown/menears
+	name = "ear necklace"
+	desc = "A necklace made from the preserved ears of humens. A trophy to show off the wearer's macabre collection of humen ears."
+	icon_state = "menears"
+	salvage_result = /obj/item/organ/ears
 
 /obj/item/clothing/neck/roguetown/collar/prisoner
 	name = "castifico collar"

@@ -1,6 +1,6 @@
 /obj/item/organ/ears
 	name = "ears"
-	icon = 'icons/roguetown/items/surgery.dmi'
+	icon = 'icons/obj/surgery.dmi'
 	icon_state = "ear"
 	desc = ""
 	zone = BODY_ZONE_PRECISE_EARS
@@ -175,11 +175,13 @@
 /obj/item/organ/ears/elf
 	name = "elf ears"
 	accessory_type = /datum/sprite_accessory/ears/elf
+	icon_state = "elfear"
 	ear_sensitivity = EARS_SENSITIVE
 
 /obj/item/organ/ears/elfw
 	name = "wood elf ears"
 	accessory_type = /datum/sprite_accessory/ears/elfw
+	icon_state = "elfear"
 	ear_sensitivity = EARS_SENSITIVE
 
 /obj/item/organ/ears/tiefling

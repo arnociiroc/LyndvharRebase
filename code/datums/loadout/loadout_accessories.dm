@@ -225,6 +225,11 @@
 	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar
 	sort_category = "Accessories"
 
+/datum/loadout_item/psicross/baotha
+	name = "Amulet of Baotha"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baotha
+	sort_category = "Accessories"
+
 /datum/loadout_item/wedding_band
 	name = "Wedding Band, Silver"
 	path = /obj/item/clothing/ring/band
@@ -278,4 +283,14 @@
 /datum/loadout_item/cotehardie
 	name = "Fitted Coat"
 	path = /obj/item/clothing/cloak/cotehardie
+	sort_category = "Accessories"
+
+/datum/loadout_item/menears
+	name = "Ear Necklace"
+	path = /obj/item/clothing/neck/roguetown/menears
+	sort_category = "Accessories"
+
+/datum/loadout_item/elfears
+	name = "Elf Ear Necklace"
+	path = /obj/item/clothing/neck/roguetown/elfears
 	sort_category = "Accessories"

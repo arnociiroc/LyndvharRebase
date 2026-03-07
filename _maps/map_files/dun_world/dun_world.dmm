@@ -1516,7 +1516,6 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
 	},
-/mob/living/simple_animal/hostile/rogue/werewolf/f,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/his_vault)
 "art" = (
@@ -2348,19 +2347,6 @@
 /obj/structure/fluff/railing/corner/south_west,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/mountains/decap/minotaurfort)
-"aBP" = (
-/obj/structure/roguemachine/mail/r{
-	mailtag = "Council Office"
-	},
-/turf/open/floor/rogue/ruinedwood/herringbone,
-/area/rogue/indoors/town/manor)
-"aCh" = (
-/obj/structure/standingbell{
-	name = "servantry service bell";
-	specific_location = "Cataphract's Quarters"
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/town/basement/keep)
 "aCn" = (
 /obj/effect/landmark/chimeric_calyx_spawner/fifteen,
 /turf/open/floor/rogue/dirt/road,
@@ -14830,8 +14816,6 @@
 /area/rogue/outdoors/town)
 "dwP" = (
 /obj/structure/rack/rogue,
-/obj/item/quiver/bluntbolts,
-/obj/item/quiver/bluntbolts,
 /obj/item/quiver/bluntarrows,
 /obj/item/quiver/bluntarrows,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -17540,7 +17524,6 @@
 /area/rogue/indoors/town/dwarfin)
 "ebT" = (
 /obj/structure/table/wood/crafted,
-/obj/item/quiver/bolts,
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/mountains/decap/gunduzirak/bossarena)
@@ -39502,14 +39485,6 @@
 /obj/structure/flora/rogueshroom/happy/random,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/cave)
-"jix" = (
-/obj/structure/mineral_door/wood/fancywood{
-	locked = 1;
-	lockid = "knight";
-	name = "Cataphract's Chamber"
-	},
-/turf/open/floor/rogue/tile/bfloorz,
-/area/rogue/under/town/basement/keep)
 "jiA" = (
 /turf/open/floor/rogue/carpet/lord/left,
 /area/rogue/indoors/town/manor)
@@ -41245,13 +41220,6 @@
 	},
 /turf/open/water/river/flow/north,
 /area/rogue/indoors/cave)
-"jCs" = (
-/obj/item/storage/backpack/rogue/satchel/otavan{
-	pixel_x = -4;
-	pixel_y = 16
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/under/cave/his_vault)
 "jCt" = (
 /obj/structure/flora/roguegrass/bush,
 /turf/open/floor/rogue/grassred,
@@ -48373,9 +48341,6 @@
 /obj/item/clothing/mask/rogue/sack/psy,
 /obj/item/clothing/mask/rogue/sack/psy,
 /obj/item/clothing/mask/rogue/sack/psy,
-/obj/item/storage/backpack/rogue/satchel/otavan,
-/obj/item/storage/backpack/rogue/satchel/otavan,
-/obj/item/storage/backpack/rogue/satchel/otavan,
 /obj/item/repair_kit/metal/bad,
 /obj/item/repair_kit/bad,
 /turf/open/floor/rogue/herringbone,
@@ -52705,11 +52670,8 @@
 /area/rogue/under/cave/dukecourt)
 "mcu" = (
 /obj/machinery/light/rogue/candle,
-/obj/structure/roguemachine/scomm/l{
-	scom_tag = "Manor - Cataphract's Armory"
-	},
-/turf/open/floor/rogue/tile/bfloorz,
-/area/rogue/under/town/basement/keep)
+/turf/open/floor/carpet/royalblack,
+/area/rogue/indoors/town/manor)
 "mcy" = (
 /obj/machinery/anvil/crafted,
 /turf/open/floor/rogue/concrete,
@@ -61596,8 +61558,6 @@
 /area/rogue/outdoors/exposed/town/keep)
 "oii" = (
 /obj/structure/rack/rogue,
-/obj/item/quiver/bolts,
-/obj/item/quiver/bolts,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "oik" = (
@@ -98794,14 +98754,6 @@
 /mob/living/carbon/human/species/construct/metal/zizoconstruct/ambush,
 /turf/open/floor/rogue/concrete/bronze,
 /area/rogue/outdoors/mountains/decap/gunduzirak)
-"wOY" = (
-/obj/structure/mineral_door/wood/fancywood{
-	locked = 1;
-	lockid = "knight";
-	name = "Cataphract's Chamber"
-	},
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/town/manor)
 "wPc" = (
 /obj/structure/bookcase/random/archive,
 /obj/item/book/rogue/fishing,
@@ -99941,14 +99893,11 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/steward)
 "xdh" = (
-/obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots,
 /obj/structure/closet/crate/chest/gold{
 	locked = 1;
 	lockid = "lich"
 	},
-/obj/item/clothing/gloves/roguetown/blacksteel/plategloves,
 /obj/item/clothing/suit/roguetown/armor/plate/full/blacksteel,
-/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket,
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave/licharena/bossroom)
 "xdi" = (
@@ -101847,7 +101796,6 @@
 /obj/structure/closet/crate/roguecloset,
 /obj/item/scomstone,
 /obj/item/clothing/gloves/roguetown/chain/psydon,
-/obj/item/clothing/gloves/roguetown/otavan/inqgloves,
 /obj/item/clothing/mask/rogue/sack/psy,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/inq/office)
@@ -233142,7 +233090,7 @@ xLd
 xFN
 xFN
 kFW
-jCs
+xFN
 xwT
 wNQ
 hMY

@@ -168,7 +168,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Crossbow")
-				beltr = /obj/item/quiver/bolts
+				beltr = /obj/item/quiver/bolt/standard
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			if("Bow")
 				beltr = /obj/item/quiver/arrows

@@ -83,7 +83,7 @@
 // --- Elf
 /datum/customizer_choice/organ/ears/elf
 	name = "Elf Ears"
-	organ_type = /obj/item/organ/ears
+	organ_type = /obj/item/organ/ears/elf
 	sprite_accessories = list(
 		/datum/sprite_accessory/ears/elf,
 		/datum/sprite_accessory/ears/elfw,

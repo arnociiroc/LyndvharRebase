@@ -29,9 +29,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	display_order = JDO_LORD
 	tutorial = "At one point you were merely a vassal to the Ruby Throne, given special status and overseen by the Empress herself. However since her death there has been almost no communication outside of the city. You have had to take increasing amounts of autocratic power in order to sustain your port, so much so that many see you as effectively a lord in your own right. And many want to take this from you, or use it to their advantage- keep your family alive and your power secure, and Lyndvhar may live to see another dae."
 	whitelist_req = FALSE
-	min_pq = 10
+	min_pq = 0
 	max_pq = null
-	round_contrib_points = 4
+	round_contrib_points = 5
 	give_bank_account = 1000
 	required = TRUE
 	cmode_music = 'sound/music/combat_viscount.ogg'
@@ -398,6 +398,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	var/accept_message = "I will serve!"
 	/// Say message when the recruit refuses
 	var/refuse_message = "I refuse."
+	ignore_los = 1 // this needs to ignore normal "range", it looks like
+	range = 3
 
 /obj/effect/proc_holder/spell/self/convertrole/cast(list/targets,mob/user = usr)
 	. = ..()

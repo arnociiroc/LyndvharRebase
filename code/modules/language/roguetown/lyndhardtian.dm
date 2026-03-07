@@ -4,7 +4,7 @@
 	speech_verb = "remarks"
 	ask_verb = "inquires"
 	exclaim_verb = "asserts"
-	key = "z"
+	key = "f"
 	space_chance = 20
 	default_priority = 75
 	icon_state = "lyndhardtian"

@@ -151,17 +151,19 @@
 	icon_state = "tavern"
 	ambientsounds = AMB_INGEN
 	ambientnight = AMB_INGEN
-	droning_sound = 'sound/silence.ogg'
+	droning_sound = 'sound/music/area/tav1.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/tavern
+	first_time_text = "THE FOOL'S FLAGON"
 	tavern_area = TRUE
 
 /area/rogue/outdoors/exposed/tavern
 	icon_state = "tavern"
-	droning_sound = 'sound/silence.ogg'
+	droning_sound = 'sound/music/area/tav1.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
+	first_time_text = "THE FOOL'S FLAGON"
 	tavern_area = TRUE
 
 /area/rogue/indoors/town/church

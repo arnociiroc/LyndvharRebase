@@ -7,8 +7,10 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 	faction = list("drow")
 	ambushable = FALSE
 	dodgetime = 30
+	a_intent = INTENT_HELP
+	d_intent = INTENT_PARRY // drow are not stupid. these fuckers will parry your ass and they will likely win. you need friends
+	selected_default_language = /datum/language/elvish
 	flee_in_pain = TRUE
-	d_intent = INTENT_DODGE
 	possible_rmb_intents = list()
 	var/is_silent = FALSE /// Determines whether or not we will scream our funny lines at people.
 
@@ -23,8 +25,9 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 		aggressive=1
 		wander = TRUE
 	if(!is_silent && target != newtarg)
-		say(pick(GLOB.drowraider_aggro))
-		pointed(target)
+		if(prob(30))
+			say(pick(GLOB.drowraider_aggro))
+			pointed(target)
 
 /mob/living/carbon/human/species/elf/dark/drowraider/should_target(mob/living/L)
 	if(L.stat != CONSCIOUS)
@@ -33,7 +36,7 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 
 /mob/living/carbon/human/species/elf/dark/drowraider/Initialize()
 	. = ..()
-	set_species(/datum/species/elf/dark/raider)
+	set_species(/datum/species/elf/dark)
 	addtimer(CALLBACK(src, PROC_REF(after_creation)), 1 SECONDS)
 	is_silent = TRUE
 
@@ -46,13 +49,8 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 	ADD_TRAIT(src, TRAIT_LEECHIMMUNE, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_BREADY, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(src, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	ADD_TRAIT(src, TRAIT_DUALWIELDER, TRAIT_GENERIC)
 	equipOutfit(new /datum/outfit/job/roguetown/human/species/elf/dark/drowraider)
-	if(prob(40))
-		gender = MALE
-	else
-		gender = FEMALE
+	gender = pick(MALE, FEMALE)
 	regenerate_icons()
 
 	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)
@@ -67,6 +65,7 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 						/datum/sprite_accessory/hair/head/emo,
 						/datum/sprite_accessory/hair/head/sabitsuki,
 						/datum/sprite_accessory/hair/head/sabitsuki_ponytail))
+	head.sellprice = 40
 
 	var/datum/bodypart_feature/hair/head/new_hair = new()
 
@@ -86,9 +85,9 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 	dna.species.handle_body(src)
 
 	if(organ_eyes)
-		organ_eyes.eye_color = "#FFBF00"
-		organ_eyes.accessory_colors = "#FFBF00#FFBF00"
-
+		organ_eyes.eye_color = "#bb2c1a"
+		organ_eyes.accessory_colors = "#bb2c1a#bb2c1a"
+	
 	if(organ_ears)
 		organ_ears.accessory_colors = "#5f5f70"
 
@@ -98,9 +97,6 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 		real_name = pick(world.file2list("strings/rt/names/elf/elfdf.txt"))
 	else
 		real_name = pick(world.file2list("strings/rt/names/elf/elfdm.txt"))
-
-	faction += "spider_lowers"
-
 	update_hair()
 	update_body()
 
@@ -124,37 +120,45 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 	if(mode == NPC_AI_HUNT)
 		if(prob(5))
 			emote("laugh")
+		if(prob(5))
+			say(pick(GLOB.drowraider_aggro))
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/elf/dark/drowraider/pre_equip(mob/living/carbon/human/H)
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/shadowpants/drowraider
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/shadowvest/drowraider
-	shirt = /obj/item/clothing/suit/roguetown/shirt/shadowshirt/elflock/drowraider
-	gloves = /obj/item/clothing/gloves/roguetown/fingerless/shadowgloves/elflock
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
-	mask = /obj/item/clothing/mask/rogue/facemask
-	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
-	r_hand = /obj/item/rogueweapon/whip
-	if(prob(45))
-		r_hand = /obj/item/rogueweapon/sword/falx/stalker
-		l_hand = /obj/item/rogueweapon/sword/falx/stalker
-	else if(prob(15))
-		r_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/corroded/dirk
-		l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/corroded/dirk
-
-	H.STASTR = 12 // 6 Points
-	H.STASPD = 13 // 3 points
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
+	if(prob(50))
+		armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	cloak = /obj/item/clothing/cloak/raincloak/furcloak/black
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
+	if(prob(50))
+		mask = /obj/item/clothing/mask/rogue/ragmask/black
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
+	if(prob(50))
+		head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
+	neck = /obj/item/clothing/neck/roguetown/bevor/iron
+	if(prob(50))
+		neck = /obj/item/clothing/neck/roguetown/gorget
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+	H.STASTR = 14 // 8 Points
+	H.STASPD = 11 // +1 - Drow
 	H.STACON = 14 // 4 points
 	H.STAWIL = 12 // 2 points - 14 points spread. Equal to 1 more than a KC accounting for Statpack.
 	H.STAPER = 10
 	H.STAINT = 10
-	H.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+	if(prob(50))
+		r_hand = /obj/item/rogueweapon/sword/falx
+		l_hand = /obj/item/rogueweapon/shield/wood
+	else
+		r_hand = /obj/item/rogueweapon/greataxe
+	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)

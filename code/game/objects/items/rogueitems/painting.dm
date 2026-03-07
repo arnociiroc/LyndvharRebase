@@ -2,7 +2,7 @@
 /obj/item/rogue/painting
 	name = "painting"
 	icon_state = "painting"
-	desc = ""
+	desc = "A guise of before."
 	w_class = WEIGHT_CLASS_NORMAL
 	static_price = TRUE
 	sellprice = 100

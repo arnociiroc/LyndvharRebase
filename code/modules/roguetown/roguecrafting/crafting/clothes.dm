@@ -287,3 +287,21 @@
 		/obj/item/natural/fibers = 2,
 		/obj/item/grown/log/tree/stick = 2,
 		)
+
+/datum/crafting_recipe/roguetown/survival/elfears
+	name = "elf ear necklace"
+	category = "Clothes"
+	result = /obj/item/clothing/neck/roguetown/elfears
+	reqs = list(
+		/obj/item/natural/fibers = 2,
+		/obj/item/organ/ears/elf = 1,
+		)
+
+/datum/crafting_recipe/roguetown/survival/menears
+	name = "ear necklace"
+	category = "Clothes"
+	result = /obj/item/clothing/neck/roguetown/menears
+	reqs = list(
+		/obj/item/natural/fibers = 2,
+		/obj/item/organ/ears = 1,
+		)

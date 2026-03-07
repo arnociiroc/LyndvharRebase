@@ -89,7 +89,7 @@
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/valorian
 	backr =  /obj/item/storage/backpack/rogue/satchel/valorian
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
-	beltr = /obj/item/quiver/bolts
+	beltr = /obj/item/quiver/bolt/standard
 	head = /obj/item/clothing/head/roguetown/inqhat
 	mask = /obj/item/clothing/mask/rogue/spectacles/inq/spawnpair
 	gloves = /obj/item/clothing/gloves/roguetown/valorian/psygloves

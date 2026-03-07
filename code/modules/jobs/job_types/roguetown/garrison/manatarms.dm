@@ -70,7 +70,6 @@
 		STATKEY_INT = 1,
 		STATKEY_CON = 2, //Like other footman classes their main thing is constitution more so than anything else
 		STATKEY_WIL = 1,
-		STATKEY_SPD = -1,
 	)
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
@@ -95,9 +94,9 @@
 /datum/outfit/job/roguetown/manorguard/footsman/pre_equip(mob/living/carbon/human/H)
 	..()
 
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-	neck = /obj/item/clothing/neck/roguetown/gorget
-	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 
 	H.adjust_blindness(-3)
 	if(H.mind)
@@ -108,33 +107,33 @@
 			if("Warhammer & Shield")
 				beltr = /obj/item/rogueweapon/mace/warhammer
 				backl = /obj/item/rogueweapon/shield/iron
-				H.adjust_skillrank_up_to(/datum/skill/combat/maces = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/shields = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE)
 			if("Axe & Shield")
 				beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
 				backl = /obj/item/rogueweapon/shield/iron
-				H.adjust_skillrank_up_to(/datum/skill/combat/axes = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/shields = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE)
 			if("Sword & Shield")
 				l_hand = /obj/item/rogueweapon/sword
 				beltr = /obj/item/rogueweapon/scabbard/sword
 				backl = /obj/item/rogueweapon/shield/iron
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/shields = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE)
 			if("Halberd & Sword")
 				l_hand = /obj/item/rogueweapon/sword
 				r_hand = /obj/item/rogueweapon/halberd
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				H.adjust_skillrank_up_to(/datum/skill/combat/polearms = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 			if("Greataxe & Sword")
 				l_hand = /obj/item/rogueweapon/sword
 				r_hand = /obj/item/rogueweapon/greataxe
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 				beltr = /obj/item/rogueweapon/scabbard/sword
-				H.adjust_skillrank_up_to(/datum/skill/combat/axes = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
@@ -156,8 +155,8 @@
 				pants = /obj/item/clothing/under/roguetown/brigandinelegs
 
 			if("Maille Set")
-				armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-				shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+				armor = /obj/item/clothing/suit/roguetown/armor/plate
+				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord/heavy
 				wrists = /obj/item/clothing/wrists/roguetown/bracers
 				pants = /obj/item/clothing/under/roguetown/chainlegs
 
@@ -183,13 +182,13 @@
 	category_tags = list(CTAG_MENATARMS)
 	//Garrison ranged/speed class. Time to go wild
 	subclass_stats = list(
-		STATKEY_STR = -1,
 		STATKEY_SPD = 2,// seems kinda lame but remember guardsman bonus!!
 		STATKEY_PER = 2,
-		STATKEY_WIL = 1
+		STATKEY_WIL = 2
 	)
 	subclass_skills = list(
 		/datum/skill/combat/knives = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,		//Trained soldier, should have some skill??
 		/datum/skill/combat/maces = SKILL_LEVEL_APPRENTICE, 		// Still have a cugel.
 		/datum/skill/combat/crossbows = SKILL_LEVEL_EXPERT,		//Only effects draw and reload time.
 		/datum/skill/combat/bows = SKILL_LEVEL_EXPERT,			//Only effects draw times.
@@ -198,7 +197,7 @@
 		/datum/skill/misc/sneaking = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT, // A little better; run fast, weak boy.
 		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,	//On par with Watch Archer.
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/riding = SKILL_LEVEL_NOVICE,
@@ -210,7 +209,7 @@
 	..()
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
-	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 
 	H.adjust_blindness(-3)
 	if(H.mind)
@@ -221,7 +220,7 @@
 		H.set_blindness(0)
 		switch(weapon_choice)
 			if("Crossbow")
-				beltr = /obj/item/quiver/bolts
+				beltr = /obj/item/quiver/bolt/standard
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 			if("Bow") // They can head down to the armory to sideshift into one of the other bows.
 				beltr = /obj/item/quiver/arrows
@@ -236,12 +235,15 @@
 				armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 				pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+				H.adjust_skillrank_up_to(/datum/skill/combat/knives, 4, TRUE)
 				ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			if("Brigandine Armor") //New MAA skirmisher
 				head = /obj/item/clothing/head/roguetown/helmet/kettle
 				armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light/retinue
 				wrists = /obj/item/clothing/wrists/roguetown/bracers/brigandine
 				pants = /obj/item/clothing/under/roguetown/brigandinelegs
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)	//Medium armour with only knife skill is ??
+				l_hand = /obj/item/rogueweapon/sword/short/messer
 				ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 		backpack_contents = list(
@@ -270,11 +272,10 @@
 	//Garrison mounted class; charge and charge often.
 	subclass_stats = list(
 		STATKEY_CON = 2,// seems kinda lame but remember guardsman bonus!!
-		STATKEY_WIL = 1,// Your name is speed, and speed is running.
+		STATKEY_WIL = 2,// Your name is speed, and speed is running.
 		STATKEY_STR = 1,
 		STATKEY_INT = 1, // No strength to account for the nominally better weapons. We'll see.
-		STATKEY_PER = 2, //Trackers
-		STATKEY_SPD = -1,
+		STATKEY_PER = 1, //Trackers
 	)
 	subclass_skills = list(
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
@@ -316,20 +317,20 @@
 				l_hand = /obj/item/rogueweapon/sword/sabre
 				r_hand = /obj/item/rogueweapon/scabbard/sword
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
-				beltr = /obj/item/quiver/bolts
-				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/swords = 4, TRUE)
+				beltr = /obj/item/quiver/bolt/standard
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 			if("Flail & Shield")
 				beltr = /obj/item/rogueweapon/flail/sflail
 				backl = /obj/item/rogueweapon/shield/tower
-				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/shields = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/shields, 4, TRUE)
 			if("Lucerne & Whip")
 				r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
 				beltr = /obj/item/rogueweapon/whip
-				H.adjust_skillrank_up_to(/datum/skill/combat/polearms = 4, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails = 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, 4, TRUE)
 
 		backpack_contents = list(
 			/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
@@ -387,8 +388,8 @@
 /datum/outfit/job/roguetown/manorguard/standard_bearer/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	neck = /obj/item/clothing/neck/roguetown/gorget
-	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	neck = /obj/item/clothing/neck/roguetown/gorget/steel
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 	head = /obj/item/clothing/head/roguetown/helmet/kettle
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/light/retinue
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
