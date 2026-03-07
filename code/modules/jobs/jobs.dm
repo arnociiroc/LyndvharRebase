@@ -86,6 +86,9 @@ GLOBAL_LIST_INIT(regency_positions, list( // Used to determine elligibility for 
 	"Steward",
 	"Councillor",
 	"Marshal",
+	"Archmagus",
+	"Archivist",
+	"Cataphract",
 ))
 
 GLOBAL_LIST_INIT(noble_positions, list( //Royal family only
