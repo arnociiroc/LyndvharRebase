@@ -225,6 +225,41 @@
 	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar
 	sort_category = "Accessories"
 
+/datum/loadout_item/psicross/baotha
+	name = "Amulet of Baotha"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baotha
+	sort_category = "Accessories"
+
+/datum/loadout_item/psicross/gronnzizo
+	name = "Wolf Talisman"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn
+	sort_category = "Accessories"
+
+/datum/loadout_item/psicross/gronnbaotha
+	name = "Leopard Talisman"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baothagronn
+	sort_category = "Accessories"
+
+/datum/loadout_item/psicross/gronnmatthios
+	name = "Bear Talisman"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/gronn
+	sort_category = "Accessories"
+
+/datum/loadout_item/psicross/gronngraggar
+	name = "Moose Talisman"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/gronn
+	sort_category = "Accessories"
+
+/datum/loadout_item/psicross/gronndendor
+	name = "Volfskinned Talisman"
+	path = /obj/item/clothing/neck/roguetown/psicross/dendor/gronn
+	sort_category = "Accessories"
+
+/datum/loadout_item/psicross/gronnabyssor
+	name = "Hadal Talisman"
+	path = /obj/item/clothing/neck/roguetown/psicross/abyssor/gronn
+	sort_category = "Accessories"
+
 /datum/loadout_item/wedding_band
 	name = "Wedding Band, Silver"
 	path = /obj/item/clothing/ring/band

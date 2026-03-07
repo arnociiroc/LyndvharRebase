@@ -125,8 +125,8 @@
 		)
 
 /datum/customizer/organ/snout/anthro
-	allows_disabling = TRUE
-	default_disabled = TRUE
+	allows_disabling = FALSE
+	default_disabled = FALSE
 	customizer_choices = list(/datum/customizer_choice/organ/snout/anthro)
 
 /datum/customizer/organ/snout/capridae

@@ -17,7 +17,7 @@
 		STATKEY_CON = -1
 	)
 	age_mod = /datum/class_age_mod/war_scholar
-	subclass_spellpoints = 15
+	subclass_spellpoints = 24
 	subclass_skills = list(
 		/datum/skill/combat/staves = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
