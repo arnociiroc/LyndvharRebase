@@ -51,9 +51,9 @@
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
+	beltr = /obj/item/flashlight/flare/torch/lantern
 
 	backpack_contents = list(
-		/obj/item/flashlight/flare/torch/metal = 1,
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1

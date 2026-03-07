@@ -225,6 +225,11 @@
 	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar
 	sort_category = "Accessories"
 
+/datum/loadout_item/psicross/baotha
+	name = "Amulet of Baotha"
+	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baotha
+	sort_category = "Accessories"
+
 /datum/loadout_item/wedding_band
 	name = "Wedding Band, Silver"
 	path = /obj/item/clothing/ring/band
