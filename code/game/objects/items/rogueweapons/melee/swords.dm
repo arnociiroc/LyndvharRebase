@@ -1082,7 +1082,7 @@
 
 /obj/item/rogueweapon/sword/short/yanshen
 	name = "steel short dao"
-	desc = "A razor-edged sword with a strange toothy pattern apparent on its blade. </br> A duandao is a general term for a short single-edged blade in the lands of the Yanshen, though ones short as this are generally only used by noncombatants looking to keep trouble away... or troublemakers trying to blend in."
+	desc = "A razor-edged sword with a strange toothy pattern apparent on its blade. </br> A duandao is a general term for a short single-edged blade in the lands of the Yanshen, though ones as short as this are generally only used by noncombatants looking to keep trouble away... or troublemakers trying to blend in."
 	possible_item_intents = list(
 		/datum/intent/sword/cut/short,
 		/datum/intent/sword/thrust/short,
@@ -1125,7 +1125,7 @@
 
 /obj/item/rogueweapon/sword/short/broken
 	name = "aged shortsword"
-	desc = "The arming sword's shorter and much older brother. Despite being centuries older than the swords of todae, it remains in use as a cheap sidearm for shieldbearers and archers. This ancient variant was there since the beginning, and - through one way or another - has found itself a wielder, once more. Imperfections hardly command censure, especially when the edge remains sharp enough to gouge; a fitting throwback for the final daes of Psydonia's latest era."
+	desc = "The arming sword's shorter and much older brother. Despite being centuries older than the swords of todae, it remains in use as a cheap sidearm for shieldbearers and archers. This ancient variant was there since the beginning, and -- through one way or another -- has found itself a wielder, once more. Time's imperfections hardly command censure, especially when the edge still remains sharp enough to gouge: a fitting throwback for what may be the final daes of Beowricke's latest era."
 	icon_state = "iswordshort_d"
 	sheathe_icon = "iswordshort_d"
 	wdefense = 3
@@ -2416,7 +2416,7 @@
 /obj/item/rogueweapon/sword/long/triumph
 	name = "valorian longsword"
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a stouter crossguard and wider blade; a prevaling design \
+	all across Beowricke. This particular variant has a stouter crossguard and wider blade; a prevailing design \
 	from the preceding century, oft-mantled in the homes of now-retired adventurers."
 	icon = 'icons/roguetown/weapons/64.dmi'  //Framework for Triumph-purchasable longswords.
 	icon_state = "longsword_triumph"
@@ -2436,7 +2436,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/rockhill
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a narrow crossguard and lengthened blade; the proportions \
+	all across Beowricke. This particular variant has a narrow crossguard and lengthened blade; the proportions \
 	of an ancient hero's claymore, resurrected through modern smithing techniques."
 	icon_state = "longsword_rockhill"
 	sheathe_icon = "gensword"
@@ -2445,7 +2445,7 @@
 	name = "valorian claymore"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This sharp-edged variant has a narrow crossguard and lengthened blade; the proportions \
+	all across Beowricke. This sharp-edged variant has a narrow crossguard and lengthened blade; the proportions \
 	of an ancient hero's claymore, resurrected through modern smithing techniques."
 	icon_state = "longsword_rockhill"
 
@@ -2465,9 +2465,7 @@
 /obj/item/rogueweapon/sword/long/broadsword/steel/rockhill //Alternate version of the Broadsword.
 	name = "valorian broadsword"
 	icon = 'icons/roguetown/weapons/64.dmi'
-	desc = "A lethal and well-balanced weapon. The broadsword - better known as a 'hand-and-a-halfer' - has dutifully served the \
-	swordsmen of Psydonia in their clashes against man-and-monster alike since time immemmorial. The edge glimmers with the hopes \
-	and dreams of the Weeping God's children, imbuing your very soul with determination. ‎</br>‎‎ </br>'There's a light inside your \
+	desc = "A lethal and well-balanced weapon. The broadsword has dutifully served the swordsmen of Beowricke in their clashes against man-and-monster alike since time immemmorial. ‎</br>‎‎ </br>'There's a light inside your \
 	soul, that’s still shining in the cold: the truth, the promise in our hearts.. ..don't forget, I'm with you in the dark.'"
 	icon_state = "longsword_rockhill"
 
@@ -2504,7 +2502,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/sabreguard
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a curved crossguard and stouter blade; hallmarks of nobility, \
+	all across Beowricke. This particular variant has a curved crossguard and stouter blade; hallmarks of nobility, \
 	whether professed atop a saiga or against a villain's edge."
 	icon_state = "longsword_sabreguard"
 	sheathe_icon = "cutlass"
@@ -2513,7 +2511,7 @@
 	name = "valorian greatsabre"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This broad-edged variant has a curved crossguard and stouter blade; hallmarks of nobility, \
+	all across Beowricke. This broad-edged variant has a curved crossguard and stouter blade; hallmarks of nobility, \
 	whether professed atop a saiga or against a villain's edge."
 	icon_state = "longsword_sabreguard"
 	sheathe_icon = "cutlass"
@@ -2533,7 +2531,7 @@
 
 /obj/item/rogueweapon/sword/long/triumph/wideguard
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a widened crossguard, adored by lightly-armored mercenaries \
+	all across Beowricke. This particular variant has a widened crossguard, adored by lightly-armored mercenaries \
 	who cannot afford to leave a single riposte without interception."
 	icon_state = "longsword_wideguard"
 	sheathe_icon = "opsysword"
@@ -2542,7 +2540,7 @@
 	name = "valorian greatrapier"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This well-honed variant has a widened crossguard, adored by lightly-armored mercenaries \
+	all across Beowricke. This well-honed variant has a widened crossguard, adored by lightly-armored mercenaries \
 	who cannot afford to leave a single riposte without interception."
 	icon_state = "longsword_wideguard"
 	sheathe_icon = "opsysword"
@@ -2562,8 +2560,8 @@
 
 /obj/item/rogueweapon/sword/long/triumph/psycrucifix
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This particular variant has a psycruciformed crossguard; a masterwork, held in silent \
-	reverance by those who've vowed to never forget the ultimate sacrifice."
+	all across Beowricke. This particular variant has a psycruciformed crossguard; a masterwork, held in silent \
+	reverance by those who've vowed to never forget their Lord."
 	icon_state = "longsword_psycrucifix"
 	sheathe_icon = "opsysword"
 
@@ -2571,8 +2569,8 @@
 	name = "valorian silver longsword"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	desc = "A lethal and perfectly balanced weapon, the longsword is the protagonist of endless tales and myths \
-	all across Psydonia. This silvered variant has a psycruciformed crossguard; a masterwork, held in silent \
-	reverance by those who've vowed to never forget the ultimate sacrifice."
+	all across Beowricke. This silvered variant has a psycruciformed crossguard; a masterwork, held in silent \
+	reverance by those who've vowed to never forget their Lord."
 	icon_state = "longsword_psycrucifix"
 	sheathe_icon = "opsysword"
 
@@ -2591,23 +2589,20 @@
 
 /obj/item/rogueweapon/sword/iron/triumph
 	name = "valorian arming sword"
-	desc = "A modest take on a mythical design, hailing from the blood-splattered crossroads \
-	between Valoria and Rockhill. It feels right at home, in the palm of your hand."
+	desc = "A modest take on an older design."
 	icon_state = "iswordalt"
 	sheathe_icon = "iswordalt"
 
 /obj/item/rogueweapon/sword/short/messer/iron/virtue/triumph
 	name = "valorian sword"
-	desc = "A modest take on a mythical design, hailing from the blood-splattered crossroads \
-	between Valoria and Rockhill. The flangs along its crossguard excel at catching the strikes \
+	desc = "A modest take on a mythical design. The flanges along its crossguard excel at catching the strikes \
 	of another, leaving them unable to persist against the following riposte."
 	icon_state = "iswordalt"
 	sheathe_icon = "iswordalt"
 
 /obj/item/rogueweapon/sword/falchion/militia/triumph
 	name = "valorian messer"
-	desc = "A modest take on a mythical design, hailing from the blood-splattered crossroads \
-	between Valoria and Rockhill. Rumors purport that mercenaries would intentionally chip the \
+	desc = "A modest take on a mythical design. Rumors purport that mercenaries would intentionally chip the \
 	edge of these blades, as the crude serrations left behind could rend goblin-flesh with far more potency."
 	icon_state = "iswordalt"
 	sheathe_icon = "iswordalt"

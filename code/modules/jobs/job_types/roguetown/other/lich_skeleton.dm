@@ -654,7 +654,7 @@ LICH SKELETONS
 
 /obj/item/rogueweapon/greatsword/grenz/flamberge/aalloy
 	name = "decrepit flamberge"
-	desc = "Tarnished bronze and decaying bogleather, meticulously woven together to fashion a flame-bladed swan song for Beowricke's final descendants. </br>'Oh, how valiant His sacrifice was! But now He lies, sleeping and witless to the world-anew.' </br>'And now, He sleeps. And now, He weeps.'"
+	desc = "Tarnished bronze and decaying bogleather, meticulously woven together to fashion a flame-bladed swan song for one's last lyfe."
 	icon_state = "ancientflamb"
 	smeltresult = /obj/item/ingot/aaslag
 	max_integrity = 150

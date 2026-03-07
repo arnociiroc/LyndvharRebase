@@ -710,8 +710,7 @@
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot/zarum
 	name = "bottle of medicinal fish vinegar"
 	desc = "A bottle with a mudclay cork, tethered to the bottleneck via braided twine. Fermented innard-paste and herbs makes for a \
-	disgustingly cheap medicine; an ancient concoction, resurrected for usage within the gladitorial arenas of Lirvas and Zybantu. </br>A \
-	particular variant of this, made by fermenting zardines in the Terrorbog, happens to be a very popular condiment back in Rockhill."
+	disgustingly cheap medicine; an ancient concoction, resurrected for usage within the gladitorial arenas of Lirvas and Raneshen."
 	list_reagents = list(/datum/reagent/medicine/healthpot/zarum = 50)
 
 /datum/reagent/medicine/healthpot/zarum

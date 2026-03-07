@@ -401,7 +401,7 @@
 
 /obj/item/reagent_containers/food/snacks/rogue/raisinbread
 	name = "raisin loaf"
-	desc = "A popular dessert amongst the peasantry, this loaf of sweetbread's speckled with fruity surprises. In recent years, it has more palettes amongst the papacy: t'was Rockhill's abbey that christened a variant, glazed with a sugary veneer."
+	desc = "A popular dessert amongst the peasantry, this loaf of sweetbread is full of unevenly dispersed dried fruits."
 	icon = 'modular/Neu_Food/icons/cooked/cooked_baked.dmi'
 	icon_state = "raisinbread6"
 	bitesize = 8

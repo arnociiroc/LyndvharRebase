@@ -22,7 +22,7 @@
 
 /obj/item/rogueore/silver
 	name = "raw silver" //Mechanically left unsilverified - like with ziliquae - for the sake of gameplay. Can be handwaved as not being pure enough to directly harm the unholy.
-	desc = "A gleaming ore of moonlight hue."
+	desc = "A gleaming ore of moonlight hue. The streaks that cover it need to be freed from the useless rock that binds it before being usable."
 	icon_state = "oresilv1"
 	smeltresult = /obj/item/ingot/silver 
 	sellprice = 8
@@ -34,7 +34,7 @@
 
 /obj/item/rogueore/iron
 	name = "raw iron"
-	desc = "A dark ore of rugged strength."
+	desc = "A dark ore of rugged strength. After, of course, you smelt it."
 	icon_state = "oreiron1"
 	smeltresult = /obj/item/ingot/iron
 	sellprice = 5
@@ -64,7 +64,7 @@
 
 /obj/item/rogueore/tin
 	name = "raw tin"
-	desc = "A mass of soft, almost malleable white ore."
+	desc = "A mass of soft -- almost malleable -- white ore."
 	icon_state = "oretin1"
 	smeltresult = /obj/item/ingot/tin
 	sellprice = 4
@@ -79,7 +79,7 @@
 
 /obj/item/rogueore/coal
 	name = "coal"
-	desc = "Dark lumps that become smoldering embers later in life."
+	desc = "Dark dry lumps that may become smoldering embers later in life."
 	icon_state = "orecoal1"
 	firefuel = 30 MINUTES
 	smeltresult = /obj/item/rogueore/coal
@@ -121,7 +121,7 @@
 
 /obj/item/rogueore/cinnabar
 	name = "cinnabar"
-	desc = "Red gems that contain the essence of quicksilver."
+	desc = "Red gems that contain the essence of quicksilver, though they need to be ground to get at it."
 	icon_state = "orecinnabar"
 	grind_results = list(/datum/reagent/mercury = 15)
 	sellprice = 5
@@ -214,7 +214,7 @@
 
 /obj/item/ingot/iron
 	name = "iron bar"
-	desc = "Forged strength. Essential for crafting."
+	desc = "Forged strength. Essential for crafting, in this modern age."
 	icon_state = "ingotiron"
 	smeltresult = /obj/item/ingot/iron
 	sellprice = 15
@@ -241,7 +241,7 @@
 
 /obj/item/ingot/copper
 	name = "copper bar"
-	desc = "This bar causes a gentle tingling sensation when touched."
+	desc = "This metal bar is soft enough in its current state to be beaten into shape by stone."
 	icon_state = "ingotcop"
 	smeltresult = /obj/item/ingot/copper
 	sellprice = 10
@@ -252,7 +252,7 @@
 
 /obj/item/ingot/tin
 	name = "tin bar"
-	desc = "An ingot of strangely soft and malleable essence."
+	desc = "An ingot of a pale and strangely soft, malleable essence."
 	icon_state = "ingottin"
 	smeltresult = /obj/item/ingot/tin
 	sellprice = 15
@@ -263,14 +263,14 @@
 
 /obj/item/ingot/bronze
 	name = "bronze bar"
-	desc = "An alloy of tin and copper, humming with yet-untapped potential. The fondest friend of tinkerers, homesteaders, and shieldbearers alike."
+	desc = "An alloy of tin and copper, almost humming with its yet-untapped potential. The fondest friend of tinkerers, homesteaders, and shieldbearers alike."
 	icon_state = "ingotbronze"
 	smeltresult = /obj/item/ingot/bronze
 	sellprice = 25
 
 /obj/item/ingot/silver
 	name = "silver bar"
-	desc = "This bar radiates purity. Treasured by the realm, and honored for its divine properties."
+	desc = "A pure and pale bar of metal. In this current age, when fiends and creechurs have seen the lacking of able arms that previously kept them checked, it is ever more precious."
 	icon_state = "ingotsilv"
 	smeltresult = /obj/item/ingot/silver
 	sellprice = 80
@@ -278,14 +278,14 @@
 
 /obj/item/ingot/steel
 	name = "steel bar"
-	desc = "This alloy of iron and coal is a stalwart defender of the realm."
+	desc = "Steel: iron ore prepared and smelted with coal. The line between what steel and what iron are is slim, but to the user the difference is easily measured in gold."
 	icon_state = "ingotsteel"
 	smeltresult = /obj/item/ingot/steel
 	sellprice = 20
 
 /obj/item/ingot/blacksteel
 	name = "blacksteel bar"
-	desc = "This ingot is both mythical and mysterious; stronger - and more expensive - than any alloy currently known to Beowricke's masses. It thrumbs with an eerie blue glow, catchable for only a blink's tyme. </br>'Sacrificing the holy elements of silver for raw strength, this strange and powerful ingot's origin carries dark rumors.'"
+	desc = "This strange dark blue bar is the marvel of the modern era, and the mystery of the last. Sacrificing the holy elements of silver for raw strength, this strange and powerful ingot's origin carries dark rumors. Though, with this strength, what wouldn't?"
 	icon_state = "ingotblacksteel"
 	smeltresult = /obj/item/ingot/blacksteel
 	sellprice = 100
@@ -293,7 +293,7 @@
 //Blessed Ingots
 /obj/item/ingot/steelholy/
 	name = "holy steel bar"
-	desc = "This ingot of steel radiates with divine might. It radiates heat, even when outside a forge."
+	desc = "This ingot of steel radiates with divine might. It seems to radiate a slight heat, even when well outside a forge."
 	icon_state = "ingotsteelholy"
 	smeltresult = /obj/item/ingot/steel //Smelting it removes the blessing
 	sellprice = 20
@@ -304,7 +304,7 @@
 
 /obj/item/ingot/silverblessed/
 	name = "blessed silver bar"
-	desc = "This bar radiates with blessed purity. It dimly glows with moonlight, even in complete darkness."
+	desc = "This bar radiates with blessed purity. In the dark, it almost seems to glow dimly like moonlight."
 	icon_state = "ingotsilvblessed"
 	smeltresult = /obj/item/ingot/silver //Smelting it removes the blessing
 	sellprice = 100
@@ -316,7 +316,7 @@
 
 /obj/item/ingot/silverblessed/bullion
 	name = "blessed silver bullion"
-	desc = "This bar radiates with blessed purity. It is marked with the sigil of the Valorian Inquisition, and appears to've been shipped straight from Valoria's treasury."
+	desc = "This bar of pure and pale metal is marked with the sigil of the Valorian Inquisition, and appears to've been shipped straight from Valoria's treasury."
 	icon_state = "ingotsilvblessed_psy"
 	smeltresult = /obj/item/ingot/silverblessed //Minor failsafe to ensure bullion can always be used for blessed silver recipes, in case of a filepath conflict.
 	sellprice = 100
@@ -324,7 +324,7 @@
 
 /obj/item/ingot/aalloy
 	name = "decrepit ingot"
-	desc = "A decrepit slab of wrought bronze, uncomfortably cold to the touch. The gales shift into whispers, when held for long enough; 'progress commands sacrifice'."
+	desc = "A decrepit slab of old wrought bronze, uncomfortably cold to the touch. Though it was first forged many yils ago, it yet still remains. How many times has this ingot's metal been reforged?"
 	icon_state = "ingotancient"
 	smeltresult = /obj/item/ingot/aaslag
 	color = "#bb9696"
@@ -332,14 +332,14 @@
 
 /obj/item/ingot/purifiedaalloy
 	name = "ancient alloy"
-	desc = "An ingot of polished gilbranze, teeming with forbidden knowledge. The reflection on its surface isn't yours; it smiles back at you with eternal malice."
+	desc = "An ingot of polished gilbranze, the product of much forbidden knowledge. The reflection on its surface isn't yours. It couldn't be."
 	icon_state = "ingotancient"
 	smeltresult = /obj/item/ingot/purifiedaalloy
 	sellprice = 111
 
 /obj/item/ingot/aaslag
 	name = "glimmering slag"
-	desc = "A mass of wrought bronze, rendered lame from the forge's heat. Sometimes, dead is better. </br>Yet, perhaps alloying it in equal parts with another glimmering piece of ore could resurrect its secrets."
+	desc = "A mass of ancient bronze, rendered lame from the forge's heat and the scraps from its previous life. Sometimes, dead is better. </br>Yet, perhaps alloying it in equal parts with another glimmering piece of ore could resurrect its secrets..."
 	icon_state = "ancientslag"
 	smeltresult = /obj/item/ingot/aaslag
 	sellprice = 6
@@ -351,7 +351,7 @@
 //Anomalous Smeltings
 /obj/item/ingot/weeping
 	name = "enduring ingot"
-	desc = "A slab of metal, aged and bare. You finally know what it is, yet no word can be sired to describe it. </br>'..none will ever know the greatest truths; of Aeon's grasp, of Adonai's presence, of Psydon's fate..' </br>'..but, perhaps, that's for the better. The malaise is gone, but the evils of this world are still very real..' </br>'..find a way to give the remains a new lyfe; a new vessel that may yet make the Archdevil weep..'"
+	desc = "A slab of metal. Enduring. Aged. Bare. You finally know what it is, yet no word can be sired to describe it. </br>'..none will ever know the greatest truths; of Aeon's grasp, of Adonai's presence, of Psydon's truth..' </br>'..but, perhaps, that's for the better. The malaise is gone, but the evils of this world are still very real..' </br>'..find a way to give the remains a new lyfe; a new vessel that may yet make even the foundations of the world weep...'"
 	icon_state = "ingotsilv"
 	smeltresult = /obj/item/ingot/weeping
 	color = "#CECA9C"
@@ -363,7 +363,7 @@
 
 /obj/item/ingot/draconic
 	name = "draconic ingot"
-	desc = "A slab of obsidian, crackling with energy. Your fingers blister from the sheer heat, radiating off of its glassy surface. </br>'..no man, be-they a saint or sinner, can truly withstand such power..' </br>'..but, perhaps, you are different..' </br>'..find a way to give the remains a new lyfe; a new vessel that may yet make the Archdevil weep..'"
+	desc = "A slab of... obsidian? crackling with energy. Your fingers blister from the sheer heat, radiating off of its glassy surface. </br>'..no man, be-they a saint or a sinner, can truly withstand such power..' </br>'..but, perhaps, you are different..' </br>'..find a way to give the remains a new lyfe; a new vessel that may yet make the evils of the land weep..'"
 	icon_state = "ingotblacksteel"
 	smeltresult = /obj/item/ingot/draconic
 	color = "#70b8ff"
@@ -386,14 +386,14 @@
 
 /obj/item/ingot/ketryl
 	name = "ketryl ingot"
-	desc = "Named after its mythical status, this ingot is forged as per the dwarven standards etched in a small imprint on the ingot's surface. Ketryl is often folded in thin layers, stronger than steel, yet unusually light at the same time."
+	desc = "Named after its mythical status, this ingot is to be forged as per the dwarven standards etched in a small imprint on the ingot's surface. Ketryl is often folded in thin layers. When folded like this, it can be stronger than steel, yet comparatively light."
 	icon_state = "ingotketryl"
 	smeltresult = null
 	sellprice = 555
 
 /obj/item/ingot/drow
 	name = "skikudic ingot"
-	desc = "This ingot offers an alternative - if rarely-heard - solution to riddle of steel, courtesy of the Underdark's fungus-fueled forges. Sunlight refuses to illuminate its presence, no matter how bright its glare becomes. </br>'..perhaps, the forge's heat can scald away its fungal temperance..'"
+	desc = "This ingot offers an alternative -- if rarely-heard of on the surface -- solution to the riddle of steel, courtesy of the Underdark's fungus-fueled forges. Sunlight refuses to reflect upon its face, no matter how bright the glare becomes. </br>..perhaps, the forge's heat can scald away its fungal temperance... though, what would become of its strength?"
 	icon_state = "ingotsteel"
 	smeltresult = /obj/item/ingot/iron //Smelting the ingot again 'burns away' the fungal temperance, allowing it to be reused for said recipes.
 	color = "#bc9ab7"
@@ -428,7 +428,7 @@
 
 /obj/item/ingot/component/heapofrawiron
 	name = "heap of raw iron"
-	desc = "A massive hunk, born from the incoherent fusion of molten iron. Chunks of ore-and-ingotry peak out from its jagged surface, yearning to be refined - be it into ingots, or something more purposeful."
+	desc = "A massive hunk, born from the incoherent fusion of molten iron. Chunks of ore-and-ingotry peak out from its jagged surface, yearning to be refined -- be it into ingots, or something more purposeful."
 	icon_state = "component_berserkheap"
 	smeltresult = /obj/item/rogueore/iron
 	sellprice = 44
