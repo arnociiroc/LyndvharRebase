@@ -20,6 +20,7 @@
 	round_contrib_points = 3
 
 	job_traits = list(
+		TRAIT_NOBLE,
 		TRAIT_ARCYNE_T3,
 		TRAIT_MAGEARMOR,
 		TRAIT_INTELLECTUAL,
