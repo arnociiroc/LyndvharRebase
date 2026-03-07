@@ -106,18 +106,19 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mending)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/enchant_weapon)
 
-	// Armor choice: Discretion (light, like adventurer) vs Progress (medium armor set with helmet)
-	var/armor_style = list("Discretion (Spellblade Disguise)", "Progress (Medium Armor)")
+	// Armor choice: Discretion (light, like adventurer) vs Ambition (medium armor set with helmet)
+	var/armor_style = list("Discretion (Spellblade Disguise)", "Ambition (Medium Armor)")
 	var/armor_choice = input(H, "Choose your armament philosophy.", "HER LIGHT SHINES THROUGH") as anything in armor_style
 	switch(armor_choice)
 		if("Discretion (Spellblade Disguise)")
 			head = /obj/item/clothing/head/roguetown/roguehood/black
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
-		if("Progress (Medium Armor)")
-			armor = /obj/item/clothing/suit/roguetown/armor/plate
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			cloak = /obj/item/clothing/cloak/raincloak/mortus
+		if("Ambition (Medium Armor)")
+			armor = /obj/item/clothing/suit/roguetown/armor/brigandine
+			pants = /obj/item/clothing/under/roguetown/brigandinelegs
 			shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-			cloak = /obj/item/clothing/cloak/tabard/black
+			cloak = /obj/item/clothing/cloak/tabard/stabard/surcoat
 			var/helmets = list(
 				"Pigface Bascinet"		= /obj/item/clothing/head/roguetown/helmet/bascinet/pigface,
 				"Guard Helmet"			= /obj/item/clothing/head/roguetown/helmet/heavy/guard,
@@ -129,7 +130,7 @@
 				"Slitted Kettle"		= /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle,
 				"None"
 			)
-			var/helmchoice = input(H, "Choose your Helm.", "HER LIGHT SHINES THROUGH") as anything in helmets
+			var/helmchoice = input(H, "Choose your Helm.", "HER DARKNESS PIERCES THROUGH") as anything in helmets
 			if(helmchoice != "None")
 				head = helmets[helmchoice]
 
