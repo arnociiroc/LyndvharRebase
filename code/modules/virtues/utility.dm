@@ -31,7 +31,7 @@
 	choice_tooltips = list(
 		NOTABLE_BEAUTY = "Just looking at me relieves some of the hardships of the world, and I'm quite good in bed.",
 		NOTABLE_STASH = "I've a hidden coinpurse for a particularly dark dae.",
-		NOTABLE_RESIDENCY = "I am a Resident of Azure Peak, with access to one of its buildings all to myself.",
+		NOTABLE_RESIDENCY = "I am a Resident of Lyndvhar, with access to one of its buildings all to myself.",
 		NOTABLE_SHREWD = "Grants Secular Appraise -- a spell that allows you to tell how much wealth someone has on them, and in their Meister."
 	)
 
@@ -54,29 +54,6 @@
 				var/mapswitch = 0
 				if(SSmapping.config.map_name == "Port of Lyndvhar")
 					mapswitch = 1
-
-/datum/virtue/utility/deadened
-	name = "Deadened"
-	desc = "Some terrible incident colours my past, and now, I feel nothing."
-	added_traits = list(TRAIT_NOMOOD)
-
-/datum/virtue/utility/light_steps
-	name = "Light Steps"
-	desc = "Years of skulking about have left my steps quiet, and my hunched gait quicker."
-	added_traits = list(TRAIT_LIGHT_STEP)
-	added_skills = list(list(/datum/skill/misc/sneaking, 3, 6))
-
-/datum/virtue/utility/resident
-	name = "Resident"
-	desc = "I'm a resident of Lyndvhar. I have an account in the city's treasury and a home in the city."
-	added_traits = list(TRAIT_RESIDENT)
-
-/datum/virtue/utility/resident/apply_to_human(mob/living/carbon/human/recipient)
-	var/mapswitch = 0
-	if(SSmapping.config.map_name == "Port of Lyndvhar")
-		mapswitch = 1
-
-	
 
 				if(mapswitch == 0)
 					return
@@ -103,7 +80,7 @@
 							var/obj/structure/chair/chosen_chair = pick(possible_chairs)
 							recipient.forceMove(get_turf(chosen_chair))
 							chosen_chair.buckle_mob(recipient)
-							to_chat(recipient, span_notice("As a resident of Azure Peak, you find yourself seated at a chair in the local tavern."))
+							to_chat(recipient, span_notice("As a resident of Lyndvhar, you find yourself seated at a chair in the local tavern."))
 						else
 							var/list/possible_spawns = list()
 							for(var/turf/T in spawn_area)
@@ -119,6 +96,18 @@
 #undef NOTABLE_STASH
 #undef NOTABLE_RESIDENCY
 #undef NOTABLE_SHREWD
+
+
+/datum/virtue/utility/deadened
+	name = "Deadened"
+	desc = "Some terrible incident colours my past, and now, I feel nothing."
+	added_traits = list(TRAIT_NOMOOD)
+
+/datum/virtue/utility/light_steps
+	name = "Light Steps"
+	desc = "Years of skulking about have left my steps quiet, and my hunched gait quicker."
+	added_traits = list(TRAIT_LIGHT_STEP)
+	added_skills = list(list(/datum/skill/misc/sneaking, 3, 6))
 
 /datum/virtue/utility/failed_squire
 	name = "Failed Squire"

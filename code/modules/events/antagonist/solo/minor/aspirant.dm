@@ -38,7 +38,6 @@
 	for(var/datum/mind/antag_mind as anything in setup_minds)
 		add_datum_to_mind(antag_mind, antag_mind.current)
 
-	var/list/helping = list("Consort" ,"Hand" ,"Suitor" ,"Heir" ,"Captain" ,"Steward" ,"Archmagus ","Archivist", "Cataphract", "Marshal", "Councillor", "City Herald", "Keeper", "Veteran")
 	var/list/possible_helpers = list()
 	for(var/mob/living/living in GLOB.human_list)
 		if(!living.client)
@@ -47,7 +46,7 @@
 			continue
 		if(!living.mind?.assigned_role)
 			continue
-		if(living.mind.assigned_role == "Grand Duke")
+		if(living.mind.assigned_role == "Viscount")
 			continue
 		if(living.mind.assigned_role in GLOB.antagonist_positions)
 			continue

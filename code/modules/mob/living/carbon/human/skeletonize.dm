@@ -50,7 +50,5 @@
 		if(clear_choice == "Clear Both")
 			if(flavortext)
 				flavortext = null
-				flavortext_cached = ""
 			if(ooc_notes)
 				ooc_notes = null
-				ooc_notes_cached = ""

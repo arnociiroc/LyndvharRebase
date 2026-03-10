@@ -29,9 +29,7 @@
 	job_reopens_slots_on_death = FALSE
 	same_job_respawn_delay = 1 MINUTES
 	virtue_restrictions = list(
-		/datum/virtue/utility/noble,
 		/datum/virtue/combat/dualwielder, //Claws are too powerful, abusable
-		/datum/virtue/combat/combat_virtue, //They do not need shield skills or anything in here
 		/datum/virtue/utility/notable, //No resident (????) or free-money-stash gnolls
 		/datum/virtue/utility/bronzelimbs, //They should feel pain in their limbs given their state
 		/datum/virtue/movement/acrobatic, //This should be given to them when they are actually after a Hunted

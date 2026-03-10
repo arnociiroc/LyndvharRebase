@@ -5,16 +5,18 @@ Inqusitor - the leader of Inquisition has the highest chance to persuade other, 
 It also includes Bishop (but not underling), and all of the "Burghers leaders" which has a lot of sway and financial resources and might actually pull it off.
 */
 #define ASPIRANT_ELIGIBLE_POSITIONS \
+	"Viscount",\
 	"Consort",\
 	"Suitor",\
-	"Prince",\
+	"Heir",\
 	"Hand",\
 	"Steward",\
 	"Councillor",\
-	"Marshal",\
+	"Cataphract",\
 	"Inquisitor",\
+	"Absolver",\
+	"Orthodoxist",\
+	"Assassin",\
+	"Bandit",\
 	"Wretch",\
-	"Merchant",\
-	"Guildmaster",\
-	"Bathmaster",\
-	"Bishop"
+	"Gnoll"

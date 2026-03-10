@@ -64,7 +64,7 @@
 		/obj/item/storage/keyring/tailor,
 		/obj/item/dye_brush, 
 		/obj/item/recipe_book/sewing, 
-		/obj/item/recipe_book/leatherworking
+		/obj/item/recipe_book/leatherworking,
 		/obj/item/mini_flagpole/tailor,
 		)
 	if(should_wear_femme_clothes(H))
